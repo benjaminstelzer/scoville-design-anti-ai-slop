@@ -1,0 +1,2199 @@
+{
+  "schema_version": 1,
+  "status": "Observed development receipts; W-004 remains open for genuine host activation and retained Fable final review.",
+  "scope": "Original Fable C1-C3, matched native SOL C4-C8, and two justified R02 candidate retests. Failed transport/provider lanes remain in the referenced archives, never counted as passes.",
+  "receipts": [
+    {
+      "id": "P6-SOL-N01",
+      "executed": true,
+      "case_version": "P6-focused-v1/P6-sol-native-v1",
+      "case": "C4",
+      "arm": "baseline",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b55-2304-7362-abed-bc2db95bd541",
+      "executed_at": "2026-09-04T07:35:56.165Z",
+      "last_captured_execution_at": "2026-09-04T07:41:00.388Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command",
+          "view_image"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "2D8718FF68019BA7D4AC21943F8A98D7823629B4B07C5BD7AE9EFFC06FE8D91B",
+      "observed_module_reads": [
+        "colour-and-reproduction",
+        "composition-and-layout",
+        "information-design-and-data-visualization",
+        "motion-and-sequence",
+        "typography-and-typesetting",
+        "ui-workflow-and-interaction-design",
+        "web-and-responsive-design"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "pass",
+          "finding": "Initial proposal retained unchanged after applicable actual proof and review."
+        }
+      ],
+      "comparative_judgment": "Baseline narrow advantage, medium confidence; not erased by candidate correction.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\artifact.html",
+          "sha256": "E35CD9F35AF9D43A431D441938EA99DE3D84637824FB7621AE452FFCBD9FDF5F"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\capture-1\\actual-tool-calls.json",
+          "sha256": "B5F50C7F49A9E357DD55792C69EE7005970F063E6F25461854A0926EF5EAFD8D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\capture-1\\answer.json",
+          "sha256": "C0BDF40E83E05175111BBBD17A0F48916A2A139C7CD671271CFFF04BE9BB04D0"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\capture-1\\receipt.json",
+          "sha256": "B5F2E8B612CF9C37D4C52E02B99AB7390DEA9619CBA2363F0FD19AF15BC9AB68"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\capture-1\\tool-events.jsonl",
+          "sha256": "A9D216C62E234D74DC4B778ACDEB0BB95D776A5770F825E6B9315787B179DAA0"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\capture-2\\actual-tool-calls.json",
+          "sha256": "7CBB62DF0C10E2825DA778A00F63ECD32F33725239B90F00371D1D2109E25763"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\capture-2\\answer.json",
+          "sha256": "1A0CE6DB040D00E0B23BBA703617E6A549F0484E5C58550AB33EB76741FA7F8F"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\capture-2\\receipt.json",
+          "sha256": "8AC8C2A5A2546CE47069DFAAD2A9024446D55DCD3FCD29AEE41B14F814AD394B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\capture-2\\tool-events.jsonl",
+          "sha256": "102299F2271AF680FCA0FD538FB1F88F4BD987E523B0D2ECDF5192C5E7B79F6C"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-1\\before.png",
+          "sha256": "2108B5B5C1B150D1C69E9DC9CA9A6D2865CBC56EFC33E43FAC99D8A8A6A51DB9"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-1\\motion-100.png",
+          "sha256": "418AA6CE6C7814BA6C2DDF8A8D0AEBCBBC43134740927D2DB2888898C7827D38"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-1\\motion-1000.png",
+          "sha256": "EF79DD68AAD82DC818CF62D78B70DDEB2A9B7AB52437C6A8A5C8C845E4E1EE74"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-1\\motion-400.png",
+          "sha256": "408F621994C6E210FA3DC72C3857991DB4F5DB1FC9E651E02DE2E05A956520FC"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-1\\observations.json",
+          "sha256": "DC75DB87C848C0F5D26333505784E10E7C574B8A26E8777F18BBFBC17E1E0412"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-1\\page@3389dc9357a61100b4e5ced5ba3dc8e5.webm",
+          "sha256": "F24DDF788B5A0C5379D2CF8C7BF50B91424D01DFAB1DA2DB0B08680D606174FA"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-1\\reduced-motion.png",
+          "sha256": "EF79DD68AAD82DC818CF62D78B70DDEB2A9B7AB52437C6A8A5C8C845E4E1EE74"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-interaction-1\\keyboard-enter-sample-2.png",
+          "sha256": "F0D12B2C9FBF58BC0B12E7CF58878E7239301DF3945378C2E7EF308D1A212B29"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-interaction-1\\narrow-selected-sample-2.png",
+          "sha256": "3BB26A5C79444C8520FD087C79BC9A6A7BD3B752F215EE77E41A67611970A887"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-interaction-1\\observations.json",
+          "sha256": "8236D25B50B97D4BEB340205ACE7CF0E0D220D1D358C717DA0E7E6791805FB52"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-interaction-1\\reduced-return-sample-1.png",
+          "sha256": "3F5282AA6D650DDE243FDEEE8F48351807DBD7DC6A316AC57052349391B8573F"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-interaction-1\\reduced-sample-2.png",
+          "sha256": "EF79DD68AAD82DC818CF62D78B70DDEB2A9B7AB52437C6A8A5C8C845E4E1EE74"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-interaction-1\\retrigger-final-sample-2.png",
+          "sha256": "EF79DD68AAD82DC818CF62D78B70DDEB2A9B7AB52437C6A8A5C8C845E4E1EE74"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N01\\proof-interaction-1\\return-sample-1.png",
+          "sha256": "3F5282AA6D650DDE243FDEEE8F48351807DBD7DC6A316AC57052349391B8573F"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N02",
+      "executed": true,
+      "case_version": "P6-focused-v1/P6-sol-native-v1",
+      "case": "C4",
+      "arm": "candidate",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b55-4cb8-7953-bf66-1e54971a4287",
+      "executed_at": "2026-09-04T07:36:13.886Z",
+      "last_captured_execution_at": "2026-09-04T07:44:07.320Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command",
+          "view_image"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "246B03A84383C1E2AB7A4928F597F1F5A32B014734D6AD3A6ED1FBEE65368655",
+      "observed_module_reads": [
+        "colour-and-reproduction",
+        "composition-and-layout",
+        "information-design-and-data-visualization",
+        "motion-and-sequence",
+        "typography-and-typesetting",
+        "ui-workflow-and-interaction-design",
+        "web-and-responsive-design"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "fail",
+          "finding": "Previous-sample legend incorrectly visible initially; actual proof and generator diagnosis."
+        },
+        {
+          "source": "artifact-v2.html",
+          "outcome": "pass",
+          "finding": "Only hidden-legend CSS added; actual initial/advanced/reduced proof checked; independent judgment still narrowly favours baseline."
+        }
+      ],
+      "comparative_judgment": "Baseline narrow advantage, medium confidence; not erased by candidate correction.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\artifact-v2.html",
+          "sha256": "D68843E7B138505F01C56341D17954255DE7B4D765DB1A02627607D4A35B907C"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\artifact.html",
+          "sha256": "29F2A5117CA76CF7AD8B292954B6B4FB7B9A6056FC7CB24DC85FA9CF90639C07"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\capture-1\\actual-tool-calls.json",
+          "sha256": "FCDAFFD56CB48AC7A0ED87D434BD298AE37189017DF72BF4905BFAFC2E8FD0EE"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\capture-1\\answer.json",
+          "sha256": "37490C93A6C8DBB8A5A060EDE700F19945A665CF68EB778B01E3B2CEB7EC4C08"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\capture-1\\receipt.json",
+          "sha256": "B4E4BBF8E1C209D73173945AB7E80935B312600280C8A098F74B94292E635C69"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\capture-1\\tool-events.jsonl",
+          "sha256": "2492CC1B75A9833C6E3683AB12931C23F7BD9A66C869CD2187F1D6AC790201EC"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\capture-2\\actual-tool-calls.json",
+          "sha256": "4B0CC2C8EBB34BE75378F3A24C09D1E948E3502407413AE11A5A5B77DC8208D0"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\capture-2\\answer.json",
+          "sha256": "658C5C0477DFB47A45BE1A5D018ABC87C121A0382BFB5293EAD98876691FED3B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\capture-2\\receipt.json",
+          "sha256": "F182C7A77C703DBDE7B7A60E19C8B333537640429F0C52901BED0134BF876D87"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\capture-2\\tool-events.jsonl",
+          "sha256": "35B8FACB33CBB8CCCF4E00DE2D96245EE6637C6D924F2C2340DBD53E1ECCD543"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-1\\before.png",
+          "sha256": "D77E04025FFA2E269998001B09E8D27D99B06E62F6B9F03919BB4E36A99336C4"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-1\\motion-100.png",
+          "sha256": "3A913257D3DF38EF43C4DCBEA3C6F025D13FD97F7402263B106B7DB9687005B2"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-1\\motion-1000.png",
+          "sha256": "CA4BE1031A4D8F5EAF6E2C03597F7CDEB1CFA03182E79E171896D543491E03B3"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-1\\motion-400.png",
+          "sha256": "0B7D7E45951F5C36F47BE41E56AF03F285890DDAEFBC413A43CC9A421E46F6D2"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-1\\observations.json",
+          "sha256": "F37ADF1D36506CFD3D3ED87F8CCE11D28013B22EA86FB33EE033E8FF16CB6A46"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-1\\page@61d3f4f1bd564eb0d7492b07610eedc9.webm",
+          "sha256": "C2D19A64F464303F9A6AF301B44ED3218D0B0073CF001AE7E6D088898669BA66"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-1\\reduced-motion.png",
+          "sha256": "CA4BE1031A4D8F5EAF6E2C03597F7CDEB1CFA03182E79E171896D543491E03B3"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-2\\before.png",
+          "sha256": "7BC1A377A4E5869EF112515770D37E438C21FDB605B6983BB46005A4A33E5F2D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-2\\motion-100.png",
+          "sha256": "3A913257D3DF38EF43C4DCBEA3C6F025D13FD97F7402263B106B7DB9687005B2"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-2\\motion-1000.png",
+          "sha256": "CA4BE1031A4D8F5EAF6E2C03597F7CDEB1CFA03182E79E171896D543491E03B3"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-2\\motion-400.png",
+          "sha256": "0B7D7E45951F5C36F47BE41E56AF03F285890DDAEFBC413A43CC9A421E46F6D2"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-2\\observations.json",
+          "sha256": "121CDE80B7D64146A01CF7BA363346AA31651E2560A712A0CE39C8344230A8FD"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-2\\page@ec658e50bca1381429be3c20c437b084.webm",
+          "sha256": "BE155E1D76991D924E34090E800B6DDEADCA25A4B274446FDAFA0C65CB827EF5"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-2\\reduced-motion.png",
+          "sha256": "CA4BE1031A4D8F5EAF6E2C03597F7CDEB1CFA03182E79E171896D543491E03B3"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-interaction-1\\keyboard-enter-sample-2.png",
+          "sha256": "C89B3576A7DB2A5BAA4EDAB42A911AB9E378ACBD77DE336EFF91683D6487E252"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-interaction-1\\narrow-selected-sample-2.png",
+          "sha256": "ADE336556EC19D947432FAE1D0D42FBA2E887802F4FADA1EEAD849CBD1D01614"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-interaction-1\\observations.json",
+          "sha256": "727F552DF651D2AC02CB4A92A0C5103FD52B7860ED0523DC4D5FC21AF7D7E792"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-interaction-1\\reduced-return-sample-1.png",
+          "sha256": "BF20B93404AB7D0530B83A8BA4623370DCF5A2AB3E56203E102030C01C0CCF05"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-interaction-1\\reduced-sample-2.png",
+          "sha256": "CA4BE1031A4D8F5EAF6E2C03597F7CDEB1CFA03182E79E171896D543491E03B3"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-interaction-1\\retrigger-final-sample-2.png",
+          "sha256": "CA4BE1031A4D8F5EAF6E2C03597F7CDEB1CFA03182E79E171896D543491E03B3"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N02\\proof-interaction-1\\return-sample-1.png",
+          "sha256": "BF20B93404AB7D0530B83A8BA4623370DCF5A2AB3E56203E102030C01C0CCF05"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N03",
+      "executed": true,
+      "case_version": "P6-focused-v1/P6-sol-native-v1",
+      "case": "C6",
+      "arm": "baseline",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b55-80a9-7da2-b9a0-d11d1f6ce2e5",
+      "executed_at": "2026-09-04T07:33:39.436Z",
+      "last_captured_execution_at": "2026-09-04T07:33:39.436Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "limited",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "2D8718FF68019BA7D4AC21943F8A98D7823629B4B07C5BD7AE9EFFC06FE8D91B",
+      "observed_module_reads": [
+        "packaging-graphics-and-sku-systems",
+        "typography-and-typesetting"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "limited",
+          "finding": "Initial proposal retained unchanged after applicable actual proof and review."
+        }
+      ],
+      "comparative_judgment": "Tie, high confidence; no visual ranking without renderer.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N03\\artifact.html",
+          "sha256": "C6D7920632996105ECA6E6CEE0255D1196170FFE1ED89BABF157B1B544224C3B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N03\\capture-1\\actual-tool-calls.json",
+          "sha256": "4BB690112203AA1E57505956BE09F1FE7A7876804936365593BAB2CCB6EE37EE"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N03\\capture-1\\answer.json",
+          "sha256": "601CF2656593A7FFA28B1320D972A9979642D6F450E8F31BB4896A7FA5E98193"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N03\\capture-1\\receipt.json",
+          "sha256": "204231DB914538B209E5BBF5F7E7EFD416E30C14378C216493A86EB16EAF980D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N03\\capture-1\\tool-events.jsonl",
+          "sha256": "DE3D0196DC09B9D57B671F742771ECDE97AA17B5989EC9648A88A1E1176F3A39"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N04",
+      "executed": true,
+      "case_version": "P6-focused-v1/P6-sol-native-v1",
+      "case": "C6",
+      "arm": "candidate",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b56-a708-73e3-bd0e-32e0ecb14ac8",
+      "executed_at": "2026-09-04T07:34:57.117Z",
+      "last_captured_execution_at": "2026-09-04T07:34:57.117Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "limited",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "246B03A84383C1E2AB7A4928F597F1F5A32B014734D6AD3A6ED1FBEE65368655",
+      "observed_module_reads": [
+        "packaging-graphics-and-sku-systems",
+        "typography-and-typesetting"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "limited",
+          "finding": "Initial proposal retained unchanged after applicable actual proof and review."
+        }
+      ],
+      "comparative_judgment": "Tie, high confidence; no visual ranking without renderer.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N04\\artifact.html",
+          "sha256": "F9C9480531CA33FF3F4CA3E029CD4E9C3E7E033492FBE0CAE2633754E54EEADA"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N04\\capture-1\\actual-tool-calls.json",
+          "sha256": "2EEC115C7909DFEAD846C25C995FF4B47AC283EA76C5F382591AA917C09F1ABC"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N04\\capture-1\\answer.json",
+          "sha256": "715C8AA8C8B10B10B86F75EE967BA5C7AB623DC2AF07E3EA2755CF991E5F123F"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N04\\capture-1\\receipt.json",
+          "sha256": "33D01A7BDB8191158FE89BDD21F762CC044C5BD959144B75AB330480AF2B84E7"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N04\\capture-1\\tool-events.jsonl",
+          "sha256": "C14A2E5B11FBBC3E150ED7FDCB78ACBCE350C44C0064E7B731E8EBE816E9D082"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N05",
+      "executed": true,
+      "case_version": "P6-focused-v1/P6-sol-native-v1",
+      "case": "C7",
+      "arm": "baseline",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b58-226c-71b3-a794-43d67d2b2b28",
+      "executed_at": "2026-09-04T07:36:44.643Z",
+      "last_captured_execution_at": "2026-09-04T07:36:44.643Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command",
+          "view_image"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "2D8718FF68019BA7D4AC21943F8A98D7823629B4B07C5BD7AE9EFFC06FE8D91B",
+      "observed_module_reads": [
+        "composition-and-layout",
+        "concept-development-and-selection",
+        "critique-and-validation",
+        "instructional-and-explanatory-design",
+        "source-verification-and-evidence",
+        "web-and-responsive-design"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "no artifact; read-only critique",
+          "outcome": "pass",
+          "finding": "Initial proposal retained unchanged after applicable actual proof and review."
+        }
+      ],
+      "comparative_judgment": "Tie, medium-high confidence; critique only, no mutation.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N05\\capture-1\\actual-tool-calls.json",
+          "sha256": "3CF8B4FD38D9164F9FB4469BF3C361122E8E25E7D1B1AF62565DE7196D97871C"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N05\\capture-1\\answer.json",
+          "sha256": "C04EFE0158167F5503744E05E9578D513D95B42E4298607F3D14C4FF6570768D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N05\\capture-1\\receipt.json",
+          "sha256": "040856D326CA4B641274C563E2B79060DAEFF963668278559273B55310A5E49A"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N05\\capture-1\\tool-events.jsonl",
+          "sha256": "87B59F05DD2EB24F2418CCFCECC75A4DE32C6711454C36B4503F6F8CD24A3150"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N06",
+      "executed": true,
+      "case_version": "P6-focused-v1/P6-sol-native-v1",
+      "case": "C7",
+      "arm": "candidate",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b59-38dc-76f1-8ee7-7da55e7c5cd1",
+      "executed_at": "2026-09-04T07:37:54.141Z",
+      "last_captured_execution_at": "2026-09-04T07:37:54.141Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command",
+          "view_image"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "246B03A84383C1E2AB7A4928F597F1F5A32B014734D6AD3A6ED1FBEE65368655",
+      "observed_module_reads": [
+        "composition-and-layout",
+        "generic-signatures-and-subject-specificity",
+        "instructional-and-explanatory-design",
+        "source-verification-and-evidence",
+        "typography-and-typesetting",
+        "web-and-responsive-design"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "no artifact; read-only critique",
+          "outcome": "pass",
+          "finding": "Initial proposal retained unchanged after applicable actual proof and review."
+        }
+      ],
+      "comparative_judgment": "Tie, medium-high confidence; critique only, no mutation.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N06\\capture-1\\actual-tool-calls.json",
+          "sha256": "A84922AE4F39BF69CE022455A1DDB046B8B1B9292DEFA0E1174F809AE397E551"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N06\\capture-1\\answer.json",
+          "sha256": "F36333941E3E47A44E26FA1871A9080AF8932C1C560543F1896B7D711C1CB81E"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N06\\capture-1\\receipt.json",
+          "sha256": "FF05D8FE92A713DFB8D4A75AABFF833253748CEB48CD3474BD4720E677DABCB9"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N06\\capture-1\\tool-events.jsonl",
+          "sha256": "79ECDCDA0B1ED6310DD48BAABEB81F727EF5F90CE8DE70253A0AFA2299CF5DEB"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N07",
+      "executed": true,
+      "case_version": "P6-focused-v1/P6-sol-native-v1",
+      "case": "C5A",
+      "arm": "baseline",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b59-6e51-7cf2-a1a4-8b1698309041",
+      "executed_at": "2026-09-04T07:38:12.783Z",
+      "last_captured_execution_at": "2026-09-04T07:41:20.545Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command",
+          "view_image"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "2D8718FF68019BA7D4AC21943F8A98D7823629B4B07C5BD7AE9EFFC06FE8D91B",
+      "observed_module_reads": [
+        "colour-and-reproduction",
+        "packaging-graphics-and-sku-systems",
+        "physical-wayfinding-and-signage-systems",
+        "typography-and-typesetting"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "pass",
+          "finding": "Initial proposal retained unchanged after applicable actual proof and review."
+        }
+      ],
+      "comparative_judgment": "Original pair tie, high confidence.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\artifact.html",
+          "sha256": "ABB0616E5F9F0E2CCC0CB99942B7BC00ADD2B86290AB9C76691D38D0E8606E19"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\capture-1\\actual-tool-calls.json",
+          "sha256": "7F06368EFFD5C7A80A6A7370712E981C8E3B0B7AD56F82B489AE8AD11CC095F7"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\capture-1\\answer.json",
+          "sha256": "5F660BDFFB60E6A9AECA8C637C4D843733D7E967DBF160CA08AC950F81D6C535"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\capture-1\\receipt.json",
+          "sha256": "32BAF3A412E635E02688C569140744E9811E9EF095BD629DF313C01894D61B2C"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\capture-1\\tool-events.jsonl",
+          "sha256": "597ACE1DD459F470726BBC27384B84BB88D1071388F97C3674ADB72959DC620F"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\capture-2\\actual-tool-calls.json",
+          "sha256": "3AC64FE749A8B8AFE74EA43D7D31C870378DB6E4A42ACC7B4FA441B14D8F2963"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\capture-2\\answer.json",
+          "sha256": "5CB69AF710F57C241CBA4EB4877CFC7ABE929F831BA542F90DC62331E5D1D16A"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\capture-2\\receipt.json",
+          "sha256": "9E5D5FF0CC187E66D51A914413F8A971C96B390386697066901499D315C3012B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\capture-2\\tool-events.jsonl",
+          "sha256": "8A4AF8E0219563073521B3BC9AACFA4EE3549B7F0743AC855379FA4B8D6B6572"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\proof-1\\observations.json",
+          "sha256": "D50482BF0AD21380ED6A777CEF532A280E089A5301B6937CED321FCCC3EFF333"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\proof-1\\screen-1000.png",
+          "sha256": "F74C926F3F47EC5C6054369163FB76E20766228BE43E79F0EB2FAFDB5C77CF14"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N07\\proof-1\\screen-390.png",
+          "sha256": "FF38BEAA2BBECE117E11D96EDDC38A76830085F22318F4F25E0ADE42EB553F72"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N08",
+      "executed": true,
+      "case_version": "P6-focused-v1/P6-sol-native-v1",
+      "case": "C5A",
+      "arm": "candidate",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b59-97e3-7692-93b8-4c24d18b44b9",
+      "executed_at": "2026-09-04T07:38:24.599Z",
+      "last_captured_execution_at": "2026-09-04T07:42:12.776Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command",
+          "view_image"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "246B03A84383C1E2AB7A4928F597F1F5A32B014734D6AD3A6ED1FBEE65368655",
+      "observed_module_reads": [
+        "colour-and-reproduction",
+        "packaging-graphics-and-sku-systems",
+        "physical-wayfinding-and-signage-systems",
+        "typography-and-typesetting"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "pass",
+          "finding": "Initial proposal retained unchanged after applicable actual proof and review."
+        }
+      ],
+      "comparative_judgment": "Original pair tie, high confidence.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\artifact.html",
+          "sha256": "71BBEE3C3B798D8DB58C0F03B080E6FCDE2E1187E8157C17CB7C4CDD4A79AA2D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\capture-1\\actual-tool-calls.json",
+          "sha256": "693A4EEBAB35909CDC9BFAC728A90F230BA636C8C8912D178E576C081617F87D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\capture-1\\answer.json",
+          "sha256": "019D1EF9ADFBD32648F3A46C78E1318BFE291631C6E62AB3B0D6A786CF610B74"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\capture-1\\receipt.json",
+          "sha256": "257563C2DABB4DB295870FD09FF601921BED13E08AC2224593A9B89B29DCA5BE"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\capture-1\\tool-events.jsonl",
+          "sha256": "DA3C33D8F33CE430B6FB7A81D14BAC3966C450376E3D7E63FD8AF8D6A0328FCF"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\capture-2\\actual-tool-calls.json",
+          "sha256": "EE1DA4D67EE31730529D429EFB32455DBBE09E474108083CC704378EBC9A8E67"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\capture-2\\answer.json",
+          "sha256": "9A2107389CD025587BCBAED1B3A60F567826B8591CA075E746D38811C4CECC64"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\capture-2\\receipt.json",
+          "sha256": "FB5A4A5F81CB31C257A4F7EC3A81CEF9B727871B82EF52E5C3C3BA31CBA93C4A"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\capture-2\\tool-events.jsonl",
+          "sha256": "377BE8D585E7D81AB39270F173FB6306A25A766FC9B3F39707DE589D7578502A"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\proof-1\\observations.json",
+          "sha256": "FAB5F334F5959818184804F96E1927E587AC05E1D24644FF2CDE6EAB5A405A2E"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\proof-1\\screen-1000.png",
+          "sha256": "6F4D479C0E08C3CF4A558194A09A0226FF12B30921D5FC7D040007CA003E1D6C"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N08\\proof-1\\screen-390.png",
+          "sha256": "54DB5B71A21F9E39851CF350D8C67EE1A9AF5243514ACC14B779FC42FE15F603"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N09",
+      "executed": true,
+      "case_version": "P6-focused-v1/P6-sol-native-v1",
+      "case": "C5B",
+      "arm": "baseline",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b5a-fcd4-7553-8a75-07832d342d6a",
+      "executed_at": "2026-09-04T07:40:28.343Z",
+      "last_captured_execution_at": "2026-09-04T07:43:03.681Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command",
+          "view_image"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "2D8718FF68019BA7D4AC21943F8A98D7823629B4B07C5BD7AE9EFFC06FE8D91B",
+      "observed_module_reads": [
+        "colour-and-reproduction",
+        "media-production-and-handoff",
+        "packaging-graphics-and-sku-systems",
+        "physical-wayfinding-and-signage-systems",
+        "typography-and-typesetting"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "pass",
+          "finding": "Initial proposal retained unchanged after applicable actual proof and review."
+        }
+      ],
+      "comparative_judgment": "Candidate narrow advantage, medium confidence; actual host return and design verification supplied.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\artifact.html",
+          "sha256": "905C6D0DB592EEB2BE479804DA73B97553F0190A62B11FF1B21338CAE2221CBB"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\capture-1\\actual-tool-calls.json",
+          "sha256": "11B25CFA9BDB318169D9E63321659C4E6A0C1D0E71E1D173D7897F94A8190F65"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\capture-1\\answer.json",
+          "sha256": "FF53028646FD8BA77AD7E8E0010D8ABC8F1E08C0100C480476297FBBA5A85543"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\capture-1\\receipt.json",
+          "sha256": "3C63124758BC66A89D3F2EA7435CC91DB43F923F67A8294ABF867E6F5A45C9C8"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\capture-1\\tool-events.jsonl",
+          "sha256": "0E7A5CB080CE0783377C8FED39DE9EF1037CC520431E94866F6355D62326CD41"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\capture-2\\actual-tool-calls.json",
+          "sha256": "36F9E2E75C0AB919D19EE245E4B703D4D05D7ED2B71DFD39F58F2FC9F4C52AA4"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\capture-2\\answer.json",
+          "sha256": "8A09D9B1AB2A9967AC2AAB481F465E399C53289B13DBA083F116385C15701895"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\capture-2\\receipt.json",
+          "sha256": "0BFE0DA9432AB93ABD0214772FE0863D1E5BA0F477EF4BEF1EECA6AB531AFFCA"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\capture-2\\tool-events.jsonl",
+          "sha256": "F4DA17B561D947069849FA3AAA11650137CB51857463A5976D02C4C2F2E9389A"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\proof-1\\observations.json",
+          "sha256": "CF74ECD9D13185F6E5DC4587B14F4F6427AFEFBD72D526C48096FA84E122F4F9"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\proof-1\\screen-1000.png",
+          "sha256": "28125BF8268AB897D6E269C4B5ABFDFAD3B4BCF86C06B40DAB6F3F7E24B80766"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N09\\proof-1\\screen-390.png",
+          "sha256": "5CF57BAC3E1E13DD4E17F85210E02E2564B4EE058A663971D416D16B0DA74CCA"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N10",
+      "executed": true,
+      "case_version": "P6-focused-v1/P6-sol-native-v1",
+      "case": "C5B",
+      "arm": "candidate",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b5b-2b50-7c22-a7d5-df6a2a2ae682",
+      "executed_at": "2026-09-04T07:40:25.424Z",
+      "last_captured_execution_at": "2026-09-04T07:43:10.956Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command",
+          "view_image"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "246B03A84383C1E2AB7A4928F597F1F5A32B014734D6AD3A6ED1FBEE65368655",
+      "observed_module_reads": [
+        "colour-and-reproduction",
+        "coordination-with-sibling-skills",
+        "packaging-graphics-and-sku-systems",
+        "physical-wayfinding-and-signage-systems",
+        "typography-and-typesetting"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "pass",
+          "finding": "Initial proposal retained unchanged after applicable actual proof and review."
+        }
+      ],
+      "comparative_judgment": "Candidate narrow advantage, medium confidence; actual host return and design verification supplied.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\artifact.html",
+          "sha256": "8CC274D702AB63388EB668D01D56753344395B4C9B5E8F9B838CED862951505C"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\capture-1\\actual-tool-calls.json",
+          "sha256": "36C50C672040994E0630D01B8421F772F0DED1914DFEAC5D34569F9DAAAFC540"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\capture-1\\answer.json",
+          "sha256": "D2E53288B1C1B93B4323A704DF1E20FA30E8A24135AC81F2F7D06947FF5F9F35"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\capture-1\\receipt.json",
+          "sha256": "292EEC766E48EBF7E54B3CC17B6CEB9C7C05595D833630D93F43F19047BAF57D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\capture-1\\tool-events.jsonl",
+          "sha256": "FF91B3DC300346BE64B0AE87E3B096837D5C00AE48D3A300C7FD3B31ED45925E"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\capture-2\\actual-tool-calls.json",
+          "sha256": "C7486397A509621672BFC86B2F19D29A05F9022B1D5BAB102D6F5C135E64C3EC"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\capture-2\\answer.json",
+          "sha256": "889E6252FA90B9535319053C98BCE8E0E5FA8B5CBE48A8F614E8B550E0C5BCC1"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\capture-2\\receipt.json",
+          "sha256": "34921ECE3ACEB354181CD006DBF27078C1C93B8BD6CD23149FC7E760610D5BA1"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\capture-2\\tool-events.jsonl",
+          "sha256": "A4BB0DAF5212E3C8E435C0D6F2A6F066D366C1D2321008993A1B8B95CC34C2F0"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\proof-1\\observations.json",
+          "sha256": "14BC8A545CDCB7C77B981A79B323381FA7BEF89E4EF3D1048363BBCA9B1C9396"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\proof-1\\screen-1000.png",
+          "sha256": "EF8E595B3BA8E5477C0E6C6E9D96CAB8263A82926A5E2ABD54678757E755237E"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N10\\proof-1\\screen-390.png",
+          "sha256": "DAB07074150FF777666A3C6A1E289C2E20321C966A71B57AB7303BA36CD2BE78"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N11",
+      "executed": true,
+      "case_version": "P6-brand-v1/P6-sol-native-v1",
+      "case": "C8",
+      "arm": "baseline",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b60-7489-7610-9aa7-fe643ce033ed",
+      "executed_at": "2026-09-04T07:49:33.105Z",
+      "last_captured_execution_at": "2026-09-04T08:00:16.045Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "2D8718FF68019BA7D4AC21943F8A98D7823629B4B07C5BD7AE9EFFC06FE8D91B",
+      "observed_module_reads": [
+        "asset-rights-and-attribution",
+        "brand-and-visual-systems",
+        "colour-and-reproduction",
+        "composition-and-layout",
+        "concept-development-and-selection",
+        "diagrams-and-relational-information",
+        "editorial-and-fixed-media-design",
+        "font-technology-and-script-safety",
+        "imagery-and-art-direction",
+        "logo-and-identity-mark-design",
+        "typography-and-typesetting",
+        "web-and-responsive-design"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "fail",
+          "finding": "Compact wordmark selector leakage and inconsistent type sample; source/render-backed findings."
+        },
+        {
+          "source": "artifact-v2.html",
+          "outcome": "fail",
+          "finding": "Those defects corrected, but independent review identifies incomplete palette ownership."
+        },
+        {
+          "source": "artifact-v3.html",
+          "outcome": "pass",
+          "finding": "Palette owner binding corrected; real propagation test and independent verification; all v2/v3 PNG hashes identical."
+        }
+      ],
+      "comparative_judgment": "Original pair tie, moderate-high confidence, retained after corrections.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\artifact-v2.html",
+          "sha256": "A2FC15FC90943C2E98DC28BF48DC97C341931502B44BF46845E3791BF3DA96F8"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\artifact-v3.html",
+          "sha256": "4359F5E3AE83F1890AB74E7ACDECC9F1778E5BA1859C5AA646A99BE588221BE5"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\artifact.html",
+          "sha256": "C2D30334AE98FBB32F094DB9653B32D6AF6002CE1B9E6AA89E8D6D481F5B89D8"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-1\\actual-tool-calls.json",
+          "sha256": "3248216359CD2077D9B13E35CA0DCCA4D37E760F225ADE98FFD4B661BE1D49E6"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-1\\answer.json",
+          "sha256": "C5C69C96763F8B3323AC4CD45CC5708D0C7A9BA7439D087F0200CC825A54692C"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-1\\receipt.json",
+          "sha256": "8794586AE838DB1E147ACB1C8B2C6E3E27A7F26173B87B7F5D75BD2E0FD66B10"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-1\\tool-events.jsonl",
+          "sha256": "FDFF35AC3D099A305D4A422A2A6A28F1296C857F2BF8424AD221CFB46133A462"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-2\\actual-tool-calls.json",
+          "sha256": "187EBD5029CAC5120E4376DDE6192EF80FC7D8FED7E6B85BF55A950E6E37C4C7"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-2\\answer.json",
+          "sha256": "E62518C05567B46F0ED6EAC5D002384E73CC14FA47924B35D7AC2E441E05511C"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-2\\raw-answer.txt",
+          "sha256": "79CD7CDB100D1929ABD7D8649560CC842BFE3B6773A40A8E4F2B661FE0ABD629"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-2\\receipt.json",
+          "sha256": "78B2A679B1DE94EA77BDDFF215BA4E8B08F0187EFDD3D2C2D12AE666902B8B08"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-2\\tool-events.jsonl",
+          "sha256": "5A98A9804EFE2958994231161DB161D1CE66D0A8563D17DFC32EC2A84A65FEC1"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-3\\actual-tool-calls.json",
+          "sha256": "56935B4F01257070083481CC17025EFA5C94E9763DBC0D5966C22FABE96981AA"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-3\\answer.json",
+          "sha256": "F7DDA638F7D74C870BFF09B1D9F5C23924DF57AD02192E7B0F4E3CB27F22B03C"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-3\\raw-answer.txt",
+          "sha256": "4571CE812F20D634CA85B82FFC8B5A756044478F24ACB7944ACFB1E55CC6E1D4"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-3\\receipt.json",
+          "sha256": "2E9F36298D791F21C979A93BE6C08121A3D49EA1ABBD16D3F44B2DDAC78CE5A1"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\capture-3\\tool-events.jsonl",
+          "sha256": "052D5678AEBAAE533E2900878142FFD6A8AD3259CA6E3DF5E7F01A765BF3BFC7"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\proof-1\\observations.json",
+          "sha256": "C9AB6743ED1B54A5E23B4CE92D753982AEA5B39C866AAD4E080D7F208D7D9976"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\proof-1\\screen-1200.png",
+          "sha256": "3F149127FA0CD54F2AA84CF9D0C57B63B9B37080A9706874879B1BB101F03D2F"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\proof-1\\screen-390.png",
+          "sha256": "C33B955445B098A1CE9537EDFD2B2FE80D5104CBDCD81B7BBE53532E15220914"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\proof-2\\observations.json",
+          "sha256": "B376DC30A18887EFE8153CD36B082E3074EB08F37CBE126FA77D7F3F40B0BA15"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\proof-2\\screen-1200.png",
+          "sha256": "8F7D41DFB644D9F1D6BE8FDD1136698B07F45C2B953FAA8E996A3FFC38FC3531"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\proof-2\\screen-390.png",
+          "sha256": "96251AEEFD6048B51A0C27C41D969BD77D3A3F0CC56F424C92B20A35197C7D63"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\proof-3\\observations.json",
+          "sha256": "34B22619FD80CF45988B821BF20B3756DADAC589A680AD6B10AB080FD82C4597"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\proof-3\\screen-1200.png",
+          "sha256": "8F7D41DFB644D9F1D6BE8FDD1136698B07F45C2B953FAA8E996A3FFC38FC3531"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\proof-3\\screen-390.png",
+          "sha256": "96251AEEFD6048B51A0C27C41D969BD77D3A3F0CC56F424C92B20A35197C7D63"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N11\\proof-palette-3\\observations.json",
+          "sha256": "AA60C2FA36A60FF31BFA6499A537E34891F72ECCC7B81DAA3519B9A156582E14"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N12",
+      "executed": true,
+      "case_version": "P6-brand-v1/P6-sol-native-v1",
+      "case": "C8",
+      "arm": "candidate",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b60-ae49-78f1-849c-497e5f595ba8",
+      "executed_at": "2026-09-04T07:49:32.880Z",
+      "last_captured_execution_at": "2026-09-04T07:56:13.320Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "246B03A84383C1E2AB7A4928F597F1F5A32B014734D6AD3A6ED1FBEE65368655",
+      "observed_module_reads": [
+        "asset-rights-and-attribution",
+        "brand-and-visual-systems",
+        "colour-and-reproduction",
+        "composition-and-layout",
+        "concept-development-and-selection",
+        "diagrams-and-relational-information",
+        "editorial-and-fixed-media-design",
+        "font-technology-and-script-safety",
+        "generic-signatures-and-subject-specificity",
+        "imagery-and-art-direction",
+        "logo-and-identity-mark-design",
+        "style-direction",
+        "typography-and-typesetting",
+        "web-and-responsive-design"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "fail",
+          "finding": "Rule/corner and offset descriptions do not exactly match source; source-time proof limit corrected separately. Extra trailing JSON envelope bytes retained."
+        },
+        {
+          "source": "artifact-v2.html",
+          "outcome": "fail",
+          "finding": "Descriptions corrected, but independent review identifies incomplete palette ownership."
+        },
+        {
+          "source": "artifact-v3.html",
+          "outcome": "pass",
+          "finding": "Palette owner bindings corrected; eleven real propagation checks and independent verification; all v2/v3 PNG hashes identical."
+        }
+      ],
+      "comparative_judgment": "Original pair tie, moderate-high confidence, retained after corrections.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\artifact-v2.html",
+          "sha256": "46CD650D406B2128D72F381EF60C5274A28A601BC338754C245F110ABBC1C083"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\artifact-v3.html",
+          "sha256": "B23937F69BC9963791F59EDF8EA9AE3F8E797B07BB058C1F60ABEBB0D78480F7"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\artifact.html",
+          "sha256": "6CE9CCAEAAF36CF13195F399DFCEB0E7F9B7588145F04AD0E0C66412EDEDE677"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\capture-1\\actual-tool-calls.json",
+          "sha256": "1EC6C78B5475693AB3978F79442C4804D13C573FACD3E64EDC223CABCAF0DBCB"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\capture-1\\answer.json",
+          "sha256": "164E687F9A6A473064B70D0D77C74A7C6C071AC6A97B6D4AFF5B620CBD32BC14"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\capture-1\\raw-answer.txt",
+          "sha256": "E78950429665CD49ED0DD9DC8AD1F20BEBEF3C9394871C2516CD450AAFBEF48D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\capture-1\\receipt.json",
+          "sha256": "EC77ABDA52B0F35F906F6D21EEB9F4B2D8DB20C8A52B2F2D21F158D3EC1E0DD6"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\capture-1\\tool-events.jsonl",
+          "sha256": "84ABABFB734D4D8699916F68948F8561E334670F92DF9C69CD764F2113106304"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\capture-2\\actual-tool-calls.json",
+          "sha256": "7E419BB4165DBC9293D08C735ADAF7E8ACBCE9BD543C34EA7B518A9F0CA73612"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\capture-2\\answer.json",
+          "sha256": "F27EE1A4BA97659CB0FA4B6CDCCC0B1E7577C74008BDEEC722BFB2C84A217612"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\capture-2\\raw-answer.txt",
+          "sha256": "0B7996FA6CA41E349792DA72B219D874B5EC75D3680AC168979652717623B5AF"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\capture-2\\receipt.json",
+          "sha256": "BF9BAFC6C5CBAF1EACE5CA5B52403C98200FB341BEB14C0961E013B23F58343A"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\capture-2\\tool-events.jsonl",
+          "sha256": "B63762054849936C1C10DF790CCDE0B94E23DD40E73EC4B365EDC7AEBEE007A5"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\proof-1\\observations.json",
+          "sha256": "E8D2C19A927BC14F66C53F3B8ACDBF0B68434A0A2DCA5AF61337F3EC685FEC9B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\proof-1\\screen-1200.png",
+          "sha256": "E00DB0D03718FD39EF41C1866A4449B77BADA01DB0CC86345D2F955A75891104"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\proof-1\\screen-390.png",
+          "sha256": "91EFDD0DBEF87D0A9EABB78CBB923EC3C81D5A7DFF409AE4E47534AF3582F56D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\proof-2\\observations.json",
+          "sha256": "692B4D347CE7711A39336A08D98C7200B957F5E968C53B866B719C1DC63F873B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\proof-2\\screen-1200.png",
+          "sha256": "39C62893AFF1339073373D6FAE0FEF023E92A9AC4947B5FA27549E9FC8527AA5"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\proof-2\\screen-390.png",
+          "sha256": "D8471A783A715599FBD126C6C1FB877CC7921A524025ED55DFC5480CEC69A096"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\proof-3\\observations.json",
+          "sha256": "9C7AA5E3E1429F92B12C45DE701E72F096050A67BAE55D7DBC1F0B57190BF13F"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\proof-3\\screen-1200.png",
+          "sha256": "39C62893AFF1339073373D6FAE0FEF023E92A9AC4947B5FA27549E9FC8527AA5"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\proof-3\\screen-390.png",
+          "sha256": "D8471A783A715599FBD126C6C1FB877CC7921A524025ED55DFC5480CEC69A096"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N12\\proof-palette-3\\observations.json",
+          "sha256": "C524BF44D792FA3EF5DFF16F59C1EBFA5B9637423BE290A95DB5D320D75F706A"
+        }
+      ]
+    },
+    {
+      "id": "P6-SOL-N13",
+      "executed": true,
+      "case_version": "P6-record-scope-r1/P6-sol-native-v1",
+      "case": "C5A",
+      "arm": "candidate",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b72-51b7-7213-80e7-8712315f097f",
+      "executed_at": "2026-09-04T08:05:43.686Z",
+      "last_captured_execution_at": "2026-09-04T08:12:11.352Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command",
+          "view_image"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "60B1E02D07EB2BEF4F168652D2D7018274F0814E4D785FDEF5D867A137FFAA60",
+      "observed_module_reads": [
+        "colour-and-reproduction",
+        "packaging-graphics-and-sku-systems",
+        "physical-wayfinding-and-signage-systems",
+        "typography-and-typesetting"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "pass",
+          "finding": "Initial proposal retained unchanged after applicable actual proof and review."
+        }
+      ],
+      "comparative_judgment": "R02 targeted retest: slight candidate preference for label legibility, high compliance confidence; original C5A tie retained.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\artifact.html",
+          "sha256": "A7BCD8FC8B627C8CE186FCFAFD799C89638A9EDFCA90BE47498F9569D8D90EB0"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\capture-1\\actual-tool-calls.json",
+          "sha256": "CB5ECFEC765D56E6AA9D8D8EF8E11C346AA5F5277F35AAEA133CB6146765B670"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\capture-1\\answer.json",
+          "sha256": "D12C0DD991F2D2CED4EECFB0E9DDDBFA378C2E23B7AFDB74D49D9056B46D2DC5"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\capture-1\\raw-answer.txt",
+          "sha256": "F0DF2FBAF820E8E1B2A3696FECF2464727CF085E5E352A92FB793A32A0078931"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\capture-1\\receipt.json",
+          "sha256": "F9963DB0A5E6D9CEB3746B4F0954B4103A6FCF67EE91B61EEA24C283224F6116"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\capture-1\\tool-events.jsonl",
+          "sha256": "0E2664AAE5A2F79EC9A9C07AE8B089A97261CDC1A1282B1E5712764C776A1AFB"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\capture-2\\actual-tool-calls.json",
+          "sha256": "C888B52468DA3F765276969FF8A3B2E5F9055BF8403C8F5F22E61A4BC84E0262"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\capture-2\\answer.json",
+          "sha256": "47FAC3672CF8CBD32F3866A0BD32F616713762AB19914DCA29B280ADBC11BCC8"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\capture-2\\raw-answer.txt",
+          "sha256": "AA53F4AC29AC1F6BBCA81F05FB75CF8947166702C195D9B47F598FDB25C2D922"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\capture-2\\receipt.json",
+          "sha256": "798C9B626C4E08A7BEC442FB474086B0C704CA9C562D29BFCDE76CA1ADEED48A"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\capture-2\\tool-events.jsonl",
+          "sha256": "E61EEE0D2710F6FC959B8EC381B622044D896216D883A679B8F7003473187FB2"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\proof-1\\observations.json",
+          "sha256": "AD87800B6D9B8003C086AB700A7AE0C3218560D5D66A861EC3426676B1E37A4D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\proof-1\\screen-1000.png",
+          "sha256": "F65F801B9E375971EE946921C355D274CEA99D249DC3F20325A9BE4BBB77D661"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N13\\proof-1\\screen-390.png",
+          "sha256": "1CD9AD206DF4710B3CDD6825995140CF38904E19F998739AA2D720C39872B617"
+        }
+      ],
+      "retest_reason": "Five module-local relevance clauses changed after independent R02 fidelity finding. Same raw task/inputs; fresh candidate session; retained baseline, not rerun. No attribution of aesthetic differences to this small instruction change."
+    },
+    {
+      "id": "P6-SOL-N14",
+      "executed": true,
+      "case_version": "P6-record-scope-r1/P6-sol-native-v1",
+      "case": "C8",
+      "arm": "candidate",
+      "requested_model": "gpt-5.6-sol",
+      "session_id": "01a06b72-9466-7e52-96d8-59699aa25fbb",
+      "executed_at": "2026-09-04T08:09:31.503Z",
+      "last_captured_execution_at": "2026-09-04T08:13:11.691Z",
+      "settings": {
+        "executor": "fresh host-native subagent, fork_turns=none",
+        "scope": "read-only generation; host materialises proposed source",
+        "inherited_host_permissions": {
+          "type": "danger-full-access"
+        },
+        "approval_policy": "never",
+        "effort": "high",
+        "tools": [
+          "exec_command"
+        ],
+        "tool_list_scope": "Observed nested tool calls; host catalogue and permissions were inherited, not reduced to these names."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded task/source and supplied render conditions only; not whole-package qualification.",
+      "tested_package_sha256": "60B1E02D07EB2BEF4F168652D2D7018274F0814E4D785FDEF5D867A137FFAA60",
+      "observed_module_reads": [
+        "brand-and-visual-systems",
+        "colour-and-reproduction",
+        "composition-and-layout",
+        "concept-development-and-selection",
+        "diagrams-and-relational-information",
+        "editorial-and-fixed-media-design",
+        "font-technology-and-script-safety",
+        "generic-signatures-and-subject-specificity",
+        "imagery-and-art-direction",
+        "logo-and-identity-mark-design",
+        "typography-and-typesetting",
+        "web-and-responsive-design"
+      ],
+      "read_evidence": "First-answer complete-read disclosures corroborated by actual read-call inputs; full actual event extracts retained.",
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "pass",
+          "finding": "Initial proposal retained unchanged after applicable actual proof and review."
+        }
+      ],
+      "comparative_judgment": "R02 targeted retest: narrow initial candidate preference; tie after previously identified baseline corrections. Candidate unchanged. Original C8 pair remains a separate tie.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\artifact.html",
+          "sha256": "0CFFA7D211E96672D907625726E537343E608D10880C62F71D5267027DFED1F2"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\capture-1\\actual-tool-calls.json",
+          "sha256": "4769AB51BA677CD05EB215F1E8B759C9D52D85434A1966F1841506C17D1E8F2B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\capture-1\\answer.json",
+          "sha256": "DF940F4C95B410F0879A48E987D9DDA3673C38F28E6E9EB75FE18EC1B5E8C883"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\capture-1\\raw-answer.txt",
+          "sha256": "07E2BE376DE09943AB046707800DC1200902E036CD62EC0CFBC15898CE06994A"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\capture-1\\receipt.json",
+          "sha256": "5EB3DE158DAA72A0127082C6E74E2F48D71009DAF51DC57A9D8958E227053A34"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\capture-1\\tool-events.jsonl",
+          "sha256": "32AC007A16270EC0C65C197B920E6641D24390776F13F22BA76614325E800F4B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\capture-2\\actual-tool-calls.json",
+          "sha256": "C79586BB22237B1B50755152AD3BBDD2BB02C455DCE7B6CDF3C4B353372ACCD3"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\capture-2\\answer.json",
+          "sha256": "4E9BD65BE1444AAF297C5F4A681246379AB9AD2AD35B1BC26021BF9C599FC8C5"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\capture-2\\raw-answer.txt",
+          "sha256": "748D51F3AF55BB964B8FECBA37E254B14477B92DC5F38A1D915C04E9888C084B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\capture-2\\receipt.json",
+          "sha256": "82FA6996EAA6B8A2F6BD6015D99A3AE2126C74D5D08B9090EBCB9EB6B3BD1FFF"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\capture-2\\tool-events.jsonl",
+          "sha256": "7891816B660B91A114DE973EBA26D6189BAC406732EBAF307200A81DBA9F41EE"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\proof-1\\observations.json",
+          "sha256": "A823DB52CAB053B32D76DEF2B8E62102810218CCE5EA0F6E30239F751D4C723B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\proof-1\\screen-1200.png",
+          "sha256": "C0958C2BA94EDABA3800FC2CA27FCB7F8A8451A0A7EC045F7A2C703F83AE927E"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\N14\\proof-1\\screen-390.png",
+          "sha256": "485D2D624CD0B7D4F38F9546F19E3E7C11812F7E0A782F4EB8557CE7B6F275E4"
+        }
+      ],
+      "retest_reason": "Five module-local relevance clauses changed after independent R02 fidelity finding. Same raw task/inputs; fresh candidate session; retained baseline, not rerun. No attribution of aesthetic differences to this small instruction change."
+    },
+    {
+      "id": "P6-FABLE-C1-BASELINE",
+      "executed": true,
+      "case_version": "P6-focused-v1",
+      "case": "C1",
+      "arm": "baseline",
+      "requested_model": "claude-fable-5-1",
+      "session_id": "0e4d1d75-6561-495c-8cf5-f37fb5836f5c",
+      "executed_at": "2026-09-04T06:59:45.970848+00:00",
+      "settings": {
+        "effort": "high",
+        "tools": [
+          "Read",
+          "Grep",
+          "Glob"
+        ],
+        "customizations": false,
+        "hard_budget": null,
+        "model_identity_limit": "Actual assistant traces carry requested string; no further backend identity asserted."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded final task outcome after any listed correction, not comparative superiority.",
+      "tested_package_sha256": "2D8718FF68019BA7D4AC21943F8A98D7823629B4B07C5BD7AE9EFFC06FE8D91B",
+      "observed_module_reads": [
+        "typography-and-typesetting"
+      ],
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "pass",
+          "finding": "Bounded correction or preservation confirmed in independent source/render review."
+        }
+      ],
+      "comparative_judgment": "Tie, high confidence.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\baseline\\artifact.html",
+          "sha256": "F9C621F8BA9D31E60936CFE532604E397B02A50061768374428BE5053268A4F8"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\baseline\\attempt-1\\receipt.json",
+          "sha256": "04E89B90929A913B1F4904CDAB598AAE78B4EE55BCA742C24A6B1279E7820418"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\baseline\\attempt-1\\session.jsonl",
+          "sha256": "C408E693EC4CDD97760B2136DAF65AFAC6B8E7BCA75FD15668C5C53976F0257D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\baseline\\attempt-1\\stdout.json",
+          "sha256": "0779F2295CC3A313D10F80A3B9643461C9CC8473B4587EB065A8C8CD5C7C096F"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\baseline\\proof-1\\observations.json",
+          "sha256": "929F408ED9F1C04AD66DE3E8E126BCB5A4910B54F828C5E6746FD10B4F0D4206"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\baseline\\proof-1\\screen-390.png",
+          "sha256": "BA1E7968497C675219691721DD472782BA0EDDCE85D397D30914009B3C981567"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\baseline\\proof-1\\screen-600.png",
+          "sha256": "BA1E7968497C675219691721DD472782BA0EDDCE85D397D30914009B3C981567"
+        }
+      ]
+    },
+    {
+      "id": "P6-FABLE-C1-CANDIDATE",
+      "executed": true,
+      "case_version": "P6-focused-v1",
+      "case": "C1",
+      "arm": "candidate",
+      "requested_model": "claude-fable-5-1",
+      "session_id": "d28d52aa-577d-4765-a576-fe17104cf060",
+      "executed_at": "2026-09-04T06:59:44.315054+00:00",
+      "settings": {
+        "effort": "high",
+        "tools": [
+          "Read",
+          "Grep",
+          "Glob"
+        ],
+        "customizations": false,
+        "hard_budget": null,
+        "model_identity_limit": "Actual assistant traces carry requested string; no further backend identity asserted."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded final task outcome after any listed correction, not comparative superiority.",
+      "tested_package_sha256": "246B03A84383C1E2AB7A4928F597F1F5A32B014734D6AD3A6ED1FBEE65368655",
+      "observed_module_reads": [
+        "typography-and-typesetting"
+      ],
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "pass",
+          "finding": "Bounded correction or preservation confirmed in independent source/render review."
+        }
+      ],
+      "comparative_judgment": "Tie, high confidence.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\candidate\\artifact.html",
+          "sha256": "F9C621F8BA9D31E60936CFE532604E397B02A50061768374428BE5053268A4F8"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\candidate\\attempt-1\\receipt.json",
+          "sha256": "9B08F92DE9CE689ACD3BDBCE0E00FF329E2327F95D046C5DF8DBA4C1A5EB5719"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\candidate\\attempt-1\\session.jsonl",
+          "sha256": "499384C226D1A921B518E82C2972D4D892EB1921F9236E32A4C88DC08B39DF83"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\candidate\\attempt-1\\stdout.json",
+          "sha256": "967C2E5BF2DF3D4A9406E980618D0D32F14C60B2584E028DAF9E6F3FE1BA8C40"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\candidate\\proof-1\\observations.json",
+          "sha256": "C95DEC852B7AFCC380280597D00020D7EE5012A045F9A322F9B8E12A404423C2"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\candidate\\proof-1\\screen-390.png",
+          "sha256": "BA1E7968497C675219691721DD472782BA0EDDCE85D397D30914009B3C981567"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C1\\candidate\\proof-1\\screen-600.png",
+          "sha256": "BA1E7968497C675219691721DD472782BA0EDDCE85D397D30914009B3C981567"
+        }
+      ]
+    },
+    {
+      "id": "P6-FABLE-C2-BASELINE",
+      "executed": true,
+      "case_version": "P6-focused-v1",
+      "case": "C2",
+      "arm": "baseline",
+      "requested_model": "claude-fable-5-1",
+      "session_id": "cf0326d3-6d2e-4932-a784-73b87e581075",
+      "executed_at": "2026-09-04T07:03:38.905116+00:00",
+      "settings": {
+        "effort": "high",
+        "tools": [
+          "Read",
+          "Grep",
+          "Glob"
+        ],
+        "customizations": false,
+        "hard_budget": null,
+        "model_identity_limit": "Actual assistant traces carry requested string; no further backend identity asserted."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded final task outcome after any listed correction, not comparative superiority.",
+      "tested_package_sha256": "2D8718FF68019BA7D4AC21943F8A98D7823629B4B07C5BD7AE9EFFC06FE8D91B",
+      "observed_module_reads": [
+        "colour-and-reproduction",
+        "composition-and-layout",
+        "concept-development-and-selection",
+        "imagery-and-art-direction",
+        "instructional-and-explanatory-design",
+        "logo-and-identity-mark-design",
+        "style-direction",
+        "typography-and-typesetting",
+        "web-and-responsive-design"
+      ],
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "fail",
+          "finding": "Initial factual/claim defects in both arms; candidate also mobile cascade defect. Full findings retained in plan-0006-sol-interim-reviews.md."
+        },
+        {
+          "source": "artifact-v2.html",
+          "outcome": "pass",
+          "finding": "Minimal host corrections verified by same still-blinded reviewer; modest baseline preference unchanged. Not a fresh generation."
+        }
+      ],
+      "comparative_judgment": "Modest baseline preference, medium confidence.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\baseline\\artifact-v2.html",
+          "sha256": "FD869345579F8F96FAC0CBA3F8DD31777A20C52BA45773E9C4196F199299C3AF"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\baseline\\artifact.html",
+          "sha256": "673AB6329089A7ED5DFD39273C6F7C93174171EEA56626A9042B9D636C3FAD2B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\baseline\\attempt-1\\receipt.json",
+          "sha256": "A78CD84EDD7BA200E068E7069D4A57D8EE4139BF9A95022E380C399F3C98DEE5"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\baseline\\attempt-1\\session.jsonl",
+          "sha256": "B46FE86B955736574381A87A355A9D5A811457BCDF9B59354401DEEF7B580A4C"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\baseline\\attempt-1\\stdout.json",
+          "sha256": "E52AD064BA9137535922324A3C6A8115CA9BB9BB76BB0A0B9476C16259AC9F41"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\baseline\\proof-1\\observations.json",
+          "sha256": "F0E48310C30630B35F9538A77582604B422D41CEBA547C4AC579185155CE64DB"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\baseline\\proof-1\\screen-1440.png",
+          "sha256": "1BE2FC3C33790FB2044F8AC11C02ACE519844EA07706ECDB92BE5D6DEB00416A"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\baseline\\proof-1\\screen-390.png",
+          "sha256": "1317A9A960349484FD0D65F27CB055D017F1B39606941BA3517F1CE181B72C94"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\baseline\\proof-2\\observations.json",
+          "sha256": "5A5135CD893202EEDBA30834799EAD3241DDD2407CCEED87E0DC2F3F28ADEA42"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\baseline\\proof-2\\screen-1440.png",
+          "sha256": "1841084E346DDF7B2A6C5581222071DFE86C82476CE21EE5E592694CC813D7E0"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\baseline\\proof-2\\screen-390.png",
+          "sha256": "9A9A737D9FC674F9AD9A6FB49B1C7441CFCF5E63FC63E8B6B6B04A4BF878B6C2"
+        }
+      ]
+    },
+    {
+      "id": "P6-FABLE-C2-CANDIDATE",
+      "executed": true,
+      "case_version": "P6-focused-v1",
+      "case": "C2",
+      "arm": "candidate",
+      "requested_model": "claude-fable-5-1",
+      "session_id": "5c0e7ef6-1459-49c7-92cc-0ee3c79241e9",
+      "executed_at": "2026-09-04T07:01:45.335639+00:00",
+      "settings": {
+        "effort": "high",
+        "tools": [
+          "Read",
+          "Grep",
+          "Glob"
+        ],
+        "customizations": false,
+        "hard_budget": null,
+        "model_identity_limit": "Actual assistant traces carry requested string; no further backend identity asserted."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded final task outcome after any listed correction, not comparative superiority.",
+      "tested_package_sha256": "246B03A84383C1E2AB7A4928F597F1F5A32B014734D6AD3A6ED1FBEE65368655",
+      "observed_module_reads": [
+        "colour-and-reproduction",
+        "composition-and-layout",
+        "concept-development-and-selection",
+        "diagrams-and-relational-information",
+        "generic-signatures-and-subject-specificity",
+        "imagery-and-art-direction",
+        "instructional-and-explanatory-design",
+        "logo-and-identity-mark-design",
+        "style-direction",
+        "typography-and-typesetting",
+        "web-and-responsive-design"
+      ],
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "fail",
+          "finding": "Initial factual/claim defects in both arms; candidate also mobile cascade defect. Full findings retained in plan-0006-sol-interim-reviews.md."
+        },
+        {
+          "source": "artifact-v2.html",
+          "outcome": "pass",
+          "finding": "Minimal host corrections verified by same still-blinded reviewer; modest baseline preference unchanged. Not a fresh generation."
+        }
+      ],
+      "comparative_judgment": "Modest baseline preference, medium confidence.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\candidate\\artifact-v2.html",
+          "sha256": "D36B347E9CA2776E1D66E3740EB559C9DA6D1D498B39AFE9E79616CDDE77DFA0"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\candidate\\artifact.html",
+          "sha256": "09699F4CD2E762B6AA9CC25BD1340C460C6D109DA4EEA693C94CE5CA59DCD2B6"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\candidate\\attempt-1\\receipt.json",
+          "sha256": "1E981D54033C90C451D164A622211440EE6D850BA2BA9F2E8595FBCCB1FFF8AB"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\candidate\\attempt-1\\session.jsonl",
+          "sha256": "E6448E6ACC27C0F5D858A89DB4E400303D614F11A52954F51960B24D56617403"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\candidate\\attempt-1\\stdout.json",
+          "sha256": "DF29893F7FD243CEE0C27E215C66D8CAB60203C5F8476A355F558E5A40766DF4"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\candidate\\proof-1\\observations.json",
+          "sha256": "D5F00615651F61EDE5517488790157E664047017B055FD77A266485ECD710E22"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\candidate\\proof-1\\screen-1440.png",
+          "sha256": "AAA949058F7DF1EC73D57B7E4026A721D9A989AC8BB475AEE239C7AFAD318E35"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\candidate\\proof-1\\screen-390.png",
+          "sha256": "316012639B65FAA99A92E4A77E9E3EAD3F907CB87ABEAB565861B7ECF1E0429F"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\candidate\\proof-2\\observations.json",
+          "sha256": "A6BA41E9E03FB20427D80F37ED8FCF35002C70E6DF927ECE946C035007F42506"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\candidate\\proof-2\\screen-1440.png",
+          "sha256": "7D1D7722CEDFB3223B97FD70990B1A4DD3A2AFCCCABC4C6498FE7120CC2EBC2B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C2\\candidate\\proof-2\\screen-390.png",
+          "sha256": "9793DC8452F88BBD013F573EF54E470091E5BEF2980D967D6CD0C92A4E877F2B"
+        }
+      ]
+    },
+    {
+      "id": "P6-FABLE-C3-BASELINE",
+      "executed": true,
+      "case_version": "P6-focused-v1",
+      "case": "C3",
+      "arm": "baseline",
+      "requested_model": "claude-fable-5-1",
+      "session_id": "c000aaeb-48e9-4468-8666-e5d38012207f",
+      "executed_at": "2026-09-04T07:00:32.636102+00:00",
+      "settings": {
+        "effort": "high",
+        "tools": [
+          "Read",
+          "Grep",
+          "Glob"
+        ],
+        "customizations": false,
+        "hard_budget": null,
+        "model_identity_limit": "Actual assistant traces carry requested string; no further backend identity asserted."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded final task outcome after any listed correction, not comparative superiority.",
+      "tested_package_sha256": "2D8718FF68019BA7D4AC21943F8A98D7823629B4B07C5BD7AE9EFFC06FE8D91B",
+      "observed_module_reads": [],
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "pass",
+          "finding": "Bounded correction or preservation confirmed in independent source/render review."
+        }
+      ],
+      "comparative_judgment": "Tie, high confidence.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\baseline\\artifact.html",
+          "sha256": "AC0ACA6FD3677D193F7BD6761CA9F976E94D876461FBCABF9C0DD4B4B40E2AB2"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\baseline\\attempt-1\\receipt.json",
+          "sha256": "BC154F370F51B99C19E2596BC10A86D98F087EEF4807E788F71CDC5157A93326"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\baseline\\attempt-1\\session.jsonl",
+          "sha256": "2CC5AFE499D52DBAFA06B982F7261326B8CFEB8EC3C8E96DCBA2D0B08AE9FFDC"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\baseline\\attempt-1\\stdout.json",
+          "sha256": "EDDC7728BD4C40CDF54200AF6397C02527D4E41AD2D8866E6F146DE2A0E20A12"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\baseline\\proof-1\\observations.json",
+          "sha256": "CED26198DA8517CCE2B752732793C7129C2CAD338BE7848C0C11ED451814085D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\baseline\\proof-1\\screen-390.png",
+          "sha256": "75DC16941F489DD2B28888486CBFA19065EDF65DE60D280907A0CF4E4E967A0E"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\baseline\\proof-1\\screen-960.png",
+          "sha256": "AFDC545DDEC212CE78B98CF5945EF862BC08D2F8AC4AB233E1BCC69214A895A1"
+        }
+      ]
+    },
+    {
+      "id": "P6-FABLE-C3-CANDIDATE",
+      "executed": true,
+      "case_version": "P6-focused-v1",
+      "case": "C3",
+      "arm": "candidate",
+      "requested_model": "claude-fable-5-1",
+      "session_id": "723ca4e3-ba9e-42b5-9371-00a07b549aa0",
+      "executed_at": "2026-09-04T07:00:46.040636+00:00",
+      "settings": {
+        "effort": "high",
+        "tools": [
+          "Read",
+          "Grep",
+          "Glob"
+        ],
+        "customizations": false,
+        "hard_budget": null,
+        "model_identity_limit": "Actual assistant traces carry requested string; no further backend identity asserted."
+      },
+      "outcome": "pass",
+      "outcome_scope": "Bounded final task outcome after any listed correction, not comparative superiority.",
+      "tested_package_sha256": "246B03A84383C1E2AB7A4928F597F1F5A32B014734D6AD3A6ED1FBEE65368655",
+      "observed_module_reads": [],
+      "stages": [
+        {
+          "source": "artifact.html",
+          "outcome": "pass",
+          "finding": "Bounded correction or preservation confirmed in independent source/render review."
+        }
+      ],
+      "comparative_judgment": "Tie, high confidence.",
+      "artifacts": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\candidate\\artifact.html",
+          "sha256": "AC0ACA6FD3677D193F7BD6761CA9F976E94D876461FBCABF9C0DD4B4B40E2AB2"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\candidate\\attempt-1\\receipt.json",
+          "sha256": "8BB8DDCAF399A74879AC41F76167E4684E6513649A305CD1FCB51FB26188B12A"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\candidate\\attempt-1\\session.jsonl",
+          "sha256": "0921AC9FBA052C65C5FA8805112D955E113DC9798F42E833BB6746A6657C75D2"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\candidate\\attempt-1\\stdout.json",
+          "sha256": "2B91832145AB1BD18DBDEB5540C3F5F08B4C23F0483E44E84DB670A7ABBBD45B"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\candidate\\proof-1\\observations.json",
+          "sha256": "7EB1B43A5C0D2E73071744353169CFAF39E54E8FACDFAD0662BA02C1A7899434"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\candidate\\proof-1\\screen-390.png",
+          "sha256": "75DC16941F489DD2B28888486CBFA19065EDF65DE60D280907A0CF4E4E967A0E"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-progress-20260904\\cases\\C3\\candidate\\proof-1\\screen-960.png",
+          "sha256": "AFDC545DDEC212CE78B98CF5945EF862BC08D2F8AC4AB233E1BCC69214A895A1"
+        }
+      ]
+    }
+  ],
+  "independent_review_artifacts": [
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\blind-r1\\receipt.json",
+      "sha256": "D0B577DF11DAFF051DC87D0E927F006760B643E8F70BBB02561F97B7FC085136"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\blind-r1\\review.md",
+      "sha256": "91003810554CA1EF5AD9BB0E0E6C2FEB299B554CFA34D5575DFAD135EAEDB502"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\blind-r1\\tool-events.jsonl",
+      "sha256": "C2F476CF879083062A13AEA2CCFB3F7E50EA9914EB30A44FB06F17E28E0DA653"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\blind-r1-feedback\\receipt.json",
+      "sha256": "B9860E365D1C572FC8797300F720B890CF246440DFA0BB484D1BF1EAC5E1B533"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\blind-r1-feedback\\review.md",
+      "sha256": "B69BD1AA1F2BD0283E177EA1283FB39109B2436F8991DFAFA3E91AF57E15876B"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\blind-r1-feedback\\tool-events.jsonl",
+      "sha256": "8C1E121CF266D4468D8C4B003DEEF47791330CFECB7C953B3FB5BB8C89B2E1A6"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\brand-r1\\receipt.json",
+      "sha256": "11FD71597C6AF094C3CFE721FF5E10B01F09652883F90FE44A93F6486FEE9DF4"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\brand-r1\\review.md",
+      "sha256": "0100F112D64E74D033EA1CCF4BDD71620D2B7BD6094C92E8CA7407BCC93B0DB9"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\brand-r1\\tool-events.jsonl",
+      "sha256": "43C9070761DF70CD6FB31BF2AAD20B9EFE08FDDDB90903CF3D0CDC6F1593F334"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\brand-r2\\receipt.json",
+      "sha256": "1B9A6FD5E63A021C7DA7645A98D0758CFCA9AB738C4B8AA93485D39E46D4C58F"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\brand-r2\\review.md",
+      "sha256": "C34B9F1905E969C6A3200C2FBA392051054349B8113C996EF13504BB7E1C7856"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\brand-r2\\tool-events.jsonl",
+      "sha256": "1A92A295F07F10056633ADF6A999C65C3D5F25F2611FE337A3AC0366B3A493A6"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\fidelity-r1\\receipt.json",
+      "sha256": "41D53BAB7DF347F6EDA72492CB3A5BB8EDD682325F4C27D0065390681138E0F6"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\fidelity-r1\\review.md",
+      "sha256": "AE62ADF9C89A8D5418D776AAD7F0D6E03ADC5AF28C19207F842CC5B36C297552"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\fidelity-r1\\tool-events.jsonl",
+      "sha256": "2DDDB6756A427B57CBADB963896486066409C66B9A152AFC1A8C98F4098069BE"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\fidelity-r2\\receipt.json",
+      "sha256": "1BEB1731AAFCB0B6827101FB9A22B085B8AAC179383DC38E8716C7B3B3DB255F"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\fidelity-r2\\review.md",
+      "sha256": "60E8D3332D3733AEAA504B7FA2E67A99B73D35342E568B94A1BF808468DEC691"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\fidelity-r2\\tool-events.jsonl",
+      "sha256": "7C4516AFD95BCF559746AD7B9EE79056D8B5F47BA467D3A668190AB92F8202B8"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\scope-r2\\receipt.json",
+      "sha256": "AEE0803C87B89C0EF82F7D9A017013D8407C808308FB372DBF64055767CE7606"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\scope-r2\\review.md",
+      "sha256": "66A8EF552C7A8F5C41860317BB9BAF329E878BA28CEF405C73979A7B7F7458EF"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\scope-r2\\tool-events.jsonl",
+      "sha256": "76A8BA9FBCE13BC44D2F6D6B4DA7431DCF9C3BB6DC0CE75298FBADF8FB4E4BBC"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-review-recovery-20260904\\scope-r1\\receipt.json",
+      "sha256": "56494517B411EB3C83D76939D58F08776BBACD09906126D4E89A3383028A6FEB"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-review-recovery-20260904\\scope-r1\\review.md",
+      "sha256": "97873E0293DEF7FCDABAD62C95396D224B2FB0350A139681657C503232E83FC3"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-review-recovery-20260904\\scope-r1\\tool-events.jsonl",
+      "sha256": "76A8BA9FBCE13BC44D2F6D6B4DA7431DCF9C3BB6DC0CE75298FBADF8FB4E4BBC"
+    }
+  ],
+  "review_capture_corrections": [
+    {
+      "reason": "The original standalone scope-r1 capture selected a subsequent commentary, not the completed initial verdict. The original final_answer remains in its event extract. Recovery selects that exact existing event; no model rerun or outcome change.",
+      "original_capture_preserved": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\scope-r1\\receipt.json",
+          "sha256": "E36FBBC2FAF042404C86573E8BDE7C28B491287E677686E9C02AAE76BE8BEE0D"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\scope-r1\\review.md",
+          "sha256": "FE69F05996A9CE9815BE4BC753D0B7AAA02B69B1C9113C5B7992B9E2D75F82C5"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\native\\reviews\\scope-r1\\tool-events.jsonl",
+          "sha256": "5541EDC89EDA7079BD50ECD4A501B3582D603349C773D26930E52B3458D7CB85"
+        }
+      ],
+      "corrected_capture": [
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-review-recovery-20260904\\scope-r1\\receipt.json",
+          "sha256": "56494517B411EB3C83D76939D58F08776BBACD09906126D4E89A3383028A6FEB"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-review-recovery-20260904\\scope-r1\\review.md",
+          "sha256": "97873E0293DEF7FCDABAD62C95396D224B2FB0350A139681657C503232E83FC3"
+        },
+        {
+          "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-review-recovery-20260904\\scope-r1\\tool-events.jsonl",
+          "sha256": "76A8BA9FBCE13BC44D2F6D6B4DA7431DCF9C3BB6DC0CE75298FBADF8FB4E4BBC"
+        }
+      ],
+      "corrected_review_at": "2026-09-04T08:16:44.658Z",
+      "source_session_id": "01a06b7b-6d8b-7fd2-a18e-99d67e09b5de"
+    }
+  ],
+  "other_review_record": {
+    "path": "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\docs\\evaluation\\plan-0006-sol-interim-reviews.md",
+    "sha256": "282B4CF69AD4469189E0D826041B104B1868392D4FDFB8A7D588A3F927A9E931"
+  },
+  "archive_manifest": {
+    "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-native-completion-20260904\\archive-manifest.json",
+    "sha256": "F9A4E3A6B5E5F167B91F15F30695F18844875A4E93CEE90DA3B91C00D39D6A87"
+  },
+  "module_annotations": {
+    "advertising-and-campaign-art-direction": [],
+    "asset-rights-and-attribution": [
+      "P6-SOL-N12"
+    ],
+    "brand-and-visual-systems": [
+      "P6-SOL-N12",
+      "P6-SOL-N14"
+    ],
+    "brief-framing-and-criteria": [],
+    "cartography-and-spatial-data": [],
+    "colour-and-reproduction": [
+      "P6-SOL-N02",
+      "P6-SOL-N08",
+      "P6-SOL-N10",
+      "P6-SOL-N12",
+      "P6-SOL-N13",
+      "P6-SOL-N14",
+      "P6-FABLE-C2-CANDIDATE"
+    ],
+    "composition-and-layout": [
+      "P6-SOL-N02",
+      "P6-SOL-N06",
+      "P6-SOL-N12",
+      "P6-SOL-N14",
+      "P6-FABLE-C2-CANDIDATE"
+    ],
+    "concept-development-and-selection": [
+      "P6-SOL-N12",
+      "P6-SOL-N14",
+      "P6-FABLE-C2-CANDIDATE"
+    ],
+    "coordination-with-sibling-skills": [
+      "P6-SOL-N10"
+    ],
+    "critique-and-validation": [],
+    "culture-and-representation": [],
+    "diagrams-and-relational-information": [
+      "P6-SOL-N12",
+      "P6-SOL-N14",
+      "P6-FABLE-C2-CANDIDATE"
+    ],
+    "editorial-and-fixed-media-design": [
+      "P6-SOL-N12",
+      "P6-SOL-N14"
+    ],
+    "font-technology-and-script-safety": [
+      "P6-SOL-N12",
+      "P6-SOL-N14"
+    ],
+    "generic-signatures-and-subject-specificity": [
+      "P6-SOL-N06",
+      "P6-SOL-N12",
+      "P6-SOL-N14",
+      "P6-FABLE-C2-CANDIDATE"
+    ],
+    "imagery-and-art-direction": [
+      "P6-SOL-N12",
+      "P6-SOL-N14",
+      "P6-FABLE-C2-CANDIDATE"
+    ],
+    "information-design-and-data-visualization": [
+      "P6-SOL-N02"
+    ],
+    "instructional-and-explanatory-design": [
+      "P6-SOL-N06",
+      "P6-FABLE-C2-CANDIDATE"
+    ],
+    "logo-and-identity-mark-design": [
+      "P6-SOL-N12",
+      "P6-SOL-N14",
+      "P6-FABLE-C2-CANDIDATE"
+    ],
+    "media-production-and-handoff": [],
+    "motion-and-sequence": [
+      "P6-SOL-N02"
+    ],
+    "packaging-graphics-and-sku-systems": [
+      "P6-SOL-N04",
+      "P6-SOL-N08",
+      "P6-SOL-N10",
+      "P6-SOL-N13"
+    ],
+    "people-privacy-and-media-integrity": [],
+    "physical-wayfinding-and-signage-systems": [
+      "P6-SOL-N08",
+      "P6-SOL-N10",
+      "P6-SOL-N13"
+    ],
+    "source-verification-and-evidence": [
+      "P6-SOL-N06"
+    ],
+    "style-direction": [
+      "P6-SOL-N12",
+      "P6-FABLE-C2-CANDIDATE"
+    ],
+    "sustainability-claims": [],
+    "typography-and-typesetting": [
+      "P6-SOL-N02",
+      "P6-SOL-N04",
+      "P6-SOL-N06",
+      "P6-SOL-N08",
+      "P6-SOL-N10",
+      "P6-SOL-N12",
+      "P6-SOL-N13",
+      "P6-SOL-N14",
+      "P6-FABLE-C1-CANDIDATE",
+      "P6-FABLE-C2-CANDIDATE"
+    ],
+    "ui-workflow-and-interaction-design": [
+      "P6-SOL-N02"
+    ],
+    "web-and-responsive-design": [
+      "P6-SOL-N02",
+      "P6-SOL-N06",
+      "P6-SOL-N12",
+      "P6-SOL-N14",
+      "P6-FABLE-C2-CANDIDATE"
+    ]
+  },
+  "limits": [
+    "No full holdout rerun or general model/Skill superiority claim.",
+    "Artifact corrections are distinct versions, not rewritten initial outcomes.",
+    "R02 instruction changes are not metadata-only; old receipts retain their old tested manifest.",
+    "Read and artifact reviewers inherit host methods/permissions as disclosed in their receipts.",
+    "No host-trigger pass, Fable final approval, installation or release is inferred."
+  ]
+}

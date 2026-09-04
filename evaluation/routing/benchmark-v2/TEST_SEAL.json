@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "state": "sealed",
+  "split": "test",
+  "sealed_at": "2026-09-02",
+  "item_count": 4,
+  "files": {
+    "test/items.json": {
+      "sha256": "4CDD3117C5B53E8108EE5829FDAA7C11FEE80E8713EB7F012D0C64C457CF3164",
+      "bytes": 15750
+    }
+  }
+}
+

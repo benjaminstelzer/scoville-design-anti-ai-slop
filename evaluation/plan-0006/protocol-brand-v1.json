@@ -1,0 +1,21 @@
+{
+  "version": "P6-brand-v1/P6-sol-native-v1",
+  "status": "frozen-before-model-outcomes",
+  "authority": "ADR-0057 permits a focused extension for a concrete uncovered changed mechanism",
+  "gap": "G09 Brand cross-touchpoint identity relation remains unobserved: original C2 did not open a reusable identity system. SOL C4 now directly reads UI Workflow in both arms, so no extra UI case is added.",
+  "requested_model": "gpt-5.6-sol",
+  "effort": "high",
+  "case": {
+    "id": "C8",
+    "family": "brand-system-extension",
+    "prompt": "Create a reusable visual identity for Around the Bauhaus, an independent educational series about the Bauhaus Dessau building. The task owner approves this exact series name and states that no applicable incumbent visual identity exists; visual system creation is authorised. Use inputs/facts.txt as the factual basis, retain its meaning, and do not suggest official affiliation, a commissioned programme, real event dates, photographed evidence or measured geometry. Deliver one editable self-contained responsive HTML specimen containing the identity's governing rules and three worked applications: an introductory poster, an educational guide cover, and a compact monochrome masthead. Include the series name in each application and use supplied building material for the poster and cover. The system must remain usable when full colour or a large illustration is unavailable. Typography, palette, composition, original graphic assets and identity relationships are open; naming and factual content are settled. Explain which elements remain fixed and which may vary across later applications. This is a proposed internal visual system, not legally cleared, audience-tested or approved for production. The host can render the specimen at 1200px and 390px.",
+    "criteria": [
+      "Actual direct Brand route and a reusable cross-touchpoint system, not three unrelated layouts",
+      "Verified subject relationship affects a ranked visual invariant, beyond a changed name or borrowed surface cue",
+      "Colour-reduced and compact application preserves its relevant relationship without forcing every component to be distinctive",
+      "Approved name, factual meaning, independence and rights/production limits remain intact",
+      "Actual source and rendered applications inspected; improvement and valid convention preservation judged separately"
+    ]
+  },
+  "comparison": "Fresh matched native sessions, one host-render feedback round, original outputs preserved, separate fresh anonymised review without prior findings or criteria. This case fills a known mechanism gap, not a search for a favourable score."
+}

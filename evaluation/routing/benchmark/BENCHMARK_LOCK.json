@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-09-02",
+  "state": "frozen_before_candidate_generation",
+  "skill": "scoville-design-anti-ai-slop",
+  "executor_floor": {
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "files": {
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/SKILL.md": {
+      "sha256": "DEA073D4FB341BFEBCA0E1A14CAC78A758F3E07ECDED226CEF54A7BD9AF808D1",
+      "bytes": 5141
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/agents/openai.yaml": {
+      "sha256": "B37AC0963B79B2064CAE877FAF8EE05CDBB2278FE3F26194927B4F7107BE07DC",
+      "bytes": 308
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/modules.yaml": {
+      "sha256": "CF8757F1BB825E42543F067F9B525B16BFD99FB88F9F2D465C0E6ACAB84EDEF3",
+      "bytes": 6758
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/brand-and-visual-systems.md": {
+      "sha256": "1C0359B3588BD290A1D7594B39652A30793263CB82466D4FDCEA213819787530",
+      "bytes": 2176
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/brief-and-concept.md": {
+      "sha256": "24848CD89AABB68A758EBD8A2F2B3B0CFB98FD733689B2A8995EAF5C3CBDF532",
+      "bytes": 2271
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/colour-and-reproduction.md": {
+      "sha256": "2FC2112A20CF7E35FE9E6F1D36F082720BA24B56A52D7135D80237F9A9959041",
+      "bytes": 2213
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/composition-and-layout.md": {
+      "sha256": "857579F2B5B907633C66EBF13FB90D25C81C90298530B28C736DD1C5E12D052C",
+      "bytes": 2361
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/critique-and-validation.md": {
+      "sha256": "04CDBA2894EBC0B9050BB0135C480A484ECB58A76CEA43362F9BD3EFA6F36891",
+      "bytes": 2640
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/culture-ethics-and-provenance.md": {
+      "sha256": "EE9457373C7BB2677F964F5E69FD937A27B9A45E4C9B90B69715B1AA8D53D69F",
+      "bytes": 2572
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/imagery-and-art-direction.md": {
+      "sha256": "520D2FA604E485B65E5D7B4E9C85A9E1566D6D426136DDC678C19DD144C5D1CF",
+      "bytes": 2922
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/information-and-data.md": {
+      "sha256": "97316F803B0A67EAD565CD273D2CB60BF1FD2770D34B2AF49531121F19C05C03",
+      "bytes": 2330
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/media-production-and-handoff.md": {
+      "sha256": "C4278CB1C5DC4153D0DAA0514E1FB2451D9C99B4D8AB2E17E211A7AFF21F292D",
+      "bytes": 2611
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/motion-and-sequence.md": {
+      "sha256": "392B386F9A6BD61761727985BF5F67FA14EED4BD6DB3370D8C72D35883801C0E",
+      "bytes": 2222
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/sources-and-attribution.md": {
+      "sha256": "1470F1BB4A58A48B4B633EE149A38353FDE186A7BC9F24F718A263CDF9F77E1E",
+      "bytes": 7076
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/style-direction.md": {
+      "sha256": "CD6C9425E85FBDE0FD2D4CE9F267C9D00FA803A12C8651CC21C875F28D443CCA",
+      "bytes": 2549
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/typography-and-writing-systems.md": {
+      "sha256": "0FAAEACDCE174460FE617764980B22EDDE2B1D04EA111CA80B98678128AE86F5",
+      "bytes": 2519
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-w4-pre/references/ui-and-interaction-design.md": {
+      "sha256": "02CFA2398960C26695783430FD29636ABA59AB9AD5B894F9A6FEADC9BAB8487E",
+      "bytes": 2735
+    },
+    "PROVENANCE.md": {
+      "sha256": "4FC9FE130E5396F368FEE008044C9DC1FB04A429BD68E93C47E737FCBBC882CE",
+      "bytes": 1351
+    },
+    "TEST_SEAL.json": {
+      "sha256": "2D7BC1A1A8B26FEFE7F4EE65DAFABDBD057E4A1B951BFAAE9012878AC85C1C8D",
+      "bytes": 269
+    },
+    "test/items.json": {
+      "sha256": "4CDD3117C5B53E8108EE5829FDAA7C11FEE80E8713EB7F012D0C64C457CF3164",
+      "bytes": 15750
+    },
+    "train/items.json": {
+      "sha256": "6DD8EBC6F6CF8181070E5CC53034E36B3C67E8DA1CED5D9687C569C76F36A198",
+      "bytes": 29962
+    },
+    "val/items.json": {
+      "sha256": "2E44013A4EB1CF324A9B12206F95BF3F6176DC8DEAA99459692A4FBB6A1C789F",
+      "bytes": 25537
+    }
+  }
+}

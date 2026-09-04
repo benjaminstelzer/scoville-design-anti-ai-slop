@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-04 08:25:54 UTC",
+  "checks_passed": true,
+  "source_manifest_sha256": "17D48D145F9492CA37C1EC3FAA6A559DBFF67F09DA57C0B72B9075AFF3F78C88",
+  "runtime_manifest_sha256": "3F38C596AE0ED4107609D874EAE628250802ED9D766616D439832FD985BA380F",
+  "checks": [
+    {
+      "name": "unit-tests",
+      "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' -m unittest discover -s scripts -p 'test_*.py'",
+      "chunk_id": "23bc14",
+      "wall_time_seconds": 3.2227088,
+      "exit_code": 0,
+      "original_token_count": 33,
+      "output": "............................\r\n----------------------------------------------------------------------\r\nRan 28 tests in 4.084s\r\n\r\nOK\r\n"
+    },
+    {
+      "name": "package",
+      "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' scripts/validate_package.py",
+      "chunk_id": "aa6711",
+      "wall_time_seconds": 0.0000024,
+      "exit_code": 0,
+      "original_token_count": 267,
+      "output": "WARNING concept-development-and-selection: 1552 tokens exceeds target 1500\r\nWARNING composition-and-layout: 1858 tokens exceeds target 1700\r\nWARNING typography-and-typesetting: 2222 tokens exceeds target 2100\r\nWARNING colour-and-reproduction: 1827 tokens exceeds target 1700\r\nWARNING imagery-and-art-direction: 1926 tokens exceeds target 1800\r\nWARNING information-design-and-data-visualization: 1812 tokens exceeds target 1800\r\nWARNING brand-and-visual-systems: 2482 tokens exceeds target 2400\r\nWARNING logo-and-identity-mark-design: 2314 tokens exceeds target 2300\r\nWARNING ui-workflow-and-interaction-design: 1714 tokens exceeds target 1700\r\nWARNING web-and-responsive-design: 1616 tokens exceeds target 1600\r\nWARNING packaging-graphics-and-sku-systems: 2243 tokens exceeds target 2200\r\nWARNING motion-and-sequence: 1931 tokens exceeds target 1900\r\nWARNING style-direction: 2008 tokens exceeds target 2000\r\nVALID schema=successor-v2 warnings=13 modules=30 core_tokens=1794 index_tokens=1173 max_expert_tokens=2482 core_plus_index=2967 core_plus_largest_phase=12470\r\n"
+    },
+    {
+      "name": "index",
+      "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' scripts/generate_module_index.py --check",
+      "chunk_id": "2fb509",
+      "wall_time_seconds": 0.0000033,
+      "exit_code": 0,
+      "original_token_count": 7,
+      "output": "module index is current\r\n"
+    },
+    {
+      "name": "routes",
+      "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' scripts/validate_route_contract.py",
+      "chunk_id": "71b206",
+      "wall_time_seconds": 0.0000025,
+      "exit_code": 0,
+      "original_token_count": 11,
+      "output": "VALID route_cases=60 signals=44 modules=30\r\n"
+    },
+    {
+      "name": "design-ui-boundary",
+      "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' scripts/validate_design_ui_boundary.py",
+      "chunk_id": "f8f1c8",
+      "wall_time_seconds": 0.0000013,
+      "exit_code": 0,
+      "original_token_count": 20,
+      "output": "VALID design_ui_boundary active_design=strict_ui ui_only=greenfield_fallback\r\n"
+    },
+    {
+      "name": "skill-creator",
+      "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' C:\\Users\\benja\\.codex\\skills\\.system\\skill-creator\\scripts\\quick_validate.py .",
+      "chunk_id": "119653",
+      "wall_time_seconds": 0.0000012,
+      "exit_code": 0,
+      "original_token_count": 5,
+      "output": "Skill is valid!\r\n"
+    },
+    {
+      "name": "measure",
+      "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' scripts/measure_package.py",
+      "chunk_id": "0bfbd7",
+      "wall_time_seconds": 0.3573536,
+      "exit_code": 0,
+      "original_token_count": 554,
+      "output": "{\r\n  \"tokenizer\": \"o200k_base\",\r\n  \"core_excluding_index\": 1794,\r\n  \"generated_authoring_index\": 1173,\r\n  \"core_plus_index\": 2967,\r\n  \"modules\": {\r\n    \"brief-framing-and-criteria\": 1482,\r\n    \"concept-development-and-selection\": 1552,\r\n    \"composition-and-layout\": 1858,\r\n    \"typography-and-typesetting\": 2222,\r\n    \"font-technology-and-script-safety\": 2033,\r\n    \"colour-and-reproduction\": 1827,\r\n    \"imagery-and-art-direction\": 1926,\r\n    \"information-design-and-data-visualization\": 1812,\r\n    \"cartography-and-spatial-data\": 1571,\r\n    \"diagrams-and-relational-information\": 1512,\r\n    \"brand-and-visual-systems\": 2482,\r\n    \"logo-and-identity-mark-design\": 2314,\r\n    \"instructional-and-explanatory-design\": 2246,\r\n    \"advertising-and-campaign-art-direction\": 2376,\r\n    \"ui-workflow-and-interaction-design\": 1714,\r\n    \"web-and-responsive-design\": 1616,\r\n    \"editorial-and-fixed-media-design\": 1838,\r\n    \"packaging-graphics-and-sku-systems\": 2243,\r\n    \"physical-wayfinding-and-signage-systems\": 2172,\r\n    \"motion-and-sequence\": 1931,\r\n    \"media-production-and-handoff\": 2331,\r\n    \"critique-and-validation\": 1751,\r\n    \"culture-and-representation\": 1626,\r\n    \"people-privacy-and-media-integrity\": 1606,\r\n    \"sustainability-claims\": 1370,\r\n    \"source-verification-and-evidence\": 1452,\r\n    \"asset-rights-and-attribution\": 1786,\r\n    \"style-direction\": 2008,\r\n    \"generic-signatures-and-subject-specificity\": 1288,\r\n    \"coordination-with-sibling-skills\": 643\r\n  },\r\n  \"common_loads\": {\r\n    \"C01\": 8885,\r\n    \"C02\": 8813,\r\n    \"C03\": 5000,\r\n    \"C04\": 8414,\r\n    \"C05\": 10636,\r\n    \"C06\": 6001,\r\n    \"C07\": 10671,\r\n    \"C08\": 8305,\r\n    \"C09\": 6297,\r\n    \"C11\": 4794,\r\n    \"C12\": 8115,\r\n    \"C13\": 5449,\r\n    \"C14\": 8617,\r\n    \"C15\": 7616,\r\n    \"C16\": 4479,\r\n    \"C17\": 7120,\r\n    \"C18\": 8963,\r\n    \"C20\": 7951,\r\n    \"C21\": 9542,\r\n    \"C22\": 8536,\r\n    \"D28-EH1\": 10564,\r\n    \"D28-CI1\": 11562,\r\n    \"D28-CI2\": 11367,\r\n    \"D28-CI3\": 10714,\r\n    \"D28-MK1\": 5281,\r\n    \"D28-IN1\": 6725,\r\n    \"D28-AD1\": 9751,\r\n    \"D28-PK1\": 7432,\r\n    \"D28-WF1\": 6710,\r\n    \"D28-BO1\": 6297\r\n  },\r\n  \"runtime_instruction_total\": 57543,\r\n  \"limit\": \"File token counts; not provider-total cost or a context gate.\"\r\n}\r\n"
+    },
+    {
+      "name": "runtime",
+      "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' scripts/validate_package.py --runtime --root Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-local-candidate-20260904\\scoville-design-anti-ai-slop",
+      "chunk_id": "72218b",
+      "wall_time_seconds": 0.4225491,
+      "exit_code": 0,
+      "original_token_count": 267,
+      "output": "WARNING concept-development-and-selection: 1552 tokens exceeds target 1500\r\nWARNING composition-and-layout: 1858 tokens exceeds target 1700\r\nWARNING typography-and-typesetting: 2222 tokens exceeds target 2100\r\nWARNING colour-and-reproduction: 1827 tokens exceeds target 1700\r\nWARNING imagery-and-art-direction: 1926 tokens exceeds target 1800\r\nWARNING information-design-and-data-visualization: 1812 tokens exceeds target 1800\r\nWARNING brand-and-visual-systems: 2482 tokens exceeds target 2400\r\nWARNING logo-and-identity-mark-design: 2314 tokens exceeds target 2300\r\nWARNING ui-workflow-and-interaction-design: 1714 tokens exceeds target 1700\r\nWARNING web-and-responsive-design: 1616 tokens exceeds target 1600\r\nWARNING packaging-graphics-and-sku-systems: 2243 tokens exceeds target 2200\r\nWARNING motion-and-sequence: 1931 tokens exceeds target 1900\r\nWARNING style-direction: 2008 tokens exceeds target 2000\r\nVALID schema=successor-v2 warnings=13 modules=30 core_tokens=1794 index_tokens=1159 max_expert_tokens=2482 core_plus_index=2953 core_plus_largest_phase=12456\r\n"
+    },
+    {
+      "name": "annotation",
+      "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' evaluation/plan-0006/check_final_annotation.py",
+      "chunk_id": "cba25f",
+      "wall_time_seconds": 0.3193526,
+      "exit_code": 0,
+      "original_token_count": 806,
+      "output": "{\r\n  \"pass\": true,\r\n  \"changed_files\": [\r\n    \"modules.yaml\"\r\n  ],\r\n  \"tested_runtime_sha256\": \"60B1E02D07EB2BEF4F168652D2D7018274F0814E4D785FDEF5D867A137FFAA60\",\r\n  \"annotated_runtime_sha256\": \"3F38C596AE0ED4107609D874EAE628250802ED9D766616D439832FD985BA380F\",\r\n  \"checks\": {\r\n    \"tested_runtime_unchanged\": true,\r\n    \"final_source_manifest_exact\": true,\r\n    \"final_runtime_manifest_exact\": true,\r\n    \"build_transform:SKILL.md\": true,\r\n    \"build_transform:agents/openai.yaml\": true,\r\n    \"build_transform:modules.yaml\": true,\r\n    \"build_transform:references/advertising-and-campaign-art-direction.md\": true,\r\n    \"build_transform:references/asset-rights-and-attribution.md\": true,\r\n    \"build_transform:references/brand-and-visual-systems.md\": true,\r\n    \"build_transform:references/brief-framing-and-criteria.md\": true,\r\n    \"build_transform:references/cartography-and-spatial-data.md\": true,\r\n    \"build_transform:references/colour-and-reproduction.md\": true,\r\n    \"build_transform:references/composition-and-layout.md\": true,\r\n    \"build_transform:references/concept-development-and-selection.md\": true,\r\n    \"build_transform:references/coordination-with-sibling-skills.md\": true,\r\n    \"build_transform:references/critique-and-validation.md\": true,\r\n    \"build_transform:references/culture-and-representation.md\": true,\r\n    \"build_transform:references/diagrams-and-relational-information.md\": true,\r\n    \"build_transform:references/editorial-and-fixed-media-design.md\": true,\r\n    \"build_transform:references/font-technology-and-script-safety.md\": true,\r\n    \"build_transform:references/generic-signatures-and-subject-specificity.md\": true,\r\n    \"build_transform:references/imagery-and-art-direction.md\": true,\r\n    \"build_transform:references/information-design-and-data-visualization.md\": true,\r\n    \"build_transform:references/instructional-and-explanatory-design.md\": true,\r\n    \"build_transform:references/logo-and-identity-mark-design.md\": true,\r\n    \"build_transform:references/media-production-and-handoff.md\": true,\r\n    \"build_transform:references/motion-and-sequence.md\": true,\r\n    \"build_transform:references/packaging-graphics-and-sku-systems.md\": true,\r\n    \"build_transform:references/people-privacy-and-media-integrity.md\": true,\r\n    \"build_transform:references/physical-wayfinding-and-signage-systems.md\": true,\r\n    \"build_transform:references/source-index.md\": true,\r\n    \"build_transform:references/source-verification-and-evidence.md\": true,\r\n    \"build_transform:references/style-direction.md\": true,\r\n    \"build_transform:references/sustainability-claims.md\": true,\r\n    \"build_transform:references/typography-and-typesetting.md\": true,\r\n    \"build_transform:references/ui-workflow-and-interaction-design.md\": true,\r\n    \"build_transform:references/web-and-responsive-design.md\": true,\r\n    \"only_registry_changed_after_retest\": true,\r\n    \"all_bytes_except_evidence_values_identical\": true,\r\n    \"all_non_evidence_fields_identical\": true,\r\n    \"annotations_match_observed_mapping\": true,\r\n    \"no_status_promotion\": true\r\n  },\r\n  \"limit\": \"Only evidence annotation is being verified here. The earlier five R02 instruction changes are separately tested and are not metadata-only.\"\r\n}\r\n"
+    },
+    {
+      "name": "profile",
+      "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' C:\\Users\\benja\\.codex\\skills\\scoville-plan\\scripts\\validate_profile.py --root . --format json",
+      "chunk_id": "8c17ee",
+      "wall_time_seconds": 0.1637516,
+      "exit_code": 0,
+      "original_token_count": 76,
+      "output": "{\r\n  \"schema_version\": 1,\r\n  \"valid\": true,\r\n  \"root\": \"Z:\\\\Projekts\\\\AI\\\\scoville-design-anti-ai-slop\",\r\n  \"format_version\": 1,\r\n  \"summary\": {\r\n    \"errors\": 0,\r\n    \"warnings\": 0,\r\n    \"files_checked\": 64,\r\n    \"plans\": 6,\r\n    \"work_items\": 35,\r\n    \"decisions\": 57\r\n  },\r\n  \"diagnostics\": []\r\n}\r\n"
+    }
+  ],
+  "limit": "Local deterministic checks only. Genuine host activation and retained Fable final review remain unverified; no publication or general quality pass.",
+  "followup_after_capture_recovery": {
+    "recorded_at": "2026-09-04 08:31:11 UTC",
+    "scope": "Only review extraction and its references changed. No new package instruction or model/design run. Original erroneous capture remains archived.",
+    "checks": [
+      {
+        "name": "capture-helper-regressions",
+        "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' -m unittest discover -s evaluation/plan-0006 -p test_capture_review.py",
+        "chunk_id": "64c728",
+        "wall_time_seconds": 0.7039805,
+        "exit_code": 0,
+        "original_token_count": 28,
+        "output": "......\r\n----------------------------------------------------------------------\r\nRan 6 tests in 0.592s\r\n\r\nOK\r\n"
+      },
+      {
+        "name": "receipt-validation-after-recovery",
+        "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' scripts/validate_package.py",
+        "chunk_id": "f3a783",
+        "wall_time_seconds": 0.4590542,
+        "exit_code": 0,
+        "original_token_count": 267,
+        "output": "WARNING concept-development-and-selection: 1552 tokens exceeds target 1500\r\nWARNING composition-and-layout: 1858 tokens exceeds target 1700\r\nWARNING typography-and-typesetting: 2222 tokens exceeds target 2100\r\nWARNING colour-and-reproduction: 1827 tokens exceeds target 1700\r\nWARNING imagery-and-art-direction: 1926 tokens exceeds target 1800\r\nWARNING information-design-and-data-visualization: 1812 tokens exceeds target 1800\r\nWARNING brand-and-visual-systems: 2482 tokens exceeds target 2400\r\nWARNING logo-and-identity-mark-design: 2314 tokens exceeds target 2300\r\nWARNING ui-workflow-and-interaction-design: 1714 tokens exceeds target 1700\r\nWARNING web-and-responsive-design: 1616 tokens exceeds target 1600\r\nWARNING packaging-graphics-and-sku-systems: 2243 tokens exceeds target 2200\r\nWARNING motion-and-sequence: 1931 tokens exceeds target 1900\r\nWARNING style-direction: 2008 tokens exceeds target 2000\r\nVALID schema=successor-v2 warnings=13 modules=30 core_tokens=1794 index_tokens=1173 max_expert_tokens=2482 core_plus_index=2967 core_plus_largest_phase=12470\r\n"
+      },
+      {
+        "name": "annotation-after-recovery",
+        "cmd": "& 'Z:\\Projekts\\AI\\SkillOpt-Studio\\.venv\\Scripts\\python.exe' evaluation/plan-0006/check_final_annotation.py",
+        "chunk_id": "0bca07",
+        "wall_time_seconds": 0.3325601,
+        "exit_code": 0,
+        "original_token_count": 806,
+        "output": "{\r\n  \"pass\": true,\r\n  \"changed_files\": [\r\n    \"modules.yaml\"\r\n  ],\r\n  \"tested_runtime_sha256\": \"60B1E02D07EB2BEF4F168652D2D7018274F0814E4D785FDEF5D867A137FFAA60\",\r\n  \"annotated_runtime_sha256\": \"3F38C596AE0ED4107609D874EAE628250802ED9D766616D439832FD985BA380F\",\r\n  \"checks\": {\r\n    \"tested_runtime_unchanged\": true,\r\n    \"final_source_manifest_exact\": true,\r\n    \"final_runtime_manifest_exact\": true,\r\n    \"build_transform:SKILL.md\": true,\r\n    \"build_transform:agents/openai.yaml\": true,\r\n    \"build_transform:modules.yaml\": true,\r\n    \"build_transform:references/advertising-and-campaign-art-direction.md\": true,\r\n    \"build_transform:references/asset-rights-and-attribution.md\": true,\r\n    \"build_transform:references/brand-and-visual-systems.md\": true,\r\n    \"build_transform:references/brief-framing-and-criteria.md\": true,\r\n    \"build_transform:references/cartography-and-spatial-data.md\": true,\r\n    \"build_transform:references/colour-and-reproduction.md\": true,\r\n    \"build_transform:references/composition-and-layout.md\": true,\r\n    \"build_transform:references/concept-development-and-selection.md\": true,\r\n    \"build_transform:references/coordination-with-sibling-skills.md\": true,\r\n    \"build_transform:references/critique-and-validation.md\": true,\r\n    \"build_transform:references/culture-and-representation.md\": true,\r\n    \"build_transform:references/diagrams-and-relational-information.md\": true,\r\n    \"build_transform:references/editorial-and-fixed-media-design.md\": true,\r\n    \"build_transform:references/font-technology-and-script-safety.md\": true,\r\n    \"build_transform:references/generic-signatures-and-subject-specificity.md\": true,\r\n    \"build_transform:references/imagery-and-art-direction.md\": true,\r\n    \"build_transform:references/information-design-and-data-visualization.md\": true,\r\n    \"build_transform:references/instructional-and-explanatory-design.md\": true,\r\n    \"build_transform:references/logo-and-identity-mark-design.md\": true,\r\n    \"build_transform:references/media-production-and-handoff.md\": true,\r\n    \"build_transform:references/motion-and-sequence.md\": true,\r\n    \"build_transform:references/packaging-graphics-and-sku-systems.md\": true,\r\n    \"build_transform:references/people-privacy-and-media-integrity.md\": true,\r\n    \"build_transform:references/physical-wayfinding-and-signage-systems.md\": true,\r\n    \"build_transform:references/source-index.md\": true,\r\n    \"build_transform:references/source-verification-and-evidence.md\": true,\r\n    \"build_transform:references/style-direction.md\": true,\r\n    \"build_transform:references/sustainability-claims.md\": true,\r\n    \"build_transform:references/typography-and-typesetting.md\": true,\r\n    \"build_transform:references/ui-workflow-and-interaction-design.md\": true,\r\n    \"build_transform:references/web-and-responsive-design.md\": true,\r\n    \"only_registry_changed_after_retest\": true,\r\n    \"all_bytes_except_evidence_values_identical\": true,\r\n    \"all_non_evidence_fields_identical\": true,\r\n    \"annotations_match_observed_mapping\": true,\r\n    \"no_status_promotion\": true\r\n  },\r\n  \"limit\": \"Only evidence annotation is being verified here. The earlier five R02 instruction changes are separately tested and are not metadata-only.\"\r\n}\r\n"
+      }
+    ]
+  }
+}

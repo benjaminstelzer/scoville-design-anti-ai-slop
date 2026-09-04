@@ -1,0 +1,64 @@
+format_version: 1
+contract_id: successor-route-v2
+status: blind_adjudicated_development_contract
+model: gpt-5.6-terra
+reasoning: medium
+qualification_credit: 0
+blind_evidence:
+  tasks_sha256: 827CC051926FE3FC088C3E0C85654AF45125359003C0B3BCEF419397DA609207
+  all_28_summaries_sha256: 52A6C03B67B3049FC7897464937E7AA15C7C0208E686073B8728129882AE5D36
+  phase1_output_sha256: 9D7999B84BFACBFEA63A74B62B22FD9C54352F039C030A4DB6DD618BF6D86838
+  selected_full_clauses_sha256: CA677B70FDB733D841CF188F82173D965E1457137C877AFD398BB59486F00447
+  phase2_output_sha256: 7F3422AF2F2651CDCBA9C0B8FBE481A0C5526FCCE538627B48847E644FE09F73
+  alias_map_sha256: 4AB7E15A379B8319E875420AA362A46737F0E8BAF77969170B91404284B77AB1
+cases:
+  - id: D28-EH1
+    exact_sets:
+      - [typography-and-typesetting, web-and-responsive-design, style-direction, critique-and-validation]
+    forbidden: [composition-and-layout]
+    w017_relation: changed_gold_was_too_narrow
+  - id: D28-CI1
+    exact_sets:
+      - [brand-and-visual-systems, composition-and-layout, typography-and-typesetting, font-technology-and-script-safety]
+    forbidden: [editorial-and-fixed-media-design, web-and-responsive-design]
+    w017_relation: changed_gold_was_too_narrow
+  - id: D28-CI2
+    exact_sets:
+      - [brand-and-visual-systems, composition-and-layout, typography-and-typesetting, editorial-and-fixed-media-design]
+    forbidden: [colour-and-reproduction, logo-and-identity-mark-design]
+    w017_relation: changed_gold_was_too_narrow
+  - id: D28-CI3
+    exact_sets:
+      - [brief-framing-and-criteria, brand-and-visual-systems, source-verification-and-evidence, media-production-and-handoff]
+    forbidden: [critique-and-validation, asset-rights-and-attribution]
+    w017_relation: changed_gold_was_too_narrow
+  - id: D28-MK1
+    exact_sets:
+      - [logo-and-identity-mark-design]
+    forbidden: [brand-and-visual-systems, colour-and-reproduction, asset-rights-and-attribution, media-production-and-handoff]
+    w017_relation: unchanged
+  - id: D28-IN1
+    exact_sets:
+      - [instructional-and-explanatory-design, diagrams-and-relational-information]
+    forbidden: [composition-and-layout, critique-and-validation, editorial-and-fixed-media-design]
+    w017_relation: unchanged
+  - id: D28-AD1
+    exact_sets:
+      - [advertising-and-campaign-art-direction, imagery-and-art-direction, brand-and-visual-systems]
+    forbidden: [web-and-responsive-design, composition-and-layout]
+    w017_relation: unchanged
+  - id: D28-PK1
+    exact_sets:
+      - [packaging-graphics-and-sku-systems, typography-and-typesetting]
+    forbidden: [composition-and-layout, media-production-and-handoff, colour-and-reproduction]
+    w017_relation: unchanged
+  - id: D28-WF1
+    exact_sets:
+      - [physical-wayfinding-and-signage-systems, cartography-and-spatial-data]
+    forbidden: [diagrams-and-relational-information, ui-workflow-and-interaction-design]
+    w017_relation: unchanged
+  - id: D28-BO1
+    exact_sets:
+      - [ui-workflow-and-interaction-design, web-and-responsive-design]
+    forbidden: [brand-and-visual-systems, media-production-and-handoff, typography-and-typesetting]
+    w017_relation: unchanged

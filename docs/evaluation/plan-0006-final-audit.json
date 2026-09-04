@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "reviewer": {
+    "session_id": "01a06b6b-a9bc-7bc3-b19a-42a5c5eaa526",
+    "agent_path": "/root/sol_fidelity_p6",
+    "requested_model": "gpt-5.6-sol",
+    "actual_trace_model": "gpt-5.6-sol",
+    "effort": "high",
+    "review_at": "2026-09-04T08:31:48.035Z",
+    "selected_response_phase": "final_answer",
+    "source_trace_sha256_at_capture": "D46685A82083D295C149947C5701D368E3E36741F5A2A4D62609264A78B7FA6C",
+    "trace_scope": "Actual tool events and assistant messages only; excludes reasoning and host context",
+    "review_sha256": "9D59867DBE271E61F228AB47A7AE9761A36E0AFB2E5A114CC2818906ADB65102"
+  },
+  "reviewed_runtime_manifest_sha256": "3F38C596AE0ED4107609D874EAE628250802ED9D766616D439832FD985BA380F",
+  "verdict": "No remaining material finding in the bounded metadata/claim review after recovery of the incorrectly extracted initial review.",
+  "prior_finding": "Review capture selected a follow-up commentary instead of the existing initial final_answer; original preserved and exact completed verdict recovered without a model rerun.",
+  "artifacts": [
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-final-audit-20260904\\resolved\\receipt.json",
+      "sha256": "5BEACDB15A6D5163F8FCFA95D0CF3DBA8375BCD35C694CAFAC4CD7EC72BAE46C"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-final-audit-20260904\\resolved\\review.md",
+      "sha256": "9D59867DBE271E61F228AB47A7AE9761A36E0AFB2E5A114CC2818906ADB65102"
+    },
+    {
+      "path": "Z:\\Projekts\\AI\\scoville-design-eval-local\\plan-0006-final-audit-20260904\\resolved\\tool-events.jsonl",
+      "sha256": "FE03B392036837A0BECDBC841CB190AB388ECCAA4E2264E76D005EE52CE3FC5E"
+    }
+  ],
+  "limits": [
+    "SOL review, not Fable approval.",
+    "No new package-wide visual review or design execution.",
+    "Required genuine host H1-H5 and retained Fable final review remain unverified; W-004 stays in_progress.",
+    "Other verification and its limits are preserved in the initial audit and actual final checks."
+  ]
+}

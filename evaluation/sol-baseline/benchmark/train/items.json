@@ -1,0 +1,164 @@
+[
+  {
+    "id": "design-train-01-dense-event-poster",
+    "task_type": "generate_static_graphic",
+    "prediction": {
+      "task_text": "Create an original A3 portrait poster for the fictional NIGHT SIGNALS festival. Required content: NIGHT SIGNALS; Experimental music and moving image; 17-18 October 2026; Foundry Hall, Essen; Friday 18:00-01:00; Saturday 15:00-01:00; day pass EUR 24; weekend EUR 39; nightsignals.example; artists Aster Vale, Broken Relay, Mica Field, Nova Choir, Static Bloom, Vessel/Zero. Audience: visually literate adults 20-40. Tone: nocturnal, intelligent, energetic, not a generic techno flyer. Return a complete editable SVG with every required string legible. Do not use external assets.",
+      "files": {"brief/task-context.md": "The complete design brief is in the task. No external assets are supplied.\n"},
+      "output_contract": "Return exactly one JSON object with keys mode, artifact_format, design_read, artifact, required_content_check, self_critique, and rendered_status. mode must be generate. artifact_format must be svg. artifact must be one complete SVG string. required_content_check must be an object with boolean keys title, descriptor, dates, venue, times, prices, url, and artists. self_critique must be an array of strings. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "generate", "artifact_format": "svg", "required_content_check": {"title": true, "descriptor": true, "dates": true, "venue": true, "times": true, "prices": true, "url": true, "artists": true}, "rendered_status": "unverified"},
+      "required_file_reads": [],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 2
+    }
+  },
+  {
+    "id": "design-train-02-80s-neon-web",
+    "task_type": "generate_style_direction",
+    "prediction": {
+      "task_text": "Design a complete responsive one-page website for ARCADE AFTERDARK, a fictional monthly retro-computing night. The user explicitly wants a typical 1980s neon vibe with ASCII art, old-school computer culture, VHS texture, and unmistakable retro energy. It must still look professionally art-directed and creative rather than like an AI-generated synthwave template. Required sections: event identity, next date 12 September 2026, venue Terminal K in Cologne, program with live coding / chiptune / arcade tournament, EUR 12 entry, accessibility note, and ticket CTA. Return self-contained HTML with embedded CSS and no external assets or scripts.",
+      "files": {"brief/task-context.md": "The complete design brief is in the task. No external assets are supplied.\n"},
+      "output_contract": "Return exactly one JSON object with keys mode, artifact_format, design_read, artifact, style_system, anti_cliche_move, accessibility_checks, self_critique, and rendered_status. mode must be style-direction. artifact_format must be html. artifact must be complete self-contained HTML. style_system must be an object with keys structure, typography, color_light, ascii_vhs, and signature. accessibility_checks must be an object with boolean keys readable_body, visible_focus, reduced_motion, and semantic_structure. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "style-direction", "artifact_format": "html", "accessibility_checks": {"readable_body": true, "visible_focus": true, "reduced_motion": true, "semantic_structure": true}, "rendered_status": "unverified"},
+      "required_file_reads": [],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 2
+    }
+  },
+  {
+    "id": "design-train-03-generic-landing-critique",
+    "task_type": "discriminate_generic_cliche",
+    "prediction": {
+      "task_text": "Read brief.md and site/index.html. Critique the supplied landing-page source without editing it. Determine whether it is merely polished or specifically designed for the subject. Identify generic or clichéd design decisions, their consequence, the strongest element to preserve, and the smallest coherent redesign direction. Do not claim rendered facts because no screenshot is supplied.",
+      "files": {
+        "brief.md": "Relay is a local mutual-aid logistics service that coordinates urgent grocery and medicine deliveries among neighborhood volunteers. The page must convey trust, speed, locality, and a clear request/help split.",
+        "site/index.html": "<!doctype html><html><head><style>body{margin:0;font-family:Inter,Arial;background:#09051a;color:white}.hero{text-align:center;padding:120px 24px;background:radial-gradient(circle at top,#7c3aed,#09051a 60%)}.pill,.card{border:1px solid #ffffff25;border-radius:24px;background:#ffffff0c;box-shadow:0 20px 60px #7c3aed33}.pill{display:inline-block;padding:8px 16px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:72px}.card{padding:32px}button{border:0;border-radius:999px;padding:16px 28px;background:linear-gradient(90deg,#8b5cf6,#22d3ee);color:white}</style></head><body><section class=\"hero\"><span class=\"pill\">NEXT-GEN COMMUNITY</span><h1>Elevate help. Unleash connection.</h1><p>Seamless support for a world in motion.</p><button>Get started</button></section><section class=\"cards\"><article class=\"card\"><h2>Connect</h2><p>Everything in one place.</p></article><article class=\"card\"><h2>Empower</h2><p>Built for everyone.</p></article><article class=\"card\"><h2>Transform</h2><p>The future is now.</p></article></section></body></html>"
+      },
+      "output_contract": "Return exactly one JSON object with keys mode, generic_cliche, subject_specificity, findings, preserve, repair_direction, edit, and rendered_status. mode must be critique. generic_cliche must be true or false. subject_specificity must be strong, weak, or absent. findings must be an array of objects with string keys observation, impact, severity, and smallest_correction. preserve must be an array of strings. edit must be none. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "critique", "generic_cliche": true, "subject_specificity": "absent", "edit": "none", "rendered_status": "unverified"},
+      "required_file_reads": ["brief.md", "site/index.html"],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 5
+    }
+  },
+  {
+    "id": "design-train-04-poster-repair",
+    "task_type": "repair_static_graphic",
+    "prediction": {
+      "task_text": "Read brief.md and artifact/poster.svg. Repair the poster by returning a complete replacement SVG. Preserve every required string and the black/cream/red identity. Correct the seeded hierarchy, alignment, spacing, and small-text problems without replacing the concept with a different style. No screenshot is supplied, so state the visual-evidence limit.",
+      "files": {
+        "brief.md": "A4 portrait reading-series poster. Required: OPEN MARGINS; New writing in translation; 6 November 2026 / 19:30; Library West; readings by Leila Arun, Mara Vos, Niko Stein; free entry; openmargins.example. Identity: black, cream, signal red; direct editorial tone.",
+        "artifact/poster.svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"794\" height=\"1123\" viewBox=\"0 0 794 1123\"><rect width=\"794\" height=\"1123\" fill=\"#f4efe4\"/><rect x=\"38\" y=\"38\" width=\"718\" height=\"1047\" fill=\"none\" stroke=\"#e33\" stroke-width=\"3\"/><text x=\"397\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"24\">New writing in translation</text><text x=\"397\" y=\"245\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"54\">OPEN</text><text x=\"102\" y=\"315\" font-family=\"Arial\" font-size=\"54\">MARGINS</text><text x=\"58\" y=\"760\" font-family=\"Arial\" font-size=\"12\">6 November 2026 / 19:30</text><text x=\"405\" y=\"795\" font-family=\"Arial\" font-size=\"12\">Library West</text><text x=\"58\" y=\"850\" font-family=\"Arial\" font-size=\"11\">readings by Leila Arun, Mara Vos, Niko Stein</text><text x=\"520\" y=\"1020\" font-family=\"Arial\" font-size=\"8\" fill=\"#e33\">free entry / openmargins.example</text></svg>"
+      },
+      "output_contract": "Return exactly one JSON object with keys mode, artifact_format, artifact, changes, preserved, protected_checks, pass_count, and rendered_status. mode must be repair. artifact_format must be svg. artifact must be one complete SVG string. changes and preserved must be arrays of strings. protected_checks must be an object with boolean keys all_required_content, identity_colors, no_new_claims, and source_valid_xml. pass_count must be 1. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "repair", "artifact_format": "svg", "protected_checks": {"all_required_content": true, "identity_colors": true, "no_new_claims": true, "source_valid_xml": true}, "pass_count": 1, "rendered_status": "unverified"},
+      "required_file_reads": ["brief.md", "artifact/poster.svg"],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 5
+    }
+  },
+  {
+    "id": "design-train-05-brand-imagery-system",
+    "task_type": "generate_art_direction",
+    "prediction": {
+      "task_text": "Create an art-direction system for Common Ground, a fictional cooperative bakery opening three neighborhood shops. The visual identity must feel skilled, contemporary, warm, and locally specific without beige-craft clichés, fake heritage, or stock-photo diversity. Define a six-image launch sequence and three production-ready image briefs. No actual image generation is available. Do not imply rights or rendered consistency you cannot verify.",
+      "files": {"brief/task-context.md": "The complete design brief is in the task. No external assets are supplied.\n"},
+      "output_contract": "Return exactly one JSON object with keys mode, direction_spec, invariants, controlled_variation, sequence, briefs, anti_cliche, rights_gate, consistency_status, and rendered_status. mode must be generate. direction_spec must be an object. invariants and controlled_variation must be arrays of strings. sequence must contain exactly six objects. briefs must contain exactly three objects. rights_gate must be required. consistency_status and rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "generate", "rights_gate": "required", "consistency_status": "unverified", "rendered_status": "unverified"},
+      "required_file_reads": [],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 2
+    }
+  },
+  {
+    "id": "design-train-06-deliberate-grid-exception",
+    "task_type": "critique_rule_exception",
+    "prediction": {
+      "task_text": "Read brief.md and artifact/poster.svg. This is a read-only critique. Determine whether the off-grid headline is an intentional, compensated exception or an accidental alignment defect. Preserve successful tension. Do not claim a rendered observation beyond what source geometry proves.",
+      "files": {
+        "brief.md": "Poster for a lecture called BREAK THE COLUMN about experimental editorial systems. The intent is controlled interruption: the headline should visibly escape the otherwise strict four-column scaffold while all event facts remain calm and readable.",
+        "artifact/poster.svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"1100\" viewBox=\"0 0 800 1100\"><rect width=\"800\" height=\"1100\" fill=\"#f5f2e8\"/><g stroke=\"#222\" stroke-width=\"1\" opacity=\".25\"><line x1=\"80\" y1=\"70\" x2=\"80\" y2=\"1030\"/><line x1=\"240\" y1=\"70\" x2=\"240\" y2=\"1030\"/><line x1=\"400\" y1=\"70\" x2=\"400\" y2=\"1030\"/><line x1=\"560\" y1=\"70\" x2=\"560\" y2=\"1030\"/><line x1=\"720\" y1=\"70\" x2=\"720\" y2=\"1030\"/></g><text x=\"28\" y=\"340\" font-family=\"Arial\" font-size=\"118\" font-weight=\"700\">BREAK</text><text x=\"210\" y=\"445\" font-family=\"Arial\" font-size=\"118\" font-weight=\"700\">THE COLUMN</text><g font-family=\"Arial\" font-size=\"20\" fill=\"#222\"><text x=\"400\" y=\"760\">Lecture / 14 January 2027</text><text x=\"400\" y=\"795\">Design Archive / 19:00</text><text x=\"400\" y=\"830\">Free / registration required</text></g></svg>"
+      },
+      "output_contract": "Return exactly one JSON object with keys mode, preserve_exception, alignment_defect, intent_status, compensation, protected_content, findings, edit, and rendered_status. mode must be critique. preserve_exception and alignment_defect must be booleans. intent_status must be documented, inferred, or unknown. compensation and findings must be arrays of strings. protected_content must be preserve. edit must be none. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "critique", "preserve_exception": true, "alignment_defect": false, "intent_status": "documented", "protected_content": "preserve", "edit": "none", "rendered_status": "unverified"},
+      "required_file_reads": ["brief.md", "artifact/poster.svg"],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 5
+    }
+  },
+  {
+    "id": "design-train-07-data-story-svg",
+    "task_type": "generate_information_design",
+    "prediction": {
+      "task_text": "Create an accessible 1200 x 900 SVG information graphic titled WHERE THE LIBRARY BUDGET GOES using this fictional 2026 allocation: staff 46%, collections 24%, buildings 14%, digital services 9%, public programs 5%, administration 2%. Audience: general public at a town-hall display and online. The result must communicate the part-to-whole relationship truthfully, label every value directly, and remain understandable without colour alone. Do not use a pie chart unless you can defend it against a clearer alternative.",
+      "files": {"brief/task-context.md": "The complete design brief is in the task. No external assets are supplied.\n"},
+      "output_contract": "Return exactly one JSON object with keys mode, artifact_format, artifact, chart_choice, truth_checks, accessibility_checks, self_critique, and rendered_status. mode must be generate. artifact_format must be svg. artifact must be one complete SVG string. truth_checks must be an object with boolean keys values_preserved, total_is_100, no_false_scale, and direct_labels. accessibility_checks must be an object with boolean keys not_color_only, readable_text, title_and_description, and ordered_legend_or_labels. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "generate", "artifact_format": "svg", "truth_checks": {"values_preserved": true, "total_is_100": true, "no_false_scale": true, "direct_labels": true}, "accessibility_checks": {"not_color_only": true, "readable_text": true, "title_and_description": true, "ordered_legend_or_labels": true}, "rendered_status": "unverified"},
+      "required_file_reads": [],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 2
+    }
+  },
+  {
+    "id": "design-train-08-annual-report-page",
+    "task_type": "generate_document_design",
+    "prediction": {
+      "task_text": "Design page 4 of a fictional public-interest annual report as an A4 SVG. Title: A year of practical support. Required content: 3,842 advice sessions; 71% resolved within one week; 18 partner organizations; body paragraph: In 2026, the Eastbank Advice Network expanded evening appointments and translated intake materials into six languages. Demand rose most sharply for housing and energy support. Include a compact source note: Internal service records, January-December 2026. Tone: trustworthy, human, civic, not corporate-SaaS. Make the page usable as part of a longer report system.",
+      "files": {"brief/task-context.md": "The complete design brief is in the task. No external assets are supplied.\n"},
+      "output_contract": "Return exactly one JSON object with keys mode, artifact_format, artifact, page_system, required_content_check, continuation_rules, self_critique, and rendered_status. mode must be generate. artifact_format must be svg. artifact must be one complete SVG string. required_content_check must be an object with boolean keys title, metrics, paragraph, and source_note. continuation_rules and self_critique must be arrays of strings. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "generate", "artifact_format": "svg", "required_content_check": {"title": true, "metrics": true, "paragraph": true, "source_note": true}, "rendered_status": "unverified"},
+      "required_file_reads": [],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 2
+    }
+  },
+  {
+    "id": "design-train-09-clinic-workflow-direction",
+    "task_type": "generate_ui_workflow_design",
+    "prediction": {
+      "task_text": "Define the Greenfield visual and workflow direction for a responsive community-clinic appointment page. Users choose one of three needs, see the earliest available location/time, provide contact details, and receive a confirmation. Many users have limited digital confidence. There is no existing design system. Return a self-contained HTML prototype of the primary state only. Do not claim responsive, keyboard, screen-reader, or error-state proof without testing. Focus on shortest coherent workflow and calm trust rather than generic healthcare cards.",
+      "files": {"brief/task-context.md": "The complete design brief is in the task. No external assets are supplied.\n"},
+      "output_contract": "Return exactly one JSON object with keys mode, artifact_format, artifact, workflow, design_system, preserved_floor, unverified_states, and rendered_status. mode must be generate. artifact_format must be html. artifact must be complete self-contained HTML. workflow and unverified_states must be arrays of strings. preserved_floor must be an object with boolean keys clear_sequence, visible_labels, no_color_only, and primary_action_clarity. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "generate", "artifact_format": "html", "preserved_floor": {"clear_sequence": true, "visible_labels": true, "no_color_only": true, "primary_action_clarity": true}, "rendered_status": "unverified"},
+      "required_file_reads": [],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 2
+    }
+  }
+]

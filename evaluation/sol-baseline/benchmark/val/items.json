@@ -1,0 +1,110 @@
+[
+  {
+    "id": "design-val-01-neoclassical-poster",
+    "task_type": "generate_style_direction",
+    "prediction": {
+      "task_text": "Create an A2 portrait SVG poster for THE CIVIC ROOM, a fictional lecture on public architecture. The user requests contemporary Neoclassicism but explicitly forbids literal columns, marble textures, black-and-gold luxury branding, and costume typography. Required: THE CIVIC ROOM; Order, memory and public life; 4 December 2026 / 18:30; Assembly House; Dr. Elian Ward; free admission. The result must be recognizably Neoclassical through structural logic while feeling current and professionally specific.",
+      "files": {"brief/task-context.md": "The complete design brief is in the task. No external assets are supplied.\n"},
+      "output_contract": "Return exactly one JSON object with keys mode, artifact_format, design_read, artifact, structural_dna, excluded_cliches, signature, self_critique, and rendered_status. mode must be style-direction. artifact_format must be svg. artifact must be a complete SVG. structural_dna and excluded_cliches must be arrays of strings. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "style-direction", "artifact_format": "svg", "rendered_status": "unverified"},
+      "required_file_reads": [],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 2
+    }
+  },
+  {
+    "id": "design-val-02-brutalist-public-health",
+    "task_type": "generate_style_direction",
+    "prediction": {
+      "task_text": "Design a self-contained responsive HTML page for HEAT HELP, a fictional city service explaining heat-warning actions and cooling-room locations. The user wants a brutalist visual language that feels urgent, direct, civic, and memorable but not hostile, illegible, militaristic, or like a novelty terminal. Required: warning level HIGH; drink water; check neighbors; avoid 12:00-17:00 exertion; cooling rooms at Central Library and North Hall; emergency number 112; language selector placeholder. Use no external assets or scripts.",
+      "files": {"brief/task-context.md": "The complete design brief is in the task. No external assets are supplied.\n"},
+      "output_contract": "Return exactly one JSON object with keys mode, artifact_format, design_read, artifact, brutalist_structure, avoided_cosplay, protected_floor, self_critique, and rendered_status. mode must be style-direction. artifact_format must be html. artifact must be complete self-contained HTML. protected_floor must be an object with boolean keys hierarchy, readable_body, visible_focus, emergency_prominence, and language_space. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "style-direction", "artifact_format": "html", "protected_floor": {"hierarchy": true, "readable_body": true, "visible_focus": true, "emergency_prominence": true, "language_space": true}, "rendered_status": "unverified"},
+      "required_file_reads": [],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 2
+    }
+  },
+  {
+    "id": "design-val-03-typography-critique",
+    "task_type": "critique_typography",
+    "prediction": {
+      "task_text": "Read brief.md and artifact/page.svg. Critique typography only. Keep factual source observations separate from likely rendered consequences and do not edit. Identify the highest-impact problems and a smallest coherent correction direction while preserving all text.",
+      "files": {
+        "brief.md": "A5 reading guide for older adult museum visitors. It is read at arm's length in mixed gallery lighting. Required text must remain complete.",
+        "artifact/page.svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"560\" height=\"794\" viewBox=\"0 0 560 794\"><rect width=\"560\" height=\"794\" fill=\"#f7f5ee\"/><text x=\"36\" y=\"60\" font-family=\"Arial\" font-size=\"18\" letter-spacing=\"5\">GALLERY GUIDE</text><text x=\"36\" y=\"108\" font-family=\"Times New Roman\" font-size=\"34\">Rooms of Memory</text><foreignObject x=\"36\" y=\"150\" width=\"488\" height=\"560\"><div xmlns=\"http://www.w3.org/1999/xhtml\" style=\"font-family:Arial;font-size:10px;line-height:1.12;text-align:justify;color:#777;columns:2;column-gap:14px\">This guide introduces six works made between 1948 and 1972. Begin with the large textile opposite the entrance, then continue clockwise. Each note connects material choices to memories of home, work, travel, and migration. Pause where the guide suggests; there is no required pace. Seating is available in rooms two and five.</div></foreignObject></svg>"
+      },
+      "output_contract": "Return exactly one JSON object with keys mode, findings, priority_order, preserve, edit, rendered_status, and unknowns. mode must be critique. findings must be an array of objects with string keys observation, likely_effect, severity, and smallest_correction. priority_order and preserve must be arrays of strings. edit must be none. rendered_status must be unverified. unknowns must be an array of strings."
+    },
+    "scoring": {
+      "expected": {"mode": "critique", "edit": "none", "rendered_status": "unverified"},
+      "required_file_reads": ["brief.md", "artifact/page.svg"],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 5
+    }
+  },
+  {
+    "id": "design-val-04-social-crop-repair",
+    "task_type": "repair_cross_format",
+    "prediction": {
+      "task_text": "Read brief.md and artifact/story.svg. Return a complete repaired 1080 x 1350 portrait-feed SVG derived from the same campaign. Preserve the campaign identity and all required content. Do not merely scale the 1080 x 1920 story layout; recompose it for the new crop and keep the portrait safe area clear.",
+      "files": {
+        "brief.md": "Fictional community ceramics sale. Required: HAND / FIRE / FORM; 21-22 November; Dock Studio; 11:00-18:00; 35 local makers; free entry; dockstudio.example. Identity: cobalt blue, clay orange, warm white, rough circular vessel silhouettes.",
+        "artifact/story.svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1080\" height=\"1920\" viewBox=\"0 0 1080 1920\"><rect width=\"1080\" height=\"1920\" fill=\"#f8f0dd\"/><circle cx=\"820\" cy=\"500\" r=\"330\" fill=\"#d65b30\"/><circle cx=\"200\" cy=\"1450\" r=\"260\" fill=\"#173f8a\"/><text x=\"70\" y=\"190\" font-family=\"Arial\" font-size=\"112\" font-weight=\"700\">HAND</text><text x=\"70\" y=\"310\" font-family=\"Arial\" font-size=\"112\" font-weight=\"700\">FIRE</text><text x=\"70\" y=\"430\" font-family=\"Arial\" font-size=\"112\" font-weight=\"700\">FORM</text><g font-family=\"Arial\" font-size=\"42\"><text x=\"70\" y=\"1540\">21-22 November / Dock Studio</text><text x=\"70\" y=\"1600\">11:00-18:00 / 35 local makers</text><text x=\"70\" y=\"1660\">free entry / dockstudio.example</text></g></svg>"
+      },
+      "output_contract": "Return exactly one JSON object with keys mode, artifact_format, artifact, recomposition, preserved, protected_checks, pass_count, and rendered_status. mode must be repair. artifact_format must be svg. artifact must be one complete 1080 x 1350 SVG string. recomposition and preserved must be arrays of strings. protected_checks must be an object with boolean keys all_required_content, identity_colors, vessel_language, and safe_area. pass_count must be 1. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "repair", "artifact_format": "svg", "protected_checks": {"all_required_content": true, "identity_colors": true, "vessel_language": true, "safe_area": true}, "pass_count": 1, "rendered_status": "unverified"},
+      "required_file_reads": ["brief.md", "artifact/story.svg"],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 5
+    }
+  },
+  {
+    "id": "design-val-05-motion-storyboard",
+    "task_type": "generate_motion_direction",
+    "prediction": {
+      "task_text": "Create a six-frame 16:9 SVG storyboard sheet for a fictional 12-second title sequence called TIDAL INDEX. Subject: coastal research data becoming a public story. Tone: precise, tidal, calm, not generic glowing particles. Show timing, transition logic, type behavior, data-to-image transformation, and a reduced/static alternative. No external assets.",
+      "files": {"brief/task-context.md": "The complete design brief is in the task. No external assets are supplied.\n"},
+      "output_contract": "Return exactly one JSON object with keys mode, artifact_format, artifact, frame_timing, continuity, motion_purpose, reduced_motion, self_critique, and rendered_status. mode must be generate. artifact_format must be svg. artifact must be one complete SVG storyboard sheet. frame_timing must contain exactly six objects. continuity and self_critique must be arrays of strings. reduced_motion must be an object. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "generate", "artifact_format": "svg", "rendered_status": "unverified"},
+      "required_file_reads": [],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 2
+    }
+  },
+  {
+    "id": "design-val-06-presentation-slide",
+    "task_type": "generate_presentation_design",
+    "prediction": {
+      "task_text": "Design one 16:9 SVG presentation slide for a fictional city council briefing. Title: What changed after the night-bus pilot. Required data: average wait 31 to 18 minutes; missed connections down 22%; weekend ridership up 14%; survey base n=612; pilot period March-August 2026. Required conclusion: Extend two routes for six months and measure again. Audience sees the slide projected in a bright room. Make the conclusion unmistakable without turning every number into a card.",
+      "files": {"brief/task-context.md": "The complete design brief is in the task. No external assets are supplied.\n"},
+      "output_contract": "Return exactly one JSON object with keys mode, artifact_format, artifact, hierarchy_order, data_integrity, projection_checks, presenter_note, self_critique, and rendered_status. mode must be generate. artifact_format must be svg. artifact must be one complete 16:9 SVG. hierarchy_order must be an array of strings. data_integrity and projection_checks must be objects with boolean values. rendered_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "generate", "artifact_format": "svg", "data_integrity": {"all_values_preserved": true, "survey_base_present": true, "period_present": true}, "projection_checks": {"large_text": true, "high_value_contrast": true, "single_clear_conclusion": true}, "rendered_status": "unverified"},
+      "required_file_reads": [],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 2
+    }
+  }
+]

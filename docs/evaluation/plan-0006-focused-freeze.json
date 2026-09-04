@@ -1,0 +1,359 @@
+{
+  "inputs": {
+    "protocol-v1.json": "58485300247EB27E41E4336680467EBD018CAD871FB1717589C073C008FAC323",
+    "inputs/facts.txt": "B16189C5DBFB760B2A4AA144B007B8066F6102504676D75B4FE0A70A68A5CE93",
+    "inputs/generic.html": "7ADF94DA5300D86A039B48EA2F121EC1CB1CC7FEF14238DDB3BC4AC9D6501436",
+    "inputs/mixed.html": "A138DAD2EF19ECD5FB978BA248167A3ED78CA946C8C80096D9634EE4AE8DF526",
+    "inputs/motion.html": "D6DE897B3D28F82648FAA1DD1CF5F8DAFA639C79A74A59473A2805A881F7B1C8",
+    "inputs/quiet.html": "AC0ACA6FD3677D193F7BD6761CA9F976E94D876461FBCABF9C0DD4B4B40E2AB2",
+    "inputs/small.html": "8DF0D4E5D049F185B2B2BB298FBF9739AFE5FE8BF83D99A95ADAB0FDEEFECDB5"
+  },
+  "packages": {
+    "baseline": {
+      "schema_version": 1,
+      "algorithm": "sha256(path\\0byte_count\\0file_sha256\\n), sorted by path",
+      "file_count": 32,
+      "manifest_sha256": "2D8718FF68019BA7D4AC21943F8A98D7823629B4B07C5BD7AE9EFFC06FE8D91B",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 16449,
+          "sha256": "AE31A0963D48DB55CC04C003421FA18A32D47D8BA137ACEEC34419E0876F8287"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "bytes": 308,
+          "sha256": "B37AC0963B79B2064CAE877FAF8EE05CDBB2278FE3F26194927B4F7107BE07DC"
+        },
+        {
+          "path": "modules.yaml",
+          "bytes": 24481,
+          "sha256": "0C22051C86A76EFE9E05CFA287C1FCDCD294020A225A10AE7035E8081AD3E73C"
+        },
+        {
+          "path": "references/advertising-and-campaign-art-direction.md",
+          "bytes": 12307,
+          "sha256": "2D3CA4F2C2D8DDD5EC437C3864B9A1B83E45817082DCC699C08825B14A168EEC"
+        },
+        {
+          "path": "references/asset-rights-and-attribution.md",
+          "bytes": 8878,
+          "sha256": "D1CB98CAFD5E797C77F157C6925569796D466351D75CD2823CA0A5365190C347"
+        },
+        {
+          "path": "references/brand-and-visual-systems.md",
+          "bytes": 12093,
+          "sha256": "A6FA6320DE26D62938DE32BB6CEA51070D92299D01DB003FA6280DA4EC7EF9EA"
+        },
+        {
+          "path": "references/brief-framing-and-criteria.md",
+          "bytes": 6456,
+          "sha256": "39443B9843F87C590B894D891C9CF8D279C903CCF4E39F7240FC2F1AB0D29D79"
+        },
+        {
+          "path": "references/cartography-and-spatial-data.md",
+          "bytes": 7829,
+          "sha256": "B8F04046B19DE1B4DA21C09AD89D6AB67C35203AA18B6DE5407338049D4B3C1D"
+        },
+        {
+          "path": "references/colour-and-reproduction.md",
+          "bytes": 8038,
+          "sha256": "69B6FFC666E7A5CD1D6486FA2ECA09F9CDCE697A697C542C095A5D00EDD8DD4F"
+        },
+        {
+          "path": "references/composition-and-layout.md",
+          "bytes": 8260,
+          "sha256": "A69564D27A691396D79078AF0B73B5DD78D74B49135EF718D0F8330A30047E61"
+        },
+        {
+          "path": "references/concept-development-and-selection.md",
+          "bytes": 7581,
+          "sha256": "0E6B5E65643C0FC150690A1CEA00A0F7AE4645B1EA64D207158645C34DEB8883"
+        },
+        {
+          "path": "references/critique-and-validation.md",
+          "bytes": 8790,
+          "sha256": "1F159A15B509E6F3E7A7CAE86E36B33C62296649B819720CBF92D8245075461D"
+        },
+        {
+          "path": "references/culture-and-representation.md",
+          "bytes": 8260,
+          "sha256": "0282CB27E177BAFEB8579975967445FA9F3B5A16AC9FE005E7DE9EE8F8EC5704"
+        },
+        {
+          "path": "references/diagrams-and-relational-information.md",
+          "bytes": 7259,
+          "sha256": "058FE07EB1EC221BE218ADED0A9F581BF5412AA96EC320BAEDF1B02B0340491E"
+        },
+        {
+          "path": "references/editorial-and-fixed-media-design.md",
+          "bytes": 8919,
+          "sha256": "132CE84B86102E8253C4EB3B6813972B1EE1346DA91F334A444EFBB6C453D49A"
+        },
+        {
+          "path": "references/font-technology-and-script-safety.md",
+          "bytes": 9809,
+          "sha256": "2DFB7B7E69480782425F78E45FDFB67767BE47E66D449DAE1EDF94495741A002"
+        },
+        {
+          "path": "references/imagery-and-art-direction.md",
+          "bytes": 8678,
+          "sha256": "C088A85BA4C5C2307DD88742B384226E581C61C5485D435ED7DB6614E1648655"
+        },
+        {
+          "path": "references/information-design-and-data-visualization.md",
+          "bytes": 8652,
+          "sha256": "4D6874E6E947182821056DCA290DE26B22B2E48D03E7AE929C09455423E9ABF4"
+        },
+        {
+          "path": "references/instructional-and-explanatory-design.md",
+          "bytes": 11352,
+          "sha256": "9B0E05C451933D0778FF2C4BE117B6E6DBC6C97AD3122418C7EC09C9A7FBC3A6"
+        },
+        {
+          "path": "references/logo-and-identity-mark-design.md",
+          "bytes": 11384,
+          "sha256": "4A90D19D30FE55D4FBB80C75125E99A574C76AECCB549B226EE6430F11159D2C"
+        },
+        {
+          "path": "references/media-production-and-handoff.md",
+          "bytes": 11646,
+          "sha256": "EB1F1324A3238885FA13F2E24B9E163C1CD7CDE9B6CDF648B3B3B08B39FB492D"
+        },
+        {
+          "path": "references/motion-and-sequence.md",
+          "bytes": 8904,
+          "sha256": "9B64DF9EC07074530FA0A987F0A7CD1FAF40B1099BA12A3BF3874BCC82061102"
+        },
+        {
+          "path": "references/packaging-graphics-and-sku-systems.md",
+          "bytes": 10881,
+          "sha256": "4E45C82E726D7380D5DF7F9B18E5BB72991FDE273376CFF3762B3D84CC074374"
+        },
+        {
+          "path": "references/people-privacy-and-media-integrity.md",
+          "bytes": 8284,
+          "sha256": "F7C52CE2130330D0FAA304EFA8AA0F493E73FEDC1491C812B75D4CBAEDA13A8F"
+        },
+        {
+          "path": "references/physical-wayfinding-and-signage-systems.md",
+          "bytes": 11056,
+          "sha256": "4F372ACAC054D3BBC14FC2BE45B23AD9970FC489E26D274E7ECE105121480DE1"
+        },
+        {
+          "path": "references/source-index.md",
+          "bytes": 67082,
+          "sha256": "47D42D7A148C098308B4FC3FCD2C47961A2E10730176C8F68E6B8CFC7A0557D6"
+        },
+        {
+          "path": "references/source-verification-and-evidence.md",
+          "bytes": 7372,
+          "sha256": "DCD7850D60BF745A98D8105A90C67B4DD3B542A71193BE2F1FC6D59781467A9E"
+        },
+        {
+          "path": "references/style-direction.md",
+          "bytes": 9326,
+          "sha256": "83E3B0B332E37A61ED4359BEC3C5710B536B282294071B3E895390EFB0915E8D"
+        },
+        {
+          "path": "references/sustainability-claims.md",
+          "bytes": 7074,
+          "sha256": "18A3FBE8DA35AACEA7F579945FF18674F5013DE8A7462D8F9DCA7C1A91DF8DF7"
+        },
+        {
+          "path": "references/typography-and-typesetting.md",
+          "bytes": 9785,
+          "sha256": "5779A7FC50FE5349BF8AFD6FA918D21FD024D6150F84AE4BAB9925997221252B"
+        },
+        {
+          "path": "references/ui-workflow-and-interaction-design.md",
+          "bytes": 8785,
+          "sha256": "4352791141D20EFC07CD782B94A165556BBDA67C50EFFC14DE11035FE6659C2B"
+        },
+        {
+          "path": "references/web-and-responsive-design.md",
+          "bytes": 7862,
+          "sha256": "D59035233081559A7B074CF11F88B23C06C51E2BD250DE9E8E5A6C362573ADCC"
+        }
+      ]
+    },
+    "candidate": {
+      "schema_version": 1,
+      "algorithm": "sha256(path\\0byte_count\\0file_sha256\\n), sorted by path",
+      "file_count": 34,
+      "manifest_sha256": "246B03A84383C1E2AB7A4928F597F1F5A32B014734D6AD3A6ED1FBEE65368655",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 15117,
+          "sha256": "CE036AB743B58435AD05B4872302BF5760520DCC05232EFC934F1EA539E990C6"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "bytes": 337,
+          "sha256": "15BEC80EB291449C2E666FC1BBC68E2D36C03E1DFCDA8D0948AFD12742A87B74"
+        },
+        {
+          "path": "modules.yaml",
+          "bytes": 26590,
+          "sha256": "9501D4BD57865773F5BB2A06EE583E205F07AED0486E5BE305C6D2497D835B0F"
+        },
+        {
+          "path": "references/advertising-and-campaign-art-direction.md",
+          "bytes": 12239,
+          "sha256": "1CDD57ACA0BE5A8A32061BA8F0CE9C2A1B5A192F1EE5377DC264ADDDF9CAB03B"
+        },
+        {
+          "path": "references/asset-rights-and-attribution.md",
+          "bytes": 8922,
+          "sha256": "D020E7E4093857F602130E97BC9D0D5ACE228747857BF075BFE9474B35587851"
+        },
+        {
+          "path": "references/brand-and-visual-systems.md",
+          "bytes": 12478,
+          "sha256": "C9982D71B1349A3D4FE8AD24C5C972590AFBBEC8125F165D91A6612D1396037A"
+        },
+        {
+          "path": "references/brief-framing-and-criteria.md",
+          "bytes": 7262,
+          "sha256": "B2800D9DAD5619CAB9955061E49130006E44A63D85E842AC026BC23989C985A4"
+        },
+        {
+          "path": "references/cartography-and-spatial-data.md",
+          "bytes": 7928,
+          "sha256": "DFA31C46EE4A81DC039FD94EAC7CD921A899AFFFD5E732F6B8C636325623D309"
+        },
+        {
+          "path": "references/colour-and-reproduction.md",
+          "bytes": 8627,
+          "sha256": "F83F00E894196F2893841F7274A5E1F99E2E1851CB94E5B35EEBCA9B141B6FE2"
+        },
+        {
+          "path": "references/composition-and-layout.md",
+          "bytes": 9181,
+          "sha256": "F9433C5A77B7A7B95C83B0939EE7C9BF51BA727B9520D60CDDEACE95E690B1D0"
+        },
+        {
+          "path": "references/concept-development-and-selection.md",
+          "bytes": 7997,
+          "sha256": "E8B9B30C2123BD5C68DE325AC51BFD79974B837741E6C337EC3583D55B966C0C"
+        },
+        {
+          "path": "references/coordination-with-sibling-skills.md",
+          "bytes": 3428,
+          "sha256": "4D2BE1F6DE23C973AA23D989320AA06B8AE0D3DC0AEF1AE99C08E611665C7BF7"
+        },
+        {
+          "path": "references/critique-and-validation.md",
+          "bytes": 8723,
+          "sha256": "5FB6C8C5504317964D14C5165BD54ACBA0E6257925B5E5A81A8AC7192C647EF0"
+        },
+        {
+          "path": "references/culture-and-representation.md",
+          "bytes": 8308,
+          "sha256": "52D4ED0EC137C7FFF2619058518141224F862A808A59BA01FE7A1C47EDBE51C1"
+        },
+        {
+          "path": "references/diagrams-and-relational-information.md",
+          "bytes": 7356,
+          "sha256": "807DB70F46F73F20482CF25A279F68F0F6EB6B3F5ADFA2954A9C6DA51618BD00"
+        },
+        {
+          "path": "references/editorial-and-fixed-media-design.md",
+          "bytes": 8991,
+          "sha256": "B7AFEECAA1785EB691D64D8B65C86ADB2296A2333D60EC0DFF0FFB71A64497B7"
+        },
+        {
+          "path": "references/font-technology-and-script-safety.md",
+          "bytes": 9909,
+          "sha256": "0C5BC04C0F85EE305D34D9F4C29CF4FFE6791C6E6E740E8903FCCDCBEC834C5A"
+        },
+        {
+          "path": "references/generic-signatures-and-subject-specificity.md",
+          "bytes": 6398,
+          "sha256": "35FF0C61CFBF0BFAD276FC397868CFCC57D5D6B6567A6E98C5950E84F9A4043B"
+        },
+        {
+          "path": "references/imagery-and-art-direction.md",
+          "bytes": 9350,
+          "sha256": "0D2681A022BC5BC977C8406CEAB13E92D9C11695F4006AACC241CF3D909F8174"
+        },
+        {
+          "path": "references/information-design-and-data-visualization.md",
+          "bytes": 9137,
+          "sha256": "DF990EEA4AAA488012FA768A07DBB812CB7C43D4DA97F75EF21793669A138801"
+        },
+        {
+          "path": "references/instructional-and-explanatory-design.md",
+          "bytes": 11394,
+          "sha256": "3EE8FF7F337183AA4C441D356BCEB9D38F6C355EDCE11E92FD0554714827E520"
+        },
+        {
+          "path": "references/logo-and-identity-mark-design.md",
+          "bytes": 11605,
+          "sha256": "A65103DBD769B7C169AC8FB3EBCAB66481897615E82DC2DF9B99803A559F7AA3"
+        },
+        {
+          "path": "references/media-production-and-handoff.md",
+          "bytes": 11755,
+          "sha256": "D57DE433F4E7B42E1DEBC19656D45CD69DA91CE9880FABF059EA88DEA73F7C6E"
+        },
+        {
+          "path": "references/motion-and-sequence.md",
+          "bytes": 9438,
+          "sha256": "A932B9D4A9FDD160F9D31EAE3E38F26B58B8293B5FB1C411C371D64379E2E991"
+        },
+        {
+          "path": "references/packaging-graphics-and-sku-systems.md",
+          "bytes": 10918,
+          "sha256": "83E051930FBC57D169C7DB8D9DCCCA3F2AD720AEB4E4D1E0B6D118A34CDDCBE9"
+        },
+        {
+          "path": "references/people-privacy-and-media-integrity.md",
+          "bytes": 8326,
+          "sha256": "B9F9E2C09ECA61B85C2F821CEE2DA7745324ADC15300F8DE2ABC1CECCF638087"
+        },
+        {
+          "path": "references/physical-wayfinding-and-signage-systems.md",
+          "bytes": 11158,
+          "sha256": "0092032464847F95AFED5A2780AE38BEC9B43A412D7C00EDB92112A58B78428C"
+        },
+        {
+          "path": "references/source-index.md",
+          "bytes": 69086,
+          "sha256": "6D5941CB7876CDEF8BACE5858073AC0BDDC597D14BF1E15237872990FF73D657"
+        },
+        {
+          "path": "references/source-verification-and-evidence.md",
+          "bytes": 7408,
+          "sha256": "CA5B03E0788C0774E5F83C75C511B4BAE9F858D1F350F77097573E1BDE3949FB"
+        },
+        {
+          "path": "references/style-direction.md",
+          "bytes": 9910,
+          "sha256": "09AA1ECBA4F5F92EC480FEF0E54FEAD35E6C09C35E10F148F9B8281FF18B254B"
+        },
+        {
+          "path": "references/sustainability-claims.md",
+          "bytes": 7112,
+          "sha256": "DC90906F61244645F25A0C529AD720AB3044AFAD7514F1B65AB7BDF4167B3BDF"
+        },
+        {
+          "path": "references/typography-and-typesetting.md",
+          "bytes": 10556,
+          "sha256": "E7C5F031D6BEDA3043BF7B636FB7F32B23E03B7B41C2D2FF23D71ECFBD900117"
+        },
+        {
+          "path": "references/ui-workflow-and-interaction-design.md",
+          "bytes": 8936,
+          "sha256": "34F712ACCEE77EDB93A7768A35408B9E43DFBB3C9C4840DF7703799A7128C0A7"
+        },
+        {
+          "path": "references/web-and-responsive-design.md",
+          "bytes": 8297,
+          "sha256": "1FD6FBB290795CFF56E6087D2A1FF765324DCACEBC558359E4FEB2D273A69D82"
+        }
+      ]
+    }
+  }
+}

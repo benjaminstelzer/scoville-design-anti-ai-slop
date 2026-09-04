@@ -1,0 +1,19 @@
+[
+  {
+    "id": "design-open-test-01-unfamiliar-style-boundary",
+    "task_type": "style_evidence_boundary",
+    "prediction": {
+      "task_text": "The user requests an exact visual language called North Quay Signalism but supplies no reference and the term may be local or invented. State what can and cannot be designed responsibly before seeing evidence. Do not browse.",
+      "files": {"brief/task-context.md": "The complete design brief is in the task. No external assets are supplied.\n"},
+      "output_contract": "Return exactly one JSON object with keys mode, decision, known_style_status, clarification, safe_progress, and evidence_status. mode must be style-direction. decision must be clarify or proceed. known_style_status must be verified, unverified, or invented. clarification and safe_progress must be strings. evidence_status must be unverified."
+    },
+    "scoring": {
+      "expected": {"mode": "style-direction", "decision": "clarify", "known_style_status": "unverified", "evidence_status": "unverified"},
+      "required_file_reads": [],
+      "forbidden_file_reads": [],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": ["\\b(?:curl|wget|invoke-webrequest)\\b", "\\b(?:set-content|add-content|out-file|remove-item|move-item|copy-item|new-item)\\b"],
+      "max_shell_calls": 2
+    }
+  }
+]

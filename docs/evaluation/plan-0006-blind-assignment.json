@@ -1,0 +1,31 @@
+{
+  "review_root": "C:/Users/benja/AppData/Local/Temp/design-plan6-neutral-review-a71d",
+  "assignments": [
+    [
+      "T1",
+      "C1",
+      [
+        "candidate",
+        "baseline"
+      ]
+    ],
+    [
+      "T2",
+      "C2",
+      [
+        "candidate",
+        "baseline"
+      ]
+    ],
+    [
+      "T3",
+      "C3",
+      [
+        "baseline",
+        "candidate"
+      ]
+    ]
+  ],
+  "date": "2026-09-04",
+  "method": "Independent random A/B order for each pair before reviewer dispatch; mapping not supplied to reviewer"
+}

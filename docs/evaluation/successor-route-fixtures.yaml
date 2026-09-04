@@ -1,0 +1,303 @@
+format_version: 1
+selection_rule: union of direct modules owning the supplied material signals; modifiers never select a route
+cases:
+  - id: RF60-unnamed-style-grammar-open
+    signals: [style_system]
+    modifiers: [unnamed_tool_default, structural_style_decision_open]
+    expected: [style-direction]
+    forbidden: [concept-development-and-selection, critique-and-validation, generic-signatures-and-subject-specificity]
+  - id: RF52-generic-only
+    signals: [generic_cliche]
+    modifiers: [critique_mode, interchangeable_relation_open]
+    expected: [generic-signatures-and-subject-specificity]
+    forbidden: [concept-development-and-selection, critique-and-validation, coordination-with-sibling-skills]
+  - id: RF53-generic-concept-style-and-lifecycle
+    signals: [needs_concept, generic_cliche, deep_critique, named_style]
+    modifiers: [all_four_concerns_independently_open]
+    expected: [concept-development-and-selection, critique-and-validation, style-direction, generic-signatures-and-subject-specificity]
+    forbidden: [coordination-with-sibling-skills]
+  - id: RF54-quiet-utility-and-partner-presence-only
+    signals: []
+    modifiers: [settled_utility_direction, partner_available_no_exchange]
+    expected: []
+    forbidden: [generic-signatures-and-subject-specificity, coordination-with-sibling-skills, critique-and-validation]
+  - id: RF55-solo-phase-handoff
+    signals: [typography]
+    modifiers: [solo_multiphase_record, no_partner]
+    expected: [typography-and-typesetting]
+    forbidden: [coordination-with-sibling-skills, critique-and-validation, media-production-and-handoff]
+  - id: RF56-active-partner-exchange
+    signals: [partner_coordination]
+    modifiers: [active_applicable_partner, accepted_intent_handoff]
+    expected: [coordination-with-sibling-skills]
+    forbidden: [critique-and-validation, media-production-and-handoff]
+  - id: RF57-specialist-with-partner
+    signals: [packaging_graphics, physical_wayfinding, partner_coordination]
+    modifiers: [specialist_geometry_settled, active_partner_exchange]
+    expected: [packaging-graphics-and-sku-systems, physical-wayfinding-and-signage-systems, coordination-with-sibling-skills]
+    forbidden: [composition-and-layout, cartography-and-spatial-data, critique-and-validation]
+  - id: RF58-complete-brief-open-communication
+    signals: [needs_brief_frame]
+    modifiers: [all_brief_fields_supplied, material_misreading_risk_open]
+    expected: [brief-framing-and-criteria]
+    forbidden: [concept-development-and-selection, critique-and-validation]
+  - id: RF59-settled-brief-readonly-type-critique
+    signals: [typography]
+    modifiers: [complete_settled_brief, critique_mode]
+    expected: [typography-and-typesetting]
+    forbidden: [brief-framing-and-criteria, critique-and-validation, generic-signatures-and-subject-specificity]
+  - id: RF51-challenged-type-exception-owner-local
+    signals: [typography]
+    modifiers: [challenged_single_domain_exception, owner_local_control]
+    expected: [typography-and-typesetting]
+    forbidden: [critique-and-validation]
+  - id: RF01-accessibility-modifier-only
+    signals: []
+    modifiers: [accessibility_duty]
+    expected: []
+    forbidden: [culture-and-representation, sustainability-claims, asset-rights-and-attribution]
+  - id: RF02-provider-production
+    signals: [production]
+    modifiers: [print_provider]
+    expected: [media-production-and-handoff]
+    forbidden: [culture-and-representation, sustainability-claims, asset-rights-and-attribution]
+  - id: RF03-sustainability-jurisdiction
+    signals: [sustainability_claim]
+    modifiers: [jurisdiction]
+    expected: [sustainability-claims]
+    forbidden: [culture-and-representation, asset-rights-and-attribution]
+  - id: RF04-territorial-asset-right
+    signals: [rights_provenance]
+    modifiers: [territory]
+    expected: [asset-rights-and-attribution]
+    forbidden: [culture-and-representation, sustainability-claims]
+  - id: RF05-contested-place
+    signals: [culture_risk]
+    modifiers: [publisher_jurisdiction]
+    expected: [culture-and-representation]
+    forbidden: [sustainability-claims, asset-rights-and-attribution]
+  - id: RF06-participant-privacy
+    signals: [privacy_risk]
+    modifiers: [privacy_law]
+    expected: [people-privacy-and-media-integrity]
+    forbidden: [asset-rights-and-attribution]
+  - id: RF07-local-type-exception
+    signals: [complex_composition, typography]
+    modifiers: [predeclared_single_domain_exception]
+    expected: [composition-and-layout, typography-and-typesetting]
+    forbidden: [critique-and-validation]
+  - id: RF08-challenged-cross-domain-exception
+    signals: [complex_composition, fixed_media, rule_exception]
+    modifiers: [conventional_control_required]
+    expected: [composition-and-layout, editorial-and-fixed-media-design, critique-and-validation]
+    forbidden: []
+  - id: RF09-styled-responsive-page
+    signals: [complex_composition, typography, responsive_web, named_style]
+    modifiers: []
+    expected: [composition-and-layout, typography-and-typesetting, web-and-responsive-design, style-direction]
+    forbidden: [ui-workflow-and-interaction-design]
+  - id: RF10-strict-incumbent-ui-implementation
+    signals: []
+    modifiers: [design_settled, framework_mechanics_only]
+    expected: []
+    forbidden: [ui-workflow-and-interaction-design, web-and-responsive-design]
+  - id: RF11-responsive-intent-only
+    signals: [responsive_web]
+    modifiers: []
+    expected: [web-and-responsive-design]
+    forbidden: [ui-workflow-and-interaction-design]
+  - id: RF12-workflow-and-states
+    signals: [ui_workflow, interaction_states]
+    modifiers: []
+    expected: [ui-workflow-and-interaction-design]
+    forbidden: [web-and-responsive-design]
+  - id: RF13-ordinary-type-selection
+    signals: [typography]
+    modifiers: []
+    expected: [typography-and-typesetting]
+    forbidden: [font-technology-and-script-safety]
+  - id: RF14-fallback-metric-repair
+    signals: [font_technology]
+    modifiers: []
+    expected: [font-technology-and-script-safety]
+    forbidden: [typography-and-typesetting]
+  - id: RF15-contested-sourced-map
+    signals: [spatial_story, culture_risk, source_audit]
+    modifiers: [boundary_vintage]
+    expected: [cartography-and-spatial-data, culture-and-representation, source-verification-and-evidence]
+    forbidden: []
+  - id: RF16-ordinary-image-selection
+    signals: [imagery]
+    modifiers: []
+    expected: [imagery-and-art-direction]
+    forbidden: [people-privacy-and-media-integrity, asset-rights-and-attribution]
+  - id: RF17-synthetic-evidence-without-person
+    signals: [synthetic_evidence]
+    modifiers: [no_person_depicted]
+    expected: [people-privacy-and-media-integrity]
+    forbidden: [imagery-and-art-direction]
+  - id: RF18-fictional-illustration
+    signals: [imagery]
+    modifiers: [clearly_fictional, no_factual_implication]
+    expected: [imagery-and-art-direction]
+    forbidden: [people-privacy-and-media-integrity]
+  - id: RF19-ordinary-concept-comparison
+    signals: [needs_brief_frame, needs_concept]
+    modifiers: [same-content_rough_comparison, utility_exception]
+    expected: [brief-framing-and-criteria, concept-development-and-selection]
+    forbidden: [critique-and-validation]
+  - id: RF20-corporate-visual-identity-system
+    signals: [brand_system]
+    modifiers: [corporate_design_visual_system_open]
+    expected: [brand-and-visual-systems]
+    forbidden: [logo-and-identity-mark-design, advertising-and-campaign-art-direction]
+  - id: RF21-nonvisual-corporate-identity-strategy
+    signals: []
+    modifiers: [purpose_strategy_behaviour_culture_only]
+    expected: []
+    forbidden: [brand-and-visual-systems, logo-and-identity-mark-design]
+  - id: RF22-create-identity-mark-form
+    signals: [identity_mark]
+    modifiers: [approved_name_and_visual_identity_role]
+    expected: [logo-and-identity-mark-design]
+    forbidden: [brand-and-visual-systems, typography-and-typesetting]
+  - id: RF23-use-approved-canonical-mark
+    signals: [brand_system]
+    modifiers: [canonical_mark_placement_governance_only]
+    expected: [brand-and-visual-systems]
+    forbidden: [logo-and-identity-mark-design]
+  - id: RF24-instructional-procedure-visual
+    signals: [instructional_explanation]
+    modifiers: [authoritative_procedure_supplied]
+    expected: [instructional-and-explanatory-design]
+    forbidden: [diagrams-and-relational-information]
+  - id: RF25-generic-relation-diagram
+    signals: [relation_diagram]
+    modifiers: [no_learning_or_procedure_objective]
+    expected: [diagrams-and-relational-information]
+    forbidden: [instructional-and-explanatory-design]
+  - id: RF26-persuasive-campaign-platform
+    signals: [advertising_campaign]
+    modifiers: [approved_strategy_claims_and_ci]
+    expected: [advertising-and-campaign-art-direction]
+    forbidden: [brand-and-visual-systems, concept-development-and-selection]
+  - id: RF27-campaign-identity-inheritance-only
+    signals: [brand_system]
+    modifiers: [creative_platform_already_approved]
+    expected: [brand-and-visual-systems]
+    forbidden: [advertising-and-campaign-art-direction]
+  - id: RF28-supplied-dieline-packaging-graphics
+    signals: [packaging_graphics]
+    modifiers: [authoritative_dieline_supplied]
+    expected: [packaging-graphics-and-sku-systems]
+    forbidden: [editorial-and-fixed-media-design, media-production-and-handoff]
+  - id: RF29-approved-pack-production-only
+    signals: [production]
+    modifiers: [pack_artwork_fully_approved]
+    expected: [media-production-and-handoff]
+    forbidden: [packaging-graphics-and-sku-systems]
+  - id: RF30-physical-wayfinding-system
+    signals: [physical_wayfinding]
+    modifiers: [approved_destination_names_and_spatial_truth]
+    expected: [physical-wayfinding-and-signage-systems]
+    forbidden: [ui-workflow-and-interaction-design, editorial-and-fixed-media-design]
+  - id: RF31-standalone-cartographic-map
+    signals: [spatial_story]
+    modifiers: [no_physical_route_system]
+    expected: [cartography-and-spatial-data]
+    forbidden: [physical-wayfinding-and-signage-systems]
+  - id: RF32-isolated-room-sign
+    signals: [fixed_media]
+    modifiers: [no_route_or_sign_family_decision]
+    expected: [editorial-and-fixed-media-design]
+    forbidden: [physical-wayfinding-and-signage-systems]
+  - id: RF33-packaging-sku-family-under-ci
+    signals: [brand_system, packaging_sku_system]
+    modifiers: [authoritative_dieline_supplied]
+    expected: [brand-and-visual-systems, packaging-graphics-and-sku-systems]
+    forbidden: [editorial-and-fixed-media-design]
+  - id: RF34-route-integrated-wayfinding-map
+    signals: [spatial_story, physical_wayfinding]
+    modifiers: [approved_spatial_source]
+    expected: [cartography-and-spatial-data, physical-wayfinding-and-signage-systems]
+    forbidden: [ui-workflow-and-interaction-design]
+  - id: RF35-branded-persuasive-campaign
+    signals: [brand_system, advertising_campaign]
+    modifiers: [visual_platform_and_identity_inheritance_open]
+    expected: [brand-and-visual-systems, advertising-and-campaign-art-direction]
+    forbidden: [concept-development-and-selection]
+  - id: RF36-packaging-panel-type-repair
+    signals: [packaging_graphics, packaging_sku_system, typography]
+    modifiers: [authoritative_dieline_supplied, panel_structure_owned_by_packaging]
+    expected: [typography-and-typesetting, packaging-graphics-and-sku-systems]
+    forbidden: [composition-and-layout, editorial-and-fixed-media-design, media-production-and-handoff]
+  - id: RF37-route-integrated-wayfinding-map-boundary
+    signals: [spatial_story, physical_wayfinding, signage_system]
+    modifiers: [approved_destination_names_and_spatial_truth, geographic_not_abstract]
+    expected: [cartography-and-spatial-data, physical-wayfinding-and-signage-systems]
+    forbidden: [diagrams-and-relational-information, instructional-and-explanatory-design, ui-workflow-and-interaction-design]
+  - id: RF38-conflicting-ci-authority-and-derivatives
+    signals: [needs_brief_frame, brand_system, source_audit, handoff]
+    modifiers: [authority_unresolved, no_visual_critique]
+    expected: [brief-framing-and-criteria, brand-and-visual-systems, media-production-and-handoff, source-verification-and-evidence]
+    forbidden: [critique-and-validation, asset-rights-and-attribution]
+  - id: RF39-fixed-poster-ci-repair
+    signals: [brand_system, complex_composition, typography, fixed_media]
+    modifiers: [mandatory_ci, type_roles_fixed_but_typesetting_open]
+    expected: [composition-and-layout, typography-and-typesetting, brand-and-visual-systems, editorial-and-fixed-media-design]
+    forbidden: [colour-and-reproduction, logo-and-identity-mark-design]
+  - id: RF40-packaging-panel-hierarchy-only
+    signals: [packaging_graphics]
+    modifiers: [authoritative_dieline_supplied, packaging_panel_hierarchy_only]
+    expected: [packaging-graphics-and-sku-systems]
+    forbidden: [composition-and-layout, editorial-and-fixed-media-design, media-production-and-handoff]
+  - id: RF41-packaging-with-separate-open-composition
+    signals: [packaging_graphics, complex_composition]
+    modifiers: [authoritative_dieline_supplied, general_within_frame_composition_open]
+    expected: [composition-and-layout, packaging-graphics-and-sku-systems]
+    forbidden: [editorial-and-fixed-media-design, media-production-and-handoff]
+  - id: RF42-wayfinding-with-settled-map-craft
+    signals: [physical_wayfinding]
+    modifiers: [route_integrated_map_spatial_encoding_settled]
+    expected: [physical-wayfinding-and-signage-systems]
+    forbidden: [cartography-and-spatial-data, diagrams-and-relational-information, instructional-and-explanatory-design]
+  - id: RF43-settled-mark-formal-mechanisms-only
+    signals: [identity_mark]
+    modifiers: [approved_identity_thesis_and_role, formal_mark_mechanisms_only]
+    expected: [logo-and-identity-mark-design]
+    forbidden: [concept-development-and-selection, brand-and-visual-systems, composition-and-layout]
+  - id: RF44-open-identity-concept-system-and-mark
+    signals: [needs_concept, brand_system, identity_mark]
+    modifiers: [identity_strategy_and_form_both_open]
+    expected: [concept-development-and-selection, brand-and-visual-systems, logo-and-identity-mark-design]
+    forbidden: []
+  - id: RF45-owner-local-wayfinding-label-repair
+    signals: [spatial_story, physical_wayfinding]
+    modifiers: [topology_destination_hierarchy_sign_system_and_general_composition_settled, owner_local_label_collision_only]
+    expected: [cartography-and-spatial-data, physical-wayfinding-and-signage-systems]
+    forbidden: [composition-and-layout, diagrams-and-relational-information, instructional-and-explanatory-design, ui-workflow-and-interaction-design]
+  - id: RF46-fixed-media-only-with-eventual-delivery
+    signals: [fixed_media]
+    modifiers: [reproduction_export_preflight_and_provider_handoff_settled, eventual_delivery_only]
+    expected: [editorial-and-fixed-media-design]
+    forbidden: [colour-and-reproduction, media-production-and-handoff]
+  - id: RF47-fixed-media-with-open-reproduction
+    signals: [fixed_media, reproduction]
+    modifiers: [export_preflight_and_provider_handoff_settled]
+    expected: [colour-and-reproduction, editorial-and-fixed-media-design]
+    forbidden: [media-production-and-handoff]
+  - id: RF48-fixed-media-with-open-handoff
+    signals: [fixed_media, handoff]
+    modifiers: [colour_and_reproduction_settled]
+    expected: [editorial-and-fixed-media-design, media-production-and-handoff]
+    forbidden: [colour-and-reproduction]
+  - id: RF49-fixed-media-with-open-reproduction-and-handoff
+    signals: [fixed_media, reproduction, handoff]
+    modifiers: [all_three_owner_decisions_open]
+    expected: [colour-and-reproduction, editorial-and-fixed-media-design, media-production-and-handoff]
+    forbidden: [composition-and-layout, typography-and-typesetting]
+  - id: RF50-fixed-specialist-diagram-relations-only
+    signals: [relation_diagram]
+    modifiers: [fixed_nodes_visual_system_and_artifact_path, source_defined_connectors_and_labels_only, routine_editable_file_and_syntax_check]
+    expected: [diagrams-and-relational-information]
+    forbidden: [composition-and-layout, typography-and-typesetting, instructional-and-explanatory-design, media-production-and-handoff]

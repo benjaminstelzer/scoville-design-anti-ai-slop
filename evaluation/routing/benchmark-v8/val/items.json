@@ -1,0 +1,359 @@
+[
+  {
+    "id": "route-rc2-val-synthetic-documentary",
+    "task_type": "design_routing_probe",
+    "prediction": {
+      "task_text": "Routing-only probe. Read only the applicable Scoville Design experts. Do not create or change an artifact. Audit an AI-generated image presented as documentary evidence, including rights and factual-source checks. Return only the exact contracted JSON.",
+      "files": {
+        "brief/task-context.md": "No additional task context.\n"
+      },
+      "output_contract": "Return exactly one JSON object with keys status and selected_modules. status must be ok. selected_modules must be an array containing only the applicable canonical module IDs in direct-index order.",
+      "skill_activation": "explicit"
+    },
+    "scoring": {
+      "expected": {
+        "status": "ok",
+        "selected_modules": [
+          "imagery-and-art-direction",
+          "culture-ethics-and-provenance",
+          "sources-and-attribution"
+        ]
+      },
+      "required_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/imagery-and-art-direction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/sources-and-attribution.md"
+      ],
+      "forbidden_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/references/brief-and-concept.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/composition-and-layout.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/typography-and-writing-systems.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/colour-and-reproduction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/information-and-data.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/brand-and-visual-systems.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/ui-and-interaction-design.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/motion-and-sequence.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/media-production-and-handoff.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/critique-and-validation.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/style-direction.md",
+        "brief/task-context.md"
+      ],
+      "exact_once_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/imagery-and-art-direction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/sources-and-attribution.md"
+      ],
+      "required_read_phases": [
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/SKILL.md"
+        ],
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/references/imagery-and-art-direction.md",
+          ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md",
+          ".agents/skills/scoville-design-anti-ai-slop/references/sources-and-attribution.md"
+        ]
+      ],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": [
+        "curl|wget|Invoke-WebRequest|Set-Content|Remove-Item|apply_patch"
+      ],
+      "max_shell_calls": 4
+    }
+  },
+  {
+    "id": "route-rc2-val-jurisdiction",
+    "task_type": "design_routing_probe",
+    "prediction": {
+      "task_text": "Routing-only probe. Read only the applicable Scoville Design experts. Do not create or change an artifact. Audit a privacy-sensitive design whose current jurisdictional duty and cited facts must be verified. Return only the exact contracted JSON.",
+      "files": {
+        "brief/task-context.md": "No additional task context.\n"
+      },
+      "output_contract": "Return exactly one JSON object with keys status and selected_modules. status must be ok. selected_modules must be an array containing only the applicable canonical module IDs in direct-index order.",
+      "skill_activation": "explicit"
+    },
+    "scoring": {
+      "expected": {
+        "status": "ok",
+        "selected_modules": [
+          "culture-ethics-and-provenance",
+          "sources-and-attribution"
+        ]
+      },
+      "required_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/sources-and-attribution.md"
+      ],
+      "forbidden_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/references/brief-and-concept.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/composition-and-layout.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/typography-and-writing-systems.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/colour-and-reproduction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/imagery-and-art-direction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/information-and-data.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/brand-and-visual-systems.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/ui-and-interaction-design.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/motion-and-sequence.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/media-production-and-handoff.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/critique-and-validation.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/style-direction.md",
+        "brief/task-context.md"
+      ],
+      "exact_once_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/sources-and-attribution.md"
+      ],
+      "required_read_phases": [
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/SKILL.md"
+        ],
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md",
+          ".agents/skills/scoville-design-anti-ai-slop/references/sources-and-attribution.md"
+        ]
+      ],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": [
+        "curl|wget|Invoke-WebRequest|Set-Content|Remove-Item|apply_patch"
+      ],
+      "max_shell_calls": 3
+    }
+  },
+  {
+    "id": "route-rc2-val-editorial-template",
+    "task_type": "design_routing_probe",
+    "prediction": {
+      "task_text": "Routing-only probe. Read only the applicable Scoville Design experts. Do not create or change an artifact. Define only controlled variation, versioning, and approval for a recurring editorial-template system whose layout, hierarchy, grid, and spacing are already settled and out of scope. Return only the exact contracted JSON.",
+      "files": {
+        "brief/task-context.md": "No additional task context.\n"
+      },
+      "output_contract": "Return exactly one JSON object with keys status and selected_modules. status must be ok. selected_modules must be an array containing only the applicable canonical module IDs in direct-index order.",
+      "skill_activation": "explicit"
+    },
+    "scoring": {
+      "expected": {
+        "status": "ok",
+        "selected_modules": [
+          "brand-and-visual-systems"
+        ]
+      },
+      "required_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/brand-and-visual-systems.md"
+      ],
+      "forbidden_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/references/brief-and-concept.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/composition-and-layout.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/typography-and-writing-systems.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/colour-and-reproduction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/imagery-and-art-direction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/information-and-data.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/ui-and-interaction-design.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/motion-and-sequence.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/media-production-and-handoff.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/critique-and-validation.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/sources-and-attribution.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/style-direction.md",
+        "brief/task-context.md"
+      ],
+      "exact_once_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/brand-and-visual-systems.md"
+      ],
+      "required_read_phases": [
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/SKILL.md"
+        ],
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/references/brand-and-visual-systems.md"
+        ]
+      ],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": [
+        "curl|wget|Invoke-WebRequest|Set-Content|Remove-Item|apply_patch"
+      ],
+      "max_shell_calls": 2
+    }
+  },
+  {
+    "id": "route-rc2-val-motion-exception",
+    "task_type": "design_routing_probe",
+    "prediction": {
+      "task_text": "Routing-only probe. Read only the applicable Scoville Design experts. Do not create or change an artifact. Critique a deliberate jitter and abrupt-cut motion exception without loading composition. Return only the exact contracted JSON.",
+      "files": {
+        "brief/task-context.md": "No additional task context.\n"
+      },
+      "output_contract": "Return exactly one JSON object with keys status and selected_modules. status must be ok. selected_modules must be an array containing only the applicable canonical module IDs in direct-index order.",
+      "skill_activation": "explicit"
+    },
+    "scoring": {
+      "expected": {
+        "status": "ok",
+        "selected_modules": [
+          "motion-and-sequence",
+          "critique-and-validation"
+        ]
+      },
+      "required_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/motion-and-sequence.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/critique-and-validation.md"
+      ],
+      "forbidden_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/references/brief-and-concept.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/composition-and-layout.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/typography-and-writing-systems.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/colour-and-reproduction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/imagery-and-art-direction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/information-and-data.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/brand-and-visual-systems.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/ui-and-interaction-design.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/media-production-and-handoff.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/sources-and-attribution.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/style-direction.md",
+        "brief/task-context.md"
+      ],
+      "exact_once_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/motion-and-sequence.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/critique-and-validation.md"
+      ],
+      "required_read_phases": [
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/SKILL.md"
+        ],
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/references/motion-and-sequence.md",
+          ".agents/skills/scoville-design-anti-ai-slop/references/critique-and-validation.md"
+        ]
+      ],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": [
+        "curl|wget|Invoke-WebRequest|Set-Content|Remove-Item|apply_patch"
+      ],
+      "max_shell_calls": 3
+    }
+  },
+  {
+    "id": "route-rc2-val-layout-exception",
+    "task_type": "design_routing_probe",
+    "prediction": {
+      "task_text": "Routing-only probe. Read only the applicable Scoville Design experts. Do not create or change an artifact. Critique an intentional off-grid layout exception and its compensating structure. Return only the exact contracted JSON.",
+      "files": {
+        "brief/task-context.md": "No additional task context.\n"
+      },
+      "output_contract": "Return exactly one JSON object with keys status and selected_modules. status must be ok. selected_modules must be an array containing only the applicable canonical module IDs in direct-index order.",
+      "skill_activation": "explicit"
+    },
+    "scoring": {
+      "expected": {
+        "status": "ok",
+        "selected_modules": [
+          "composition-and-layout",
+          "critique-and-validation"
+        ]
+      },
+      "required_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/composition-and-layout.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/critique-and-validation.md"
+      ],
+      "forbidden_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/references/brief-and-concept.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/typography-and-writing-systems.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/colour-and-reproduction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/imagery-and-art-direction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/information-and-data.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/brand-and-visual-systems.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/ui-and-interaction-design.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/motion-and-sequence.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/media-production-and-handoff.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/sources-and-attribution.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/style-direction.md",
+        "brief/task-context.md"
+      ],
+      "exact_once_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/composition-and-layout.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/critique-and-validation.md"
+      ],
+      "required_read_phases": [
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/SKILL.md"
+        ],
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/references/composition-and-layout.md",
+          ".agents/skills/scoville-design-anti-ai-slop/references/critique-and-validation.md"
+        ]
+      ],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": [
+        "curl|wget|Invoke-WebRequest|Set-Content|Remove-Item|apply_patch"
+      ],
+      "max_shell_calls": 3
+    }
+  },
+  {
+    "id": "route-rc5-val-jurisdiction-only",
+    "task_type": "design_routing_probe",
+    "prediction": {
+      "task_text": "Routing-only probe. Read only the applicable Scoville Design experts. Do not create or change an artifact. Map authority and escalation for an unspecified jurisdictional design duty without researching or verifying the law. Return only the exact contracted JSON.",
+      "files": {
+        "brief/task-context.md": "No additional task context.\n"
+      },
+      "output_contract": "Return exactly one JSON object with keys status and selected_modules. status must be ok. selected_modules must be an array containing only the applicable canonical module IDs in direct-index order.",
+      "skill_activation": "explicit"
+    },
+    "scoring": {
+      "expected": {
+        "status": "ok",
+        "selected_modules": [
+          "culture-ethics-and-provenance"
+        ]
+      },
+      "required_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md"
+      ],
+      "forbidden_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/references/brief-and-concept.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/composition-and-layout.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/typography-and-writing-systems.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/colour-and-reproduction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/imagery-and-art-direction.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/information-and-data.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/brand-and-visual-systems.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/ui-and-interaction-design.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/motion-and-sequence.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/media-production-and-handoff.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/critique-and-validation.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/sources-and-attribution.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/style-direction.md",
+        "brief/task-context.md"
+      ],
+      "exact_once_file_reads": [
+        ".agents/skills/scoville-design-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md"
+      ],
+      "required_read_phases": [
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/SKILL.md"
+        ],
+        [
+          ".agents/skills/scoville-design-anti-ai-slop/references/culture-ethics-and-provenance.md"
+        ]
+      ],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": [
+        "curl|wget|Invoke-WebRequest|Set-Content|Remove-Item|apply_patch"
+      ],
+      "max_shell_calls": 2
+    }
+  }
+]

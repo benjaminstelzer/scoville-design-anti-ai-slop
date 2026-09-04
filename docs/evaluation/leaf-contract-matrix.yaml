@@ -1,0 +1,459 @@
+format_version: 1
+canonical_modes: [generate, critique, repair, style-direction]
+contract_dimensions:
+  - generation_or_decision
+  - critique
+  - repair
+  - exception_or_claim_boundary
+  - proof
+  - ownership
+budget:
+  coverage_planned: 22
+  coverage_reserve: 5
+  skillopt_planned: 15
+  skillopt_reserve: 4
+  hard_call_maximum: 46
+  provider_total_token_maximum: 5000000
+  uncached_plus_output_token_maximum: 2750000
+  provisional_max_simultaneous_leaves: 4
+  provisional_core_plus_leaves_maximum: 15000
+cases:
+  C01: {wave: 1, canary: true, mode: generate, leaves: [composition-and-layout, typography-and-typesetting, editorial-and-fixed-media-design]}
+  C02: {wave: 2, canary: false, mode: critique, leaves: [typography-and-typesetting, web-and-responsive-design, style-direction]}
+  C03: {wave: 1, canary: false, mode: repair, leaves: [font-technology-and-script-safety]}
+  C04: {wave: 2, canary: false, mode: generate, leaves: [composition-and-layout, editorial-and-fixed-media-design, critique-and-validation]}
+  C05: {wave: 2, canary: false, mode: repair, leaves: [composition-and-layout, typography-and-typesetting, editorial-and-fixed-media-design, critique-and-validation]}
+  C06: {wave: 2, canary: true, mode: generate, leaves: [brief-framing-and-criteria, concept-development-and-selection]}
+  C07: {wave: 2, canary: false, mode: style-direction, leaves: [style-direction, web-and-responsive-design, typography-and-typesetting, composition-and-layout]}
+  C08: {wave: 2, canary: false, mode: repair, leaves: [style-direction, ui-workflow-and-interaction-design, web-and-responsive-design]}
+  C09: {wave: 2, canary: false, mode: generate, leaves: [ui-workflow-and-interaction-design, web-and-responsive-design]}
+  C10: {wave: 2, canary: false, mode: repair, leaves: [ui-workflow-and-interaction-design, web-and-responsive-design]}
+  C11: {wave: 3, canary: true, mode: repair, leaves: [colour-and-reproduction]}
+  C12: {wave: 3, canary: false, mode: repair, leaves: [imagery-and-art-direction, people-privacy-and-media-integrity, web-and-responsive-design]}
+  C13: {wave: 3, canary: false, mode: repair, leaves: [brand-and-visual-systems]}
+  C14: {wave: 4, canary: true, mode: repair, leaves: [information-design-and-data-visualization, web-and-responsive-design, typography-and-typesetting]}
+  C15: {wave: 4, canary: false, mode: repair, leaves: [cartography-and-spatial-data, culture-and-representation, source-verification-and-evidence]}
+  C16: {wave: 4, canary: false, mode: repair, leaves: [diagrams-and-relational-information]}
+  C17: {wave: 4, canary: false, mode: repair, leaves: [motion-and-sequence, typography-and-typesetting]}
+  C18: {wave: 5, canary: true, mode: repair, leaves: [media-production-and-handoff, editorial-and-fixed-media-design, colour-and-reproduction]}
+  C19: {wave: 5, canary: false, mode: critique, leaves: [composition-and-layout, editorial-and-fixed-media-design, critique-and-validation]}
+  C20: {wave: 5, canary: false, mode: repair, leaves: [people-privacy-and-media-integrity, imagery-and-art-direction, source-verification-and-evidence]}
+  C21: {wave: 5, canary: false, mode: repair, leaves: [sustainability-claims, source-verification-and-evidence, colour-and-reproduction, imagery-and-art-direction]}
+  C22: {wave: 5, canary: false, mode: repair, leaves: [asset-rights-and-attribution, source-verification-and-evidence, media-production-and-handoff]}
+assertions:
+  C01:
+    composition-and-layout:
+      generation_or_decision: "Select a content-derived spatial system whose semantic intervals, hierarchy and negative-space jobs survive intended-size and thumbnail views."
+    typography-and-typesetting:
+      generation_or_decision: "Assign type roles, compare compatible one- and multi-family options with real copy, then typeset the selected hierarchy without a fixed family-count recipe."
+    editorial-and-fixed-media-design:
+      generation_or_decision: "Define the 1200 by 1600 fixed digital canvas, viewing context, edge relationships and one-format composition before making the SVG."
+      proof: "Inspect the exact fixed canvas at intended size and as an unchanged proportional thumbnail without claiming print, provider or responsive proof."
+  C02:
+    typography-and-typesetting:
+      critique: "Localize hierarchy, river, punctuation and numeral failures; separate observation, cause, severity/confidence and attributed preference without editing."
+      exception_or_claim_boundary: "Preserve the supplied valid expressive type exception and reject universal line-length, pairing or hierarchy claims."
+      proof: "Name exact intended-size, narrow/wide and source/font evidence needed; do not call a screenshot or metric taste proof."
+    web-and-responsive-design:
+      critique: "Identify which type and content relationships fail under narrow/wide pressure and propose recomposition intent without implementing queries."
+      exception_or_claim_boundary: "Distinguish a justified styled responsive departure from a breakpoint/device recipe and keep UI runtime proof outside Design."
+    style-direction:
+      critique: "Separate source-bounded style invariants from cliché markers and identify the smallest style-preserving correction without editing."
+      exception_or_claim_boundary: "Keep the recognizable exception only when subject relation, function and access survive; make no historical-authority claim."
+  C03:
+    font-technology-and-script-safety:
+      generation_or_decision: "Select supported fonts, shaping, direction, feature and fallback strategy from actual repertoire and renderer evidence."
+      critique: "Detect missing glyphs, joining/mark/order/vertical failures, fallback drift and Latin-default assumptions in the supplied render."
+      repair: "Change the smallest owning font, language/direction, feature or fallback cause and rerender every supplied script."
+      exception_or_claim_boundary: "Reject a native-quality or multiscript-art-direction claim and prohibit Latin casing, tracking, italic, hyphenation or spacing transfer without authority."
+      proof: "Require actual-font and fallback renders plus native-reader or script-specialist review when material."
+      ownership: "Keep type intent with Design, implementation with UI/format owner, font-specific requirements here and native correctness with qualified reviewers."
+  C04:
+    composition-and-layout:
+      exception_or_claim_boundary: "Declare the off-grid rule, gain, protected reading/access floors, counterstructure, cost and falsifier before rendering."
+    editorial-and-fixed-media-design:
+      generation_or_decision: "Set final dimensions, viewing context and fixed-format relationships before composing the poster."
+      exception_or_claim_boundary: "Test the fixed-format exception against intended size and a conventional control without converting supplier proof into Design proof."
+    critique-and-validation:
+      generation_or_decision: "Predeclare a controlled comparison and finding record for the challenged exception before outputs are visible."
+      exception_or_claim_boundary: "Return defect, tradeoff, attributed preference, intentional exception or unverifiable from evidence rather than taste."
+  C05:
+    composition-and-layout:
+      repair: "Change the faulty parent spatial token rather than patching pages and preserve the intentional asymmetry."
+      proof: "Compare pages, spreads and thumbnail strip under frozen content, crops, dimensions and source ownership."
+      ownership: "Keep within-page relationships in Composition and hand cross-page sequence plus production constraints to their owners."
+    typography-and-typesetting:
+      repair: "Repair paragraph, break, hierarchy and fallback consequences at the parent type cause without changing exact copy."
+      ownership: "Keep typesetting decisions in Typography while Fixed Media owns sequence and Production owns export proof."
+    editorial-and-fixed-media-design:
+      repair: "Repair recurring anchors, pacing, spread relation and page/column break context while preserving the valid page exception."
+    critique-and-validation:
+      repair: "Reproduce the failure, change one parent cause, validate affected consumers and protected regions, then stop."
+      proof: "Bind before/control/after artifacts to identical content, dimensions, fonts, crops and renderer conditions."
+      ownership: "Route each cause to Typography, Composition, Fixed Media or Production and do not duplicate the domain decision."
+  C06:
+    brief-framing-and-criteria:
+      generation_or_decision: "Resolve field authority, required content, constraints, freedoms, hard gates, criteria and approval without inventing strategy or research."
+      critique: "Identify missing, conflicting or weakly authorized brief fields and distinguish unknowns from assumptions."
+      repair: "Repair only the frame fields whose authority or criteria fail and record the revision."
+      exception_or_claim_boundary: "Permit a quiet utility-artifact path when concept divergence adds no value; do not universalize territory counts."
+      proof: "Return a complete content/constraint/authority manifest whose fields resolve to supplied evidence or explicit unknowns."
+      ownership: "Keep strategy, research, facts and approval with their owners while Design converts them into a usable frame."
+    concept-development-and-selection:
+      generation_or_decision: "Create materially different mechanisms and carriers, instantiate comparable roughs and select only after hard gates."
+      critique: "Distinguish mechanism diversity from surface variation and compare each rough against the same content and contexts."
+      repair: "Repair the selected concept's failed carrier or reopen the recorded frame rather than silently changing criteria."
+      exception_or_claim_boundary: "Use the utility exception and state originality limits; do not equate visual difference with conceptual novelty."
+      proof: "Show comparable roughs, format-survival evidence, selection rationale, uncertainty and rejected alternatives."
+      ownership: "Concept owns mechanisms and selection; Brief owns criteria; craft leaves own later execution."
+  C07:
+    style-direction:
+      generation_or_decision: "Disambiguate the 1980s label, select a sourced retro-computing branch and compile structural DNA tied to the event subject."
+      proof: "Use narrow/wide renders, removal test and source/invariant record to show recognizability without claiming audience success."
+  C08:
+    style-direction:
+      repair: "Remove cliché markers or repair their cause while preserving the sourced raw-data invariant and recognizable style relation."
+      ownership: "Style owns interpretation and invariants; UI Workflow and Web own task and transformation intent; UI implements mechanics."
+    ui-workflow-and-interaction-design:
+      critique: "Trace task, state, validation, error and recovery failures separately from visual style."
+      repair: "Repair the smallest workflow/state cause and preserve supplied facts, progress and incumbent-system constraints."
+      exception_or_claim_boundary: "Permit a custom pattern only with recognition, recovery and access floors; make no usability or conformance claim."
+  C09:
+    ui-workflow-and-interaction-design:
+      generation_or_decision: "Define task/object/decision flow, IA, pattern, state and recovery intent without inventing policy or success."
+    web-and-responsive-design:
+      generation_or_decision: "Define content-pressure transformations for workflow, navigation, action persistence and density before framework mechanics."
+  C10:
+    ui-workflow-and-interaction-design:
+      proof: "Require Scoville UI runtime evidence for semantics, focus, input, announcements and states while Design evidence remains intent-only."
+      ownership: "Pass the canonical Design record to UI; preserve incumbent-system precedence, fallback and opt-out without simulation."
+    web-and-responsive-design:
+      repair: "Repair intended reflow, order, disclosure and persistent-action relations without prescribing framework queries."
+      proof: "Compare exact long/short content and relevant states across narrow/wide/zoom views through UI-owned renders."
+      ownership: "Design owns responsive transformation intent; UI owns implementation mechanics and runtime proof."
+  C11:
+    colour-and-reproduction:
+      generation_or_decision: "Rebuild semantic role, state, theme and destination mapping before selecting or converting colour values."
+      critique: "Separate viewing-context, accessibility, gamut/profile, ink/substrate and preference causes."
+      repair: "Repair the smallest role, redundant cue or source-transform-destination cause and preserve intended hierarchy."
+      exception_or_claim_boundary: "Keep scoped decorative or destination exceptions and reject universal CVD, CMYK, black, ink or contrast recipes."
+      proof: "Require applicable contrast/non-colour checks, actual surrounds, profile/output-intent evidence and named provider or physical proof where needed."
+      ownership: "Colour owns role and reproduction intent; UI implements states; Production/provider owns export and physical acceptance."
+  C12:
+    imagery-and-art-direction:
+      generation_or_decision: "Choose image thesis, mode, contact-sheet selection, sequence job and crop invariants from supplied evidence."
+      critique: "Identify selection, crop, text relation and prohibited-invention failures without conflating participant policy or rights."
+      repair: "Reselect or recrop the smallest failing image relation and preserve documentary content plus protected subject/context."
+      exception_or_claim_boundary: "Reject authenticity, truth, identity or permission claims from plausible imagery and record the supplied mode exception."
+      proof: "Compare source/contact sheet and final wide/narrow crops with live text, content-fit and actual participant/source conditions."
+      ownership: "Imagery owns visual treatment and local no-invention stop; People/Privacy owns mode/participant policy; Sources owns facts; Rights owns permission."
+  C13:
+    brand-and-visual-systems:
+      generation_or_decision: "Define approved identity plus icon/pictogram/symbol grammar, invariants, variables, required variants and lifecycle from real touchpoints."
+      critique: "Diagnose mark/icon family, optical reduction, semantic consistency, template drift, campaign inheritance and governance failures."
+      repair: "Change the canonical grammar/registry cause and rerender affected touchpoints without redesigning approved strategy or unrelated marks."
+      exception_or_claim_boundary: "Bound recognition, distinctiveness and legal claims; test temporary campaign and small-context variants with owner/expiry."
+      proof: "Stress one-colour, reversed, small, dense, co-brand, localized and icon-family contexts with real content."
+      ownership: "Brand owns cross-touchpoint visual grammar; UI Workflow owns UI icon semantics/state/name; UI implements; Rights/legal owners clear use."
+  C14:
+    information-design-and-data-visualization:
+      generation_or_decision: "Choose table/chart/exact-value route from task, data types, uncertainty and responsive destination."
+      critique: "Diagnose source/grain/transform, baseline/scale, missingness, uncertainty, locale, access and responsive failures."
+      repair: "Repair the owning transform, encoding or responsive mapping without changing immutable values or thesis."
+      exception_or_claim_boundary: "Keep the legitimate non-zero/transformed-scale condition with explicit evidence and reject universal chart rankings."
+      proof: "Recompute values, compare spec/source, locale/access alternatives and narrow/wide renders under the same snapshot."
+      ownership: "Information Design owns encoding; data/statistical owner owns validity; Web/UI implements interaction; Sources owns evidence."
+  C15:
+    cartography-and-spatial-data:
+      generation_or_decision: "Choose map or non-map and specify projection, extent, normalization, classification, boundary vintage and uncertainty."
+      critique: "Diagnose raw-count fill, projection/class break, no-data, ecological inference and map-versus-chart failures."
+      repair: "Repair or replace the map form while preserving supplied spatial evidence and thesis."
+      exception_or_claim_boundary: "Bound projection/generalization choices and reject neutral-map, individual-inference or cartographic-expertise claims."
+      proof: "Recompute rates, verify boundary/source records and compare map/non-map plus print/web views."
+      ownership: "Cartography owns spatial encoding intent; GIS/domain authorities own boundary/inference correctness; Culture owns contested naming."
+    culture-and-representation:
+      generation_or_decision: "Record speaker, affected parties, place-name authority, scripts, disputed positions and publisher/jurisdiction context."
+      critique: "Identify whose position a label, boundary, colour or omission normalizes and whether context/agency is lost."
+      repair: "Apply the smallest authorized name/boundary/context repair or withhold the representation."
+      exception_or_claim_boundary: "Document the scoped jurisdictional naming choice and reject neutrality, consent or cultural-safety claims."
+      proof: "Compare every crop/version for protected labels, dispute notation, legend and required qualification with accountable authority."
+      ownership: "Culture owns representational consequence; Cartography owns encoding; publisher/geospatial/legal authority decides disputed release."
+  C16:
+    diagrams-and-relational-information:
+      generation_or_decision: "Select notation and geometry from the typed source model, audience and relationship task."
+      critique: "Detect omitted/reversed/merged edges, invented notation, false containment and geometry that contradicts semantics."
+      repair: "Correct the smallest model-to-diagram mapping or geometry cause without silently changing the source model."
+      exception_or_claim_boundary: "Keep a documented notation exception with a key and reject complete UML/BPMN/C4 or reality claims."
+      proof: "Diff node/edge/type/direction/cardinality inventory, validate markers/key and compare rendered plus structured alternative."
+      ownership: "Diagram Design owns visual relation; model/process owner owns source semantics; UI/Production owns interaction/export."
+  C17:
+    motion-and-sequence:
+      generation_or_decision: "Define motion thesis, stable states, beats, holds, continuity and reduced/static equivalent before changing timing."
+      critique: "Diagnose attention, reading, interruption/reverse, loop/final-state and exact flashing/motion-scope failures."
+      repair: "Change the smallest temporal cause and preserve data/type identity plus meaningful stable states."
+      exception_or_claim_boundary: "Bound expressive motion and reject safety, reduced-equivalence, performance or comprehension claims without exact evidence."
+      proof: "Inspect timed playback, sampled frames, interruption/reverse, full loop and reduced/static outputs under target conditions."
+      ownership: "Motion owns temporal intent; UI/Code owns live behavior/performance; Media Production owns render/export evidence."
+  C18:
+    media-production-and-handoff:
+      generation_or_decision: "Choose authoritative sources, derivatives, validators, renders, tagged document/deck path and receiver/provider evidence contract."
+      critique: "Separate syntax, resources, semantics/access, export, profile/preflight, receiver and physical-proof failures."
+      repair: "Repair editable authority sources first, rebuild every affected derivative and invalidate stale receipts."
+      exception_or_claim_boundary: "Keep provider-specific exceptions scoped and reject render, soft proof or declared conformance as universal production/access proof."
+      proof: "Bind hashes to parser, render, reading-order/tag, preflight, provider and physical evidence with conditions and dates."
+      ownership: "Production owns artifact/export evidence; Fixed owns document/deck/template and physical design intent; specialists own package/wayfinding safety."
+    editorial-and-fixed-media-design:
+      proof: "Verify final page/slide size, template/sequence, reading order intent, fold/face or sign context and fixed-medium handoff record."
+      ownership: "Fixed Media owns document/presentation/template and package-face/sign design intent; Production/provider/specialist owns technical and physical acceptance."
+  C19:
+    composition-and-layout:
+      critique: "Read-only localization separates within-page hierarchy/spacing cause from the challenged off-grid exception and preserves working structure."
+    editorial-and-fixed-media-design:
+      critique: "Read-only critique identifies fixed viewing, sequence/format and pacing causes without claiming production proof."
+    critique-and-validation:
+      critique: "Return a stable finding record with evidence, verdict, severity/confidence, parent cause, proposed repair, preservation and unknowns; make no edit."
+  C20:
+    people-privacy-and-media-integrity:
+      generation_or_decision: "Classify documentary/constructed/synthetic mode, participant conditions, permitted operations, disclosure and metadata policy."
+      critique: "Detect consent/privacy/publicity, child/bystander, re-identification, factual-mode and metadata failures."
+      repair: "Remove, replace, narrow, disclose or redact the smallest failing condition while preserving evidence and participant agency."
+      exception_or_claim_boundary: "Reject anonymity, consent, truth, safety or legal-clearance claims from blur, labels, provenance or model compliance alone."
+      proof: "Inspect original/final pixels, metadata, source facts, disclosure and participant/authority records in the delivered context."
+      ownership: "People/Privacy owns mode and participant conditions; Imagery owns treatment; Sources facts; Asset Rights permission; counsel decides law."
+  C21:
+    sustainability-claims:
+      generation_or_decision: "Define exact express/implied claim, scope, lifecycle stage, baseline/date/geography, evidence, tradeoffs, qualification and expiry."
+      critique: "Identify whole-impression, denominator, omission, seal/certification and nature-coded overstatement causes."
+      repair: "Narrow or remove the unsupported visual/textual claim and make material scope/tradeoff visible."
+      exception_or_claim_boundary: "Reject broad green, sustainable, zero-impact, certification or compliance claims beyond current evidence and authority."
+      proof: "Bind final wording/visual implication to current source/version, calculation, owner and expiry in every format."
+      ownership: "Sustainability owns claim framing; Sources evidence; Colour/Imagery visual implication; legal/domain owners approve release."
+  C22:
+    source-verification-and-evidence:
+      generation_or_decision: "Assign stable claim/source/asset IDs and define atomic checkable claims plus evidence roles."
+      critique: "Detect unsupported, dependent, stale, contradictory or uninspected claims and citations."
+      repair: "Correct the claim/source relation and every dependent caption, credit, manifest and output without hiding unresolved state."
+      exception_or_claim_boundary: "Reject fact-checker, exhaustive-research, truth or currentness claims beyond actual inspected evidence."
+      proof: "Validate IDs, source inspection/currentness, dependency graph, correction history and final visible citation state."
+      ownership: "Sources owns evidence records; domain owner validates meaning; Rights owns permission; Production owns output survival."
+    asset-rights-and-attribution:
+      generation_or_decision: "Create use-specific asset receipts for creator/rightsholder, license, releases, territory, duration, modification, credit and downstream use."
+      critique: "Detect root-license assumptions, missing depicted-right layers, incompatible use, absent notice and attribution-survival risk."
+      repair: "Replace, narrow, obtain authority, correct the receipt/credit and rebuild every affected derivative."
+      exception_or_claim_boundary: "Reject ownership, non-infringement, legal clearance or universal allowlist claims; fail closed on mandatory unknowns."
+      proof: "Resolve asset hashes to license/release records and inspect attribution in every delivered format."
+      ownership: "Asset Rights owns use/credit record; counsel/rightsholders decide legal permission; Production preserves the approved output record."
+leaves:
+  brief-framing-and-criteria:
+    label: Brief Framing
+    implementation_wave: 2
+    generation_or_decision: [C06]
+    critique: [C06]
+    repair: [C06]
+    exception_or_claim_boundary: [C06]
+    proof: [C06]
+    ownership: [C06]
+  concept-development-and-selection:
+    label: Concept Development
+    implementation_wave: 2
+    generation_or_decision: [C06]
+    critique: [C06]
+    repair: [C06]
+    exception_or_claim_boundary: [C06]
+    proof: [C06]
+    ownership: [C06]
+  composition-and-layout:
+    label: Composition
+    implementation_wave: 1
+    required_modes: [generate, critique, repair]
+    generation_or_decision: [C01]
+    critique: [C19]
+    repair: [C05]
+    exception_or_claim_boundary: [C04]
+    proof: [C05]
+    ownership: [C05]
+  typography-and-typesetting:
+    label: Typography
+    implementation_wave: 1
+    required_modes: [generate, critique, repair]
+    generation_or_decision: [C01]
+    critique: [C02]
+    repair: [C05]
+    exception_or_claim_boundary: [C02]
+    proof: [C02]
+    ownership: [C05]
+  font-technology-and-script-safety:
+    label: Font Technology
+    implementation_wave: 1
+    generation_or_decision: [C03]
+    critique: [C03]
+    repair: [C03]
+    exception_or_claim_boundary: [C03]
+    proof: [C03]
+    ownership: [C03]
+  colour-and-reproduction:
+    label: Colour
+    implementation_wave: 3
+    generation_or_decision: [C11]
+    critique: [C11]
+    repair: [C11]
+    exception_or_claim_boundary: [C11]
+    proof: [C11]
+    ownership: [C11]
+  imagery-and-art-direction:
+    label: Imagery
+    implementation_wave: 3
+    generation_or_decision: [C12]
+    critique: [C12]
+    repair: [C12]
+    exception_or_claim_boundary: [C12]
+    proof: [C12]
+    ownership: [C12]
+  information-design-and-data-visualization:
+    label: Information Design
+    implementation_wave: 4
+    generation_or_decision: [C14]
+    critique: [C14]
+    repair: [C14]
+    exception_or_claim_boundary: [C14]
+    proof: [C14]
+    ownership: [C14]
+  cartography-and-spatial-data:
+    label: Cartography
+    implementation_wave: 4
+    generation_or_decision: [C15]
+    critique: [C15]
+    repair: [C15]
+    exception_or_claim_boundary: [C15]
+    proof: [C15]
+    ownership: [C15]
+  diagrams-and-relational-information:
+    label: Diagrams
+    implementation_wave: 4
+    generation_or_decision: [C16]
+    critique: [C16]
+    repair: [C16]
+    exception_or_claim_boundary: [C16]
+    proof: [C16]
+    ownership: [C16]
+  brand-and-visual-systems:
+    label: Brand
+    implementation_wave: 3
+    generation_or_decision: [C13]
+    critique: [C13]
+    repair: [C13]
+    exception_or_claim_boundary: [C13]
+    proof: [C13]
+    ownership: [C13]
+  ui-workflow-and-interaction-design:
+    label: UI Workflow
+    implementation_wave: 2
+    generation_or_decision: [C09]
+    critique: [C08]
+    repair: [C08]
+    exception_or_claim_boundary: [C08]
+    proof: [C10]
+    ownership: [C10]
+  web-and-responsive-design:
+    label: Web
+    implementation_wave: 2
+    required_modes: [generate, critique, repair]
+    generation_or_decision: [C09]
+    critique: [C02]
+    repair: [C10]
+    exception_or_claim_boundary: [C02]
+    proof: [C10]
+    ownership: [C10]
+  editorial-and-fixed-media-design:
+    label: Fixed Media
+    implementation_wave: 1
+    required_modes: [generate, critique, repair]
+    generation_or_decision: [C01, C04]
+    critique: [C19]
+    repair: [C05]
+    exception_or_claim_boundary: [C04]
+    proof: [C01, C18]
+    ownership: [C18]
+  motion-and-sequence:
+    label: Motion
+    implementation_wave: 4
+    generation_or_decision: [C17]
+    critique: [C17]
+    repair: [C17]
+    exception_or_claim_boundary: [C17]
+    proof: [C17]
+    ownership: [C17]
+  media-production-and-handoff:
+    label: Media Production
+    implementation_wave: 5
+    generation_or_decision: [C18]
+    critique: [C18]
+    repair: [C18]
+    exception_or_claim_boundary: [C18]
+    proof: [C18]
+    ownership: [C18]
+  critique-and-validation:
+    label: Critique
+    implementation_wave: 1
+    required_modes: [generate, critique, repair]
+    generation_or_decision: [C04]
+    critique: [C19]
+    repair: [C05]
+    exception_or_claim_boundary: [C04]
+    proof: [C05]
+    ownership: [C05]
+  culture-and-representation:
+    label: Culture
+    implementation_wave: 4
+    generation_or_decision: [C15]
+    critique: [C15]
+    repair: [C15]
+    exception_or_claim_boundary: [C15]
+    proof: [C15]
+    ownership: [C15]
+  people-privacy-and-media-integrity:
+    label: People/Privacy
+    implementation_wave: 3
+    generation_or_decision: [C20]
+    critique: [C20]
+    repair: [C20]
+    exception_or_claim_boundary: [C20]
+    proof: [C20]
+    ownership: [C20]
+  sustainability-claims:
+    label: Sustainability
+    implementation_wave: 5
+    generation_or_decision: [C21]
+    critique: [C21]
+    repair: [C21]
+    exception_or_claim_boundary: [C21]
+    proof: [C21]
+    ownership: [C21]
+  source-verification-and-evidence:
+    label: Source Verification
+    implementation_wave: 4
+    generation_or_decision: [C22]
+    critique: [C22]
+    repair: [C22]
+    exception_or_claim_boundary: [C22]
+    proof: [C22]
+    ownership: [C22]
+  asset-rights-and-attribution:
+    label: Asset Rights
+    implementation_wave: 5
+    generation_or_decision: [C22]
+    critique: [C22]
+    repair: [C22]
+    exception_or_claim_boundary: [C22]
+    proof: [C22]
+    ownership: [C22]
+  style-direction:
+    label: Style
+    implementation_wave: 2
+    required_modes: [style-direction, critique, repair]
+    generation_or_decision: [C07]
+    critique: [C02]
+    repair: [C08]
+    exception_or_claim_boundary: [C02]
+    proof: [C07]
+    ownership: [C08]

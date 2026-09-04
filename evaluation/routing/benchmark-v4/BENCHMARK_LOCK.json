@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-09-02",
+  "state": "frozen_before_candidate_generation",
+  "skill": "scoville-design-anti-ai-slop",
+  "executor_floor": {
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium"
+  },
+  "files": {
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/SKILL.md": {
+      "sha256": "28D8473A71F355A7EFC82235A71FA9C5DCC3A20CB9095F37520A2AC9A82F8177",
+      "bytes": 5645
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/agents/openai.yaml": {
+      "sha256": "B37AC0963B79B2064CAE877FAF8EE05CDBB2278FE3F26194927B4F7107BE07DC",
+      "bytes": 308
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/modules.yaml": {
+      "sha256": "CCA5BA70B6A28E0996506C9BF86AED159F75F1BEB72B0E0D67B2BECBC831E68C",
+      "bytes": 6934
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/brand-and-visual-systems.md": {
+      "sha256": "1C0359B3588BD290A1D7594B39652A30793263CB82466D4FDCEA213819787530",
+      "bytes": 2176
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/brief-and-concept.md": {
+      "sha256": "24848CD89AABB68A758EBD8A2F2B3B0CFB98FD733689B2A8995EAF5C3CBDF532",
+      "bytes": 2271
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/colour-and-reproduction.md": {
+      "sha256": "2FC2112A20CF7E35FE9E6F1D36F082720BA24B56A52D7135D80237F9A9959041",
+      "bytes": 2213
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/composition-and-layout.md": {
+      "sha256": "857579F2B5B907633C66EBF13FB90D25C81C90298530B28C736DD1C5E12D052C",
+      "bytes": 2361
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/critique-and-validation.md": {
+      "sha256": "5262D3F66963975DF1117429763AEE8E122B319CC874F8F3E62239896B927AAE",
+      "bytes": 2803
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/culture-ethics-and-provenance.md": {
+      "sha256": "EE9457373C7BB2677F964F5E69FD937A27B9A45E4C9B90B69715B1AA8D53D69F",
+      "bytes": 2572
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/imagery-and-art-direction.md": {
+      "sha256": "520D2FA604E485B65E5D7B4E9C85A9E1566D6D426136DDC678C19DD144C5D1CF",
+      "bytes": 2922
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/information-and-data.md": {
+      "sha256": "97316F803B0A67EAD565CD273D2CB60BF1FD2770D34B2AF49531121F19C05C03",
+      "bytes": 2330
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/media-production-and-handoff.md": {
+      "sha256": "C4278CB1C5DC4153D0DAA0514E1FB2451D9C99B4D8AB2E17E211A7AFF21F292D",
+      "bytes": 2611
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/motion-and-sequence.md": {
+      "sha256": "392B386F9A6BD61761727985BF5F67FA14EED4BD6DB3370D8C72D35883801C0E",
+      "bytes": 2222
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/sources-and-attribution.md": {
+      "sha256": "1470F1BB4A58A48B4B633EE149A38353FDE186A7BC9F24F718A263CDF9F77E1E",
+      "bytes": 7076
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/style-direction.md": {
+      "sha256": "CD6C9425E85FBDE0FD2D4CE9F267C9D00FA803A12C8651CC21C875F28D443CCA",
+      "bytes": 2549
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/typography-and-writing-systems.md": {
+      "sha256": "0FAAEACDCE174460FE617764980B22EDDE2B1D04EA111CA80B98678128AE86F5",
+      "bytes": 2519
+    },
+    "../../../../SkillOpt-Studio/frozen-controls/scoville-design-rc3-routing-fixed/references/ui-and-interaction-design.md": {
+      "sha256": "3014EA689B0F5D3B89AEAE232EC358B5AFCBF7411809759F233EB9A03A85CD36",
+      "bytes": 2870
+    },
+    "PROVENANCE.md": {
+      "sha256": "E3A3C583C8EF73CD0DD343B6AD058E78F4509C59987C73482B4478B71A23F9DF",
+      "bytes": 566
+    },
+    "test/items.json": {
+      "sha256": "4CDD3117C5B53E8108EE5829FDAA7C11FEE80E8713EB7F012D0C64C457CF3164",
+      "bytes": 15750
+    },
+    "train/items.json": {
+      "sha256": "B2E57A9D82B27C6950E8BCCB43641EB4F0D76384482D8453D58F2035301BB3FF",
+      "bytes": 16103
+    },
+    "val/items.json": {
+      "sha256": "FD80B46E99F66FB0BE57F6B6A56673A1A0711B578470A116D63330EBF558E45F",
+      "bytes": 16347
+    }
+  }
+}

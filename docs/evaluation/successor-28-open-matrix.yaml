@@ -1,0 +1,128 @@
+format_version: 1
+work_item: W-017
+model: gpt-5.6-terra
+reasoning: medium
+execution: one_at_a_time_immediate_inspection
+execution_status: complete_no_qualified_pass
+progress:
+  completed_medium_calls: 10
+  timed_out_medium_calls_without_terminal_usage: 1
+  provider_total_tokens: 1583416
+  uncached_input_plus_output_tokens: 407864
+  coverage_reserve_consumed: 1
+  completed_case_ids: [D28-EH1, D28-CI1, D28-CI2, D28-CI3, D28-MK1, D28-IN1, D28-AD1, D28-PK1, D28-WF1, D28-BO1]
+  remaining_case_ids: []
+  remaining_authorized_calls_under_current_contract: 0
+historical_calls:
+  terminal_calls: 9
+  provider_total_tokens: 1594151
+  uncached_input_plus_output_tokens: 336679
+  interrupted_high_calls_with_unknown_usage: 1
+  qualification_credit: 0
+budget:
+  remaining_named_calls: 0
+  conditional_paired_skillopt_calls: 0
+  retry_reserve_calls: 0
+  max_remaining_terminal_calls: 0
+  cost_stops: none
+  sealed_calls: 0
+context:
+  core_ceiling: 1500
+  generated_index_ceiling: 1200
+  target_leaves: 3
+  max_leaves: 4
+  core_index_selected_ceiling: 15000
+required_dimensions:
+  - exact_route
+  - generation_or_repair
+  - owner_and_stop
+  - context_render_or_trace
+  - claim_boundary
+  - evidence_honesty
+cases:
+  - id: D28-EH1
+    status: bounded_failure_no_rerun
+    purpose: hashed visual-input harness and evidence-honesty canary
+    mode: critique
+    selected: [typography-and-typesetting, web-and-responsive-design, style-direction]
+    forbidden: [critique-and-validation, ui-workflow-and-interaction-design]
+    proof: run-status initial-image hashes plus content-specific observations from each supplied render
+  - id: D28-CI1
+    status: failed_no_rerun
+    purpose: create corporate-design visual-identity system from supplied approved strategy
+    mode: generate
+    selected: [brand-and-visual-systems]
+    forbidden: [brief-framing-and-criteria, logo-and-identity-mark-design, advertising-and-campaign-art-direction]
+    proof: real-content cross-touchpoint identity stress set
+  - id: D28-CI2
+    status: bounded_failure_no_rerun
+    purpose: repair an attractive but forbidden deviation under mandatory incumbent CI
+    mode: repair
+    selected: [brand-and-visual-systems, composition-and-layout]
+    forbidden: [logo-and-identity-mark-design]
+    proof: cited CI locator plus identical-content compliant before-after renders
+  - id: D28-CI3
+    status: bounded_failure_no_rerun
+    purpose: audit contradictory or stale CI authority without silently choosing
+    mode: critique
+    selected: [brand-and-visual-systems, source-verification-and-evidence]
+    forbidden: [critique-and-validation]
+    proof: source-version conflict record with unresolved mutation block
+  - id: D28-MK1
+    status: bounded_failure_no_rerun
+    purpose: create and compare identity-mark mechanisms under an approved identity role
+    mode: generate
+    selected: [logo-and-identity-mark-design]
+    forbidden: [brand-and-visual-systems, typography-and-typesetting]
+    proof: equal-fidelity mark set plus relevant monochrome small and dense stress renders
+  - id: D28-IN1
+    status: bounded_failure_no_rerun
+    purpose: repair an explanatory procedure while preserving authoritative steps and safety boundary
+    mode: repair
+    selected: [instructional-and-explanatory-design, diagrams-and-relational-information]
+    forbidden: [ui-workflow-and-interaction-design]
+    proof: step-referent-check-state comparison and bounded comprehension test contract
+  - id: D28-AD1
+    status: bounded_failure_no_rerun
+    purpose: create a persuasive campaign family from supplied strategy claims and CI
+    mode: generate
+    selected: [brand-and-visual-systems, advertising-and-campaign-art-direction, imagery-and-art-direction]
+    forbidden: [concept-development-and-selection]
+    proof: equal-fidelity mechanism set and placement-native campaign contexts
+  - id: D28-PK1
+    status: infrastructure_timeout_no_rerun
+    purpose: repair a supplied-dieline packaging and SKU system
+    mode: repair
+    selected: [packaging-graphics-and-sku-systems, typography-and-typesetting]
+    forbidden: [editorial-and-fixed-media-design, media-production-and-handoff]
+    proof: flat assembled and identical-context SKU lineup renders plus specialist stops
+  - id: D28-WF1
+    status: bounded_failure_no_rerun
+    purpose: repair a physical route and decision-point signage system
+    mode: repair
+    selected: [physical-wayfinding-and-signage-systems, cartography-and-spatial-data]
+    forbidden: [ui-workflow-and-interaction-design, editorial-and-fixed-media-design]
+    proof: location schedule plus before-at-after decision-point and route-test artifacts
+  - id: D28-BO1
+    status: bounded_failure_no_rerun
+    purpose: preserve Design UI and Scribe ownership through a composed handoff
+    mode: generate
+    selected: [ui-workflow-and-interaction-design, web-and-responsive-design]
+    forbidden: [critique-and-validation]
+    proof: owner-attributed record plus framework implementation and wording handoff boundaries
+reserves:
+  coverage: []
+  skillopt: []
+skillopt_pairs:
+  - id: D28-SO1
+    case: D28-CI2
+    status: ineligible_named_case_no_pass
+    editable_owners: [core, brand-and-visual-systems, composition-and-layout]
+  - id: D28-SO2
+    case: D28-AD1
+    status: ineligible_named_case_no_pass
+    editable_owners: [core, brand-and-visual-systems, advertising-and-campaign-art-direction, imagery-and-art-direction]
+  - id: D28-SO3
+    case: D28-PK1
+    status: ineligible_named_case_no_pass
+    editable_owners: [core, packaging-graphics-and-sku-systems, typography-and-typesetting]

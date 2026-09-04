@@ -1,0 +1,150 @@
+{
+  "version": "P6-focused-v1",
+  "date": "2026-09-04",
+  "status": "frozen-before-model-outcomes",
+  "requested_model": "claude-fable-5-1",
+  "effort": "high",
+  "tools": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "customizations": false,
+  "resource_limits": "No fixed cost, token or expert count ceiling",
+  "generation": "Fresh persistent session for each case/arm. Same task prompt and output envelope. Read package from skill/SKILL.md and only actual direct routes. Read-only model returns proposed source; authorised host materialises and renders. One render-feedback round in each renderable case/arm; errors retained and corrected only with a new labelled version for affected cases.",
+  "output": {
+    "files": [
+      {
+        "path": "artifact.html",
+        "content": "complete editable source, omit files for critique"
+      }
+    ],
+    "notes": "concise task output and evidence limits, no mandatory full protocol"
+  },
+  "comparison": "Freeze complete inputs before any model output. Distinct baseline/candidate snapshots. Fresh separate blind reviewer sees randomised neutral arm labels, raw task and actual artifacts/renders, no package or change identity, no prior findings/expected fixes. Retained Fable session separately reviews proposal fidelity and evidence. No general superiority claim.",
+  "activation": {
+    "host": "Claude Code with isolated supported configuration; no global installation",
+    "cases": [
+      {
+        "id": "H1",
+        "expect": "positive",
+        "prompt": "Create the visual direction for a new independent architecture exhibition poster. Typography, composition, colour and imagery are open."
+      },
+      {
+        "id": "H2",
+        "expect": "negative",
+        "prompt": "Review this backend function for correctness only: def add(a, b): return a + b. No user interface or visual work."
+      },
+      {
+        "id": "H3",
+        "expect": "negative",
+        "prompt": "Correct grammar only in this sentence: The containers is ready. Do not change the meaning."
+      },
+      {
+        "id": "H4",
+        "expect": "negative",
+        "prompt": "Implement this fully settled UI CSS instruction only: in .notice, set padding to 16px and leave everything else unchanged. Design, typography, colours and layout decisions are closed. Return the CSS rule."
+      },
+      {
+        "id": "H5",
+        "expect": "positive-readonly",
+        "prompt": "Give a read-only visual design critique of an exhibition poster whose title, three equally prominent slogans and four competing images leave no clear reading order. Do not edit or generate an artifact."
+      }
+    ],
+    "proof": "Actual host discovery/invocation trace, not self-reported use or interpreted signals. Unavailable lane stays unverified."
+  },
+  "cases": [
+    {
+      "id": "C1",
+      "family": "small-repair",
+      "input": "small.html",
+      "prompt": "Repair the overlapping body copy in inputs/small.html. All exact visible words, poster dimensions, title and footer styling/positions, colours and unrelated layout are settled and protected. Typesetting of the body paragraph only is open. Deliver the corrected self-contained HTML. A 600 by 600 screen proof is available from the host after materialisation.",
+      "criteria": [
+        "Exact text and protected geometry unchanged",
+        "Readable nonoverlapping paragraph at actual render",
+        "Proportionate record without unrelated framing/inventories"
+      ]
+    },
+    {
+      "id": "C2",
+      "family": "generic-named-style",
+      "input": "generic.html",
+      "prompt": "Develop inputs/generic.html into a convincing independent educational one-page guide to the Bauhaus Dessau building. Follow Swiss International Typographic Style as the named direction. Use the verified facts in inputs/facts.txt; retain their meaning and all named building parts and storey counts. Concept, page argument, typography, composition, colour, an original guide mark and imagery/art direction are open. Include an image brief in your notes and, if useful, a clearly labelled constructed schematic in the page. Do not imply official identity, photographic evidence or measured geometry. Deliver editable responsive self-contained HTML. The host can render at 1440px and 390px.",
+      "criteria": [
+        "Verified subject material causes inspectable design decisions, not names alone",
+        "Named style read and applied by mechanisms rather than copy",
+        "Concept/composition/type/colour/imagery/brand/mark/web outcomes inspected separately",
+        "Exact fact meaning retained; no official or measurement claim",
+        "Usable desktop/mobile; valid peer comparisons not removed merely for card form"
+      ]
+    },
+    {
+      "id": "C3",
+      "family": "quiet-utility",
+      "input": "quiet.html",
+      "prompt": "Review inputs/quiet.html for a bounded repair. This is a settled incumbent stock utility. The default Arial, three equal peer inventory cards, colours, geometry and visible content are accepted. Change source only if an actual legibility or task-use defect is present; otherwise preserve it. No rebranding or new concept is requested. Deliver the unchanged or minimally corrected HTML and a short explanation. Host screen proofs are available at 960px and 390px.",
+      "criteria": [
+        "No invented fashion defect",
+        "Accepted default typography and peer cards preserved",
+        "No content loss or unnecessary new spatial system"
+      ]
+    },
+    {
+      "id": "C4",
+      "family": "motion-data",
+      "input": "motion.html",
+      "prompt": "Improve inputs/motion.html for the stated relief decision. Preserve both exact data samples and station identities, units, capacities and working Advance sample control. Metric encoding, emphasis and transition design are open. The viewer needs to locate the most urgent capacity exceedance and understand what changed between samples. The dataset is explicitly fictional training data. Deliver self-contained HTML with real executable motion and a reduced-motion equivalent. The host will exercise the control and capture actual playback at 1000px.",
+      "criteria": [
+        "Data semantics/values/units unchanged",
+        "Priority follows backlog against capacity, not absolute count alone",
+        "Actual state transition has meaningful continuity or justified absence",
+        "Actual playback/control sampled; reduced motion preserves information"
+      ]
+    },
+    {
+      "id": "C5A",
+      "family": "mixed-solo",
+      "input": "mixed.html",
+      "prompt": "Improve the text hierarchy/legibility in the packaging label and facility direction sign in inputs/mixed.html. Exact visible words and the contents of the SVG groups pack-fixed and sign-fixed are protected byte-for-byte: cutline, fold, barcode reserve, sign panel and arrow are settled. Only type size/weight/line arrangement/colour in text groups is open. This is an internal proof, not print-ready, safety-certified or externally approved. No partner is available; handle the safe local design and source phases yourself. Deliver one self-contained HTML preserving fixed groups.",
+      "criteria": [
+        "Packaging and Wayfinding actual direct reads",
+        "Owner-local protected geometry and external acceptance preserved",
+        "Solo phase record contains needed constraint/unknown without partner dependency",
+        "Actual packaging/sign legibility and arrow geometry inspected"
+      ]
+    },
+    {
+      "id": "C5B",
+      "family": "mixed-partner",
+      "input": "mixed.html",
+      "prompt": "Improve the text hierarchy/legibility in the packaging label and facility direction sign in inputs/mixed.html. Exact visible words and contents of SVG groups pack-fixed and sign-fixed are protected byte-for-byte. Only text size/weight/line arrangement/colour is open. Internal proof only, not production or safety approval. An active implementation partner (the evaluation host, not a claimed sibling Skill) will materialise your proposed source and render it, then return actual evidence for your design verification. Provide a concise actionable design-to-implementation handoff alongside one complete proposed HTML. Do not claim that another Skill has been activated.",
+      "criteria": [
+        "Same protected geometry and direct specialist ownership as solo variant",
+        "Actual exchange has design intent/protected constraint/evidence needed and returned observation",
+        "Coordination direct read when applicable without fabricated sibling activation"
+      ]
+    },
+    {
+      "id": "C6",
+      "family": "unavailable-proof",
+      "input": "mixed.html",
+      "prompt": "Make the safe source-only text hierarchy adjustment to the packaging label in inputs/mixed.html. Exact words, all non-text geometry and the entire facility sign are settled; only pack-text typography is open. The renderer is intentionally unavailable for this case. No print-provider acceptance is available either. Deliver editable HTML source and state what can and cannot be concluded. Do not wait for permissions unnecessary for this authorised local edit, and do not claim a rendered or production-approved outcome.",
+      "criteria": [
+        "Safe authorised source work delivered",
+        "No render or external acceptance falsely claimed",
+        "Entire sign and fixed packaging geometry/content preserved"
+      ]
+    },
+    {
+      "id": "C7",
+      "family": "readonly-critique",
+      "input": "generic.html",
+      "prompt": "Give a read-only design critique of inputs/generic.html using inputs/facts.txt as its factual brief. It is an independent educational building guide. Identify material issues and preserved strengths. Do not propose a complete redesign or write/replace any artifact. The host can show existing 1440px/390px screen proofs; deliver only concise findings and their evidence limits.",
+      "criteria": [
+        "Actual interchangeable subject relationship distinguished from legitimate peer comparison",
+        "Material relevant critique, no pattern-only bans",
+        "Input hashes unchanged and no artifact files proposed"
+      ]
+    }
+  ]
+}
