@@ -92,6 +92,18 @@ any of those inputs.
     gates, likely takeout, brand linkage, placement survival, ethical risk,
     evidence quality, and the uncertainty most likely to reverse the decision.
 
+## Test the carrier and its counter-reading
+
+Suppose an explicitly fictional brief authorises “Share the equipment”. A
+demonstration can show one identifiable object handed from one person to
+another; an analogy might show separate paths meeting at that object. Compare
+what the image actually communicates without the headline, then restore the
+words and inspect what they clarify. The analogy may accidentally imply shared
+ownership or universal availability; repair or qualify it if those claims are
+not supplied. A literal object and booking instruction can outperform the
+analogy for an immediate task. These original examples explain a comparison;
+they do not prove persuasion, audience response or the fictional proposition.
+
 ## Critique failure signatures and causes
 
 - **Eye-catching but unidentifiable.** The image or effect wins attention while

@@ -1,0 +1,59 @@
+{
+  "scope": "Local final runtime tree; structural checks and existing tests, not behavioral qualification",
+  "checks": [
+    {
+      "name": "package",
+      "cmd": "& 'Z:/Projekts/AI/SkillOpt-Studio/.venv/Scripts/python.exe' scripts/validate_package.py",
+      "chunk_id": "97c2d9",
+      "wall_time_seconds": 0.7365026,
+      "exit_code": 0,
+      "original_token_count": 788,
+      "output": "WARNING brief-framing-and-criteria: 1614 tokens exceeds target 1500\r\nWARNING concept-development-and-selection: 1697 tokens exceeds target 1500\r\nWARNING composition-and-layout: 2134 tokens exceeds ceiling 2100\r\nWARNING typography-and-typesetting: 2472 tokens exceeds target 2100\r\nWARNING font-technology-and-script-safety: 2185 tokens exceeds target 2100\r\nWARNING colour-and-reproduction: 2063 tokens exceeds ceiling 2000\r\nWARNING imagery-and-art-direction: 2175 tokens exceeds ceiling 2100\r\nWARNING information-design-and-data-visualization: 2092 tokens exceeds target 1800\r\nWARNING cartography-and-spatial-data: 1752 tokens exceeds target 1600\r\nWARNING diagrams-and-relational-information: 1741 tokens exceeds target 1600\r\nWARNING brand-and-visual-systems: 2700 tokens exceeds target 2400\r\nWARNING logo-and-identity-mark-design: 2524 tokens exceeds target 2300\r\nWARNING instructional-and-explanatory-design: 2392 tokens exceeds target 2300\r\nWARNING advertising-and-campaign-art-direction: 2510 tokens exceeds target 2400\r\nWARNING ui-workflow-and-interaction-design: 1885 tokens exceeds target 1700\r\nWARNING web-and-responsive-design: 1885 tokens exceeds target 1600\r\nWARNING editorial-and-fixed-media-design: 2039 tokens exceeds target 1900\r\nWARNING packaging-graphics-and-sku-systems: 2430 tokens exceeds target 2200\r\nWARNING physical-wayfinding-and-signage-systems: 2351 tokens exceeds target 2200\r\nWARNING motion-and-sequence: 2179 tokens exceeds target 1900\r\nWARNING media-production-and-handoff: 2476 tokens exceeds target 2400\r\nWARNING critique-and-validation: 1944 tokens exceeds target 1800\r\nWARNING style-direction: 2165 tokens exceeds target 2000\r\nWARNING generic-signatures-and-subject-specificity: 1309 tokens exceeds target 1300\r\nWARNING coordination-with-sibling-skills: 703 tokens exceeds target 700\r\nWARNING planned common load C01: 9717 tokens exceeds ceiling 9500\r\nWARNING planned common load C02: 9594 tokens exceeds ceiling 9400\r\nWARNING planned common load C04: 9189 tokens exceeds ceiling 9100\r\nWARNING planned common load C05: 11661 tokens exceeds ceiling 11400\r\nWARNING planned common load C07: 11728 tokens exceeds ceiling 11200\r\nWARNING planned common load C08: 9007 tokens exceeds ceiling 8900\r\nWARNING planned common load C09: 6842 tokens exceeds ceiling 6800\r\nWARNING planned common load C11: 5135 tokens exceeds ceiling 5100\r\nWARNING planned common load C12: 8738 tokens exceeds ceiling 8700\r\nWARNING planned common load C14: 9521 tokens exceeds ceiling 9200\r\nWARNING planned common load C17: 7723 tokens exceeds ceiling 7600\r\nWARNING planned common load C21: 10132 tokens exceeds ceiling 10100\r\nWARNING planned common load D28-EH1: 11538 tokens exceeds ceiling 11300\r\nWARNING planned common load D28-CI1: 12563 tokens exceeds ceiling 12300\r\nWARNING planned common load D28-CI2: 12417 tokens exceeds ceiling 12100\r\nWARNING planned common load D28-AD1: 10457 tokens exceeds ceiling 10400\r\nWARNING planned common load D28-BO1: 6842 tokens exceeds ceiling 6800\r\nVALID schema=successor-v2 warnings=42 modules=30 core_tokens=1913 index_tokens=1159 max_expert_tokens=2700 core_plus_index=3072 core_plus_largest_phase=13282\r\n"
+    },
+    {
+      "name": "index",
+      "cmd": "& 'Z:/Projekts/AI/SkillOpt-Studio/.venv/Scripts/python.exe' scripts/generate_module_index.py --check",
+      "chunk_id": "8006b6",
+      "wall_time_seconds": 0.0000021,
+      "exit_code": 0,
+      "original_token_count": 7,
+      "output": "module index is current\r\n"
+    },
+    {
+      "name": "routes",
+      "cmd": "& 'Z:/Projekts/AI/SkillOpt-Studio/.venv/Scripts/python.exe' scripts/validate_route_contract.py",
+      "chunk_id": "df9e10",
+      "wall_time_seconds": 0.000001,
+      "exit_code": 0,
+      "original_token_count": 11,
+      "output": "VALID route_cases=60 signals=44 modules=30\r\n"
+    },
+    {
+      "name": "boundary",
+      "cmd": "& 'Z:/Projekts/AI/SkillOpt-Studio/.venv/Scripts/python.exe' scripts/validate_design_ui_boundary.py",
+      "chunk_id": "8be7ba",
+      "wall_time_seconds": 0.0000011,
+      "exit_code": 0,
+      "original_token_count": 20,
+      "output": "VALID design_ui_boundary active_design=strict_ui ui_only=greenfield_fallback\r\n"
+    },
+    {
+      "name": "tests",
+      "cmd": "& 'Z:/Projekts/AI/SkillOpt-Studio/.venv/Scripts/python.exe' -m unittest discover -s tests -p 'test_*.py'",
+      "chunk_id": "3068ec",
+      "wall_time_seconds": 6.4931043,
+      "exit_code": 0,
+      "original_token_count": 35,
+      "output": "..................................\r\n----------------------------------------------------------------------\r\nRan 34 tests in 6.263s\r\n\r\nOK\r\n"
+    },
+    {
+      "name": "skill",
+      "cmd": "& 'Z:/Projekts/AI/SkillOpt-Studio/.venv/Scripts/python.exe' C:/Users/benja/.codex/skills/.system/skill-creator/scripts/quick_validate.py ../scoville-design-anti-ai-slop",
+      "chunk_id": "9fce25",
+      "wall_time_seconds": 0.1292974,
+      "exit_code": 0,
+      "original_token_count": 5,
+      "output": "Skill is valid!\r\n"
+    }
+  ]
+}

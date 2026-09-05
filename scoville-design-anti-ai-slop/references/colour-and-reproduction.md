@@ -64,6 +64,27 @@ one part of that chain, not the final appearance.
    gamut, and HDR as destination-dependent effects. Supply a bounded fallback
    that preserves role and hierarchy when the effect is unsupported.
 
+## Construct a role palette in place
+
+Start with the actual background, largest surface and reading text. Establish
+their lightness relation in the layout, then introduce the accent where the
+task needs attention. For example, a pending decision may get the accent while
+completed items use text and a quiet status marker. Compare changing accent
+area with changing its chroma; equal swatches hide this difference.
+
+For a muddy palette, isolate the failed adjacent pair. Change lightness when
+figure/ground is weak, chroma when attention is misallocated, or hue when a
+category distinction is needed; retain the other role relations for comparison.
+For ordered values compare a progression with consistent perceptual direction;
+for categories compare separability without implying rank.
+
+When an alternate theme is required, map each role again against its new
+surround: reading text, quiet text, surface boundary and accent may need
+different adjustments. Do not invert every coordinate. Inspect the same
+content and attention order in both themes and without hue where meaning
+requires redundancy. An entirely neutral palette can already serve the job;
+these construction steps do not require an accent, a theme or a colour count.
+
 ## Critique: failure signatures and likely causes
 
 - **A role disappears or changes meaning across states.** Likely cause: values

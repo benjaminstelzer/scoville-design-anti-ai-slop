@@ -131,6 +131,12 @@ Style direction remains a domain available within each mode. A requested artifac
 the appropriate format tool when available. Advice alone does not complete an
 artifact request.
 
+The modules include practical ways to build and compare a design: adjust
+measure and leading with the actual text, construct a role palette, compare
+mark contours, allocate content across media, or place map labels without
+moving their features. Select the operation the task needs. These methods
+do not impose a universal visual preset or a module-size target.
+
 ### Design and UI
 
 Each Skill works independently.
@@ -180,6 +186,12 @@ The current package contains 30 selectively loaded modules and 35 files,
 including its MIT license. Publishing a package does not qualify its design
 judgment.
 
+Version 1.1.0 adds practical guidance across 23 existing modules and removes
+package-size guidelines. Local artifact checks exercise the added operations,
+including coupled typography settings and point, line and area map labels.
+The release passes 26 unit tests and the package, routing and export checks.
+These observations do not demonstrate a general model advantage.
+
 Five focused Terra Medium host cases on 2026-09-05 observed appropriate
 activation and exclusions, but a hierarchy critique omitted the applicable
 Composition module. That case is not a workflow pass. No artifact was rendered.
@@ -187,8 +199,8 @@ The original Fable final review remains open, and no complete successor holdout
 or general visual-quality claim follows from these checks.
 
 See [current host observations](development/docs/evaluation/2026-09-05-terra-host-results.md),
-[release validation](development/docs/release-validation.md), and
-[implementation evidence](development/docs/evaluation/plan-0006-implementation.md).
+[release validation](development/docs/release-validation-v1.1.0.md), and
+[practical guidance evidence](development/docs/evaluation/plan-0008-implementation.md).
 
 Repository development and the current path mapping are in [development/](development/README.md).
 

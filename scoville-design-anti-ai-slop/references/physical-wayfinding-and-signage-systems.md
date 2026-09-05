@@ -94,6 +94,22 @@ route from visual inspection, a floor plan, an ordinary path or model memory.
    replacement, inspection and expiry so a corrected source cannot leave stale
    signs or derivatives in service.
 
+## Fill a decision point from the route
+
+Fictional source: arriving from Reception, the corridor branches left to the
+Archive and right to the Store. Record the approach direction before drawing
+arrows. Compare the sign's destination groups with that view, then follow each
+choice to its next confirmation. “Archive” on arrival confirms location; the
+branch sign answers a different question. A missed turn needs a recoverable
+return to the decision, not an arrow invented from the page's left/right.
+
+Place the proposed sign in an approach study with the viewer's line of sight
+and the actual decision point. Check whether the message arrives before the
+choice is committed. A straight route with one destination may need only
+arrival identification. This original walkthrough tests message/route
+relations; distance, installation, physical access and safe-route acceptance
+still need their actual authorities and evidence.
+
 ## Critique: failure signatures and causes
 
 | Failure signature | Parent cause to test |

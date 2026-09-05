@@ -65,6 +65,20 @@ the next. A checksum proves file identity, not correctness.
    derivatives, dependency/asset manifest, specifications, evidence receipts,
    known limits, rejected variants, repair path, owner and acceptance state.
 
+## A small delivery record can be enough
+
+Illustrative local record: `source: label.svg revision B; derivative: label.png;
+scope: supplied screen preview; inspected: dimensions and target render;
+receiver acceptance: not requested`. Replace these example values with the
+actual source, output and evidence; a filename alone does not establish their
+identity. A print job with open font or provider questions needs those fields,
+but an ordinary screen export does not inherit a release dossier.
+
+When raster resolution is material, calculate effective density from retained
+pixels divided by placed inches, using the cropped dimension actually placed.
+Compare it with the real receiver condition; this arithmetic supplies no
+universal target and upsampling creates no new captured detail.
+
 ## Format gates
 
 Apply only the gates used by the job. The shared spine applies at the delivery

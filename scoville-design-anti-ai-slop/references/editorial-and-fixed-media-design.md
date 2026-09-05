@@ -69,6 +69,23 @@ gutter, fold or projection; how colour and material appear in context; how a
 page, spread, slide or surface controls entry, continuity and exit. Do not
 replace actual type, image, colour or composition judgment with a medium recipe.
 
+## Allocate the content before polishing a page
+
+Choose the entry by actual use: a live presentation supports a timed spoken
+argument; a reading document carries its explanation without a speaker; a
+poster must establish its priority at the relevant distance; a reference sheet
+supports lookup. The same source need not have the same allocation in each.
+
+An original flatplan for a three-part report might assign opening question and
+scope to the first unit, evidence with its qualifications to the second, and
+the decision plus next step to the third. Put actual headings, quantities,
+captions and image roles into those units. Now inspect the whole strip: a dense
+evidence unit may need a quiet transition, but alternating density mechanically
+adds nothing. Compare a compact reference version when readers need all facts
+together. Preserve each medium's required content across the complete sequence;
+do not move an essential qualification into absent speaker notes. This worked
+allocation is a starting comparison, not a required page count or template.
+
 ## Critique failure signatures and causes
 
 - **Competent but monotonous sequence:** one template, density, type scale or

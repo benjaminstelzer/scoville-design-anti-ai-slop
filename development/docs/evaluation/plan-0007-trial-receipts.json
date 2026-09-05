@@ -1,0 +1,2052 @@
+{
+  "scope": "Local source/render/interaction observations; original PG-06 candidate render failed and has a separately identified coordinator repair. Not 28 autonomous design passes.",
+  "trials": [
+    {
+      "case": "PG-01",
+      "arm": "baseline",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07229-7670-7260-9ae1-611e4b4b629f",
+      "started": "2026-09-05T15:21:54.788806+00:00",
+      "finished": "2026-09-05T15:23:16.662738+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/composition-and-layout.md": "F9433C5A77B7A7B95C83B0939EE7C9BF51BA727B9520D60CDDEACE95E690B1D0"
+      },
+      "prompt_sha256": "23E878DC4D3C80231FFD8CF176D7A959CD732AA16AFBB5A47B6EABBE369C3B21",
+      "answer_sha256": "E332683AEF6B9702261A1339F97ECCB8394642F2249A6AB48D1E2D4F7BE6D07B",
+      "artifacts": {
+        "control.html": "143AF95F86403A2851F9CFB02FE734AA8C7BF75BEEDF606505D2984539903EBF",
+        "main.html": "994D66A790947F198350C8B7A967D2C6C6C612F51E6220EF16401E52D8D25AA0"
+      },
+      "usage": {
+        "input_tokens": 17693,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1659,
+        "reasoning_output_tokens": 406
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-01\\baseline\\receipt.json",
+      "receipt_sha256": "ED2212F8D120BBBEE3A4D7C773ED9555803DCFF094200564AE4FC707A74F252E"
+    },
+    {
+      "case": "PG-01",
+      "arm": "candidate",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0722d-0ec8-7a62-8481-582b5ad0fc77",
+      "started": "2026-09-05T15:25:50.569733+00:00",
+      "finished": "2026-09-05T15:27:12.092823+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/composition-and-layout.md": "AC395923F70A93203C0B7DAA450528BBFB9D5B666C65CD25220E6A4D30AD901F"
+      },
+      "prompt_sha256": "BA4DC0A43EB1E980AA2B6CF7B319C262E005B63823E17947162EB069903224C7",
+      "answer_sha256": "41B77823CAFFDABC5D4823C61CBADEC7E9078AE7006D31134D56CA05BDDF411D",
+      "artifacts": {
+        "control.html": "BEC6DA374FF4DCBD6E1C3E350B191BC9E0CB1F785052025695140A160535ACC4",
+        "main.html": "34035E4F08D2353E2F3AE85702CBF026879D08E4D04E7D816CB07FBF8293CBF8"
+      },
+      "usage": {
+        "input_tokens": 17969,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1610,
+        "reasoning_output_tokens": 385
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-01\\candidate\\receipt.json",
+      "receipt_sha256": "DEED09F5450F37ABA884E270217F3F5690FC9E5AC8CA2E00BFF9042B94B4A965"
+    },
+    {
+      "case": "PG-02",
+      "arm": "baseline",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0722a-4400-7540-ad96-911c5e473ca3",
+      "started": "2026-09-05T15:22:47.584242+00:00",
+      "finished": "2026-09-05T15:25:22.180743+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/typography-and-typesetting.md": "E7C5F031D6BEDA3043BF7B636FB7F32B23E03B7B41C2D2FF23D71ECFBD900117",
+        "references/font-technology-and-script-safety.md": "0C5BC04C0F85EE305D34D9F4C29CF4FFE6791C6E6E740E8903FCCDCBEC834C5A"
+      },
+      "prompt_sha256": "1FA3D5F0542F39B5E89DF6CACADEDD6D56FEE94B223FE5BE634F446A5D27CBFF",
+      "answer_sha256": "A669272AD118AB755DF3EE15E9FF15EC04B0A8059CFB21BEBBDC53B8669E1E68",
+      "artifacts": {
+        "control.html": "27A1CCE41CFCE62795127B6A09D51533E8DAEB7B85F98139658F056E72C491EE",
+        "main.html": "803EA16689BABF580FC4312F4BB1FCA14DB25307BB2069C9BF094A8E4E2D8D2D"
+      },
+      "usage": {
+        "input_tokens": 20036,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3403,
+        "reasoning_output_tokens": 990
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-02\\baseline\\receipt.json",
+      "receipt_sha256": "5847D8005FE2556666E2BC1F9D91ABEE1227CE1370BCAED827A8209244A90927"
+    },
+    {
+      "case": "PG-02",
+      "arm": "candidate",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0722f-dcfa-78b0-a7c7-2e06c43de27e",
+      "started": "2026-09-05T15:28:54.441059+00:00",
+      "finished": "2026-09-05T15:31:13.642009+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/typography-and-typesetting.md": "079F6B13F2457AC8D34068F84427C81085E2F6984018562E830BF7F58C267F5B",
+        "references/font-technology-and-script-safety.md": "E54F6A016F0D6E22F52496A34D80D3DEED9C9E1297BD93613473FA14ABC5E54B"
+      },
+      "prompt_sha256": "6723D1D510E499EE25AC54658C29434029BA44039437F5C53785C94876D69CBC",
+      "answer_sha256": "2D0E1B3FC6758700F6784F9938C6083588776D7B31A421FCC181741172A0F37A",
+      "artifacts": {
+        "control.html": "9BFF2DADA7400F361427F6902EA4F3F44136BF74CF881126206B0A442EB129F4",
+        "main.html": "609DC59EB1C69DD68902CEC3CDE376EABA27AC2E51B715DDABF50A444BE4B4DC"
+      },
+      "usage": {
+        "input_tokens": 20438,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2878,
+        "reasoning_output_tokens": 793
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-02\\candidate\\receipt.json",
+      "receipt_sha256": "1B78EC84652C3620CF9BE79345C4AA964CF5F82D6DDCADB5F46AC3140114252A"
+    },
+    {
+      "case": "PG-03",
+      "arm": "baseline",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0722a-4407-7af0-9c97-e6bf0f15fdda",
+      "started": "2026-09-05T15:22:47.587475+00:00",
+      "finished": "2026-09-05T15:25:32.877519+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/colour-and-reproduction.md": "AC3F9459B542513F8088A2E1A35169AE73243AE8618425BF5EA0474968FB7AFB"
+      },
+      "prompt_sha256": "822C1EFA9BC7EF9A79FDD33EFAC9776E9FF83A405C2ED24EC63E57E26443A013",
+      "answer_sha256": "B9A6E384C171D5F00116FFA50A84237FB50C8DCE637766F76732BA4E4A1593B4",
+      "artifacts": {
+        "control.html": "B1D6471668F8BA00C1977AC14FC2ED0F9AB53134D07DA97A0B9E66074574DC17",
+        "main.html": "4D52D4201A90B2B62E7E36EAC79B6842EBEFE85FA75F0098DEDD8F340D192DFE"
+      },
+      "usage": {
+        "input_tokens": 17491,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4052,
+        "reasoning_output_tokens": 509
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-03\\baseline\\receipt.json",
+      "receipt_sha256": "A25808FB0BB8583A40C4672E6AB40151B05E90693AD381008947A2EDF276488E"
+    },
+    {
+      "case": "PG-03",
+      "arm": "candidate",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07230-0582-73c2-a60f-0b85c2dd3864",
+      "started": "2026-09-05T15:29:04.820699+00:00",
+      "finished": "2026-09-05T15:31:42.423917+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/colour-and-reproduction.md": "BFE8BEF7FD8E35F299D021B6E097C2A0870DB788EBF237A962D87FCF672087DE"
+      },
+      "prompt_sha256": "17225A6F7818C2DF3AA5D1F795A84E844BAFC86B480A0539783F0D1CD1594580",
+      "answer_sha256": "5A6D81275BB2D5CE9781C3FD6048138F8276AC4795D2D77B8C7818EDB5AE539F",
+      "artifacts": {
+        "control.html": "55F4E908DF706F6447449A0731BF377F081A11F352F4E6B669FACC4285EDBAAA",
+        "main.html": "27A90FB35340912A30039BFB0F2621659E825FCFD37E6EC71D5042322D4D1D8E"
+      },
+      "usage": {
+        "input_tokens": 17727,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3903,
+        "reasoning_output_tokens": 518
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-03\\candidate\\receipt.json",
+      "receipt_sha256": "1D440B69DFB7740B86E1A216981FCF0252E31838A1C0D6BFBC10578DA952E066"
+    },
+    {
+      "case": "PG-04",
+      "arm": "baseline",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0722c-9fff-7c83-8416-c47cc1165641",
+      "started": "2026-09-05T15:25:22.232315+00:00",
+      "finished": "2026-09-05T15:32:05.470565+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/brand-and-visual-systems.md": "9A0B6C249E13C855D40F29735428EC7794E637DBF123B6021A4FA6C43582E9A6",
+        "references/logo-and-identity-mark-design.md": "79687BBCE2D2B1327407145CBF2D85D900868F6859A52A45BA5F03593D4FA48E"
+      },
+      "prompt_sha256": "CED875A846040B42A5F949D2F6E1A9190DFF7799C7078F1D848F0309D83899AC",
+      "answer_sha256": "23654CF1EE53B696484739CEA963D7BF8C02C1A0619B24DF9E8BCCCFE19F6B2A",
+      "artifacts": {
+        "control.html": "9450251BD80692DD605E46796DD7A4D1214EDB2B7CA3E3982DF060BBD3DD26C8",
+        "main.html": "7FE0B6ACDE084B7AB84914A003A56531781D345532F4D399BD2EC381B55514BB"
+      },
+      "usage": {
+        "input_tokens": 20595,
+        "cached_input_tokens": 20480,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8761,
+        "reasoning_output_tokens": 1554
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-04\\baseline\\receipt.json",
+      "receipt_sha256": "41B54D092056CB52E393EDE61A830B5F0644C8B8859C5E02C64A1CA827B8686A"
+    },
+    {
+      "case": "PG-04",
+      "arm": "candidate",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07236-e6aa-7480-9a51-56715a9e9ead",
+      "started": "2026-09-05T15:36:35.674827+00:00",
+      "finished": "2026-09-05T15:42:17.479847+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/brand-and-visual-systems.md": "F5884E4B2494139252186F14C5CA135545A6F444BB2B70EC132BB9E97DD453D7",
+        "references/logo-and-identity-mark-design.md": "811B5BC274B1652596442E633D6CA6CA4A370719280685CF56ECB6499BBE4668"
+      },
+      "prompt_sha256": "1E47E48DF3A0A8F1F680EEE0D2333CD9EB4198A66A47A4C6B8E1B4EA674CCC0B",
+      "answer_sha256": "84DEBE4119D4B04EA9FC4A61BAF6A8187B3A93E5A021C573231BD8B7122A5837",
+      "artifacts": {
+        "control.html": "67C480E17514570C9E0A0FF4CB48227C9396D051AFD5C9F4A11395117EA33386",
+        "main.html": "6E69C740098E4210ED0CD0BB389625F43F21ACF8EEE79F732FDF510919E7FDFF"
+      },
+      "usage": {
+        "input_tokens": 21023,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7769,
+        "reasoning_output_tokens": 1218
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-04\\candidate\\receipt.json",
+      "receipt_sha256": "5732E313D1BE77ED37261B67CAF1C3E956DBF28C2665E57D2F3E5132B13934FF"
+    },
+    {
+      "case": "PG-05",
+      "arm": "baseline",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0722c-c9d5-7b50-a52e-c0e0e7833f82",
+      "started": "2026-09-05T15:25:32.941141+00:00",
+      "finished": "2026-09-05T15:32:41.264467+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/imagery-and-art-direction.md": "E7481D510B099F63943331029D21090C40D4B1D7758E580018944D3569307766"
+      },
+      "prompt_sha256": "7844FEFC4CB5126644426D147C177C7376D88DF6F83A89BC46FB05AB2EDE432E",
+      "answer_sha256": "F2670CB8C0EC9D0CA5E45252B2B6A15ECE6FDCE7193CE2226D6C462ACCD96718",
+      "artifacts": {
+        "control.html": "1594422C9DDDC305BDAF1CBF85B7A37BA32E73003CE7695AE00B8DE46F1289D9",
+        "main.html": "D358611C7F535C03345D7FA4D18B7E4DB3F91E1742B97D7B2DAE677C12AD7B99"
+      },
+      "usage": {
+        "input_tokens": 17615,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9180,
+        "reasoning_output_tokens": 1036
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-05\\baseline\\receipt.json",
+      "receipt_sha256": "019E06594716FFC6CA090CE3BD48573825465C522979601CD8D86412E76746A9"
+    },
+    {
+      "case": "PG-05",
+      "arm": "candidate",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07237-0f3c-7263-99c3-02c9ae4d97bb",
+      "started": "2026-09-05T15:36:46.048494+00:00",
+      "finished": "2026-09-05T15:43:24.322732+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/imagery-and-art-direction.md": "49B122DB4D4EBD4089ACE1706723AEE2C54E45AF36835CB0B950A5A10787C97A"
+      },
+      "prompt_sha256": "1FEB119EE459AB06B9C2D25AA009F2ACB0ABFA80365BBE115DC382067CAF3FA5",
+      "answer_sha256": "216B7BCC09186DC8B1EAE1E569C69E08709F058849D0A0D0DF28A2D3905FB522",
+      "artifacts": {
+        "control.html": "CCE955B13983F07A5002D38C0EC26656AF8EC8B169F7CBE11E6ABEC2F5AD330B",
+        "main.html": "70010D53439B334AF08BA4D5661AC0ADFAAA993A4522ED1B5A09689C1BFFAA01"
+      },
+      "usage": {
+        "input_tokens": 17864,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8343,
+        "reasoning_output_tokens": 1036
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-05\\candidate\\receipt.json",
+      "receipt_sha256": "B21B4C9723E6FF2C8934A5297F5ABF1F7326A5D0ADD39732759B1C706B88120E"
+    },
+    {
+      "case": "PG-06",
+      "arm": "baseline",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07232-c765-7cd3-b0e6-23e4f98c9e22",
+      "started": "2026-09-05T15:32:05.529689+00:00",
+      "finished": "2026-09-05T15:35:08.923931+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/information-design-and-data-visualization.md": "DF990EEA4AAA488012FA768A07DBB812CB7C43D4DA97F75EF21793669A138801"
+      },
+      "prompt_sha256": "C04CFCAAD90CD174DAF11ADC61522DE8A17F59F04F02B831FD5BD25FE0AE7E2F",
+      "answer_sha256": "8A9ACA3EDBA26D0E7D4786A544861FD7ABD455DD522CFAE02E33AE2C203E3BD6",
+      "artifacts": {
+        "control.html": "682F73063AA7773FE5DE533AD212E3D88B7DC2AE40474DB4C5D2C17D223B43C9",
+        "main.html": "C990AFC2C17EA0DF6D7415067EF2ADC7CA39A2DED124CC41DF7DE6BE2B159D8F"
+      },
+      "usage": {
+        "input_tokens": 17520,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4375,
+        "reasoning_output_tokens": 773
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-06\\baseline\\receipt.json",
+      "receipt_sha256": "A8045A6143574F1243E9556FAAF354EE1470D7B959EAA89A472CA5CEDD7885D7"
+    },
+    {
+      "case": "PG-06",
+      "arm": "candidate",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0723a-307a-7aa0-8771-798b45a4dcbc",
+      "started": "2026-09-05T15:40:11.175021+00:00",
+      "finished": "2026-09-05T15:44:48.631180+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/information-design-and-data-visualization.md": "60E6D017A4A1FF77AC5E854ECD84159D04809FA551E19C789A0A89DC90D4E5DA"
+      },
+      "prompt_sha256": "F8D4EC8E9C6704BFE0A6B199728361F3C2B6BC376E08ED6D5E3647B70EF8928E",
+      "answer_sha256": "D2B43463D1BD24F259C6B9BF42C3E9B50203250844BCDB7CDD85B892DA4AD239",
+      "artifacts": {
+        "control.html": "1BB7F89D668A538C548B286F505B0C0AA446356B7E86E41865AE9F7479F38786",
+        "main.html": "73E9B69D4183DB1D70E13A6F4F261B65877F244BF6AE9616E1F59F17B85FEDD2"
+      },
+      "usage": {
+        "input_tokens": 18823,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3601,
+        "reasoning_output_tokens": 0
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-06\\candidate\\receipt.json",
+      "receipt_sha256": "9D1B5030FFC2533482F5BE01646937D97ED7D0D4EFFDA4DB6F853E62571435E1"
+    },
+    {
+      "case": "PG-07",
+      "arm": "baseline",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07233-5337-7c80-b99d-8a89dc73b8bf",
+      "started": "2026-09-05T15:32:41.329648+00:00",
+      "finished": "2026-09-05T15:35:53.290525+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/diagrams-and-relational-information.md": "807DB70F46F73F20482CF25A279F68F0F6EB6B3F5ADFA2954A9C6DA51618BD00"
+      },
+      "prompt_sha256": "5234864107BF0B71E363C1DBA4D75043536D2A5D0FC47FE981840AA7CDE4949E",
+      "answer_sha256": "6A1C34A35BFC262D4BD7F7707F13A014552E155E67AF75997C2A802129192410",
+      "artifacts": {
+        "control.html": "4E1C236C0C1E7BA5EF24939714DBCE550B793673468B1137E439AE5A025F8E48",
+        "main.html": "29677CBE52C071A326D997EE66D8860164BDC1DAF0F46127069A23767E376D98"
+      },
+      "usage": {
+        "input_tokens": 17211,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4141,
+        "reasoning_output_tokens": 996
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-07\\baseline\\receipt.json",
+      "receipt_sha256": "78A2969B66CBBC9A533611C4E7452FD704350571AD61E6664B5574D93F627D80"
+    },
+    {
+      "case": "PG-07",
+      "arm": "candidate",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0723a-58ee-7793-a836-8e57bbed1475",
+      "started": "2026-09-05T15:40:21.534304+00:00",
+      "finished": "2026-09-05T15:43:17.744160+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/diagrams-and-relational-information.md": "A75D22C136847F9F09A3C9EA4E5DB362F880CC497A884890765B87119DC2F5EA"
+      },
+      "prompt_sha256": "E199ED10FBD808211B7C77520FBE03ED8FA20E9734813A7CE0E615CA3B2DA5E5",
+      "answer_sha256": "F8EEEED357E2499142BFF4746CB991CEC682B5E9B425029F6AABD5D1580A26AD",
+      "artifacts": {
+        "control.html": "59CCC19440FEB14797D928EFAA3EB7B5CF51904C9DDC8523974A91E8453268D8",
+        "main.html": "E78A6B6B314DF3D0A5E242B084B6C1E7C1329B21493EA2233B257E0125A56A6B"
+      },
+      "usage": {
+        "input_tokens": 17440,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3971,
+        "reasoning_output_tokens": 724
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-07\\candidate\\receipt.json",
+      "receipt_sha256": "126B6AB5A5F54C0CB96E2F67304D46DA797D815B84FE50C907E1FA3FBBE1ED8B"
+    },
+    {
+      "case": "PG-08",
+      "arm": "candidate",
+      "tier": "candidate",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07239-689c-7953-a942-dea474978072",
+      "started": "2026-09-05T15:39:20.005022+00:00",
+      "finished": "2026-09-05T15:42:21.467936+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/cartography-and-spatial-data.md": "9FD17FF6360FC91F3662801C3D9A8A8BA1AB027694E8DE598D46F0C4E8FFAF63"
+      },
+      "prompt_sha256": "1EFD0CA3B8D9D9AA24840171A3717511A68A59C2FF248C7D71C056854F4B1789",
+      "answer_sha256": "07EAE23F52DFA313DC3C3029C1FEC66834176AD82C77392E75A9A9D9466E846C",
+      "artifacts": {
+        "control.html": "623BA4D353608FD462DFF028ABE8037A90095435066BAE14571C6F2983DB0AA9",
+        "main.html": "E456561A54DF323AF2E1CB5E4508CE14D0A9886F580A18D63A90F8129540334C"
+      },
+      "usage": {
+        "input_tokens": 17480,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3756,
+        "reasoning_output_tokens": 1036
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-08\\candidate\\receipt.json",
+      "receipt_sha256": "5C1D613B61DC06D641067DDD024FAB37553B6D19B7AB6877744F3106A41B6269"
+    },
+    {
+      "case": "PG-09",
+      "arm": "baseline",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07235-93eb-7261-a3ff-4f34e82daf5d",
+      "started": "2026-09-05T15:35:08.965809+00:00",
+      "finished": "2026-09-05T15:37:50.411473+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/web-and-responsive-design.md": "1FD6FBB290795CFF56E6087D2A1FF765324DCACEBC558359E4FEB2D273A69D82",
+        "references/ui-workflow-and-interaction-design.md": "34F712ACCEE77EDB93A7768A35408B9E43DFBB3C9C4840DF7703799A7128C0A7"
+      },
+      "prompt_sha256": "D35CC4F586E1A9F3A3A7850BC66494D0C1112CDCD2CE31C905FA8F7282F1B7F9",
+      "answer_sha256": "65935429DFBB039F2A179653024B5693AF5A816A0707645DBDCF6448F697CEBB",
+      "artifacts": {
+        "control.html": "888F41B1B0FD95D6149868E56AE51D4F1CEFEA7602F2969D9EDB788C66A00DD9",
+        "main.html": "A1D04250C51D465832601F509664235AB78FB4BF029B1EF84A995BB794CC19D5"
+      },
+      "usage": {
+        "input_tokens": 19077,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3611,
+        "reasoning_output_tokens": 711
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-09\\baseline\\receipt.json",
+      "receipt_sha256": "D3BB2049D2A263C7979E4B0A865FAC58257BF27B7DCB65DD90E77106CCA076FD"
+    },
+    {
+      "case": "PG-09",
+      "arm": "candidate",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0723b-f1d6-7ef1-9275-c9643dba9e61",
+      "started": "2026-09-05T15:42:06.206548+00:00",
+      "finished": "2026-09-05T15:44:46.605512+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/web-and-responsive-design.md": "E9B1A9CE39275D84ADB27A20056F6677818C74B4140F0A66333D557B851397F1",
+        "references/ui-workflow-and-interaction-design.md": "054B9D956B45806873ACC46D7C7F25D470891859BC2F16E8F046257E6ED9651B"
+      },
+      "prompt_sha256": "091F39BB1091D7F01FD03829B244EF0A60E94DF8387BA63C838AA8C17E154815",
+      "answer_sha256": "251E48C0E34BC4B653F429CAAE0E04AE5CABC10DB5962322CB8A9E96D18F94A4",
+      "artifacts": {
+        "control.html": "888F41B1B0FD95D6149868E56AE51D4F1CEFEA7602F2969D9EDB788C66A00DD9",
+        "main.html": "C48A9C5CC3FB2CEF6632742565AEBD43B0F960ECA2343B646240C6B9B2B775B8"
+      },
+      "usage": {
+        "input_tokens": 19518,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3572,
+        "reasoning_output_tokens": 518
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-09\\candidate\\receipt.json",
+      "receipt_sha256": "7F5DA58F2CBA7D1F3958A814D7D7908FC9D5C7C8AA7ABAE83EC95DE5DFD7C82F"
+    },
+    {
+      "case": "PG-10",
+      "arm": "baseline",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07236-414d-7223-9b20-8c0246cf7636",
+      "started": "2026-09-05T15:35:53.348600+00:00",
+      "finished": "2026-09-05T15:39:35.239887+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/editorial-and-fixed-media-design.md": "B7AFEECAA1785EB691D64D8B65C86ADB2296A2333D60EC0DFF0FFB71A64497B7"
+      },
+      "prompt_sha256": "A858A27C0CB2C758FDC0AAD29EFE948B25B08CFA9CCFC09F54B96CA5AF9DDDD9",
+      "answer_sha256": "F3E17DBB1D2734FF01EE0D31D2C483B34A281227BBF53C1A5129D93DFD4F54F3",
+      "artifacts": {
+        "control.html": "C6B6C21938C685E4D48D85EDFCCD88E02BDA70121519C49CEF182CE812F79264",
+        "main.html": "5C0EE6FB6EBBC6D2576555573EFBCFC903AC4B6C6AAF70C153A5680D07A46398"
+      },
+      "usage": {
+        "input_tokens": 17535,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6218,
+        "reasoning_output_tokens": 989
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-10\\baseline\\receipt.json",
+      "receipt_sha256": "98CDAAB086B4D5D4FB9CFDEED66FA8A93D8E3A6C114744AB964FF30A571BD30F"
+    },
+    {
+      "case": "PG-10",
+      "arm": "candidate",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0723d-9fa6-7b20-99a5-cbb805945d7a",
+      "started": "2026-09-05T15:43:56.252483+00:00",
+      "finished": "2026-09-05T15:48:41.596007+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/editorial-and-fixed-media-design.md": "0712AC9A3FAFAA1D888BDE6761F6C809AF70CA97D8E91B03C9CB1ED789B37058"
+      },
+      "prompt_sha256": "3EA2BF8B1EA5C69A31124903EAFF843A16A5F8FEB7C9F2148553CD35EEA52F65",
+      "answer_sha256": "7A7CCA22D1DF0D847022C414B6190EDA1A96674C522B14D414F35C1ABA6745E4",
+      "artifacts": {
+        "control.html": "8206ED43F5EFE1DFEE54857B6D4363B20077027E49BE15B57F3266A4C0890D73",
+        "main.html": "33C001331D4749F25E5F4EC99F2D373256E0E93B2063F06494F278B29E09BD42"
+      },
+      "usage": {
+        "input_tokens": 17736,
+        "cached_input_tokens": 17536,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6309,
+        "reasoning_output_tokens": 1036
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-10\\candidate\\receipt.json",
+      "receipt_sha256": "F9029846BAA2D119F2958DFD8C66A7B1C8F41BD13E3949C9C734A6B06EB74875"
+    },
+    {
+      "case": "PG-11",
+      "arm": "baseline",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07238-0b49-7873-b3cc-84b4dcc8b6bd",
+      "started": "2026-09-05T15:37:50.579363+00:00",
+      "finished": "2026-09-05T15:43:17.345177+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/motion-and-sequence.md": "A932B9D4A9FDD160F9D31EAE3E38F26B58B8293B5FB1C411C371D64379E2E991"
+      },
+      "prompt_sha256": "10476673F1A184CE4C51469A9A405E5E3AFFFFB08CB5BB69E2494D26C9A3212C",
+      "answer_sha256": "AD1E231EB573CE70A6E7DC87404B72116B2EB590D5D5034ABD7F887CAFF2DCD7",
+      "artifacts": {
+        "control.html": "BB9D4EBD82EAB49F420BA60A3191A934BFA75BF6414B59F7635862F924016F3B",
+        "main.html": "2B0E5D4B6DAEAEFE41C5E5FF6BE9D5EC05C2C247CF35A93FBEEC0CC7259911FA"
+      },
+      "usage": {
+        "input_tokens": 17625,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7555,
+        "reasoning_output_tokens": 1130
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-11\\baseline\\receipt.json",
+      "receipt_sha256": "31031B7744A1E26C6B56948D9B0040CC7795D5CE573CFD5B04F36AFD5E5BEA20"
+    },
+    {
+      "case": "PG-11",
+      "arm": "candidate",
+      "tier": "paired",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0723e-8d8b-71c0-8f06-41c61cef36d9",
+      "started": "2026-09-05T15:44:57.147435+00:00",
+      "finished": "2026-09-05T15:49:45.412821+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/motion-and-sequence.md": "60E5E69D44D10F4F2E5740071EFCA9FCF50FCD1D307AE64BB68E5E8F65BA6D10"
+      },
+      "prompt_sha256": "426B72722FDBED401060FDCE476F04CA8B02D13454E775488F22A3223A6B8D1F",
+      "answer_sha256": "7577E15D2F63A29086C5990EBA532CC7AA730555172EF8049C7BE70206012BC5",
+      "artifacts": {
+        "control.html": "A965901B969A8387C34E4E10082A88272E4B437E99F324AF8F48B36CF8AB15CB",
+        "main.html": "88C5EEE4C04A1FE84CFE8BBBB0DFDAAB8A5D929930DEEEF667CEAFF6D0AF33AB"
+      },
+      "usage": {
+        "input_tokens": 17873,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7652,
+        "reasoning_output_tokens": 1371
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-11\\candidate\\receipt.json",
+      "receipt_sha256": "B1E741172EAAD88569D358968DB00264674C15BEB645685304B6E0FE835F6300"
+    },
+    {
+      "case": "PG-12",
+      "arm": "candidate",
+      "tier": "candidate",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07241-11dd-74e2-b573-5c08d04251bf",
+      "started": "2026-09-05T15:47:41.111846+00:00",
+      "finished": "2026-09-05T15:52:03.421188+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/brief-framing-and-criteria.md": "F0B962C1F269A44BF5CEB768C8112FCFB297F8EDDA0E8AB28F9212AB07BA79A4",
+        "references/concept-development-and-selection.md": "AA14AD800A0B11821B2CECE8A665E8F02F587F0CEAB2C03220E6AE6AD219B4E3",
+        "references/advertising-and-campaign-art-direction.md": "15E2B31206F067B4C47A4C338EB0AF701E602B5E26320AB360BB6426F07E5C63",
+        "references/style-direction.md": "4343B2A1B0D206C697BA78693C6487BC6FA781D967295533AA5AC079F7440C69"
+      },
+      "prompt_sha256": "77DC86345E8AF6F61CDF2504AC5C44813E7DDF702A82D93CAF8364D98DEC6811",
+      "answer_sha256": "F592A406D565261D3F7F83C40FB6589277089ABD129E1049EBFBA0BE3F2AD5FF",
+      "artifacts": {
+        "control.html": "137A7F823293170638810A013E7FA82C95C9536C7352A1F09EC7C9A4BAAE45D4",
+        "main.html": "8A9345478A76A97DBD94F9F4C6893AFD134000162708448EF0215B1412454D3B"
+      },
+      "usage": {
+        "input_tokens": 23737,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5778,
+        "reasoning_output_tokens": 1554
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-12\\candidate\\receipt.json",
+      "receipt_sha256": "1D51C78A5CC2D6049585B33957E570862DA09F5D3D0F372BC55353A01CF2335D"
+    },
+    {
+      "case": "PG-13",
+      "arm": "candidate",
+      "tier": "candidate",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07241-3721-7d00-915e-a57fb9b92a13",
+      "started": "2026-09-05T15:47:51.417128+00:00",
+      "finished": "2026-09-05T15:50:28.833597+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/instructional-and-explanatory-design.md": "F13F697FB9B621360A98104C3A3A6C3FEBB0990C268D388B751345831688391D"
+      },
+      "prompt_sha256": "AB54E562D46BB44901E6D629176A95D47A346403F4FAE8C689AA2AB527DEA733",
+      "answer_sha256": "0E706DDA9A368EB203DA7BBB84113797E936F975E8EE3FDFFC98F89F18C8F8D2",
+      "artifacts": {
+        "control.html": "D7565309D9154A0C5936DB9F3E8EBA0A5E2BF9D5EA668E0E2667077698F3F6DE",
+        "main.html": "297E96EEDC7C3AACE6EBBD169EDB46CFFE4B734E61BBE0744A4727944821FB6B"
+      },
+      "usage": {
+        "input_tokens": 18070,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3644,
+        "reasoning_output_tokens": 518
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-13\\candidate\\receipt.json",
+      "receipt_sha256": "1631B9D978D7E4349FFE6D3DD1F087C7F482BD1878D644E5380D970669AD3BCB"
+    },
+    {
+      "case": "PG-14",
+      "arm": "candidate",
+      "tier": "candidate",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07243-83a9-71b3-9b54-bd110660054d",
+      "started": "2026-09-05T15:50:22.085957+00:00",
+      "finished": "2026-09-05T15:56:34.615921+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/packaging-graphics-and-sku-systems.md": "F1334C98B6484A677FD0494FD2F8279581E20C537F4452FA363DBB90F8E879F7"
+      },
+      "prompt_sha256": "6CDBA5DFC50890C686D0C8D78B36B17410E246F2B84A5EEA21D2ECD49FE24A4F",
+      "answer_sha256": "80669BF49606A18627522EE6F789C007697475B7A64FCD1B737FFEEE718FB665",
+      "artifacts": {
+        "control.html": "508B0CC90C6F646DF0983CAA3031DCD1CBE9E0F38A5E40797CA7CD8A0DADFBEF",
+        "main.html": "32B0E25E26C832E5A6DAC93743A447C653266A12162CA7F6FD363FA0A1DC5458"
+      },
+      "usage": {
+        "input_tokens": 18171,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8962,
+        "reasoning_output_tokens": 1436
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-14\\candidate\\receipt.json",
+      "receipt_sha256": "F6076681DCD656D9447D879CE710D468487A53914239B5B326711E1B9D56CE6B"
+    },
+    {
+      "case": "PG-15",
+      "arm": "candidate",
+      "tier": "candidate",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07243-ac20-7fe0-8fa0-9c61bfa4ac74",
+      "started": "2026-09-05T15:50:32.467488+00:00",
+      "finished": "2026-09-05T15:55:59.352152+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/physical-wayfinding-and-signage-systems.md": "A9153DD60368C4925B4458A99305FB1B51E72056A3E590AA276133EAE32679E0"
+      },
+      "prompt_sha256": "46C84E210DB9F9CE66030604DA638A2422A92AFD1EBC3B32ACCEAED548FFE138",
+      "answer_sha256": "943AE588AD4768DB20E0BD11D9F46286AEF1D998DA8F2BAEA3BB9BD7EE0F3BEC",
+      "artifacts": {
+        "control.html": "BC5DD940CB17C6BA954AA9D26A647A62C12ECF235EA292373B56108DFF0A2C96",
+        "main.html": "561E4E6E86019CF2E54A2B6D350530E81306549CB57A568791FA5211684587E4"
+      },
+      "usage": {
+        "input_tokens": 18055,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7253,
+        "reasoning_output_tokens": 995
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-15\\candidate\\receipt.json",
+      "receipt_sha256": "FFF0885E11B65E4C558C68550DD3856BE6F2D74FD107EE640D9BCF4F28523730"
+    },
+    {
+      "case": "PG-16",
+      "arm": "candidate",
+      "tier": "candidate",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07244-e635-7970-9903-dbead932004e",
+      "started": "2026-09-05T15:51:52.840908+00:00",
+      "finished": "2026-09-05T15:52:38.873021+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/media-production-and-handoff.md": "696279AA1A1CBCF2C7A9DFC30BB25ADB4213431B318BCD8A1F01602C368D2702",
+        "references/critique-and-validation.md": "1F1DCA8EF3538C0DD1372A025D0EA81BBFE063CA370925D1D5ACFD89BA38D289"
+      },
+      "prompt_sha256": "E4B807D0FED743059711AE88F5C661D3EB6EFF27A12A005AD4E8EFD1B6B02521",
+      "answer_sha256": "FC1E6D86D88DAB3FE7D8F1D88EF5B1F8CA364B37EE026FC25D318948B3828140",
+      "artifacts": {},
+      "usage": {
+        "input_tokens": 20196,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 599,
+        "reasoning_output_tokens": 143
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-16\\candidate\\receipt.json",
+      "receipt_sha256": "7EC943797C38A73965CA686B5809EC74D70D479097269D6082F73DEBF21A9481"
+    },
+    {
+      "case": "PG-T1",
+      "arm": "candidate",
+      "tier": "candidate",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a07271-ed43-7923-bf1d-45f0d7da3726",
+      "started": "2026-09-05T16:41:03.793166+00:00",
+      "finished": "2026-09-05T16:43:57.768403+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/composition-and-layout.md": "AC395923F70A93203C0B7DAA450528BBFB9D5B666C65CD25220E6A4D30AD901F",
+        "references/typography-and-typesetting.md": "079F6B13F2457AC8D34068F84427C81085E2F6984018562E830BF7F58C267F5B",
+        "references/colour-and-reproduction.md": "BFE8BEF7FD8E35F299D021B6E097C2A0870DB788EBF237A962D87FCF672087DE",
+        "references/web-and-responsive-design.md": "E9B1A9CE39275D84ADB27A20056F6677818C74B4140F0A66333D557B851397F1"
+      },
+      "prompt_sha256": "4AFDA4ADC6C25EFE0A14A64E561E6EDAB3529336A9D7A003A693688F3BDE0BF1",
+      "answer_sha256": "B82249AC6D91B95D2A8BE496E5B56812D5E32ECFBE3D449DE2929E40D87B9666",
+      "artifacts": {
+        "control.html": "8D254A2AEC5FC344B8981A4A9F89868A23A23BD6B1C1F55216E7792825E1D29A",
+        "main.html": "085C4C208987377E44B74467BCCDE5F336448C52FB56E19B50D4226C36F5F5C5"
+      },
+      "usage": {
+        "input_tokens": 24287,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3771,
+        "reasoning_output_tokens": 907
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-T1\\candidate\\receipt.json",
+      "receipt_sha256": "2080674ABA1FAD0FFB825A72201EA12E72B2DB21453F7952603EB80548592E12"
+    },
+    {
+      "case": "PG-12S",
+      "arm": "candidate",
+      "tier": "candidate",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "session_id": "01a0726b-15c4-7ea0-afcf-088f956d59f6",
+      "started": "2026-09-05T16:33:35.391717+00:00",
+      "finished": "2026-09-05T16:38:42.796642+00:00",
+      "exit_code": 0,
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/style-direction.md": "4343B2A1B0D206C697BA78693C6487BC6FA781D967295533AA5AC079F7440C69"
+      },
+      "prompt_sha256": "8FDD22A23E411F7655E47FEFF9677EB762E3638A446CB9CAE2D0FE2AA68874D7",
+      "answer_sha256": "B9A26D7756E39478A914FBE3394F80824121577D39F5ACB425B4396310C6570E",
+      "artifacts": {
+        "control.html": "6779ED69A50390B3CF8FDDE1459D94C743955E72563D0470EFBC102C8C750DB8",
+        "main.html": "0086153061ED56E7D1849361A558D4483745017062735F1CAFF15B74DB86A9BA"
+      },
+      "usage": {
+        "input_tokens": 17897,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6201,
+        "reasoning_output_tokens": 2072
+      },
+      "receipt_path": "Z:\\Projekts\\AI\\output\\design-plan7-style-revision\\PG-12S\\candidate\\receipt.json",
+      "receipt_sha256": "783CAED02743D0442B8B16310197C79616825A4F2930CA09F567EADEBF37A19A"
+    }
+  ],
+  "renders": [
+    {
+      "label": "V04dc3a722f",
+      "family": "PG-10",
+      "arm": "baseline",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-10\\baseline\\control.html",
+      "source_sha256": "c6b6c21938c685e4d48d85edfccd88e02bda70121519c49cef182ce812f79264",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V04dc3a722f.json",
+      "receipt_sha256": "A3E0A05FEE03A62BBD5DCBB9F376F2B0D60D10BCFBEA137CD95A524AFFC48646",
+      "images": {
+        "V04dc3a722f-1200.png": "1CF1E3A9EFDB84ACF56AE452D6C82E939A09F1AD903302A22CC070F4AB2FD955"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V11d693114a",
+      "family": "PG-12S",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-style-revision\\PG-12S\\candidate\\main.html",
+      "source_sha256": "0086153061ed56e7d1849361a558d4483745017062735f1caff15b74db86a9ba",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V11d693114a.json",
+      "receipt_sha256": "3C067B26D05B751BE07E2F5D5A5BAB66881C509E9005ED3A5736BED634FBE8E3",
+      "images": {
+        "V11d693114a-1200.png": "EE9388BE64BDAE8088EB6D3195D30FC70D4B3501CC7320EC71B3B2CB66C8E869"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V138e49e419",
+      "family": "PG-10",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-10\\candidate\\control.html",
+      "source_sha256": "8206ed43f5efe1dfee54857b6d4363b20077027e49be15b57f3266a4c0890d73",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V138e49e419.json",
+      "receipt_sha256": "40A951A480EDF93ABBBF04F8A6B0DE369C4415FB2830BE87F4CCD7D12F08D29B",
+      "images": {
+        "V138e49e419-1200.png": "FC1FB539EAF704560250755CCEFFC333F60EA0A12628D9F92680F54AFB2D280E"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V19e9da8291",
+      "family": "PG-03",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-03\\candidate\\main.html",
+      "source_sha256": "27a90fb35340912a30039bfb0f2621659e825fcfd37e6ec71d5042322d4d1d8e",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V19e9da8291.json",
+      "receipt_sha256": "79209907DA326790D479DF501B031C968917D55D269ECA955BA82709122EDFC0",
+      "images": {
+        "V19e9da8291-1200.png": "62E08D525B0532DFF147ADEFD924366E09ABFAB0F4283FAA1565198B520C962A"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V1c11704afa",
+      "family": "PG-04",
+      "arm": "baseline",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-04\\baseline\\main.html",
+      "source_sha256": "7fe0b6acde084b7ab84914a003a56531781d345532f4d399bd2ec381b55514bb",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V1c11704afa.json",
+      "receipt_sha256": "E7636FFFC4F21313F6ECC36149F851D9406AAD5ADD5D19211A81500FD9C29989",
+      "images": {
+        "V1c11704afa-1200.png": "AE0BB5AD38E752513B9EC5622516D7BC2C850F4534E187DD0348FC2DA54E8B43"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V219341e469",
+      "family": "PG-08",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-08\\candidate\\main.html",
+      "source_sha256": "e456561a54df323af2e1cb5e4508ce14d0a9886f580a18d63a90f8129540334c",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V219341e469.json",
+      "receipt_sha256": "44CF99A2EF8BA4A3F1B3A6F9A53CB865CD37ECE9D68CB3ABD12FF3654612AAB9",
+      "images": {
+        "V219341e469-1200.png": "2A5E1EE90F751ECCF72986211B3BA346B1D227F9F9D44DDB78192A12B78C7449"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V26ab9aa162",
+      "family": "PG-04",
+      "arm": "baseline",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-04\\baseline\\control.html",
+      "source_sha256": "9450251bd80692dd605e46796dd7a4d1214edb2b7ca3e3982df060bbd3dd26c8",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V26ab9aa162.json",
+      "receipt_sha256": "CBF3C33328E5DADC3F9AF41ED58C489064A46B85F163D2553065D54F537F4CE8",
+      "images": {
+        "V26ab9aa162-1200.png": "24163D051B03516EF558102DCB31B7D6C721594EB6BCB688F5BC7EA53AEDB2C4"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V27745c2a24",
+      "family": "PG-12",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-12\\candidate\\control.html",
+      "source_sha256": "137a7f823293170638810a013e7fa82c95c9536c7352a1f09ec7c9a4baae45d4",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V27745c2a24.json",
+      "receipt_sha256": "A3247A4B27E36BBE09B75AE63669AE81A1CDCF7611CEC889309BF4F60D9E03F3",
+      "images": {
+        "V27745c2a24-1200.png": "D1F2D26483C7C1B7F2A59683B20CBB42DDA4D7FA2D1A3F776D0A7A626ED8C629"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V27a9404f0c",
+      "family": "PG-11",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-11\\candidate\\main.html",
+      "source_sha256": "88c5eee4c04a1fe84cfe8bbbb0dfdaab8a5d929930deeef667ceaff6d0af33ab",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V27a9404f0c.json",
+      "receipt_sha256": "3502163830169D10972F6D983CF1B2FC3A5A40A24B55E3F407540E6BA435BBF1",
+      "images": {
+        "V27a9404f0c-1200.png": "CBE84BC54957D06D7D86A0F6A2CE7E9106F5D2402860075D1BE5B38B8CAC631B",
+        "V27a9404f0c-replay-status-80.png": "3945AD1B288C3924DDED253B53932FE34DD9F54F4766DBD4A6D388A4F91647C3",
+        "V27a9404f0c-replay-status-220.png": "3945AD1B288C3924DDED253B53932FE34DD9F54F4766DBD4A6D388A4F91647C3",
+        "V27a9404f0c-replay-status-700.png": "3945AD1B288C3924DDED253B53932FE34DD9F54F4766DBD4A6D388A4F91647C3",
+        "V27a9404f0c-replay-status-1600.png": "3945AD1B288C3924DDED253B53932FE34DD9F54F4766DBD4A6D388A4F91647C3",
+        "V27a9404f0c-replay-story-80.png": "6E00B5DB2656B6904BC57EF1314976F50C87D8601C6A2E69D2219D55B7D55B07",
+        "V27a9404f0c-replay-story-220.png": "4FAC96579B8BD7903EA91379EA549863FC7878AE2EBA80C6ADE98F4030ED007D",
+        "V27a9404f0c-replay-story-700.png": "6A58A08C68897B2D532239B103E72A62EE3418E0B053DBA582525130DED30C27",
+        "V27a9404f0c-replay-story-1600.png": "814F366CC9B7C5B7A25A29669797D5748C37C65014C6166E260B80B0CC01229F",
+        "V27a9404f0c-reduced.png": "6871FDDD2EC7F3406E5C39082E32E3AACCAB890DFAA60C32C5A377EBE2ADB5F1"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V290628c0ce",
+      "family": "PG-13",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-13\\candidate\\control.html",
+      "source_sha256": "d7565309d9154a0c5936db9f3e8eba0a5e2bf9d5ea668e0e2667077698f3f6de",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V290628c0ce.json",
+      "receipt_sha256": "E44175F8B074F385DD42481AFC283124073F84E5D3AC90C8C97AEFF1A1C15DB9",
+      "images": {
+        "V290628c0ce-1200.png": "58EB40D950E8DC7195BCDB905F7A767598B3B2E699647030188678AFA1427184"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V29bcd8fde5",
+      "family": "PG-03",
+      "arm": "baseline",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-03\\baseline\\main.html",
+      "source_sha256": "4d52d4201a90b2b62e7e36eac79b6842ebefe85fa75f0098dedd8f340d192dfe",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V29bcd8fde5.json",
+      "receipt_sha256": "231B71CB65000FDC29820E1456D0F5D456D7792B56C92BC69EA500B119696B78",
+      "images": {
+        "V29bcd8fde5-1200.png": "19790796051854DC53ED823A90D6F0008E4EC06644573EF2BC99C09E1B017ADB"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V2d42a3fd9b",
+      "family": "PG-07",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-07\\candidate\\control.html",
+      "source_sha256": "59ccc19440feb14797d928efaa3eb7b5cf51904c9ddc8523974a91e8453268d8",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V2d42a3fd9b.json",
+      "receipt_sha256": "1BD91A210E8F9003C9567E2C885FEF1C98796D4F8A09613CB868DA927D423426",
+      "images": {
+        "V2d42a3fd9b-1200.png": "2B84ACF510B5D75BB2C96D61AB87AA2240EF08B73B09BBEC93FA97ADD0752070"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V3822182d3c",
+      "family": "PG-01",
+      "arm": "baseline",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-01\\baseline\\control.html",
+      "source_sha256": "143af95f86403a2851f9cfb02fe734aa8c7bf75beedf606505d2984539903ebf",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V3822182d3c.json",
+      "receipt_sha256": "B800D55449B5F85EE5C5F563BB445117DE6F1E4BA1696EB0FC5E869C61B32EBB",
+      "images": {
+        "V3822182d3c-720.png": "1A13C129DD5F35903B71C3D53DAB2FF3242B87C7C3CBEB6E40FFDC07340F6191"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V452deead5d",
+      "family": "PG-13",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-13\\candidate\\main.html",
+      "source_sha256": "297e96eedc7c3aace6ebbd169edb46cffe4b734e61bbe0744a4727944821fb6b",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V452deead5d.json",
+      "receipt_sha256": "E0A79A4825874DD9A55DCF904BFCED27A4DD0924D66A27809288CA118EF5CBD2",
+      "images": {
+        "V452deead5d-1200.png": "662E1652764B7C3BAF6E46EFE62785FD85FD9CB9D2AE4272F659B25D0BE32DBD"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V4679d80c5a",
+      "family": "PG-07",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-07\\candidate\\main.html",
+      "source_sha256": "e78a6b6b314df3d0a5e242b084b6c1e7c1329b21493ea2233b257e0125a56a6b",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V4679d80c5a.json",
+      "receipt_sha256": "1C67F2325F7C849F705986217E5DEC5F6763C685B43245CB265DFA921FBA4E58",
+      "images": {
+        "V4679d80c5a-1200.png": "13E58AFA0F10279AF29E74F11281B522AB33F22DB277F768832306C394D74F0B"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V4680ef40cc",
+      "family": "PG-09",
+      "arm": "baseline",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-09\\baseline\\control.html",
+      "source_sha256": "888f41b1b0fd95d6149868e56ae51d4f1cefea7602f2969d9edb788c66a00dd9",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V4680ef40cc.json",
+      "receipt_sha256": "2FA0D9D24A45BF615702A43A43847850C26AD61D148E468E1E7ED6FF491F894E",
+      "images": {
+        "V4680ef40cc-360.png": "2777440939981493CBD46D640471FC3A17ECE62724B096EC51B451E98D3F3C0B",
+        "V4680ef40cc-720.png": "0C8F0E32ADE11C29B21E18A828BD3834B5E44698E749CA752820C5805A84EAAA",
+        "V4680ef40cc-1200.png": "03D053CC271D140DD6036F1B3F3B8236659A35A3CD4BD59174205E5EF5A1D85A"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V47c02fc9d9",
+      "family": "PG-02",
+      "arm": "baseline",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-02\\baseline\\control.html",
+      "source_sha256": "27a1cce41cfce62795127b6a09d51533e8daeb7b85f98139658f056e72c491ee",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V47c02fc9d9.json",
+      "receipt_sha256": "4911378A99324517614CDA63018EF758E2A2C62F57827B4CDA2BB3DD93F31F58",
+      "images": {
+        "V47c02fc9d9-760.png": "5D592805EC6C8EE8FBF12F8F19E7115E4B5742C54C3851F67ED492F42CB08E7A"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V48d47f31bd",
+      "family": "PG-03",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-03\\candidate\\control.html",
+      "source_sha256": "55f4e908df706f6447449a0731bf377f081a11f352f4e6b669facc4285edbaaa",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V48d47f31bd.json",
+      "receipt_sha256": "0C1A85884A9788D190FF72A3DB8B7CB5102B1F5EFCCAB2B6B9272A46EA378723",
+      "images": {
+        "V48d47f31bd-1200.png": "ABE6F285364D8398C241A858EAC6387E1B5BEDF930D8692FD5FF57E759518A82"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V4adf503900",
+      "family": "PG-05",
+      "arm": "baseline",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-05\\baseline\\control.html",
+      "source_sha256": "1594422c9dddc305bdaf1cbf85b7a37ba32e73003ce7695ae00b8de46f1289d9",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V4adf503900.json",
+      "receipt_sha256": "51C651A3A7AC0FEA516B6FAD749DEA1434304F21515F4C650949E4558CC8DC4A",
+      "images": {
+        "V4adf503900-1200.png": "0B4A8B8CB67BE1FB317C7594E9A9F9CBFC8813B076F8131DD07E3D22FE5ADAC9"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V514adc9094",
+      "family": "PG-04",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-04\\candidate\\control.html",
+      "source_sha256": "67c480e17514570c9e0a0ff4cb48227c9396d051afd5c9f4a11395117ea33386",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V514adc9094.json",
+      "receipt_sha256": "99F3D8D0EB9E3DBBC23B69D9ED2684DA5A482DCCF8CAE9EB2C5B56CE82A6BC2A",
+      "images": {
+        "V514adc9094-1200.png": "B306E3F546D5B8A17594172AEC724DF002708B9CDAAE4C5208797613C4223B65"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V527c80d9f0",
+      "family": "PG-02",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-02\\candidate\\control.html",
+      "source_sha256": "9bff2dada7400f361427f6902ea4f3f44136bf74cf881126206b0a442eb129f4",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V527c80d9f0.json",
+      "receipt_sha256": "0C299596A72167006C9545E30B5F62D8229CCB408A29ACF001B681D638AB2466",
+      "images": {
+        "V527c80d9f0-760.png": "D04D1A17478F9F7D20F17E3FE02F76F802981736BC079414AF9555D0519E2D6E"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V52919824b5",
+      "family": "PG-01",
+      "arm": "baseline",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-01\\baseline\\main.html",
+      "source_sha256": "994d66a790947f198350c8b7a967d2c6c6c612f51e6220ef16401e52d8d25aa0",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V52919824b5.json",
+      "receipt_sha256": "361DD69FACA34CCA6F304D8C079D98ABD72089399B79FF2D1D5157D5CD9603BE",
+      "images": {
+        "V52919824b5-720.png": "F5B24059AFB2429E5AF1AE4D7665F2F3D50A364CA6D1053F0A7E585BFE933407"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V56d2c96b4b",
+      "family": "PG-09",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-09\\candidate\\main.html",
+      "source_sha256": "c48a9c5cc3fb2cef6632742565aebd43b0f960eca2343b646240c6b9b2b775b8",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V56d2c96b4b.json",
+      "receipt_sha256": "124EEAF82DA328E3A7E03BB68855A14285D17D29ABEA7249D756915C1F7CB043",
+      "images": {
+        "V56d2c96b4b-360.png": "C074924393C56443AA2AA31B9418833BD5C26E7CD544D352957C7727A0E080CD",
+        "V56d2c96b4b-720.png": "FB9E18D9210DBD642D2D848563B355C81E5827E2B86CB37B09FAF97C55E23671",
+        "V56d2c96b4b-1200.png": "CB7C3FA2E34C111B85D8A266496C73CA1538B6026268986E3372438E8C314C5E"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V5e226d1c16",
+      "family": "PG-08",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-08\\candidate\\control.html",
+      "source_sha256": "623ba4d353608fd462dff028abe8037a90095435066bae14571c6f2983db0aa9",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V5e226d1c16.json",
+      "receipt_sha256": "87312CF371FFBA3C79304BCAF2787473412130A16EAB54DDAC552EA056406D16",
+      "images": {
+        "V5e226d1c16-1200.png": "B519E2F316AEAEE405E94CB0953A4BE44494EEC422B5F363F65D946BF7E13E32"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V5ff31e6161",
+      "family": "PG-06",
+      "arm": "baseline",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-06\\baseline\\main.html",
+      "source_sha256": "c990afc2c17ea0df6d7415067ef2adc7ca39a2ded124cc41df7de6be2b159d8f",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V5ff31e6161.json",
+      "receipt_sha256": "0D16962D6C7578B94B67256D604B850EF2EEBE7432446D472CF9942FB7F2CE27",
+      "images": {
+        "V5ff31e6161-1200.png": "A6D7FDEB655EE768AD373A403BD06309F2ACEA47B0B73B8D880E0125DEA35AB9"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V6903e2bd6a",
+      "family": "PG-05",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-05\\candidate\\main.html",
+      "source_sha256": "70010d53439b334af08ba4d5661ac0adfaaa993a4522ed1b5a09689c1bffaa01",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V6903e2bd6a.json",
+      "receipt_sha256": "CC9F96A216858362888DFA208ECA488AB168FD933955A18FCA4083C542C12BD1",
+      "images": {
+        "V6903e2bd6a-1200.png": "B42DC8BF6D7D245C9EF34D2F812A67F9F74D6F31DCF332C84C1E506A58C01845"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V7634e2ce76",
+      "family": "PG-01",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-01\\candidate\\main.html",
+      "source_sha256": "34035e4f08d2353e2f3ae85702cbf026879d08e4d04e7d816cb07fbf8293cbf8",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V7634e2ce76.json",
+      "receipt_sha256": "A8E2333EEC24623185634F1B7A1BD2B259B7FA30CDCBF35FCA2E94D77CC4CC17",
+      "images": {
+        "V7634e2ce76-720.png": "C878B86488B4D2E67245CC043CAB9177208DFC559892D47BBEC61C430CDBEB0B"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V799264429d",
+      "family": "PG-10",
+      "arm": "baseline",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-10\\baseline\\main.html",
+      "source_sha256": "5c0ee6fb6ebbc6d2576555573efbcfc903ac4b6c6aaf70c153a5680d07a46398",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V799264429d.json",
+      "receipt_sha256": "EABC4AADD40ABBE07E1900A2F0F10D5F445BF159141F1238A095F0EF6620DC52",
+      "images": {
+        "V799264429d-1200.png": "A26B28BC8384136C76370803101D027667D2E2ACC3E2710760A8E6A4232B3099"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V7aa496a1c8",
+      "family": "PG-03",
+      "arm": "baseline",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-03\\baseline\\control.html",
+      "source_sha256": "b1d6471668f8ba00c1977ac14fc2ed0f9ab53134d07da97a0b9e66074574dc17",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V7aa496a1c8.json",
+      "receipt_sha256": "557F9C65531E97744BCBE18194AC7335E083316BC835E1BE8016BCEB7FA14903",
+      "images": {
+        "V7aa496a1c8-1200.png": "476D4FA3CF2B1DFACEEFA0AA78EC0EA028D755995981EC41AC8D304A69345811"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V7e9d8b5b2a",
+      "family": "PG-06",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-06\\candidate\\main.html",
+      "source_sha256": "73e9b69d4183db1d70e13a6f4f261b65877f244bf6ae9616e1f59f17b85fedd2",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V7e9d8b5b2a.json",
+      "receipt_sha256": "C6F48EBAD733F715FF910F304D53949C124EF4D5832D283ED5684B8B808758FF",
+      "images": {
+        "V7e9d8b5b2a-1200.png": "8F7E88EE1A5FAB220242E1A1024E0757153DF7D1A34D5ABF03C55DB86490699B"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V83fff1d41d",
+      "family": "PG-11",
+      "arm": "baseline",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-11\\baseline\\main.html",
+      "source_sha256": "2b0e5d4b6daeaefe41c5e5ff6be9d5ec05c2c247cf35a93fbeec0cc7259911fa",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V83fff1d41d.json",
+      "receipt_sha256": "902D213CD4B6330CE6B9A9265ECF7BC7DF8894396E952DC8C8B59660C5B838A3",
+      "images": {
+        "V83fff1d41d-1200.png": "FA07052CEF50E9B9DD81BC514D15E2DE03F29B8FB4786A3923B7AC6A3F170596",
+        "V83fff1d41d-replay-status-80.png": "192A14DD50D4DA400C3C0FAE2D72D181356F463940069ACFC56A0F316DFA268F",
+        "V83fff1d41d-replay-status-220.png": "192A14DD50D4DA400C3C0FAE2D72D181356F463940069ACFC56A0F316DFA268F",
+        "V83fff1d41d-replay-status-700.png": "192A14DD50D4DA400C3C0FAE2D72D181356F463940069ACFC56A0F316DFA268F",
+        "V83fff1d41d-replay-status-1600.png": "192A14DD50D4DA400C3C0FAE2D72D181356F463940069ACFC56A0F316DFA268F",
+        "V83fff1d41d-replay-story-80.png": "283DA498CD59CDFEEA6C8E5BBC301995D7D6A9409F37B9C5BE7E99EC3BA023A4",
+        "V83fff1d41d-replay-story-220.png": "283DA498CD59CDFEEA6C8E5BBC301995D7D6A9409F37B9C5BE7E99EC3BA023A4",
+        "V83fff1d41d-replay-story-700.png": "214336897E5C6586B2F686E8051BCB70F123BD1D8BC933EAF915853F2D8E899E",
+        "V83fff1d41d-replay-story-1600.png": "AC7B56FBE8B938417597BF0C4076B3FC3498416EE218A50A935373771D78A080",
+        "V83fff1d41d-reduced.png": "CF1BFD2F8166D94A4EFFA447FE6EDCBF1B3D926E81B2DC2D4CD8884E20AD2B08"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V85ca001051",
+      "family": "PG-T1",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-T1\\candidate\\control.html",
+      "source_sha256": "8d254a2aec5fc344b8981a4a9f89868a23a23bd6b1c1f55216e7792825e1d29a",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V85ca001051.json",
+      "receipt_sha256": "D0449B7FD93F9B21D92BF35BAE11056171715A57F9A17458DBA41C806E699821",
+      "images": {
+        "V85ca001051-360.png": "ED3F671C3EFCA9EBA138B8CDDB976EC27D2E7C01AA11AE2D3B8BF572958FC6FC",
+        "V85ca001051-720.png": "C704FCC1DC72ADE61A461DB9A07EBE883B75EF6C85CD4213B1AC47FEE3A802A8",
+        "V85ca001051-1000.png": "72DD1087FDD99EE5B660163005C4CF6CEB9535902C222C17F95D44E895796E52"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V87937f6696",
+      "family": "PG-01",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-01\\candidate\\control.html",
+      "source_sha256": "bec6da374ff4dcbd6e1c3e350b191bc9e0cb1f785052025695140a160535acc4",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V87937f6696.json",
+      "receipt_sha256": "9327ABF762101F431F501C70D64B89D046275DDEFB4B1CE45E285569986A87DC",
+      "images": {
+        "V87937f6696-720.png": "C73A1C49840F0D23CBABE1784D0E61B16D34D7CAD971EA0C28359D7B21596B10"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V9389e55df2",
+      "family": "PG-15",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-15\\candidate\\main.html",
+      "source_sha256": "561e4e6e86019cf2e54a2b6d350530e81306549cb57a568791fa5211684587e4",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V9389e55df2.json",
+      "receipt_sha256": "256D043E9671B4C014BB7BBF416CDDF5728D541D37176E7305F746554D5D9465",
+      "images": {
+        "V9389e55df2-1200.png": "7AE947448B15AEF4ED38D33E2E3D54A14EA4EB701CDD73DE46E8E1CAF8B979B1"
+      },
+      "overflow": []
+    },
+    {
+      "label": "V9dc71a4dc4",
+      "family": "PG-04",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-04\\candidate\\main.html",
+      "source_sha256": "6e69c740098e4210ed0cd0bb389625f43f21acf8eee79f732fdf510919e7fdff",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\V9dc71a4dc4.json",
+      "receipt_sha256": "63D354E82E47D9D3186CC3A632C79222AB93DDEB198CFD0131021F3636033FCF",
+      "images": {
+        "V9dc71a4dc4-1200.png": "42D2B82E8C4D44108B742BB204F465B97CCA5A2BAFB860A35C69639353B0BC46"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Va5a0a84bf1",
+      "family": "PG-07",
+      "arm": "baseline",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-07\\baseline\\main.html",
+      "source_sha256": "29677cbe52c071a326d997ee66d8860164bdc1daf0f46127069a23767e376d98",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Va5a0a84bf1.json",
+      "receipt_sha256": "45A52319DBF514F22E06125551A5CE3FEDBAF4957BC8AEDB10C4710BEF4C9D4F",
+      "images": {
+        "Va5a0a84bf1-1200.png": "1E7A34402468D10F4B2D7F43216E5CB6C730376D42B80EF4659FC03B3E8C00D4"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vb22ad16408",
+      "family": "PG-05",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-05\\candidate\\control.html",
+      "source_sha256": "cce955b13983f07a5002d38c0ec26656af8ec8b169f7cbe11e6abec2f5ad330b",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vb22ad16408.json",
+      "receipt_sha256": "ED77C6CD397561FB08BF91E8BC0B65FD78B6B4ECD2C53E9BB2FE8E7520D9D751",
+      "images": {
+        "Vb22ad16408-1200.png": "332D4385AD6D92D181226CD6FB3B68857CF5B3F2A7736AC828D9019B0CFBFC3F"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vb2ea849145",
+      "family": "PG-06",
+      "arm": "baseline",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-06\\baseline\\control.html",
+      "source_sha256": "682f73063aa7773fe5de533ad212e3d88b7dc2ae40474db4c5d2c17d223b43c9",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vb2ea849145.json",
+      "receipt_sha256": "B5475985666E4F10D3546566E56F85B60E4729A20D1B5AEEB0DEA206673DEA33",
+      "images": {
+        "Vb2ea849145-1200.png": "4C77A71D5E2A7BCF7E044BCCF3FA10AD229FC7D1C26B538CDE7B20A428CB804C"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vb767f77854",
+      "family": "PG-05",
+      "arm": "baseline",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-05\\baseline\\main.html",
+      "source_sha256": "d358611c7f535c03345d7fa4d18b7e4db3f91e1742b97d7b2dae677c12ad7b99",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vb767f77854.json",
+      "receipt_sha256": "56E68A291E2075C42DE200132A88EBC873AA6BB4D68C285E94265F2F5E519768",
+      "images": {
+        "Vb767f77854-1200.png": "7E3C78D2C48D9132315A679F2EEE12030AAE7435B3BC1E1426A5CFD0FAB509C1"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vb7f7ffa4e2",
+      "family": "PG-07",
+      "arm": "baseline",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-07\\baseline\\control.html",
+      "source_sha256": "4e1c236c0c1e7ba5ef24939714dbce550b793673468b1137e439ae5a025f8e48",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vb7f7ffa4e2.json",
+      "receipt_sha256": "FBAA2D727DBECEA6518CC6309FFC24CEE05F4407D410D503238E22B0D61B6662",
+      "images": {
+        "Vb7f7ffa4e2-1200.png": "CF94991932491645C48FA9230E41EBF82AD7F4729DD9894B67D06D7952633477"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vb84f681e0d",
+      "family": "PG-10",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-10\\candidate\\main.html",
+      "source_sha256": "33c001331d4749f25e5f4ec99f2d373256e0e93b2063f06494f278b29e09bd42",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vb84f681e0d.json",
+      "receipt_sha256": "8C06EF04645AB09FC258887EC3B58DB8AAB8CB4D3D9EE8AE7149787F57811C1A",
+      "images": {
+        "Vb84f681e0d-1200.png": "55DFED0C3C72DA4FF6D8C72C5CF7D2796C9351D475F8A5A108384A8CB9805FE4"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vc1bd43e09d",
+      "family": "PG-11",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-11\\candidate\\control.html",
+      "source_sha256": "a965901b969a8387c34e4e10082a88272e4b437e99f324af8f48b36cf8ab15cb",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vc1bd43e09d.json",
+      "receipt_sha256": "35E659A0E5C996F60556DC45E3E5D974539CB092F22F8F6726ED5B37174ED45B",
+      "images": {
+        "Vc1bd43e09d-1200.png": "6B115B72CC224ADDEA9D89A93FCFB022D0AFB03C8E49CC368BA559BEE0C33E96"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vc5e3dd0c59",
+      "family": "PG-12S",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-style-revision\\PG-12S\\candidate\\control.html",
+      "source_sha256": "6779ed69a50390b3cf8fdde1459d94c743955e72563d0470efbc102c8c750db8",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vc5e3dd0c59.json",
+      "receipt_sha256": "FF3EAB165F3F84F12FF5C79E11E506815E13FABE9D37B7B789938F1198A48F8A",
+      "images": {
+        "Vc5e3dd0c59-1200.png": "865CF4D40303B4A1194478142761967D9FC8935ACA946D4556273170920258E6"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Ve1d8bdd807",
+      "family": "PG-12",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-12\\candidate\\main.html",
+      "source_sha256": "8a9345478a76a97dbd94f9f4c6893afd134000162708448ef0215b1412454d3b",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Ve1d8bdd807.json",
+      "receipt_sha256": "7B2369E14CFD768602784994673E6ED9F4797EA601B9B95B24B5CA64C3A9C247",
+      "images": {
+        "Ve1d8bdd807-1200.png": "4D736EB9FBEB9290FFDE6D36A6CA9A4461DF3736AAA8E742141D74880FACC351"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Ve26ab3217a",
+      "family": "PG-02",
+      "arm": "baseline",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-02\\baseline\\main.html",
+      "source_sha256": "803ea16689babf580fc4312f4bb1fca14db25307bb2069c9bf094a8e4e2d8d2d",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Ve26ab3217a.json",
+      "receipt_sha256": "60535E66662CFDC9304CB73E2F306A75DE3A40034D3792F9033B814246613CFC",
+      "images": {
+        "Ve26ab3217a-760.png": "2091B6210CE6F4760C32D1113121790178324A031C4637B17C92A1B58C3914A7"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Ve36ed5f40f",
+      "family": "PG-11",
+      "arm": "baseline",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-11\\baseline\\control.html",
+      "source_sha256": "bb9d4ebd82eab49f420ba60a3191a934bfa75bf6414b59f7635862f924016f3b",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Ve36ed5f40f.json",
+      "receipt_sha256": "9789A693FAA566186B2533FC28297FE034FEA86FD47966C836C0E70A949754F2",
+      "images": {
+        "Ve36ed5f40f-1200.png": "27E5B0C77551F89DB6503495E984463C29E9E47E42CDE5F7F6B59D2C5C24D3AF"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Ve37e966872",
+      "family": "PG-09",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-09\\candidate\\control.html",
+      "source_sha256": "888f41b1b0fd95d6149868e56ae51d4f1cefea7602f2969d9edb788c66a00dd9",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Ve37e966872.json",
+      "receipt_sha256": "4BD059A452F68160703A0FCD50064CADDC3DE9D6BF79D562C8A6CD6E3DF40CB0",
+      "images": {
+        "Ve37e966872-360.png": "2777440939981493CBD46D640471FC3A17ECE62724B096EC51B451E98D3F3C0B",
+        "Ve37e966872-720.png": "0C8F0E32ADE11C29B21E18A828BD3834B5E44698E749CA752820C5805A84EAAA",
+        "Ve37e966872-1200.png": "03D053CC271D140DD6036F1B3F3B8236659A35A3CD4BD59174205E5EF5A1D85A"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Ve504e7d60e",
+      "family": "PG-09",
+      "arm": "baseline",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-09\\baseline\\main.html",
+      "source_sha256": "a1d04250c51d465832601f509664235ab78fb4bf029b1ef84a995bb794cc19d5",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Ve504e7d60e.json",
+      "receipt_sha256": "0C21197EBE326AB58FFBDC0F7816360134473C016E604FFA1478728ED4A1732D",
+      "images": {
+        "Ve504e7d60e-360.png": "6299912E9D00F34A5EF15C1E199A34B24F8F83754FF08700C76A2142B3E86BDE",
+        "Ve504e7d60e-720.png": "FE83C2E214200808F3C441669EE717ED5A1206F56FB5BFB5E7CB1B17B3F845EF",
+        "Ve504e7d60e-1200.png": "4E13B78FB2E60417C5245FEFC1041FA458213E77DAED3CFBFF0C129F47AD67D4"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vf1036230db",
+      "family": "PG-06",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-06\\candidate\\control.html",
+      "source_sha256": "1bb7f89d668a538c548b286f505b0c0aa446356b7e86e41865ae9f7479f38786",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vf1036230db.json",
+      "receipt_sha256": "8811162957CB87CCC8E2F3AADB486E00B25AE0EE5D2D24DD0FD4222F1210353E",
+      "images": {
+        "Vf1036230db-1200.png": "D60DECCC3A20C1F1B1F0F3B17163E8DC1D1AE8ACC1FE5C1AFA3256316237056A"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vf4b25b6164",
+      "family": "PG-T1",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-T1\\candidate\\main.html",
+      "source_sha256": "085c4c208987377e44b74467bccde5f336448c52fb56e19b50d4226c36f5f5c5",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vf4b25b6164.json",
+      "receipt_sha256": "21FE4480A7C7ABAB631595097093719027B90505E739234AA2BA4E2E68DFBC07",
+      "images": {
+        "Vf4b25b6164-360.png": "211F79ED8026E58C34F3FA64BAA057C61BEF044C4B389D69DE09B0BADA56A93D",
+        "Vf4b25b6164-720.png": "F903B124E020E48E12010717CE657EDF4D237CA79CDA68C77E6125F543782531",
+        "Vf4b25b6164-1000.png": "15D91212E1B30F07A8E6314F2FA9B6848FD67288D05B7BFC86627066234C6077"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vf4fd37a0dd",
+      "family": "PG-15",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-15\\candidate\\control.html",
+      "source_sha256": "bc5dd940cb17c6ba954aa9d26a647a62c12ecf235ea292373b56108dff0a2c96",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vf4fd37a0dd.json",
+      "receipt_sha256": "399E61756247C25644CF8AA816B457745264C655F0B6BE2A3898EBBDB0D91813",
+      "images": {
+        "Vf4fd37a0dd-1200.png": "36C53C8CDD94F335F57C3ED19761D41BC9C71E9BFA6AAE54EAFF23DB953129D1"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vf54ce51ab2",
+      "family": "PG-14",
+      "arm": "candidate",
+      "file": "control.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-14\\candidate\\control.html",
+      "source_sha256": "508b0cc90c6f646df0983caa3031dcd1cbe9e0f38a5e40797ca7cd8a0dadfbef",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vf54ce51ab2.json",
+      "receipt_sha256": "E530474BDD9F7D539AFD30C5569EAA13CCA2F0F8E13C3BB57D8A889E1856D175",
+      "images": {
+        "Vf54ce51ab2-1200.png": "5B5E6ECE512D93EB35AA9AE914E0A50DEC820E1FBE744283B4D0F7C7AB28F4C5"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vfe1ca8e50d",
+      "family": "PG-14",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-14\\candidate\\main.html",
+      "source_sha256": "32b0e25e26c832e5a6dac93743a447c653266a12162ca7f6fd363fa0a1dc5458",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vfe1ca8e50d.json",
+      "receipt_sha256": "5A47398B0530E4B1854C301B39139C8796CF73B8A54D5C21B21EA103CA5560C1",
+      "images": {
+        "Vfe1ca8e50d-1200.png": "816F0F3FD458EBDF3908885D57F286FED0898452C3BF09A8D6673C1CE798126B"
+      },
+      "overflow": []
+    },
+    {
+      "label": "Vfeee79921a",
+      "family": "PG-02",
+      "arm": "candidate",
+      "file": "main.html",
+      "source": "Z:\\Projekts\\AI\\output\\design-plan7-trials\\PG-02\\candidate\\main.html",
+      "source_sha256": "609dc59eb1c69dd68902cec3cde376eaba27ac2e51b715ddabf50a444be4b4dc",
+      "chrome": "152.0.7977.76",
+      "receipt_path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\Vfeee79921a.json",
+      "receipt_sha256": "18093248045EDE6FACB6FE3A630784D67BD84304FA65D4A3B35D807BAA6FCF2D",
+      "images": {
+        "Vfeee79921a-760.png": "E06A9144863C3E0D58E9DF3DE85FFA581A09C1E3EE85EF80D61E6D29AA311A82"
+      },
+      "overflow": []
+    }
+  ],
+  "followup_receipt": {
+    "path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan7\\followup-v2\\receipt.json",
+    "sha256": "F018BE94F53C8651C87F1E9991D2FFF32F774191D5BE7E578CE4A43BB3A3E293"
+  },
+  "integrity": {
+    "source_and_runtime_match_build_receipt": true,
+    "original_monitored": 100,
+    "unchanged": 74,
+    "changed": [
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\development\\docs\\plans\\0006-implement-fable-design-improvements.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\development\\PROJECT_INDEX.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\advertising-and-campaign-art-direction.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\brand-and-visual-systems.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\brief-framing-and-criteria.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\cartography-and-spatial-data.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\colour-and-reproduction.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\composition-and-layout.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\concept-development-and-selection.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\critique-and-validation.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\diagrams-and-relational-information.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\editorial-and-fixed-media-design.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\font-technology-and-script-safety.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\imagery-and-art-direction.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\information-design-and-data-visualization.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\instructional-and-explanatory-design.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\logo-and-identity-mark-design.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\media-production-and-handoff.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\motion-and-sequence.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\packaging-graphics-and-sku-systems.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\physical-wayfinding-and-signage-systems.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\source-index.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\style-direction.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\typography-and-typesetting.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\ui-workflow-and-interaction-design.md",
+      "Z:\\Projekts\\AI\\scoville-design-anti-ai-slop\\scoville-design-anti-ai-slop\\references\\web-and-responsive-design.md"
+    ],
+    "plan6_w004_unchanged": true,
+    "freezes_unchanged": true,
+    "final_candidate_exposure_hashes_match": true
+  },
+  "tokens": {
+    "tokenizer": "o200k_base",
+    "core_plus_index": [
+      3072,
+      3072
+    ],
+    "runtime_instruction_total": [
+      57729,
+      62317
+    ],
+    "modules": {
+      "brief-framing-and-criteria": {
+        "before": 1482,
+        "after": 1614,
+        "delta": 132
+      },
+      "concept-development-and-selection": {
+        "before": 1552,
+        "after": 1697,
+        "delta": 145
+      },
+      "composition-and-layout": {
+        "before": 1858,
+        "after": 2134,
+        "delta": 276
+      },
+      "typography-and-typesetting": {
+        "before": 2222,
+        "after": 2472,
+        "delta": 250
+      },
+      "font-technology-and-script-safety": {
+        "before": 2033,
+        "after": 2185,
+        "delta": 152
+      },
+      "colour-and-reproduction": {
+        "before": 1827,
+        "after": 2063,
+        "delta": 236
+      },
+      "imagery-and-art-direction": {
+        "before": 1926,
+        "after": 2175,
+        "delta": 249
+      },
+      "information-design-and-data-visualization": {
+        "before": 1812,
+        "after": 2092,
+        "delta": 280
+      },
+      "cartography-and-spatial-data": {
+        "before": 1571,
+        "after": 1752,
+        "delta": 181
+      },
+      "diagrams-and-relational-information": {
+        "before": 1512,
+        "after": 1741,
+        "delta": 229
+      },
+      "brand-and-visual-systems": {
+        "before": 2482,
+        "after": 2700,
+        "delta": 218
+      },
+      "logo-and-identity-mark-design": {
+        "before": 2314,
+        "after": 2524,
+        "delta": 210
+      },
+      "instructional-and-explanatory-design": {
+        "before": 2246,
+        "after": 2392,
+        "delta": 146
+      },
+      "advertising-and-campaign-art-direction": {
+        "before": 2376,
+        "after": 2510,
+        "delta": 134
+      },
+      "ui-workflow-and-interaction-design": {
+        "before": 1714,
+        "after": 1885,
+        "delta": 171
+      },
+      "web-and-responsive-design": {
+        "before": 1616,
+        "after": 1885,
+        "delta": 269
+      },
+      "editorial-and-fixed-media-design": {
+        "before": 1838,
+        "after": 2039,
+        "delta": 201
+      },
+      "packaging-graphics-and-sku-systems": {
+        "before": 2243,
+        "after": 2430,
+        "delta": 187
+      },
+      "physical-wayfinding-and-signage-systems": {
+        "before": 2172,
+        "after": 2351,
+        "delta": 179
+      },
+      "motion-and-sequence": {
+        "before": 1931,
+        "after": 2179,
+        "delta": 248
+      },
+      "media-production-and-handoff": {
+        "before": 2331,
+        "after": 2476,
+        "delta": 145
+      },
+      "critique-and-validation": {
+        "before": 1751,
+        "after": 1944,
+        "delta": 193
+      },
+      "culture-and-representation": {
+        "before": 1626,
+        "after": 1626,
+        "delta": 0
+      },
+      "people-privacy-and-media-integrity": {
+        "before": 1606,
+        "after": 1606,
+        "delta": 0
+      },
+      "sustainability-claims": {
+        "before": 1370,
+        "after": 1370,
+        "delta": 0
+      },
+      "source-verification-and-evidence": {
+        "before": 1452,
+        "after": 1452,
+        "delta": 0
+      },
+      "asset-rights-and-attribution": {
+        "before": 1786,
+        "after": 1786,
+        "delta": 0
+      },
+      "style-direction": {
+        "before": 2008,
+        "after": 2165,
+        "delta": 157
+      },
+      "generic-signatures-and-subject-specificity": {
+        "before": 1309,
+        "after": 1309,
+        "delta": 0
+      },
+      "coordination-with-sibling-skills": {
+        "before": 703,
+        "after": 703,
+        "delta": 0
+      }
+    },
+    "common_loads": {
+      "C01": {
+        "before": 8990,
+        "after": 9717,
+        "delta": 727
+      },
+      "C02": {
+        "before": 8918,
+        "after": 9594,
+        "delta": 676
+      },
+      "C03": {
+        "before": 5105,
+        "after": 5257,
+        "delta": 152
+      },
+      "C04": {
+        "before": 8519,
+        "after": 9189,
+        "delta": 670
+      },
+      "C05": {
+        "before": 10741,
+        "after": 11661,
+        "delta": 920
+      },
+      "C06": {
+        "before": 6106,
+        "after": 6383,
+        "delta": 277
+      },
+      "C07": {
+        "before": 10776,
+        "after": 11728,
+        "delta": 952
+      },
+      "C08": {
+        "before": 8410,
+        "after": 9007,
+        "delta": 597
+      },
+      "C09": {
+        "before": 6402,
+        "after": 6842,
+        "delta": 440
+      },
+      "C11": {
+        "before": 4899,
+        "after": 5135,
+        "delta": 236
+      },
+      "C12": {
+        "before": 8220,
+        "after": 8738,
+        "delta": 518
+      },
+      "C13": {
+        "before": 5554,
+        "after": 5772,
+        "delta": 218
+      },
+      "C14": {
+        "before": 8722,
+        "after": 9521,
+        "delta": 799
+      },
+      "C15": {
+        "before": 7721,
+        "after": 7902,
+        "delta": 181
+      },
+      "C16": {
+        "before": 4584,
+        "after": 4813,
+        "delta": 229
+      },
+      "C17": {
+        "before": 7225,
+        "after": 7723,
+        "delta": 498
+      },
+      "C18": {
+        "before": 9068,
+        "after": 9650,
+        "delta": 582
+      },
+      "C20": {
+        "before": 8056,
+        "after": 8305,
+        "delta": 249
+      },
+      "C21": {
+        "before": 9647,
+        "after": 10132,
+        "delta": 485
+      },
+      "C22": {
+        "before": 8641,
+        "after": 8786,
+        "delta": 145
+      },
+      "D28-EH1": {
+        "before": 10669,
+        "after": 11538,
+        "delta": 869
+      },
+      "D28-CI1": {
+        "before": 11667,
+        "after": 12563,
+        "delta": 896
+      },
+      "D28-CI2": {
+        "before": 11472,
+        "after": 12417,
+        "delta": 945
+      },
+      "D28-CI3": {
+        "before": 10819,
+        "after": 11314,
+        "delta": 495
+      },
+      "D28-MK1": {
+        "before": 5386,
+        "after": 5596,
+        "delta": 210
+      },
+      "D28-IN1": {
+        "before": 6830,
+        "after": 7205,
+        "delta": 375
+      },
+      "D28-AD1": {
+        "before": 9856,
+        "after": 10457,
+        "delta": 601
+      },
+      "D28-PK1": {
+        "before": 7537,
+        "after": 7974,
+        "delta": 437
+      },
+      "D28-WF1": {
+        "before": 6815,
+        "after": 7175,
+        "delta": 360
+      },
+      "D28-BO1": {
+        "before": 6402,
+        "after": 6842,
+        "delta": 440
+      }
+    }
+  }
+}

@@ -60,6 +60,25 @@ Begin from an authoritative typed model, not the current drawing. Record only op
    textual path. Preserve IDs, type, direction, cardinality and conditions;
    localised labels may change presentation, not model identity.
 
+## Lay out and trace the difficult relation
+
+Sketch directionally ordered stages for a process, parent/child levels for a
+real hierarchy, or a non-hierarchical arrangement for peer connections. A
+radial centre implies a privileged entity; a neat circle can obscure sequence.
+Choose from the actual question, not a layout engine's name.
+
+For a feedback loop, place the main progression first and reserve a distinct
+return corridor. Choose departure/arrival sides that preserve arrow direction
+and keep the return label near its own segment, away from a competing edge.
+Trace the loop from source node through label to the exact destination; repeat
+in reverse as an inspection, not as a new graph relation. At a crossing, check
+that no visual junction is implied. If moving one node solves several crowded
+edges, compare that parent change before adding bends. Keep stable node IDs;
+duplicating a node to tidy the page needs an explicit repeated-view notation.
+Symmetry and curved routing remain valid when endpoints and relations read
+clearly. These are local layout/tracing operations, not an automatic
+comprehension test or a required notation.
+
 ## Critique: failure signatures and causes
 
 | Failure signature | Likely parent cause to test |

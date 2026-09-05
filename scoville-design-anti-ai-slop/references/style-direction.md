@@ -96,6 +96,19 @@ do not animate a defect merely to look retro. Poster, mobile, motion, print,
 sound, reduced mode and fixed display may express different components while
 retaining the same causal grammar.
 
+## Translate a sourced relation, not a surface effect
+
+Fictional supplied process brief: two flat ink passes and shapes cut from paper.
+A usable relation is the overlap of two bounded silhouettes, with the second
+pass revealing a meaningful shared region. A poster may use that region to
+carry its key word; a compact screen notice may preserve the same overlap and
+word relation while changing scale and allocation. Do not add random distress
+to simulate age, or claim that the construction authenticates a historical
+movement. This original process example is bounded by its supplied premise.
+For a real named lineage, inspect an actual source before adopting its relation;
+retain the relevant cultural and item-rights authority. If a plain incumbent
+system already serves the task, no style translation is required.
+
 ## Critique failure signatures and causes
 
 - **Style equals obvious motif bundle:** a label was mapped to stereotype.

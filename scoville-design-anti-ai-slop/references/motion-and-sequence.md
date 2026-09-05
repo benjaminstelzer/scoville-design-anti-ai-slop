@@ -69,6 +69,28 @@ Record only open relevant fields; otherwise use the Core minimal record:
    labels or transcript; a frozen first/last frame or slow fade is not
    automatically equivalent.
 
+## Compare the movement and the hold separately
+
+Sketch the start and destination first. For an object settling into a known
+place, compare a path that slows near arrival with a constant-speed move. For
+departure, compare how quickly the object yields attention to what remains.
+For a measured progression, constant speed may communicate more honestly than
+an expressive acceleration. These are role-dependent candidates, not universal
+entry/exit curves. A justified expressive overshoot is not banned outside an
+incumbent system that disallows it.
+
+Use the same object, distance and states for the initial curve comparison.
+Then vary duration if needed; a larger journey and a frequently repeated cue
+may need different treatment. Distinguish travel time from the hold after the
+message becomes readable. For an original sequence such as a folded sheet
+opening into a map, inspect when orientation becomes clear and protect the
+subsequent reading interval instead of stretching every transition.
+
+Play the whole study, interrupt it and inspect its reduced/static equivalent.
+Judge the next beat from the actual settled state, not from a timeline label.
+Keep stillness when it already carries the job; no movement, timing range or
+easing family is compulsory merely because this comparison is available.
+
 ## Critique: failure signatures and causes
 
 | Failure signature | Likely parent cause to test |

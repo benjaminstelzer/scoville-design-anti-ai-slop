@@ -73,6 +73,24 @@ Keep severity (consequence), confidence (evidence certainty), and priority
 (action order) separate. Attribute preferences to a named reviewer or audience;
 do not disguise them as laws.
 
+## Calibrate a cross-domain finding
+
+Fictional example: a brand treatment crops a diagram's endpoint identifiers,
+and its owner defends the crop as expressive. The shared finding can say
+`endpoint labels absent in the narrow view; relation tracing is no longer
+possible from supplied IDs; restore those labels or compare an alternate crop;
+preserve the accepted brand device elsewhere; rerender the affected view`.
+Diagram semantics owns the protected relation; Brand owns the permitted device;
+this leaf coordinates the challenged exception and its proof. A crop that
+removes only expendable ornament can remain an intentional exception when the
+comparison preserves the task.
+
+By contrast, a caption detached from its own image is an owner-local
+composition problem unless another independent concern makes a shared lifecycle
+necessary. Do not promote that small repair into a multi-domain review merely
+to use this example. The worked finding is original synthesis, not a new
+severity score or evidence of audience comprehension.
+
 ## Critique: signatures, causes, and false positives
 
 | Failure signature | Cause to test before recommending repair |

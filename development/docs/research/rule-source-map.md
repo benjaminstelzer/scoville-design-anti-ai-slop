@@ -1,5 +1,47 @@
 # Rule-to-source map
 
+## 2026-09-05 PLAN-0008 supplement
+
+Cartography's line-following/horizontal comparison and interior/exterior area
+comparison extend the existing `SRC-CARTOGRAPHY` lineage with the inspected
+PG-S04 Esri passages in the source ledger. Association, unchanged geometry and
+target-size comparison are original `SRC-PACKAGE-LOCAL-SYNTHESIS` procedures.
+The frozen PG-08S case exercises them without geographic or audience authority.
+
+## 2026-09-05 practical-guidance additions
+
+These original, owner-local working procedures supplement the retained
+curriculum. Their conditional examples and comparison methods are attributed
+to `SRC-PACKAGE-LOCAL-SYNTHESIS`, alongside the owners' existing domain lineage.
+They are not new standards, source quotations or measured model improvements.
+`docs/evaluation/plan-0007-implementation.md` records actual evidence separately.
+
+| Owner | Added cluster | Additional source boundary |
+| --- | --- | --- |
+| Composition | Content-derived tracks, explicit visual-weight variables and caption/group repair | Existing composition/Gestalt lineage; arithmetic describes a selected grid only |
+| Typography | Actual-text hierarchy, coupled-setting and face-pair comparison | Existing type lineage; no imported numeric prescription |
+| Font Technology | Filled substitution specimen with observed glyph/metric state | Existing font-technology lineage; no native-script competence claim |
+| Colour | In-layout role palette and applicable theme remapping | Existing perception/role lineage; no imported palette or mandatory theme |
+| Brand | Optical family and repeated-surface comparison | Existing Brand lineage; no IBM asset or system value imported |
+| Mark | Contour/handle inspection followed by optical comparison | SRC-MARK-DESIGN includes PG-S02 for technical mechanics; optical judgment is local |
+| Imagery | Conditional capture/framing and illustration construction operations | Existing image craft/integrity lineage; original study, no documentary invention |
+| Information | Question-to-representation comparison | Existing data lineage; no chart mandate or time-only line rule |
+| Diagrams | Topology choice, feedback corridor and endpoint tracing | Existing relation semantics; geometry is not comprehension proof |
+| Cartography | Scale-dependent point-label candidates and protected association | SRC-CARTOGRAPHY includes PG-S03; no default corner or altered site geometry |
+| UI Workflow | Direct/detail/dialog tradeoff by task and recovery cost | Existing UI evaluation lineage; implementation remains with its owner |
+| Web | Observed pressure to conditional transformation | Existing responsive lineage; no device breakpoint or new state obligation |
+| Fixed Media | Medium entry and populated content allocation | Existing editorial lineage; no fixed page count or uniform cadence |
+| Motion | Separate curve/movement/reading hold and interruption comparison | Existing temporal lineage; no Carbon timing imported |
+| Brief | Translate vague intent into a bounded decision with unknowns | Original lending-desk example; no invented eligibility authority |
+| Concept | Distinct visible mechanisms, cosmetic variant and quiet control | Original object-lending example; no novelty guarantee |
+| Instructional | Worked/wrong/new-instance sequence from an explicit model | Original title-sorting rule; no measured learning claim |
+| Advertising | Visible carrier and counter-reading of an identical proposition | Original equipment-sharing example; no unsupported benefit claim |
+| Style | Translate one supplied structural relation across media | Original two-pass paper example; no historical attribution |
+| Packaging | Filled panel/SKU map and colour-loss comparison | Original supplied geometry; no structural or regulatory authority |
+| Wayfinding | Filled approach/arrow/confirmation/recovery relation | Original fictional route; no site or safety approval |
+| Production | Compact source/export/receiver record and conditional resolution arithmetic | Local evidence boundary; no universal output target |
+| Critique | Cross-domain cause and smallest owner-specific repair | Original crop/diagram example; no mandatory review for a local defect |
+
 Date: 2026-09-02  
 Scope: accepted twenty-eight-leaf successor registry  
 Status: W-015 source and authoring contract

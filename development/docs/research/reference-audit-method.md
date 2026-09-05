@@ -67,11 +67,9 @@ instructions the Skill must focus, correct, teach, or externally verify.
    - keep only a bounded stub;
    - withhold until evidence exists.
 
-The current 1,800-token ordinary-leaf figure is a cost target, not a quality
-ceiling. Exceed it when an inseparable concern needs more applied instruction.
 Split only when task signals can select the parts independently without losing
 shared causal reasoning. Record measured leaf size, expected load frequency,
-common multi-leaf combinations, and the smallest tested non-inferior payload.
+and common multi-leaf combinations as descriptive observations.
 
 For composition, typography, colour, imagery, UI, and production, explicitly
 evaluate the medium architecture in
@@ -104,9 +102,8 @@ or proof requirement.
 - A before/after example is not universal Gold.
 - A numeric convention is never a universal law without population, language
   or script, medium, task, source, and override evidence.
-- Token pressure may remove repetition, history, or model-prior exposition; it
-  may not remove necessary professional criteria, binding floors, causal repair,
-  or verification.
+- Remove irrelevant repetition when it obscures the task. Preserve necessary
+  professional criteria, binding floors, causal repair and verification.
 - Rules remain breakable when intent is declared, functional floors survive,
   compensating structure exists, and the whole result improves.
 - No executable reference, `SKILL.md`, `modules.yaml`, benchmark Gold, or

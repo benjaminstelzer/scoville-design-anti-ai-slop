@@ -1,0 +1,25 @@
+{
+  "path": "Z:\\Projekts\\AI\\output\\design-plan7-style-revision\\freeze.json",
+  "sha256": "1C463DDA4A47733517D162E7E78524FBC67AA087835EA10D4736307C223E7A95",
+  "frozen_at": "2026-09-05T16:33:35.352484+00:00",
+  "case": {
+    "id": "PG-12S",
+    "tier": "candidate",
+    "modules": [
+      "style-direction"
+    ],
+    "reason": "PG-12 made cross-medium translation conditional and did not exercise row 28. Preserve that coverage gap; this is a new explicit task, not another attempt to improve the same output.",
+    "task": "Create main.html with an editable poster and a 360px compact screen notice, translating the same supplied fictional visual relation: two interrupted portions of a word are visibly reconnected by a bridge, making repair extend the word's continuity. This is an original supplied graphic relation, with no historical or cultural claim. Preserve the exact proposition Keep it working. and facts Repair evening; 22 November; Bring one unplugged lamp. Recompose the relation for each medium instead of shrinking the complete poster. The compact notice must fit 360px. control.html is a legitimate quiet literal notice using the same facts and no bridging effect. Explain what is invariant and what changes, without claiming audience testing or prior render inspection.",
+    "checks": [
+      "supplied relation visible in both media",
+      "same proposition and exact facts",
+      "medium-native allocation at 360px",
+      "quiet literal control",
+      "no invented historical authority"
+    ]
+  },
+  "source_hashes": {
+    "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+    "references/style-direction.md": "4343B2A1B0D206C697BA78693C6487BC6FA781D967295533AA5AC079F7440C69"
+  }
+}

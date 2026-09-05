@@ -91,6 +91,25 @@ permission to redesign.
    or interlock that is not visibly present is a failed mechanism, not a prose
    explanation of intended geometry.
 
+## Correct a contour without changing its idea
+
+Isolate the suspect contour and decide whether the join is meant to be smooth
+or a corner. In a cubic curve, inspect the anchor and its adjacent handles:
+their directions govern departure and arrival, while their lengths affect the
+curve's pull. Compare one handle change before adding anchors; an unwanted
+local bend may need fewer points, while a deliberate cusp must remain. A smooth
+join does not require equal handle lengths.
+
+Restore the fill after the outline study. Check whether the corrected contour
+also improves the adjoining negative space, apparent weight and silhouette.
+Compare positive and reversed versions at the required small size; the same
+coordinates can have different apparent weight against different surrounds.
+Make a named optical variant only for an observed failure, preserving the
+identifying relationship. For a letter-based mark, recheck the neighbouring
+letters after changing a terminal or counter. Curve mechanics are technical;
+these optical comparisons are local judgment, not proof that fewer points or
+geometric smoothness make a better mark.
+
 ## Critique failure signatures and causes
 
 - **Generic despite polish.** A gradient orb, swoosh, abstract letter in a

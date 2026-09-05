@@ -78,6 +78,17 @@ criterion record, approval map, and consequential unknown list. It does not
 choose fonts, palette, style, layout, or concept unless one is already an
 authorised constraint.
 
+## Translate a vague request into a decision
+
+Fictional example: “Make the lending desk look lively.” Supplied task: visitors
+must identify an available object and its collection time. A useful frame is
+`availability leads; object identity supports comparison; collection time stays
+attached; eligibility rules are unknown`. “Lively” can remain a preference,
+but it does not answer what should lead. Check whether the intended reader can
+find the object/time relation in the proposed artifact; do not fill the unknown
+eligibility rule with plausible policy. A settled request to correct one date
+needs neither this example's framing work nor a new visual direction.
+
 ## Critique and smallest repair
 
 Look for these failure signatures and test the parent cause:

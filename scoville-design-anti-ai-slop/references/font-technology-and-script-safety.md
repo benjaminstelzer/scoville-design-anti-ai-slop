@@ -77,6 +77,18 @@ name, web listing, installed copy, or screenshot is not a receipt.
    whole legal permission. Recheck current commercial/service and receiver
    terms at use time.
 
+## A compact substitution specimen
+
+For a Latin identifier field, a filled local specimen might use
+`Order I1l-008 / O0 / 27.50`: primary file and actual instance, renderer/version,
+the same field width, and the named fallback forced in a second render. Inspect
+glyph identity, total advance, baseline and clipping, then the containing row.
+A recorded field such as `primary not loaded; fallback rendered; row grew to
+two lines` is useful evidence; `font-family declared` is not proof of which
+font drew the glyphs. Replace this illustrative string with the task's actual
+confusables and language. It neither demonstrates another script's shaping nor
+requires a fallback experiment for a raster-only delivery.
+
 ## Critique: signatures and causes
 
 | Failure signature | Likely technical cause to test |

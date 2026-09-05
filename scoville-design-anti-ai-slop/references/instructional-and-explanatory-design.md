@@ -84,6 +84,18 @@ source/owner/status | unknowns`.
     environmental conditions. Ask participants to predict, explain, choose, or
     perform. Preference and visual polish are not comprehension tests.
 
+## Build an example that can transfer
+
+For a fictional sorting rule “A–M titles use the upper shelf; N–Z use the lower
+shelf”, show one supplied title, highlight its first letter and connect that
+letter to the correct shelf. Then show a deliberately wrong placement with
+the violated branch marked. Give a new title whose answer is initially absent
+so the reader must apply the rule rather than copy the picture. Preserve the
+rule's exact alphabet and scope; this example supplies no advice for other
+writing systems. If the audience already knows the distinction, the short rule
+alone may be sufficient. Use an observed response for a learning claim;
+including a practice item does not prove that learning occurred.
+
 ## Critique failure signatures and causes
 
 - **Visually clear but conceptually wrong.** The rendering is coherent while

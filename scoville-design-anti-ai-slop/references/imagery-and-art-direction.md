@@ -61,6 +61,28 @@ area and variant limits.
    source when a narrow crop destroys the relation; do not keep zooming until
    the subject technically fits.
 
+## Choose operations for the image's job
+
+For a photograph or a proposed capture, distinguish viewpoint, subject distance
+and framing. A higher viewpoint may reveal an object's working surface; a
+lower one may conceal it. Compare whether front, side or back light reveals
+the relevant volume, texture or silhouette. Decide this from the subject and
+permitted truth mode, not a mood word. A crop cannot restore missing context;
+return to the source or choose a different image when necessary.
+
+For illustration, block the largest masses and the subject's silhouette before
+surface detail. Establish a readable value structure, then resolve the
+relations that carry the idea: overlap, contact, scale, gesture or construction.
+Add perspective or lighting only when the chosen language needs them. A flat
+symbolic scene can be complete without realistic volume.
+
+An original study might show a hand holding a tool: preserve the contact and
+working end in both a wide and narrow crop, reserve live-copy space only where
+the actual image permits it, and compare a silhouette with the detailed view.
+If the action exists only in the caption, repair the visible relation. These
+are conditional branches, not a required style, shot list or permission to
+construct documentary evidence.
+
 ## Critique: failure signatures and causes
 
 - **Generic or interchangeable image:** the image thesis is missing, selection

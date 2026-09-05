@@ -68,6 +68,36 @@ condition from a plausible basemap or model familiarity.
    direction or inset only when it supports the task; ensure small regions and
    dense labels do not silently disappear.
 
+## Repair labels at the target scale
+
+For a crowded point pair, keep the feature coordinates fixed and compare
+several label positions with explicit association. Prefer candidates that
+avoid the other symbol, label and consequential geometry; block positions
+that would imply the wrong feature. If displacement becomes ambiguous, compare
+a leader or inset rather than moving the site or hiding a required name.
+
+For a line feature, compare a label following a readable portion of its course
+with a clearly associated horizontal label. Choose the segment and orientation
+so the name belongs to the intended line, not a nearby crossing; any separate
+smoothed label path must not replace the source geometry. Repeat a name only
+where it helps readers recover the same feature across the view.
+
+For an area, try an interior label that reads as belonging to the region and
+does not cross a hole or neighbouring boundary. If the region is too narrow,
+compare an exterior label with an explicit callout anchored to that region.
+Do not move or enlarge the polygon to fit its name. Distinguish this area
+association from a point's positional label and a line's directional reading;
+inspect both the name and its feature at the required output sizes.
+
+Inspect the same extent at both required scales. A solution at the larger
+size may collide after reduction even though geographic positions are correct.
+Retain task-critical features and labels; reduce optional background detail,
+split a view or provide an explicit alternative when everything cannot fit.
+Any geometric generalization must preserve the supplied spatial invariants
+and accountable authority. It is not a licence to move boundaries for polish.
+This original procedure draws on configurable placement candidates, not a
+universal preferred corner, label distance or automatic GIS correctness claim.
+
 ## Critique: failure signatures and causes
 
 | Failure signature | Likely parent cause to test |

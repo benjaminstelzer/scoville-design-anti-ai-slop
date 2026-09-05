@@ -22,7 +22,6 @@ def build_current(root: Path) -> dict:
     registry["package_schema"] = CURRENT_SCHEMA
     registry["distribution_files"] = ["LICENSE"]
     (root / "LICENSE").write_bytes(b"Synthetic license fixture\n")
-    registry["budget"]["policy"] = "advisory"
     for index, module_id in enumerate(CURRENT_CANONICAL_IDS[28:], start=29):
         registry["modules"].append(_module(module_id, index, True))
         registry["signal_enum"].append(f"signal_{index:02d}")
@@ -56,6 +55,32 @@ class CurrentSchemaTests(unittest.TestCase):
             self.assertNotIn("(draft)", render_index(registry))
             self.assertIn(GENERATED, render_index(registry))
 
+    def test_large_content_and_all_modules_validate_without_size_policy(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            registry = build_current(root)
+            registry["planned_common_loads"][0]["modules"] = list(CURRENT_CANONICAL_IDS)
+            for item in registry["modules"]:
+                item["route_label"] += " descriptive route" * 150
+                path = root / item["path"]
+                path.write_text(path.read_text(encoding="utf-8") + " instruction" * 5000, encoding="utf-8")
+            _write_registry(root, registry)
+            _write_skill(root, registry)
+            path = root / "SKILL.md"
+            path.write_text(path.read_text(encoding="utf-8") + " core instruction" * 5000, encoding="utf-8")
+            result = validate_package(root, CURRENT_SCHEMA)
+            self.assertEqual([], result.errors)
+            self.assertEqual([], result.warnings)
+
+    def test_common_load_ids_and_shape_remain_structural(self):
+        for value, signature in (([], "non-empty string list"), (["missing"], "unknown module IDs"), ([CURRENT_CANONICAL_IDS[0]] * 2, "duplicate module IDs")):
+            with self.subTest(value=value), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                registry = build_current(root)
+                registry["planned_common_loads"][0]["modules"] = value
+                _write_registry(root, registry)
+                self.assertTrue(any(signature in e for e in validate_package(root, CURRENT_SCHEMA).errors))
+
     def test_historical_schema_does_not_accept_draft_or_thirty(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -69,15 +94,13 @@ class CurrentSchemaTests(unittest.TestCase):
             build_current(root)
             self.assertTrue(any("canonical module" in e for e in validate_package(root, SUCCESSOR_SCHEMA).errors))
 
-    def test_current_rejects_old_status_header_drift_and_hard_budget(self):
-        for mutation, signature in (("status", "invalid status"), ("header", "Status header"), ("budget", "must be advisory")):
+    def test_current_rejects_old_status_and_header_drift(self):
+        for mutation, signature in (("status", "invalid status"), ("header", "Status header")):
             with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
                 registry = build_current(root)
                 if mutation == "status":
                     registry["modules"][0]["status"] = "stub"
-                elif mutation == "budget":
-                    registry["budget"]["policy"] = "hard"
                 else:
                     path = root / registry["modules"][0]["path"]
                     path.write_text(path.read_text(encoding="utf-8").replace("Status: `draft`", "Status: `stub`"), encoding="utf-8")

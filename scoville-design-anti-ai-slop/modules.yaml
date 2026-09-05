@@ -67,22 +67,6 @@ signal_enum:
 non_routed_references:
   - references/source-index.md
 
-budget:
-  # Applies to every token/count estimate here and in modules/planned_common_loads.
-  # Legacy ceiling/max field names retain comparison values, not hard limits.
-  # Necessary overruns remain visible; they do not fail quality or exclude experts.
-  # Values are planning allowances, not measured file sizes. Repository measurement
-  # uses o200k_base; Core excludes the generated index, which is counted separately.
-  # Common loads include Core + index + listed leaves, not provenance metadata,
-  # conversation history or provider overhead. Line counts are not token counts.
-  # These estimates neither predict a provider's tokenizer/cost nor cap context.
-  policy: advisory
-  core_token_ceiling: 2200
-  index_token_ceiling: 1500
-  # Four leaves is a historical measurement sample, never a runtime maximum.
-  provisional_max_simultaneous_leaves: 4
-  provisional_core_plus_leaves_ceiling: 15000
-
 modules:
   - id: brief-framing-and-criteria
     status: draft
@@ -96,8 +80,6 @@ modules:
     owns: [brief_frame, field_authority, required_content_manifest, degrees_of_freedom, selection_criteria, approval_authority]
     sources: [SRC-BRIEF-HCD, SRC-FOUNDATION-GRAPHIC, SRC-PROFESSIONAL-SCOPE, SRC-PACKAGE-LOCAL-SYNTHESIS, SRC-COMMUNICATION-CANON]
     evidence: []
-    token_target: 1500
-    token_ceiling: 1800
   - id: concept-development-and-selection
     status: draft
     intervention: focus
@@ -110,8 +92,6 @@ modules:
     owns: [concept_territories, concept_carriers, rough_comparison, concept_selection, concept_repair, originality_boundary]
     sources: [SRC-CONCEPT-EVIDENCE, SRC-BRIEF-HCD, SRC-FOUNDATION-GRAPHIC, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
-    token_target: 1500
-    token_ceiling: 1800
   - id: composition-and-layout
     status: draft
     intervention: external-verification
@@ -124,8 +104,6 @@ modules:
     owns: [visual_hierarchy, semantic_spacing, negative_space, spatial_system, layout_exception, content_fit]
     sources: [SRC-COMPOSITION-CANON, SRC-GESTALT-EVIDENCE, SRC-TYPE-DETAIL, SRC-PROFESSIONAL-SCOPE, SRC-CRITIQUE-CANON, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N02, P6-SOL-N06, P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
-    token_target: 1700
-    token_ceiling: 2100
   - id: typography-and-typesetting
     status: draft
     intervention: external-verification
@@ -138,8 +116,6 @@ modules:
     owns: [type_roles, glyph_differentiation, typeface_compatibility, type_hierarchy, typesetting, microtypography, type_exception]
     sources: [SRC-TYPE-CANON, SRC-TYPE-SELECTION, SRC-TYPE-DETAIL, SRC-TYPE-EMPIRICAL, SRC-FONT-TECH, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N02, P6-SOL-N04, P6-SOL-N06, P6-SOL-N08, P6-SOL-N10, P6-SOL-N12, P6-SOL-N13, P6-SOL-N14, P6-FABLE-C1-CANDIDATE, P6-FABLE-C2-CANDIDATE]
-    token_target: 2100
-    token_ceiling: 2500
   - id: font-technology-and-script-safety
     status: draft
     intervention: external-verification
@@ -152,8 +128,6 @@ modules:
     owns: [font_technology, font_fallback, script_requirements, bidi_vertical, font_proof]
     sources: [SRC-FONT-TECH, SRC-FONT-LICENCE-PROOF, SRC-DATA-ACCESS-LOCALE, SRC-PROFESSIONAL-SCOPE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N12, P6-SOL-N14]
-    token_target: 2100
-    token_ceiling: 2500
   - id: colour-and-reproduction
     status: draft
     intervention: external-verification
@@ -166,8 +140,6 @@ modules:
     owns: [colour_roles, colour_access, gamut_boundary, reproduction_chain, colour_proof]
     sources: [SRC-COLOUR-PERCEPTION, SRC-COLOUR-MANAGEMENT, SRC-COLOUR-ACCESS-DATA, SRC-PRODUCTION-PRINT, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N02, P6-SOL-N08, P6-SOL-N10, P6-SOL-N12, P6-SOL-N13, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
-    token_target: 1700
-    token_ceiling: 2000
   - id: imagery-and-art-direction
     status: draft
     intervention: external-verification
@@ -180,8 +152,6 @@ modules:
     owns: [image_thesis, image_mode, shot_or_generation_brief, image_sequence, crop_system, image_treatment_integrity_floor]
     sources: [SRC-IMAGE-CRAFT, SRC-IMAGE-INTEGRITY, SRC-PEOPLE-PRIVACY, SRC-IMAGE-METADATA-ACCESS, SRC-SYNTHETIC-PROVENANCE, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
-    token_target: 1800
-    token_ceiling: 2100
   - id: information-design-and-data-visualization
     status: draft
     intervention: external-verification
@@ -194,8 +164,6 @@ modules:
     owns: [data_encoding, data_integrity, uncertainty_display, dashboard_information, data_handoff]
     sources: [SRC-DATA-CANON, SRC-DATA-EMPIRICAL, SRC-DATA-ACCESS-LOCALE, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N02]
-    token_target: 1800
-    token_ceiling: 2100
   - id: cartography-and-spatial-data
     status: draft
     intervention: external-verification
@@ -208,8 +176,6 @@ modules:
     owns: [map_decision, spatial_encoding, map_normalization, cartographic_proof]
     sources: [SRC-CARTOGRAPHY, SRC-DATA-CANON, SRC-DATA-EMPIRICAL, SRC-CULTURE-AUTHORITY, SRC-PEOPLE-PRIVACY, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: []
-    token_target: 1600
-    token_ceiling: 1900
   - id: diagrams-and-relational-information
     status: draft
     intervention: external-verification
@@ -222,8 +188,6 @@ modules:
     owns: [diagram_semantics, relation_encoding, edge_contract, diagram_proof]
     sources: [SRC-DIAGRAM-SEMANTICS, SRC-DATA-CANON, SRC-DATA-EMPIRICAL, SRC-DATA-ACCESS-LOCALE, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
-    token_target: 1600
-    token_ceiling: 1900
   - id: brand-and-visual-systems
     status: draft
     intervention: focus
@@ -236,8 +200,6 @@ modules:
     owns: [visual_identity_thesis, visual_identity_authority, brand_architecture, identity_grammar, icon_and_symbol_system, system_invariants, controlled_variation, ci_conformance, brand_governance]
     sources: [SRC-BRAND-CANON, SRC-BRAND-EVIDENCE, SRC-BRAND-SYSTEM-GOVERNANCE, SRC-CORPORATE-DESIGN-CONFORMANCE, SRC-BRAND-ARCHITECTURE, SRC-UI-EVALUATION, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N12, P6-SOL-N14]
-    token_target: 2400
-    token_ceiling: 2900
   - id: logo-and-identity-mark-design
     status: draft
     intervention: focus
@@ -250,8 +212,6 @@ modules:
     owns: [identity_mark_form, wordmark_form, mark_optical_variants, mark_form_proof]
     sources: [SRC-MARK-DESIGN, SRC-BRAND-CANON, SRC-BRAND-EVIDENCE, SRC-CULTURE-AUTHORITY, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
-    token_target: 2300
-    token_ceiling: 2700
   - id: instructional-and-explanatory-design
     status: draft
     intervention: external-verification
@@ -264,8 +224,6 @@ modules:
     owns: [explanation_objective, explanation_sequence, instructional_visual_relation, comprehension_test_contract]
     sources: [SRC-INSTRUCTIONAL-COMMUNICATION, SRC-COMMUNICATION-CLARITY, SRC-DIAGRAM-SEMANTICS, SRC-DATA-ACCESS-LOCALE, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N06, P6-FABLE-C2-CANDIDATE]
-    token_target: 2300
-    token_ceiling: 2700
   - id: advertising-and-campaign-art-direction
     status: draft
     intervention: focus
@@ -278,8 +236,6 @@ modules:
     owns: [advertising_creative_platform, visual_rhetoric, advertising_image_copy_relation, campaign_creative_variation, advertising_context_proof]
     sources: [SRC-AD-CREATIVE-CANON, SRC-AD-OPEN-LEARNING, SRC-AD-CREATIVE-EVIDENCE, SRC-AD-ETHICS-CURRENT, SRC-BRAND-CANON, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: []
-    token_target: 2400
-    token_ceiling: 2900
   - id: ui-workflow-and-interaction-design
     status: draft
     intervention: external-verification
@@ -292,8 +248,6 @@ modules:
     owns: [workflow_design, information_architecture, interaction_pattern_intent, state_recovery_intent, ui_system_definition, design_ui_record]
     sources: [SRC-UI-HCD-IA, SRC-UI-FORMS-STATES, SRC-UI-EVALUATION, SRC-BRIEF-HCD, SRC-BRAND-SYSTEM-GOVERNANCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N02]
-    token_target: 1700
-    token_ceiling: 2000
   - id: web-and-responsive-design
     status: draft
     intervention: external-verification
@@ -306,8 +260,6 @@ modules:
     owns: [responsive_priority, responsive_transformation, density_disclosure, responsive_asset_intent, responsive_design_record]
     sources: [SRC-WEB-RESPONSIVE, SRC-TYPE-DETAIL, SRC-TYPE-EMPIRICAL, SRC-FONT-TECH, SRC-FONT-LICENCE-PROOF, SRC-IMAGE-METADATA-ACCESS, SRC-DATA-ACCESS-LOCALE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N02, P6-SOL-N06, P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
-    token_target: 1600
-    token_ceiling: 1900
   - id: editorial-and-fixed-media-design
     status: draft
     intervention: external-verification
@@ -320,8 +272,6 @@ modules:
     owns: [fixed_medium_contract, editorial_sequence, page_spread_system, presentation_document_template_system, fold_face_relationship, physical_design_constraints]
     sources: [SRC-FIXED-EDITORIAL, SRC-COMPOSITION-CANON, SRC-GESTALT-EVIDENCE, SRC-TYPE-DETAIL, SRC-TYPE-EMPIRICAL, SRC-IMAGE-CRAFT, SRC-IMAGE-INTEGRITY, SRC-PRODUCTION-PRINT, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N12, P6-SOL-N14]
-    token_target: 1900
-    token_ceiling: 2300
   - id: packaging-graphics-and-sku-systems
     status: draft
     intervention: external-verification
@@ -334,8 +284,6 @@ modules:
     owns: [dieline_graphic_mapping, packaging_panel_communication, packaging_sku_system, packaging_context_proof]
     sources: [SRC-PACKAGING-GRAPHICS, SRC-BRAND-CANON, SRC-TYPE-DETAIL, SRC-IMAGE-CRAFT, SRC-PRODUCTION-PRINT, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N04, P6-SOL-N08, P6-SOL-N10, P6-SOL-N13]
-    token_target: 2200
-    token_ceiling: 2700
   - id: physical-wayfinding-and-signage-systems
     status: draft
     intervention: external-verification
@@ -348,8 +296,6 @@ modules:
     owns: [physical_route_model, destination_hierarchy_structure, decision_point_system, signage_family_system, wayfinding_route_proof]
     sources: [SRC-WAYFINDING-SYSTEMS, SRC-CARTOGRAPHY, SRC-TYPE-DETAIL, SRC-DATA-ACCESS-LOCALE, SRC-BRAND-CANON, SRC-PRODUCTION-PRINT, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N08, P6-SOL-N10, P6-SOL-N13]
-    token_target: 2200
-    token_ceiling: 2700
   - id: motion-and-sequence
     status: draft
     intervention: external-verification
@@ -362,8 +308,6 @@ modules:
     owns: [motion_thesis, temporal_hierarchy, continuity_spine, kinetic_readability, reduced_equivalent]
     sources: [SRC-MOTION-CRAFT, SRC-MOTION-ACCESS, SRC-MOTION-TECH, SRC-IMAGE-CRAFT, SRC-IMAGE-INTEGRITY, SRC-PEOPLE-PRIVACY, SRC-TYPE-EMPIRICAL, SRC-DATA-ACCESS-LOCALE, SRC-PRODUCTION-DIGITAL, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N02]
-    token_target: 1900
-    token_ceiling: 2300
   - id: media-production-and-handoff
     status: draft
     intervention: external-verification
@@ -376,8 +320,6 @@ modules:
     owns: [artifact_contract, authority_derivative_graph, format_validation, render_contract, production_preflight, handoff_record]
     sources: [SRC-COLOUR-MANAGEMENT, SRC-FIXED-EDITORIAL, SRC-CRITIQUE-EMPIRICAL, SRC-UI-EVALUATION, SRC-PRODUCTION-PRINT, SRC-PRODUCTION-DIGITAL, SRC-PRODUCTION-ACCESS, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: []
-    token_target: 2400
-    token_ceiling: 2800
   - id: critique-and-validation
     status: draft
     intervention: focus
@@ -390,8 +332,6 @@ modules:
     owns: [causal_critique, finding_record, repair_priority, validation_rationale]
     sources: [SRC-CRITIQUE-CANON, SRC-CRITIQUE-EMPIRICAL, SRC-PROFESSIONAL-SCOPE, SRC-SOURCE-EVIDENCE, SRC-PRODUCTION-PRINT, SRC-PRODUCTION-ACCESS, SRC-UI-EVALUATION, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: []
-    token_target: 1800
-    token_ceiling: 2200
   - id: culture-and-representation
     status: draft
     intervention: external-verification
@@ -404,8 +344,6 @@ modules:
     owns: [authority_boundary, representation_risk, cultural_protocol, contested_place_context]
     sources: [SRC-CULTURE-AUTHORITY, SRC-PROFESSIONAL-SCOPE, SRC-FOUNDATION-GRAPHIC, SRC-STYLE-HISTORY, SRC-IMAGE-INTEGRITY, SRC-IMAGE-METADATA-ACCESS, SRC-SYNTHETIC-PROVENANCE, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: []
-    token_target: 1700
-    token_ceiling: 2000
   - id: people-privacy-and-media-integrity
     status: draft
     intervention: external-verification
@@ -418,8 +356,6 @@ modules:
     owns: [participant_agency, consent_privacy, documentary_integrity, synthetic_evidence_boundary, metadata_privacy]
     sources: [SRC-PEOPLE-PRIVACY, SRC-IMAGE-INTEGRITY, SRC-IMAGE-METADATA-ACCESS, SRC-SYNTHETIC-PROVENANCE, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: []
-    token_target: 1700
-    token_ceiling: 2000
   - id: sustainability-claims
     status: draft
     intervention: external-verification
@@ -432,8 +368,6 @@ modules:
     owns: [environmental_claim_scope, lifecycle_boundary, substantiation_record, qualification_expiry]
     sources: [SRC-SUSTAINABILITY-CLAIMS, SRC-SOURCE-EVIDENCE, SRC-PROFESSIONAL-SCOPE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: []
-    token_target: 1400
-    token_ceiling: 1700
   - id: source-verification-and-evidence
     status: draft
     intervention: external-verification
@@ -446,8 +380,6 @@ modules:
     owns: [claim_registry, source_registry, evidence_relation, current_verification, correction_history]
     sources: [SRC-SOURCE-EVIDENCE, SRC-PROFESSIONAL-SCOPE, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N06]
-    token_target: 1500
-    token_ceiling: 1800
   - id: asset-rights-and-attribution
     status: draft
     intervention: external-verification
@@ -460,8 +392,6 @@ modules:
     owns: [asset_registry, license_boundary, rights_layers, attribution_record, attribution_survival]
     sources: [SRC-ASSET-RIGHTS, SRC-PEOPLE-PRIVACY, SRC-CULTURE-AUTHORITY, SRC-IMAGE-METADATA-ACCESS, SRC-SYNTHETIC-PROVENANCE, SRC-PRODUCTION-DIGITAL, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N12]
-    token_target: 1800
-    token_ceiling: 2200
   - id: style-direction
     status: draft
     intervention: focus
@@ -474,8 +404,6 @@ modules:
     owns: [style_interpretation, style_dna, anti_cliche_counterweight, medium_translation, style_proof]
     sources: [SRC-STYLE-HISTORY, SRC-FOUNDATION-GRAPHIC, SRC-CULTURE-AUTHORITY, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N12, P6-FABLE-C2-CANDIDATE]
-    token_target: 2000
-    token_ceiling: 2300
 
   - id: generic-signatures-and-subject-specificity
     status: draft
@@ -489,8 +417,6 @@ modules:
     owns: [generic_cliche_test, specificity_judgment, subject_counter_move]
     sources: [SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N06, P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
-    token_target: 1300
-    token_ceiling: 1600
   - id: coordination-with-sibling-skills
     status: draft
     intervention: focus
@@ -503,38 +429,36 @@ modules:
     owns: [partner_exchange, cross_owner_status_preservation]
     sources: [SRC-DESIGN-BOUNDARY-COORDINATION, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: [P6-SOL-N10]
-    token_target: 700
-    token_ceiling: 800
 
 # C10 and C19 were removed as duplicate load examples; retain the ID gaps.
 planned_common_loads:
-  - {id: C01, modules: [composition-and-layout, typography-and-typesetting, editorial-and-fixed-media-design], token_ceiling: 9500}
-  - {id: C02, modules: [typography-and-typesetting, web-and-responsive-design, style-direction], token_ceiling: 9400}
-  - {id: C03, modules: [font-technology-and-script-safety], token_ceiling: 5500}
-  - {id: C04, modules: [composition-and-layout, editorial-and-fixed-media-design, critique-and-validation], token_ceiling: 9100}
-  - {id: C05, modules: [composition-and-layout, typography-and-typesetting, editorial-and-fixed-media-design, critique-and-validation], token_ceiling: 11400}
-  - {id: C06, modules: [brief-framing-and-criteria, concept-development-and-selection], token_ceiling: 6500}
-  - {id: C07, modules: [style-direction, web-and-responsive-design, typography-and-typesetting, composition-and-layout], token_ceiling: 11200}
-  - {id: C08, modules: [style-direction, ui-workflow-and-interaction-design, web-and-responsive-design], token_ceiling: 8900}
-  - {id: C09, modules: [ui-workflow-and-interaction-design, web-and-responsive-design], token_ceiling: 6800}
-  - {id: C11, modules: [colour-and-reproduction], token_ceiling: 5100}
-  - {id: C12, modules: [imagery-and-art-direction, people-privacy-and-media-integrity, web-and-responsive-design], token_ceiling: 8700}
-  - {id: C13, modules: [brand-and-visual-systems], token_ceiling: 5900}
-  - {id: C14, modules: [information-design-and-data-visualization, web-and-responsive-design, typography-and-typesetting], token_ceiling: 9200}
-  - {id: C15, modules: [cartography-and-spatial-data, culture-and-representation, source-verification-and-evidence], token_ceiling: 8400}
-  - {id: C16, modules: [diagrams-and-relational-information], token_ceiling: 5000}
-  - {id: C17, modules: [motion-and-sequence, typography-and-typesetting], token_ceiling: 7600}
-  - {id: C18, modules: [media-production-and-handoff, editorial-and-fixed-media-design, colour-and-reproduction], token_ceiling: 9700}
-  - {id: C20, modules: [people-privacy-and-media-integrity, imagery-and-art-direction, source-verification-and-evidence], token_ceiling: 8600}
-  - {id: C21, modules: [sustainability-claims, source-verification-and-evidence, colour-and-reproduction, imagery-and-art-direction], token_ceiling: 10100}
-  - {id: C22, modules: [asset-rights-and-attribution, source-verification-and-evidence, media-production-and-handoff], token_ceiling: 9400}
-  - {id: D28-EH1, modules: [typography-and-typesetting, web-and-responsive-design, style-direction, critique-and-validation], token_ceiling: 11300}
-  - {id: D28-CI1, modules: [brand-and-visual-systems, composition-and-layout, typography-and-typesetting, font-technology-and-script-safety], token_ceiling: 12300}
-  - {id: D28-CI2, modules: [brand-and-visual-systems, composition-and-layout, typography-and-typesetting, editorial-and-fixed-media-design], token_ceiling: 12100}
-  - {id: D28-CI3, modules: [brief-framing-and-criteria, brand-and-visual-systems, source-verification-and-evidence, media-production-and-handoff], token_ceiling: 11700}
-  - {id: D28-MK1, modules: [logo-and-identity-mark-design], token_ceiling: 5700}
-  - {id: D28-IN1, modules: [instructional-and-explanatory-design, diagrams-and-relational-information], token_ceiling: 7400}
-  - {id: D28-AD1, modules: [brand-and-visual-systems, advertising-and-campaign-art-direction, imagery-and-art-direction], token_ceiling: 10400}
-  - {id: D28-PK1, modules: [packaging-graphics-and-sku-systems, typography-and-typesetting], token_ceiling: 8000}
-  - {id: D28-WF1, modules: [physical-wayfinding-and-signage-systems, cartography-and-spatial-data], token_ceiling: 7400}
-  - {id: D28-BO1, modules: [ui-workflow-and-interaction-design, web-and-responsive-design], token_ceiling: 6800}
+  - {id: C01, modules: [composition-and-layout, typography-and-typesetting, editorial-and-fixed-media-design]}
+  - {id: C02, modules: [typography-and-typesetting, web-and-responsive-design, style-direction]}
+  - {id: C03, modules: [font-technology-and-script-safety]}
+  - {id: C04, modules: [composition-and-layout, editorial-and-fixed-media-design, critique-and-validation]}
+  - {id: C05, modules: [composition-and-layout, typography-and-typesetting, editorial-and-fixed-media-design, critique-and-validation]}
+  - {id: C06, modules: [brief-framing-and-criteria, concept-development-and-selection]}
+  - {id: C07, modules: [style-direction, web-and-responsive-design, typography-and-typesetting, composition-and-layout]}
+  - {id: C08, modules: [style-direction, ui-workflow-and-interaction-design, web-and-responsive-design]}
+  - {id: C09, modules: [ui-workflow-and-interaction-design, web-and-responsive-design]}
+  - {id: C11, modules: [colour-and-reproduction]}
+  - {id: C12, modules: [imagery-and-art-direction, people-privacy-and-media-integrity, web-and-responsive-design]}
+  - {id: C13, modules: [brand-and-visual-systems]}
+  - {id: C14, modules: [information-design-and-data-visualization, web-and-responsive-design, typography-and-typesetting]}
+  - {id: C15, modules: [cartography-and-spatial-data, culture-and-representation, source-verification-and-evidence]}
+  - {id: C16, modules: [diagrams-and-relational-information]}
+  - {id: C17, modules: [motion-and-sequence, typography-and-typesetting]}
+  - {id: C18, modules: [media-production-and-handoff, editorial-and-fixed-media-design, colour-and-reproduction]}
+  - {id: C20, modules: [people-privacy-and-media-integrity, imagery-and-art-direction, source-verification-and-evidence]}
+  - {id: C21, modules: [sustainability-claims, source-verification-and-evidence, colour-and-reproduction, imagery-and-art-direction]}
+  - {id: C22, modules: [asset-rights-and-attribution, source-verification-and-evidence, media-production-and-handoff]}
+  - {id: D28-EH1, modules: [typography-and-typesetting, web-and-responsive-design, style-direction, critique-and-validation]}
+  - {id: D28-CI1, modules: [brand-and-visual-systems, composition-and-layout, typography-and-typesetting, font-technology-and-script-safety]}
+  - {id: D28-CI2, modules: [brand-and-visual-systems, composition-and-layout, typography-and-typesetting, editorial-and-fixed-media-design]}
+  - {id: D28-CI3, modules: [brief-framing-and-criteria, brand-and-visual-systems, source-verification-and-evidence, media-production-and-handoff]}
+  - {id: D28-MK1, modules: [logo-and-identity-mark-design]}
+  - {id: D28-IN1, modules: [instructional-and-explanatory-design, diagrams-and-relational-information]}
+  - {id: D28-AD1, modules: [brand-and-visual-systems, advertising-and-campaign-art-direction, imagery-and-art-direction]}
+  - {id: D28-PK1, modules: [packaging-graphics-and-sku-systems, typography-and-typesetting]}
+  - {id: D28-WF1, modules: [physical-wayfinding-and-signage-systems, cartography-and-spatial-data]}
+  - {id: D28-BO1, modules: [ui-workflow-and-interaction-design, web-and-responsive-design]}

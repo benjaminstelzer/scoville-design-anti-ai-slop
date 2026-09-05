@@ -75,6 +75,28 @@ not eye-tracking evidence.
    Fit all declared `X` cases rather than an ideal placeholder. Never hide,
    crop, truncate, or reorder required meaning merely to make the frame clean.
 
+## Working from content to geometry
+
+For an open grid, place the longest required unit and a representative repeated
+unit first. Compare a shared reading column with a lead/support split; keep the
+split only if the support content still fits at its intended reading size. For
+equal tracks inside usable width `W`, `n` tracks and gap `g` give
+`track = (W - (n - 1) * g) / n`. This computes a chosen system, not the correct
+track count. Derive spans from the content that must align, then test the most
+demanding group before extending the grid.
+
+Tune visual weight through a named variable: occupied area, size, tonal or hue
+contrast, isolation, edge/axis position, or detail density. If a small dark
+image overpowers a large pale heading, compare reducing the image's contrast
+or area before enlarging every heading. Judge the whole frame again.
+
+For a detached caption, compare its distance to its image with its distance to
+the next group. Move the shared caption/image relation before changing all
+page gaps. Check whether similarity or an enclosing box still implies the
+wrong group. A deliberately remote caption can work when a clear reference
+link preserves association. These are local comparison procedures, not fixed
+spacing ratios or a requirement to replace a useful incumbent grid.
+
 ## Critique: signatures and causes
 
 Run an unanchored whole-view assessment before overlays or measurements. Then

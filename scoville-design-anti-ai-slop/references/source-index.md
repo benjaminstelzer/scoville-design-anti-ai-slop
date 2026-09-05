@@ -30,9 +30,10 @@ cited, but its expression or assets are not packaged or adapted.
 ### SRC-PACKAGE-LOCAL-SYNTHESIS
 
 Class: local-synthesis
-Authorship/version: package-authored operational heuristics; 2026-09-04 revision.
+Authorship/version: package-authored operational heuristics; 2026-09-05 revision.
 Scope: subject-specificity catalog and craft counter-moves; proportional
-records, routing, comparison controls and optional sibling coordination.
+records, routing, comparison controls and optional sibling coordination;
+original applied craft procedures and worked fragments in the existing owners.
 Basis: local synthesis developed from the recorded review proposals and
 existing package constraints, not an external publication.
 Limits: no measured prevalence, universal design rule, audience-recognition
@@ -253,6 +254,9 @@ being reconstructed from an author's reputation or a source-family label.
 
 ### SRC-CARTOGRAPHY
 
+- **2026-09-05 line/area supplement (PLAN-0008):** Esri, [Labels for line features](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/text/labels-for-line-features.html) and [Labels for polygon features](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/text/labels-for-polygon-features.html), current online text inspected. Supports comparing line-following and horizontal placement, interior area labels and exterior callouts when an area cannot contain its name. Maplex-specific capabilities are reference examples, not required software or universal settings. Public proprietary guidance; reuse licence not established; no quoted text or source artwork incorporated. The association and geometry-preservation procedure is original synthesis.
+
+- **2026-09-05 label supplement:** Esri, [Labels for point features](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/text/labels-for-point-features.html) and [Set user-defined zones for point label placement](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/text/set-user-defined-zones-for-point-label-placement.html), current documentation text inspected. Public proprietary guidance, method/reference only; reuse terms not established. Supports configurable label offsets and preferred/blocked placement candidates in Maplex, not a universal position order, generalized geometry or readability guarantee. The runtime comparison procedure is original synthesis; no software dependency or third-party fixture is introduced.
 - **Stable source or identifier:** [UN and ICA, *Mapping for a Sustainable World*](https://digitallibrary.un.org/record/3898826/files/MappingforaSustainableWorld20210603.pdf), [ColorBrewer](https://colorbrewer2.org/), and [UNGEGN national names authorities](https://unstats.un.org/unsd/ungegn/nna/)
 - **Class:** professional-manual, official-current
 - **Licence and reuse status:** UN and ICA work is CC BY-NC. ColorBrewer terms apply. UN names material is official reference.
@@ -508,6 +512,7 @@ was verified. The historical research freeze remains 2026-09-02.
 
 ### SRC-MARK-DESIGN
 
+- **2026-09-05 technical supplement:** Adobe, [Draw curves with the Pen tool](https://helpx.adobe.com/illustrator/desktop/draw-shapes-and-paths/draw-shapes/draw-curves-with-the-pen-tool.html), updated 2026-02-25; text on handle direction and curve construction inspected. Proprietary public documentation, method/reference only. Supports handle mechanics, not optical quality or a mark recipe; no example geometry or assets are adapted.
 - **Stable source or identifier:** Wheeler and Meyerson, *Designing Brand Identity*, ISBN `9781119984818`, Airey, *Logo Design Love*, ISBN `9780321985200`, Mollerup, *Marks of Excellence*, ISBN `9780714864747`, Henderson and Cote, DOI [`10.1177/002224299806200202`](https://doi.org/10.1177/002224299806200202), and Phillips et al., DOI [`10.1002/mar.20689`](https://doi.org/10.1002/mar.20689)
 - **Class:** book-reference, empirical
 - **Licence and reuse status:** Copyrighted books and scholarly articles. Reference and original paraphrase only; no marks, construction diagrams, comparison plates or protected prose are packaged.

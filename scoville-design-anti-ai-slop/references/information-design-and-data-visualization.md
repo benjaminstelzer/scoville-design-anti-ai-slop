@@ -75,6 +75,24 @@ Keep machine values separate from localised display strings.
    Localise numbers, dates, percentages, currency and units from current locale
    data while preserving source precision.
 
+## Choose a form by the question
+
+Use this comparison aid when representation is open; it is not a chart mandate.
+
+| Question | Candidate to sketch | Failure to check / useful control |
+| --- | --- | --- |
+| Which is larger, and by how much? | Aligned bars or dots with a common scale | Long labels, false baseline or hidden small differences; compare a value table for lookup |
+| How does a value change across an ordered domain? | Connected positions or small multiples | Connection implies continuity/order the source may not have; unordered categories need another relation |
+| How are observations distributed? | Dots, bins or a distribution summary | Binning or aggregation conceals sample size, outliers or multimodality; inspect source points where permitted |
+| How do two measures relate? | Scatter positions | Overplotting, unequal units, absent values or an invented causal story |
+| How do parts contribute to a whole? | Shared-whole bars or another explicitly bounded composition | Denominator, omitted parts or incomparable wholes; compare direct values |
+
+Sketch the leading candidate with actual values and labels, then test the
+question that would favour the alternative. A line can serve an ordered
+non-temporal domain. A table can be the final design when exact lookup matters
+more than a visual pattern. Preserve meaning while changing form, not only the
+numbers printed beside it.
+
 ## Critique: failure signatures and causes
 
 | Failure signature | Likely parent cause to test |

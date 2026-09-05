@@ -1,0 +1,44 @@
+{
+  "path": "Z:\\Projekts\\AI\\output\\design-plan8-supplements\\freeze.json",
+  "sha256": "C77F01DB1C4D63FC4F14C885A78E5788F30CB9CC0548E83B2DE2620B3375B3DA",
+  "frozen_at": "2026-09-05T17:45:04.390207+00:00",
+  "cases": [
+    {
+      "id": "PG-02S",
+      "tier": "paired",
+      "modules": [
+        "typography-and-typesetting"
+      ],
+      "reason": "PG-02 exercised family substitution only, not the separately required coupled measure/leading comparison.",
+      "task": "Create main.html as a typesetting comparison using actual installed Georgia, 18px regular throughout. Show three separately labelled specimens, each containing EXACTLY TWO paragraphs, each paragraph exactly: A repaired object keeps more than its material. It carries the marks of ordinary use, the decisions of its makers, and the patience of the people who kept it working. The archive records these traces without pretending that every object tells the same story.\nSpecimen original: text measure 648px and line-height 29px. Specimen narrower: text measure 432px, still 18px/29px. Specimen selected: choose a suitable line-height at 432px and the unchanged 18px size after considering the narrower comparison. Keeping 29px is allowed if reasoned. Keep all three specimens visible in the document; specify their measured CSS settings and explain the line-return/leading decision without claiming to have rendered or user-tested it. Use data-specimen=\"original\", \"narrower\", \"selected\" on the text containers; labels and explanations must be outside those containers. No tracking or font-family substitution. control.html is a legitimate single-paragraph specimen using the same exact paragraph, Georgia 18px/29px at 648px, with a reason to retain this setting for a wide reading panel. These numerical values are supplied fixture conditions, not universal typography rules.",
+      "checks": [
+        "two exact paragraphs per main specimen",
+        "same actual font and 18px size",
+        "648 to 432 measure with constant leading comparison",
+        "explicit final leading decision",
+        "original visible alongside alternatives",
+        "legitimate unchanged wide control"
+      ]
+    },
+    {
+      "id": "PG-08S",
+      "tier": "candidate",
+      "modules": [
+        "cartography-and-spatial-data"
+      ],
+      "reason": "PG-08 covered point labels only; audit row 09 also requires practical line and area distinctions.",
+      "task": "Create main.html with two maps at exactly 600px and 300px square, same full extent x=0..100 rightwards and y=0..100 downwards (fictional drawing coordinates, no CRS or jurisdiction). The supplied geometry is authoritative for this fictional exercise and must be identical in both maps: Willow Brook is line M 10 25 C 30 5, 55 45, 90 25; Orchard is polygon points 12,52 45,52 45,85 12,85; Long Meadow is narrow polygon points 61,53 66,53 66,90 61,90; Depot is point 80,78. Use SVG viewBox=\"0 0 100 100\" and unchanged source geometry with data-feature=\"brook\", \"orchard\", \"meadow\", \"depot\" respectively. All four exact names are mandatory and must stay visibly associated at both sizes. Choose and explain distinct line, area and point label strategies; compare a line-following or aligned label against a clearly associated horizontal alternative, and interior area placement against a callout when the narrow polygon cannot fit a label. Preserve features; label paths or callout lines may differ from source geometry but must be distinct, not replace or distort it. Supply an accessible exact geometry table or description. control.html is a legitimate name/type lookup table with all four names, types and exact source coordinates, for the different question \"which feature is a line, area or point?\" Do not invent spatial values, projection, terrain, official authority, audience tests or GIS certification. Explain the reason for the different placement at each size without claiming prior render inspection.",
+      "checks": [
+        "identical authoritative geometry at two sizes",
+        "line area point strategies",
+        "readable line alternative and narrow-area callout",
+        "mandatory name association",
+        "accessible exact geometry",
+        "non-map control",
+        "no geographic authority claim"
+      ]
+    }
+  ],
+  "model": "gpt-6-astra",
+  "effort": "high"
+}

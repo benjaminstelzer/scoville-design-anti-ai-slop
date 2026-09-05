@@ -40,8 +40,8 @@ Preserve the canonical owner's status meanings: approval is not verification.
    and consequential unknowns. A settled small repair needs no full inventory.
    Do not invent strategy, facts, permission or approval.
 2. **Route.** Select every materially applicable module through the direct index,
-   without a fixed expert count or context/token gate. Estimates are advisory;
-   use the smallest sufficient payload without omitting necessary expertise.
+   without a fixed expert count or context/token gate. Load the relevant
+   expertise for the actual decisions.
    Split phases only for task needs or actual capacity, carrying the record;
    headings do not unload context. Explicit user/provider limits, authorisation,
    evidence and safety controls remain binding. A mentioned topic alone is not

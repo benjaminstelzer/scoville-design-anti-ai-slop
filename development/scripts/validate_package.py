@@ -13,15 +13,6 @@ from typing import Any
 
 import yaml
 
-try:
-    import tiktoken
-except ModuleNotFoundError:
-    print(
-        "ERROR tiktoken is required for the frozen o200k_base token checks; "
-        "run this validator in the pinned SkillOpt environment or install tiktoken.",
-        file=sys.stderr,
-    )
-    raise SystemExit(2)
 
 from generate_module_index import END, GENERATED, START, load_registry, render_index, replace_index
 
@@ -113,17 +104,18 @@ class Result:
 
 
 def tokens(text: str) -> int:
+    # Optional descriptive measurement; structural validation never calls this.
+    import tiktoken
     return len(tiktoken.get_encoding("o200k_base").encode(text))
 
 
 def successor_core_text(skill_text: str) -> str:
-    """Return Core with generated index entries excluded from its token budget.
+    """Return Core with generated index entries excluded from its measured size.
 
     The exact successor metric retains the index boundary markers and replaces
     everything from START through END with ``START + newline + END``. The
     generated comment and every generated module entry therefore count only
-    toward the separate index budget. Legacy RC7 intentionally keeps its prior
-    full-SKILL.md metric for historical comparability.
+    toward the separate index measurement.
     """
     start = skill_text.find(START)
     end = skill_text.find(END)
@@ -131,10 +123,6 @@ def successor_core_text(skill_text: str) -> str:
         raise ValueError("SKILL.md is missing valid module index markers")
     end += len(END)
     return skill_text[:start] + START + "\n" + END + skill_text[end:]
-
-
-def _positive_int(value: Any) -> bool:
-    return isinstance(value, int) and not isinstance(value, bool) and value > 0
 
 
 def _normal_path(value: Any) -> str:
@@ -252,88 +240,12 @@ def _validate_rule_source_map(
             result.error(f"{module_id}: rule-source map mismatch ({'; '.join(details)})")
 
 
-def _validate_successor_budgets(
-    registry: dict[str, Any],
-    modules: list[dict[str, Any]],
-    module_token_counts: dict[str, int],
-    core_tokens: int,
-    index_tokens: int,
-    result: Result,
-) -> None:
-    budget = registry.get("budget")
-    if not isinstance(budget, dict):
-        result.error("budget must be a mapping")
-        return
-
-    # Missing policy preserves the frozen successor contract. Only the current
-    # package opts into ADR-0032; structure and historical metrics stay intact.
-    policy = budget.get("policy", "hard")
-    if policy not in ("hard", "advisory"):
-        result.error("budget.policy must be hard or advisory")
-        return
-    report_overrun = result.warning if policy == "advisory" else result.error
-
-    core_ceiling = budget.get("core_token_ceiling")
-    index_ceiling = budget.get("index_token_ceiling")
-    max_leaves = budget.get("provisional_max_simultaneous_leaves")
-    phase_ceiling = budget.get("provisional_core_plus_leaves_ceiling")
-
-    budget_fields = (
-        "core_token_ceiling", "index_token_ceiling",
-        "provisional_max_simultaneous_leaves", "provisional_core_plus_leaves_ceiling",
-    )
-    for name in budget_fields:
-        if not _positive_int(budget.get(name)):
-            result.error(f"budget.{name} must be a positive integer")
-    if any(not _positive_int(budget.get(name)) for name in budget_fields):
-        return
-
-    if policy == "hard" and core_ceiling != 1500:
-        result.error("budget.core_token_ceiling must remain 1500")
-    elif core_tokens > core_ceiling:
-        report_overrun(f"SKILL.md: {core_tokens} tokens exceeds {core_ceiling}")
-
-    if index_tokens > index_ceiling:
-        report_overrun(f"generated index: {index_tokens} tokens exceeds {index_ceiling}")
-
-    if policy == "hard" and max_leaves != 4:
-        result.error("budget.provisional_max_simultaneous_leaves must remain 4")
-        max_leaves = 4
-    if policy == "hard" and phase_ceiling != 15000:
-        result.error("budget.provisional_core_plus_leaves_ceiling must remain 15000")
-        phase_ceiling = 15000
-
-    # Core and index have separate individual ceilings, but both are resident
-    # whenever SKILL.md is loaded. Every phase/common-load metric therefore
-    # starts with Core-without-index plus the complete generated index.
-    loaded_core_and_index = core_tokens + index_tokens
-    result.metrics["core_plus_index"] = loaded_core_and_index
-
-    for item in modules:
-        module_id = item.get("id", "<missing>")
-        target = item.get("token_target")
-        ceiling = item.get("token_ceiling")
-        if not _positive_int(target):
-            result.error(f"{module_id}: token_target must be a positive integer")
-            continue
-        if not _positive_int(ceiling):
-            result.error(f"{module_id}: token_ceiling must be a positive integer")
-            continue
-        if target > ceiling:
-            result.error(f"{module_id}: token_target exceeds token_ceiling")
-        count = module_token_counts.get(module_id)
-        if count is None:
-            continue
-        if count > ceiling:
-            report_overrun(f"{module_id}: {count} tokens exceeds ceiling {ceiling}")
-        elif count > target:
-            result.warning(f"{module_id}: {count} tokens exceeds target {target}")
-
+def _validate_common_loads(registry: dict, modules: list[dict], result: Result) -> None:
     planned = registry.get("planned_common_loads")
     if not isinstance(planned, list) or not planned:
         result.error("planned_common_loads must be a non-empty list")
         planned = []
-    known_ids = set(module_token_counts)
+    known_ids = {item.get("id") for item in modules if isinstance(item, dict)}
     load_ids: set[str] = set()
     for load in planned:
         if not isinstance(load, dict):
@@ -341,7 +253,6 @@ def _validate_successor_budgets(
             continue
         load_id = load.get("id")
         selected = load.get("modules")
-        load_ceiling = load.get("token_ceiling")
         if not isinstance(load_id, str) or not load_id.strip():
             result.error("planned common load requires a non-empty id")
             load_id = "<missing>"
@@ -365,65 +276,6 @@ def _validate_successor_budgets(
                 f"planned common load {load_id}: unknown module IDs "
                 + ", ".join(unknown)
             )
-        if len(selected) > max_leaves:
-            report_overrun(
-                f"planned common load {load_id}: {len(selected)} leaves exceeds {max_leaves}"
-            )
-        if not _positive_int(load_ceiling):
-            result.error(
-                f"planned common load {load_id}: token_ceiling must be a positive integer"
-            )
-            continue
-        if load_ceiling > phase_ceiling:
-            report_overrun(
-                f"planned common load {load_id}: token_ceiling {load_ceiling} "
-                f"exceeds phase ceiling {phase_ceiling}"
-            )
-        if not unknown:
-            count = loaded_core_and_index + sum(
-                module_token_counts[item] for item in selected
-            )
-            if count > load_ceiling:
-                report_overrun(
-                    f"planned common load {load_id}: {count} tokens exceeds ceiling "
-                    f"{load_ceiling}"
-                )
-            if count > phase_ceiling:
-                report_overrun(
-                    f"planned common load {load_id}: {count} tokens exceeds phase "
-                    f"ceiling {phase_ceiling}"
-                )
-
-    largest = sorted(module_token_counts.values(), reverse=True)[:max_leaves]
-    largest_phase = loaded_core_and_index + sum(largest)
-    result.metrics["core_plus_largest_phase"] = largest_phase
-    if largest_phase > phase_ceiling:
-        report_overrun(
-            f"Core + index + {len(largest)} largest experts: {largest_phase} tokens "
-            f"exceeds phase ceiling {phase_ceiling}"
-        )
-
-
-def _validate_legacy_budgets(
-    module_token_counts: dict[str, int],
-    core_tokens: int,
-    index_tokens: int,
-    result: Result,
-) -> None:
-    for module_id, count in module_token_counts.items():
-        if count > 1800:
-            result.error(f"{module_id}: {count} tokens exceeds 1800")
-        if core_tokens + count > 3800:
-            result.error(f"Core + {module_id}: {core_tokens + count} tokens exceeds 3800")
-    if core_tokens > 1500:
-        result.error(f"SKILL.md: {core_tokens} tokens exceeds 1500")
-    if index_tokens > 450:
-        result.error(f"generated index: {index_tokens} tokens exceeds 450")
-    top_three = sorted(module_token_counts.values(), reverse=True)[:3]
-    legacy_phase = core_tokens + sum(top_three)
-    result.metrics["core_plus_three"] = legacy_phase
-    if legacy_phase > 7000:
-        result.error("Core + three largest experts exceeds 7000 tokens")
 
 
 def validate_evidence_receipts(root: Path, modules: list[dict], result: Result) -> None:
@@ -545,7 +397,6 @@ def validate_package(root: Path, schema: str, *, runtime: bool = False, developm
     signal_owner: dict[str, str] = {}
     owned: dict[str, str] = {}
     referenced_paths: set[Path] = set()
-    module_token_counts: dict[str, int] = {}
     module_sources: dict[str, set[str]] = {}
 
     if successor:
@@ -667,7 +518,6 @@ def validate_package(root: Path, schema: str, *, runtime: bool = False, developm
                 result.error(f"{module_id}: evidence must list executed P6 receipt IDs or be empty")
             elif len(evidence) != len(set(evidence)):
                 result.error(f"{module_id}: duplicate evidence receipt")
-        module_token_counts[module_id] = tokens(content)
         sibling_links = [
             link for link in MARKDOWN_LINK.findall(content) if _is_sibling_reference_link(link)
         ]
@@ -742,26 +592,7 @@ def validate_package(root: Path, schema: str, *, runtime: bool = False, developm
         expected_skill = skill_text
     if skill_text != expected_skill:
         result.error("generated module index drift")
-    full_skill_tokens = tokens(skill_text)
-    if successor:
-        try:
-            core_tokens = tokens(successor_core_text(skill_text))
-        except ValueError as exc:
-            result.error(f"cannot measure successor Core: {exc}")
-            core_tokens = full_skill_tokens
-    else:
-        # Preserve RC7's historical metric: its Core count included the
-        # generated index because the old validator measured all SKILL.md text.
-        core_tokens = full_skill_tokens
-    index_tokens = tokens(index_text)
-    result.metrics.update(
-        {
-            "modules": len(modules),
-            "core_tokens": core_tokens,
-            "index_tokens": index_tokens,
-            "max_expert_tokens": max(module_token_counts.values(), default=0),
-        }
-    )
+    result.metrics["modules"] = len(modules)
 
     linked = set(DIRECT_MODULE_LINK.findall(skill_text))
     expected_links = {
@@ -773,20 +604,7 @@ def validate_package(root: Path, schema: str, *, runtime: bool = False, developm
         result.error("SKILL.md direct links do not equal modules.yaml paths")
 
     if successor:
-        if schema == CURRENT_SCHEMA and registry.get("budget", {}).get("policy") != "advisory":
-            result.error("successor-v2 budget.policy must be advisory")
-        _validate_successor_budgets(
-            registry,
-            modules,
-            module_token_counts,
-            core_tokens,
-            index_tokens,
-            result,
-        )
-    else:
-        _validate_legacy_budgets(
-            module_token_counts, core_tokens, index_tokens, result
-        )
+        _validate_common_loads(registry, modules, result)
 
     try:
         agent = yaml.safe_load(agent_path.read_text(encoding="utf-8"))

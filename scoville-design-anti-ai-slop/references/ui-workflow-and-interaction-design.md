@@ -88,6 +88,22 @@ authorised implementation. A brand-governed template does not transfer
 its medium-specific interactive structure to Brand, and framework availability
 does not transfer design-system definition to UI implementation.
 
+## Compare the cost of an editing pattern
+
+For a frequently corrected single field, compare direct editing with a separate
+detail view. Direct editing keeps the surrounding comparison visible but must
+make edit state, save/cancel and failure recovery understandable. A detail view
+can give related fields and consequential changes enough context, at the cost
+of leaving the list and recovering position. A dialog may suit a bounded
+interruption when focus and return are clear; it is not automatically the
+middle answer.
+
+Use the same task and content for the comparison. Count the meaningful context
+switches and inspect how a mistaken value is recovered, rather than awarding
+the fewest clicks. Keep the incumbent pattern when its task costs are already
+appropriate. This example chooses interaction intent; it neither mandates new
+controls nor implements the framework's state, focus or persistence mechanics.
+
 ## Critique failure signatures and causes
 
 - **Shell-first dashboard:** sidebar, four KPI tiles, line chart and table

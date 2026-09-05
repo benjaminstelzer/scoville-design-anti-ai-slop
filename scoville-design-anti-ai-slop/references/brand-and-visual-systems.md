@@ -115,6 +115,25 @@ for every organisational label by default.
    required derivatives. Include version, status, owner, source, allowed use,
    replacement/migration and deprecation state.
 
+## Build a family rather than matching boxes
+
+Compare a compact, a wide and a diagonal member at their actual use size.
+Inspect apparent mass and centre, counter size, terminal/corner treatment and
+detail survival beside the unchanged incumbent when one applies. Equal bounds
+can make a sparse diagonal feel smaller than a filled square; compare extending
+its optical extent with changing stroke weight, rather than scaling every
+member identically. Preserve each symbol's distinct meaning.
+
+For a pattern, separate the motif from the repeat operation. A fictional
+paper-strip device might preserve one cut angle and the relation of two edges
+while translation, offset and spacing vary. Draw adjoining repeats, not only
+one tile: inspect accidental stripes, holes, seam accents and the smallest gap.
+Then inspect the actual cropped surface. Density and edge behavior belong to
+the identity's job; a deliberate broken repeat or cropped motif may be correct.
+Keep a useful incumbent grammar instead of importing another brand's keyline,
+stroke width or mandated rhythm. These comparisons are original working aids,
+not optical equations or universal family counts.
+
 ## Critique: failure signatures and causes
 
 - **Recognisable only in the full hero composition:** no ranked invariants or

@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.0 - 2026-09-05
+
+- Add practical construction, comparison and repair methods to 23 existing design modules, including typography, colour, identity, imagery, information design, responsive composition and motion.
+- Distinguish point, line and area label placement in Cartography, with source-bounded guidance for preserving geometry across output sizes.
+- Remove package and module size targets, ceilings, leaf-count allowances and their validation warnings. Structural validation and builds no longer require token measurement.
+- Add separate typography and cartography application checks and correct the Motion study's status subtitle in a preserved derivative. Original trial results remain unchanged.
+- Pass 26 unit tests, package and index checks, 60 route cases, the Design/UI boundary and a verified 35-file runtime export. Local artifact observations establish the tested operations, without demonstrating a general model advantage or completing the outstanding host qualification.
+
 ## v1.0.3 - 2026-09-05
 
 - Correct the README source-index link to the canonical installable package.

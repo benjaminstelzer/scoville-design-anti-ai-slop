@@ -70,6 +70,24 @@ disclosure, navigation, composition—and what would falsify the choice. Respons
 design may produce substantially different compositions; it need not resemble a
 scaled desktop canvas.
 
+## Match pressure to a transformation
+
+Reduce the available width with real content until the first important relation
+fails. Compare an operation that addresses that failure, then inspect widths
+on both sides of the change and between the intended endpoints.
+
+| First pressure | Operation to compare | Protected relation / countercase |
+| --- | --- | --- |
+| A label loses its value or action | Rewrap the field or regroup its row | Preserve label/value/action association; peer comparison may favour a bounded table |
+| Reading lines or a control cannot fit | Change measure, track allocation or flow | Preserve readable type and full required copy; shrinking everything is not the default |
+| A crop loses the subject's working relation | Change focal envelope, aspect or source | Keep meaning and truthful context; `cover` alone cannot decide the crop |
+| Repeated navigation displaces the task | Compare supported disclosure or a different arrangement | Preserve location, access and recovery; do not hide essential content to make space |
+| Two-dimensional comparison collapses when stacked | Compare bounded scrolling or a task-equivalent view | Preserve axes, row/column relations and reachable content |
+
+Record the observed content pressure as the reason for the breakpoint, not a
+device label. A settled single-column layout may need no transformation. This
+map supplies design intent; the implementation owner supplies tested mechanics.
+
 ## Critique failure signatures and causes
 
 - **Long narrow stack:** automatic stacking replaced hierarchy and task logic.

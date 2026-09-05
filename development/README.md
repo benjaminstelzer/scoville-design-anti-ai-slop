@@ -3,6 +3,25 @@
 The only installable Skill source is [`scoville-design-anti-ai-slop/`](../scoville-design-anti-ai-slop/).
 This directory owns repository development and is not an installation package.
 
+## Current size policy
+
+ADR-0059 removes all package, Core, index, leaf and common-load size guidelines.
+`scripts/validate_package.py` and runtime builds check structure and evidence
+without token measurement or size warnings. `scripts/measure_package.py` is an
+optional descriptive report and requires `tiktoken`; structural checks do not.
+The package's existing module identities and metadata field formats remain
+structural contracts.
+
+Pre-PLAN-0008 Decisions, plans, evaluation contracts, matrices and receipts are
+retained historical evidence. Their numeric package-size prescriptions are not
+current authoring policy, including `successor-module-registry.md`,
+`fable-implementation-contract.md` and the PLAN-0007 contract. The historical
+`docs/evaluation/validate_open_call_matrix.py` and
+`validate_successor_28_open_matrix.py` only reproduce their frozen old matrix
+contracts; do not use their size gates to admit current work. Current checks
+are the scripts under `scripts/` and tests under `tests/`. Actual provider or
+explicit user limits and immutable evaluation controls remain applicable.
+
 ## Current layout
 
 Paths recorded before the 2026-09-05 structure change are historical. Use this mapping

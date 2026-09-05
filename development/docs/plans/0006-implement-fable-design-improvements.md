@@ -1,10 +1,9 @@
 ---
 format_version: 1
 id: PLAN-0006
-status: active
+status: draft
 created: 2026-09-04
 updated: 2026-09-05
-current_item: W-004
 ---
 
 # Implement Fable design improvements
@@ -21,6 +20,12 @@ the plan in session 7d03e896-c898-42a4-abee-b39d759bde77. The user's subsequent
 
 The subsequent explicit publication request adds W-006 for Design and UI under
 ADR-0058. W-004's remaining evaluation lanes are not release pass claims.
+
+On 2026-09-05 the user instructed direct implementation of the reviewed
+practical-guidance fix Plan. PLAN-0007 becomes active; this Plan returns to
+draft as retained inactive work. W-004 stays paused with its exact evidence
+and Next action preserved. Its open DH5 and original Fable lanes are neither
+completed nor cancelled by this transition.
 
 ## Non-goals
 

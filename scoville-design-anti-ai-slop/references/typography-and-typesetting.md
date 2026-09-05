@@ -93,6 +93,27 @@ render. A fixed raster-only deliverable has no runtime font fallback; do not
 invent that check. Escalate when metrics, features, loading, embedding, shaping,
 or unfamiliar scripts become material.
 
+## Build a setting comparison
+
+Put a real heading, subheading, paragraph and caption together before choosing
+a scale. Assign the reader's first and second tasks, then test whether adjacent
+levels differ clearly with one signal removed. A heading hierarchy can use
+weight and spacing inside one family; it need not increase size at every level.
+
+For sustained text, begin with a plausible face and reading size, set the real
+column, and inspect line endings and vertical texture. Compare a narrower
+measure at unchanged size, then adjust leading for that measure if needed.
+Keep the untouched setting beside it. Name the intended variables and allow
+their dependent line-break changes; do not silently change copy to improve one
+specimen. Inspect a full paragraph and its neighbours, not only a short line.
+
+For a proposed pair, put the same heading/body content in a one-family control
+and the pair. Compare role contrast, apparent size, texture and voice. Equal
+nominal sizes do not guarantee equal apparent sizes: optical matching is a
+separate declared comparison. Keep the extra family only for a visible job.
+These original comparison steps supply no universal measure, leading range or
+font-pair formula; display exceptions remain scoped to their actual role.
+
 ## Critique: signatures and causes
 
 | Failure signature | Likely cause to distinguish |

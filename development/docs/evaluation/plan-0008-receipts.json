@@ -1,0 +1,486 @@
+{
+  "scope": "Three new frozen model calls, six rendered artifacts and six Motion state observations; no improvement, audience, GIS or automatic routing claim.",
+  "freeze_sha256": "C77F01DB1C4D63FC4F14C885A78E5788F30CB9CC0548E83B2DE2620B3375B3DA",
+  "trials": [
+    {
+      "case": "PG-02S",
+      "arm": "baseline",
+      "tier": "paired",
+      "started": "2026-09-05T17:46:23.076229+00:00",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "source_hashes": {
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9",
+        "references/typography-and-typesetting.md": "E7C5F031D6BEDA3043BF7B636FB7F32B23E03B7B41C2D2FF23D71ECFBD900117"
+      },
+      "package_manifest": {
+        "agents/openai.yaml": "15BEC80EB291449C2E666FC1BBC68E2D36C03E1DFCDA8D0948AFD12742A87B74",
+        "LICENSE": "4CBB4950227DD6B4753FD20EC90307D71F6F4CF827E1E8E8D74F6BF1E80C2098",
+        "modules.yaml": "E5AACF656252979D414A0BEB41DBD4FC6C45385FC31C9DCFD91B604C25FBC3BF",
+        "references/advertising-and-campaign-art-direction.md": "1CDD57ACA0BE5A8A32061BA8F0CE9C2A1B5A192F1EE5377DC264ADDDF9CAB03B",
+        "references/asset-rights-and-attribution.md": "D020E7E4093857F602130E97BC9D0D5ACE228747857BF075BFE9474B35587851",
+        "references/brand-and-visual-systems.md": "9A0B6C249E13C855D40F29735428EC7794E637DBF123B6021A4FA6C43582E9A6",
+        "references/brief-framing-and-criteria.md": "B2800D9DAD5619CAB9955061E49130006E44A63D85E842AC026BC23989C985A4",
+        "references/cartography-and-spatial-data.md": "DFA31C46EE4A81DC039FD94EAC7CD921A899AFFFD5E732F6B8C636325623D309",
+        "references/colour-and-reproduction.md": "AC3F9459B542513F8088A2E1A35169AE73243AE8618425BF5EA0474968FB7AFB",
+        "references/composition-and-layout.md": "F9433C5A77B7A7B95C83B0939EE7C9BF51BA727B9520D60CDDEACE95E690B1D0",
+        "references/concept-development-and-selection.md": "E8B9B30C2123BD5C68DE325AC51BFD79974B837741E6C337EC3583D55B966C0C",
+        "references/coordination-with-sibling-skills.md": "B43F830D8DFBA41A2667618C6C2A595206BB02A3A18058B5391E3C3BFFD91C2B",
+        "references/critique-and-validation.md": "5FB6C8C5504317964D14C5165BD54ACBA0E6257925B5E5A81A8AC7192C647EF0",
+        "references/culture-and-representation.md": "52D4ED0EC137C7FFF2619058518141224F862A808A59BA01FE7A1C47EDBE51C1",
+        "references/diagrams-and-relational-information.md": "807DB70F46F73F20482CF25A279F68F0F6EB6B3F5ADFA2954A9C6DA51618BD00",
+        "references/editorial-and-fixed-media-design.md": "B7AFEECAA1785EB691D64D8B65C86ADB2296A2333D60EC0DFF0FFB71A64497B7",
+        "references/font-technology-and-script-safety.md": "0C5BC04C0F85EE305D34D9F4C29CF4FFE6791C6E6E740E8903FCCDCBEC834C5A",
+        "references/generic-signatures-and-subject-specificity.md": "1D2FA2B826BCB00F2845EB7CD324F2C0D65F1AECC277DA6B9D170C66FFB66D11",
+        "references/imagery-and-art-direction.md": "E7481D510B099F63943331029D21090C40D4B1D7758E580018944D3569307766",
+        "references/information-design-and-data-visualization.md": "DF990EEA4AAA488012FA768A07DBB812CB7C43D4DA97F75EF21793669A138801",
+        "references/instructional-and-explanatory-design.md": "3EE8FF7F337183AA4C441D356BCEB9D38F6C355EDCE11E92FD0554714827E520",
+        "references/logo-and-identity-mark-design.md": "79687BBCE2D2B1327407145CBF2D85D900868F6859A52A45BA5F03593D4FA48E",
+        "references/media-production-and-handoff.md": "D57DE433F4E7B42E1DEBC19656D45CD69DA91CE9880FABF059EA88DEA73F7C6E",
+        "references/motion-and-sequence.md": "A932B9D4A9FDD160F9D31EAE3E38F26B58B8293B5FB1C411C371D64379E2E991",
+        "references/packaging-graphics-and-sku-systems.md": "35CA899CD21085BCE1BDD1EA8183359D0CFF4FE07C01041EDAEC350D29C83318",
+        "references/people-privacy-and-media-integrity.md": "B9F9E2C09ECA61B85C2F821CEE2DA7745324ADC15300F8DE2ABC1CECCF638087",
+        "references/physical-wayfinding-and-signage-systems.md": "0092032464847F95AFED5A2780AE38BEC9B43A412D7C00EDB92112A58B78428C",
+        "references/source-index.md": "EF77D70B7505BBDCA735EEC6750D1DAFCDB2272D0F598F191AEE7136FA1F00BD",
+        "references/source-verification-and-evidence.md": "CA5B03E0788C0774E5F83C75C511B4BAE9F858D1F350F77097573E1BDE3949FB",
+        "references/style-direction.md": "09AA1ECBA4F5F92EC480FEF0E54FEAD35E6C09C35E10F148F9B8281FF18B254B",
+        "references/sustainability-claims.md": "DC90906F61244645F25A0C529AD720AB3044AFAD7514F1B65AB7BDF4167B3BDF",
+        "references/typography-and-typesetting.md": "E7C5F031D6BEDA3043BF7B636FB7F32B23E03B7B41C2D2FF23D71ECFBD900117",
+        "references/ui-workflow-and-interaction-design.md": "34F712ACCEE77EDB93A7768A35408B9E43DFBB3C9C4840DF7703799A7128C0A7",
+        "references/web-and-responsive-design.md": "1FD6FBB290795CFF56E6087D2A1FF765324DCACEBC558359E4FEB2D273A69D82",
+        "SKILL.md": "F0D6DC581866E095950DCA728DF66D885987DFC29F786AD1BE2925F9BB9939B9"
+      },
+      "prompt_sha256": "1A3C4C097605E4CC9AE6391D5E6CD904326AEEE76708EE1A04E2F80699F7B5C4",
+      "command": [
+        "C:\\Users\\benja\\AppData\\Local\\OpenAI\\Codex\\bin\\27d6a192e9c98618\\codex.EXE",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "--model",
+        "gpt-6-astra",
+        "--json",
+        "--color",
+        "never",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "approval_policy=\"never\"",
+        "-c",
+        "features.apps=false",
+        "-c",
+        "features.plugins=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "features.multi_agent=false",
+        "-c",
+        "features.shell_snapshot=false",
+        "-c",
+        "project_doc_max_bytes=0",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "project_root_markers=[\".eval-root\"]",
+        "-c",
+        "skills.config=[{path=\"C:/Users/benja/.codex/skills/.backup-ask-claude-and-sol-for-codex-pre-v1.0.0\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.backup-ask-claude-and-sol-for-codex-pre-v1.0.1\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/imagegen\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/openai-docs\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/plugin-creator\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/review-agent\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/skill-creator\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/skill-installer\",enabled=false},{path=\"C:/Users/benja/.codex/skills/ask-claude-and-astra-for-codex\",enabled=false},{path=\"C:/Users/benja/.codex/skills/ask-claude-and-sol-for-codex\",enabled=false},{path=\"C:/Users/benja/.codex/skills/ask-claude-for-codex\",enabled=false},{path=\"C:/Users/benja/.codex/skills/benjaminstelzer-github\",enabled=false},{path=\"C:/Users/benja/.codex/skills/benjaminstelzer-imitate-me\",enabled=false},{path=\"C:/Users/benja/.codex/skills/mantine-combobox\",enabled=false},{path=\"C:/Users/benja/.codex/skills/mantine-custom-components\",enabled=false},{path=\"C:/Users/benja/.codex/skills/mantine-form\",enabled=false},{path=\"C:/Users/benja/.codex/skills/playwright\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-brainstorm\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-code-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-design-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-handoff\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-plan\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-research\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-scribe-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-ui-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/wordpress-backend-ui\",enabled=false}]",
+        "--output-schema",
+        "Z:\\Projekts\\AI\\output\\design-plan8-supplements\\schema.json",
+        "--output-last-message",
+        "Z:\\Projekts\\AI\\output\\design-plan8-supplements\\PG-02S\\baseline\\answer.json",
+        "--cd",
+        "Z:\\Projekts\\AI\\output\\design-plan8-supplements\\PG-02S\\baseline",
+        "-"
+      ],
+      "exit_code": 0,
+      "finished": "2026-09-05T17:47:40.913386+00:00",
+      "session_id": "01a072ad-bb29-78f0-a447-5a3978ba6b18",
+      "usage": {
+        "input_tokens": 18090,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2416,
+        "reasoning_output_tokens": 262
+      },
+      "answer_sha256": "1A2178534C517328DA1F273705A5045EDF962FA86E0091202E6ED59FC07DD1B0",
+      "artifacts": {
+        "control.html": "6EA12A0BFDC872B076110E104C6AA0B631030D4527E1D2C92AF1CFF6C9957834",
+        "main.html": "93479A75CCCB57B3B5CC5795B13EE0C654D88B27CA2FE8B81BA3C7CDC79162BC"
+      }
+    },
+    {
+      "case": "PG-02S",
+      "arm": "candidate",
+      "tier": "paired",
+      "started": "2026-09-05T17:48:26.489761+00:00",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "source_hashes": {
+        "SKILL.md": "6652CD832F34B657F476EB5AD171D7951B0D1048449579C3A6CD889BF2109A90",
+        "references/typography-and-typesetting.md": "079F6B13F2457AC8D34068F84427C81085E2F6984018562E830BF7F58C267F5B"
+      },
+      "package_manifest": {
+        "agents/openai.yaml": "15BEC80EB291449C2E666FC1BBC68E2D36C03E1DFCDA8D0948AFD12742A87B74",
+        "LICENSE": "4CBB4950227DD6B4753FD20EC90307D71F6F4CF827E1E8E8D74F6BF1E80C2098",
+        "modules.yaml": "BF9836970EAD1CAB3715CF173C292EBF21A1775C8034DA69FF4086F553BAEEE0",
+        "references/advertising-and-campaign-art-direction.md": "15E2B31206F067B4C47A4C338EB0AF701E602B5E26320AB360BB6426F07E5C63",
+        "references/asset-rights-and-attribution.md": "D020E7E4093857F602130E97BC9D0D5ACE228747857BF075BFE9474B35587851",
+        "references/brand-and-visual-systems.md": "F5884E4B2494139252186F14C5CA135545A6F444BB2B70EC132BB9E97DD453D7",
+        "references/brief-framing-and-criteria.md": "F0B962C1F269A44BF5CEB768C8112FCFB297F8EDDA0E8AB28F9212AB07BA79A4",
+        "references/cartography-and-spatial-data.md": "D7413A652A2D92D713AFCA54624D9C4B5CAFC2C336F9F2E7D90B73AAE9F850DA",
+        "references/colour-and-reproduction.md": "BFE8BEF7FD8E35F299D021B6E097C2A0870DB788EBF237A962D87FCF672087DE",
+        "references/composition-and-layout.md": "AC395923F70A93203C0B7DAA450528BBFB9D5B666C65CD25220E6A4D30AD901F",
+        "references/concept-development-and-selection.md": "AA14AD800A0B11821B2CECE8A665E8F02F587F0CEAB2C03220E6AE6AD219B4E3",
+        "references/coordination-with-sibling-skills.md": "B43F830D8DFBA41A2667618C6C2A595206BB02A3A18058B5391E3C3BFFD91C2B",
+        "references/critique-and-validation.md": "1F1DCA8EF3538C0DD1372A025D0EA81BBFE063CA370925D1D5ACFD89BA38D289",
+        "references/culture-and-representation.md": "52D4ED0EC137C7FFF2619058518141224F862A808A59BA01FE7A1C47EDBE51C1",
+        "references/diagrams-and-relational-information.md": "A75D22C136847F9F09A3C9EA4E5DB362F880CC497A884890765B87119DC2F5EA",
+        "references/editorial-and-fixed-media-design.md": "0712AC9A3FAFAA1D888BDE6761F6C809AF70CA97D8E91B03C9CB1ED789B37058",
+        "references/font-technology-and-script-safety.md": "E54F6A016F0D6E22F52496A34D80D3DEED9C9E1297BD93613473FA14ABC5E54B",
+        "references/generic-signatures-and-subject-specificity.md": "1D2FA2B826BCB00F2845EB7CD324F2C0D65F1AECC277DA6B9D170C66FFB66D11",
+        "references/imagery-and-art-direction.md": "49B122DB4D4EBD4089ACE1706723AEE2C54E45AF36835CB0B950A5A10787C97A",
+        "references/information-design-and-data-visualization.md": "60E6D017A4A1FF77AC5E854ECD84159D04809FA551E19C789A0A89DC90D4E5DA",
+        "references/instructional-and-explanatory-design.md": "F13F697FB9B621360A98104C3A3A6C3FEBB0990C268D388B751345831688391D",
+        "references/logo-and-identity-mark-design.md": "811B5BC274B1652596442E633D6CA6CA4A370719280685CF56ECB6499BBE4668",
+        "references/media-production-and-handoff.md": "696279AA1A1CBCF2C7A9DFC30BB25ADB4213431B318BCD8A1F01602C368D2702",
+        "references/motion-and-sequence.md": "60E5E69D44D10F4F2E5740071EFCA9FCF50FCD1D307AE64BB68E5E8F65BA6D10",
+        "references/packaging-graphics-and-sku-systems.md": "F1334C98B6484A677FD0494FD2F8279581E20C537F4452FA363DBB90F8E879F7",
+        "references/people-privacy-and-media-integrity.md": "B9F9E2C09ECA61B85C2F821CEE2DA7745324ADC15300F8DE2ABC1CECCF638087",
+        "references/physical-wayfinding-and-signage-systems.md": "A9153DD60368C4925B4458A99305FB1B51E72056A3E590AA276133EAE32679E0",
+        "references/source-index.md": "55947E01848E34F501E648705FD72C9D3ADFEF39C28B926331CFB55ED1524A27",
+        "references/source-verification-and-evidence.md": "CA5B03E0788C0774E5F83C75C511B4BAE9F858D1F350F77097573E1BDE3949FB",
+        "references/style-direction.md": "4343B2A1B0D206C697BA78693C6487BC6FA781D967295533AA5AC079F7440C69",
+        "references/sustainability-claims.md": "DC90906F61244645F25A0C529AD720AB3044AFAD7514F1B65AB7BDF4167B3BDF",
+        "references/typography-and-typesetting.md": "079F6B13F2457AC8D34068F84427C81085E2F6984018562E830BF7F58C267F5B",
+        "references/ui-workflow-and-interaction-design.md": "054B9D956B45806873ACC46D7C7F25D470891859BC2F16E8F046257E6ED9651B",
+        "references/web-and-responsive-design.md": "E9B1A9CE39275D84ADB27A20056F6677818C74B4140F0A66333D557B851397F1",
+        "SKILL.md": "6652CD832F34B657F476EB5AD171D7951B0D1048449579C3A6CD889BF2109A90"
+      },
+      "prompt_sha256": "96F609598C8862045F4143F76A9428FC166A5899F9D4A7BF9874FB7FEC675226",
+      "command": [
+        "C:\\Users\\benja\\AppData\\Local\\OpenAI\\Codex\\bin\\27d6a192e9c98618\\codex.EXE",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "--model",
+        "gpt-6-astra",
+        "--json",
+        "--color",
+        "never",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "approval_policy=\"never\"",
+        "-c",
+        "features.apps=false",
+        "-c",
+        "features.plugins=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "features.multi_agent=false",
+        "-c",
+        "features.shell_snapshot=false",
+        "-c",
+        "project_doc_max_bytes=0",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "project_root_markers=[\".eval-root\"]",
+        "-c",
+        "skills.config=[{path=\"C:/Users/benja/.codex/skills/.backup-ask-claude-and-sol-for-codex-pre-v1.0.0\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.backup-ask-claude-and-sol-for-codex-pre-v1.0.1\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/imagegen\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/openai-docs\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/plugin-creator\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/review-agent\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/skill-creator\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/skill-installer\",enabled=false},{path=\"C:/Users/benja/.codex/skills/ask-claude-and-astra-for-codex\",enabled=false},{path=\"C:/Users/benja/.codex/skills/ask-claude-and-sol-for-codex\",enabled=false},{path=\"C:/Users/benja/.codex/skills/ask-claude-for-codex\",enabled=false},{path=\"C:/Users/benja/.codex/skills/benjaminstelzer-github\",enabled=false},{path=\"C:/Users/benja/.codex/skills/benjaminstelzer-imitate-me\",enabled=false},{path=\"C:/Users/benja/.codex/skills/mantine-combobox\",enabled=false},{path=\"C:/Users/benja/.codex/skills/mantine-custom-components\",enabled=false},{path=\"C:/Users/benja/.codex/skills/mantine-form\",enabled=false},{path=\"C:/Users/benja/.codex/skills/playwright\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-brainstorm\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-code-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-design-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-handoff\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-plan\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-research\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-scribe-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-ui-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/wordpress-backend-ui\",enabled=false}]",
+        "--output-schema",
+        "Z:\\Projekts\\AI\\output\\design-plan8-supplements\\schema.json",
+        "--output-last-message",
+        "Z:\\Projekts\\AI\\output\\design-plan8-supplements\\PG-02S\\candidate\\answer.json",
+        "--cd",
+        "Z:\\Projekts\\AI\\output\\design-plan8-supplements\\PG-02S\\candidate",
+        "-"
+      ],
+      "exit_code": 0,
+      "finished": "2026-09-05T17:50:01.133726+00:00",
+      "session_id": "01a072af-9d22-7572-bea7-c4a870593fba",
+      "usage": {
+        "input_tokens": 18335,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2903,
+        "reasoning_output_tokens": 518
+      },
+      "answer_sha256": "6EEEA8934274A961C9610597217CF2D352677EBFCEBACFEEDE19ABB1BAAD2827",
+      "artifacts": {
+        "control.html": "E78A52370E24C3D5CA92E57863DC0843962A7522E09BA4F8C3F4F65E221E786B",
+        "main.html": "D4626A6586E9BA37A13CE58B9FDF70066E5219B40CFEEFF325D2E2FB63472800"
+      }
+    },
+    {
+      "case": "PG-08S",
+      "arm": "candidate",
+      "tier": "candidate",
+      "started": "2026-09-05T17:46:33.484210+00:00",
+      "requested_model": "gpt-6-astra",
+      "effort": "high",
+      "source_hashes": {
+        "SKILL.md": "6652CD832F34B657F476EB5AD171D7951B0D1048449579C3A6CD889BF2109A90",
+        "references/cartography-and-spatial-data.md": "D7413A652A2D92D713AFCA54624D9C4B5CAFC2C336F9F2E7D90B73AAE9F850DA"
+      },
+      "package_manifest": {
+        "agents/openai.yaml": "15BEC80EB291449C2E666FC1BBC68E2D36C03E1DFCDA8D0948AFD12742A87B74",
+        "LICENSE": "4CBB4950227DD6B4753FD20EC90307D71F6F4CF827E1E8E8D74F6BF1E80C2098",
+        "modules.yaml": "BF9836970EAD1CAB3715CF173C292EBF21A1775C8034DA69FF4086F553BAEEE0",
+        "references/advertising-and-campaign-art-direction.md": "15E2B31206F067B4C47A4C338EB0AF701E602B5E26320AB360BB6426F07E5C63",
+        "references/asset-rights-and-attribution.md": "D020E7E4093857F602130E97BC9D0D5ACE228747857BF075BFE9474B35587851",
+        "references/brand-and-visual-systems.md": "F5884E4B2494139252186F14C5CA135545A6F444BB2B70EC132BB9E97DD453D7",
+        "references/brief-framing-and-criteria.md": "F0B962C1F269A44BF5CEB768C8112FCFB297F8EDDA0E8AB28F9212AB07BA79A4",
+        "references/cartography-and-spatial-data.md": "D7413A652A2D92D713AFCA54624D9C4B5CAFC2C336F9F2E7D90B73AAE9F850DA",
+        "references/colour-and-reproduction.md": "BFE8BEF7FD8E35F299D021B6E097C2A0870DB788EBF237A962D87FCF672087DE",
+        "references/composition-and-layout.md": "AC395923F70A93203C0B7DAA450528BBFB9D5B666C65CD25220E6A4D30AD901F",
+        "references/concept-development-and-selection.md": "AA14AD800A0B11821B2CECE8A665E8F02F587F0CEAB2C03220E6AE6AD219B4E3",
+        "references/coordination-with-sibling-skills.md": "B43F830D8DFBA41A2667618C6C2A595206BB02A3A18058B5391E3C3BFFD91C2B",
+        "references/critique-and-validation.md": "1F1DCA8EF3538C0DD1372A025D0EA81BBFE063CA370925D1D5ACFD89BA38D289",
+        "references/culture-and-representation.md": "52D4ED0EC137C7FFF2619058518141224F862A808A59BA01FE7A1C47EDBE51C1",
+        "references/diagrams-and-relational-information.md": "A75D22C136847F9F09A3C9EA4E5DB362F880CC497A884890765B87119DC2F5EA",
+        "references/editorial-and-fixed-media-design.md": "0712AC9A3FAFAA1D888BDE6761F6C809AF70CA97D8E91B03C9CB1ED789B37058",
+        "references/font-technology-and-script-safety.md": "E54F6A016F0D6E22F52496A34D80D3DEED9C9E1297BD93613473FA14ABC5E54B",
+        "references/generic-signatures-and-subject-specificity.md": "1D2FA2B826BCB00F2845EB7CD324F2C0D65F1AECC277DA6B9D170C66FFB66D11",
+        "references/imagery-and-art-direction.md": "49B122DB4D4EBD4089ACE1706723AEE2C54E45AF36835CB0B950A5A10787C97A",
+        "references/information-design-and-data-visualization.md": "60E6D017A4A1FF77AC5E854ECD84159D04809FA551E19C789A0A89DC90D4E5DA",
+        "references/instructional-and-explanatory-design.md": "F13F697FB9B621360A98104C3A3A6C3FEBB0990C268D388B751345831688391D",
+        "references/logo-and-identity-mark-design.md": "811B5BC274B1652596442E633D6CA6CA4A370719280685CF56ECB6499BBE4668",
+        "references/media-production-and-handoff.md": "696279AA1A1CBCF2C7A9DFC30BB25ADB4213431B318BCD8A1F01602C368D2702",
+        "references/motion-and-sequence.md": "60E5E69D44D10F4F2E5740071EFCA9FCF50FCD1D307AE64BB68E5E8F65BA6D10",
+        "references/packaging-graphics-and-sku-systems.md": "F1334C98B6484A677FD0494FD2F8279581E20C537F4452FA363DBB90F8E879F7",
+        "references/people-privacy-and-media-integrity.md": "B9F9E2C09ECA61B85C2F821CEE2DA7745324ADC15300F8DE2ABC1CECCF638087",
+        "references/physical-wayfinding-and-signage-systems.md": "A9153DD60368C4925B4458A99305FB1B51E72056A3E590AA276133EAE32679E0",
+        "references/source-index.md": "55947E01848E34F501E648705FD72C9D3ADFEF39C28B926331CFB55ED1524A27",
+        "references/source-verification-and-evidence.md": "CA5B03E0788C0774E5F83C75C511B4BAE9F858D1F350F77097573E1BDE3949FB",
+        "references/style-direction.md": "4343B2A1B0D206C697BA78693C6487BC6FA781D967295533AA5AC079F7440C69",
+        "references/sustainability-claims.md": "DC90906F61244645F25A0C529AD720AB3044AFAD7514F1B65AB7BDF4167B3BDF",
+        "references/typography-and-typesetting.md": "079F6B13F2457AC8D34068F84427C81085E2F6984018562E830BF7F58C267F5B",
+        "references/ui-workflow-and-interaction-design.md": "054B9D956B45806873ACC46D7C7F25D470891859BC2F16E8F046257E6ED9651B",
+        "references/web-and-responsive-design.md": "E9B1A9CE39275D84ADB27A20056F6677818C74B4140F0A66333D557B851397F1",
+        "SKILL.md": "6652CD832F34B657F476EB5AD171D7951B0D1048449579C3A6CD889BF2109A90"
+      },
+      "prompt_sha256": "EF1A45C7D8D52CE2D18B48A4457417B27F762C3265D8E3C9E403FC05BE46C642",
+      "command": [
+        "C:\\Users\\benja\\AppData\\Local\\OpenAI\\Codex\\bin\\27d6a192e9c98618\\codex.EXE",
+        "exec",
+        "--ignore-user-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "read-only",
+        "--model",
+        "gpt-6-astra",
+        "--json",
+        "--color",
+        "never",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "approval_policy=\"never\"",
+        "-c",
+        "features.apps=false",
+        "-c",
+        "features.plugins=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "features.multi_agent=false",
+        "-c",
+        "features.shell_snapshot=false",
+        "-c",
+        "project_doc_max_bytes=0",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "project_root_markers=[\".eval-root\"]",
+        "-c",
+        "skills.config=[{path=\"C:/Users/benja/.codex/skills/.backup-ask-claude-and-sol-for-codex-pre-v1.0.0\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.backup-ask-claude-and-sol-for-codex-pre-v1.0.1\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/imagegen\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/openai-docs\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/plugin-creator\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/review-agent\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/skill-creator\",enabled=false},{path=\"C:/Users/benja/.codex/skills/.system/skill-installer\",enabled=false},{path=\"C:/Users/benja/.codex/skills/ask-claude-and-astra-for-codex\",enabled=false},{path=\"C:/Users/benja/.codex/skills/ask-claude-and-sol-for-codex\",enabled=false},{path=\"C:/Users/benja/.codex/skills/ask-claude-for-codex\",enabled=false},{path=\"C:/Users/benja/.codex/skills/benjaminstelzer-github\",enabled=false},{path=\"C:/Users/benja/.codex/skills/benjaminstelzer-imitate-me\",enabled=false},{path=\"C:/Users/benja/.codex/skills/mantine-combobox\",enabled=false},{path=\"C:/Users/benja/.codex/skills/mantine-custom-components\",enabled=false},{path=\"C:/Users/benja/.codex/skills/mantine-form\",enabled=false},{path=\"C:/Users/benja/.codex/skills/playwright\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-brainstorm\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-code-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-design-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-handoff\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-plan\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-research\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-scribe-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/scoville-ui-anti-ai-slop\",enabled=false},{path=\"C:/Users/benja/.codex/skills/wordpress-backend-ui\",enabled=false}]",
+        "--output-schema",
+        "Z:\\Projekts\\AI\\output\\design-plan8-supplements\\schema.json",
+        "--output-last-message",
+        "Z:\\Projekts\\AI\\output\\design-plan8-supplements\\PG-08S\\candidate\\answer.json",
+        "--cd",
+        "Z:\\Projekts\\AI\\output\\design-plan8-supplements\\PG-08S\\candidate",
+        "-"
+      ],
+      "exit_code": 0,
+      "finished": "2026-09-05T17:49:24.387991+00:00",
+      "session_id": "01a072ad-e3bb-79b3-9c01-8012166d9ae8",
+      "usage": {
+        "input_tokens": 17848,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5113,
+        "reasoning_output_tokens": 1036
+      },
+      "answer_sha256": "CD23EB4EEE748B0A79E32CC3E7399B62E49F5F9259ACA45EC97F660B76849DF4",
+      "artifacts": {
+        "control.html": "49BCD130B2E6874795530A01AB809A0C5E7E516D9F09C7DD9BE5B1C4E17A725B",
+        "main.html": "CABDAB318BF18B2BC26777AF115F7325470142E4341A2B6E88BB014EBD1D0493"
+      }
+    }
+  ],
+  "render_receipt": {
+    "path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan8\\supplements-receipt.json",
+    "sha256": "63F29CBAF37C79127170AA7A67D0CEA197878140E1CB0E97B1F0447C9693D8A7"
+  },
+  "motion_receipt": {
+    "path": "Z:\\Projekts\\AI\\output\\playwright\\design-plan8\\motion-receipt.json",
+    "sha256": "9B86E2221AF48393EB7C813C4C0F202E05BA4BE9E651273FF6B714E18663F840"
+  },
+  "preserved_plan7_trials": [
+    {
+      "case": "PG-01",
+      "arm": "baseline",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-01",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-02",
+      "arm": "baseline",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-02",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-03",
+      "arm": "baseline",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-03",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-04",
+      "arm": "baseline",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-04",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-05",
+      "arm": "baseline",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-05",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-06",
+      "arm": "baseline",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-06",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-07",
+      "arm": "baseline",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-07",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-08",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-09",
+      "arm": "baseline",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-09",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-10",
+      "arm": "baseline",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-10",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-11",
+      "arm": "baseline",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-11",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-12",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-13",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-14",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-15",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-16",
+      "arm": "candidate",
+      "artifacts": 0
+    },
+    {
+      "case": "PG-T1",
+      "arm": "candidate",
+      "artifacts": 2
+    },
+    {
+      "case": "PG-12S",
+      "arm": "candidate",
+      "artifacts": 2
+    }
+  ],
+  "original_baseline_and_source_freeze_unchanged": true,
+  "original_protocol_and_runner_unchanged": true,
+  "plan6_w004_unchanged": true,
+  "exact_supplement_geometry_and_georgia_verified": true,
+  "candidate_exposure_matches_current_source": true,
+  "source_and_runtime_match_build_receipt": true
+}

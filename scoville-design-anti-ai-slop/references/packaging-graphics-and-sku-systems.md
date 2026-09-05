@@ -93,6 +93,22 @@ omit, invent, rewrite or relocate them.
    flattering three-quarter render is presentation, not proof of hidden faces,
    geometry, print or shelf performance.
 
+## Fill the panel and variant map
+
+For fictional stationery packs on supplied geometry, map `front: family,
+variant, quantity`; `back: supplied use text`; `side: exact item ID`. Put actual
+copy into the map before judging artwork. Compare “Ruled / 20 sheets” and
+“Plain / 20 sheets” at their closest-confusable view: the variant word must
+remain discoverable when colour disappears. Keep its role and location stable
+unless the task justifies another grammar.
+
+Trace each panel ID from the flat artwork to an assembled view and inspect
+seam-adjacent content, not only the attractive front. A long variant name tests
+the shared allocation before it becomes a one-off font shrink. Equal layouts
+are valid for peer SKUs. This original example allocates supplied content;
+it neither provides a dieline nor invents mandatory claims, barcode space or
+manufacturing clearance.
+
 ## Critique: failure signatures and causes
 
 | Failure signature | Parent cause to test |

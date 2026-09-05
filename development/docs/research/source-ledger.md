@@ -1,5 +1,30 @@
 # Source and license ledger
 
+## 2026-09-05 PLAN-0008 line and area label supplement
+
+PG-S04 / SRC-CARTOGRAPHY: inspected Esri's [line feature labels](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/text/labels-for-line-features.html), paragraphs on curved river versus horizontal highway placement and distinct label paths, and [polygon feature labels](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/text/labels-for-polygon-features.html), paragraphs on interior/exterior placement, callout anchors and contained polygons. Current page date not established. Reference only; proprietary public documentation with reuse licence unknown. Original prose compares these possibilities and preserves supplied geometry. No Esri settings, graphics or wording are imported; no engine dependency or comprehension guarantee follows.
+
+## 2026-09-05 practical-guidance admission
+
+PLAN-0007 uses original examples and independently authored operational
+procedures. Audit Q1–Q13 remain scoped reference readings, not automatically
+admitted templates or assets. No third-party fixture, image, table, proprietary
+protocol or font file is redistributed. No Butterick range, IBM grid, Carbon
+timing or historical-style attribution is added by this work.
+
+| Record | Family / inspected source | Supported use and boundary |
+| --- | --- | --- |
+| PG-S01 | SRC-PACKAGE-LOCAL-SYNTHESIS; current owning rules and PLAN-0007 audit, inspected 2026-09-05 | Original craft operations, comparison sequences and fictional examples. Local formulas are arithmetic for declared geometry, not aesthetic evidence. Source-family membership supplies lineage, not independent efficacy. |
+| PG-S02 | SRC-MARK-DESIGN; Adobe [Draw curves with the Pen tool](https://helpx.adobe.com/illustrator/desktop/draw-shapes-and-paths/draw-shapes/draw-curves-with-the-pen-tool.html), updated 2026-02-25, text on curve/handle construction inspected 2026-09-05 | Method/reference only; proprietary public documentation, no adaptation permission assumed. Grounds handle mechanics. Optical judgment and the original contour comparison remain local synthesis; no source geometry, images or prose copied. |
+| PG-S03 | SRC-CARTOGRAPHY; Esri [point-feature labels](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/text/labels-for-point-features.html) and [placement zones](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/text/set-user-defined-zones-for-point-label-placement.html), current online text inspected 2026-09-05; page version date not established | Method/reference only; reuse licence unknown. Configurable offsets and candidate zones support the local label comparison. No universal upper-right preference, engine dependency or GIS validation follows. The previously admitted UN/ICA PDF returned 403 on this refresh; its earlier evidence is not relabelled as newly inspected. |
+
+Reference-only expression was not used as an authoring template. Operative
+prose was written from bounded claim notes and current package contracts.
+Exact fixture task content is original and marked fictional/constructed in
+`evaluation/plan-0007/protocol.json`; local system fonts are used by the
+renderer without packaging their bytes. Rights to future supplied assets and
+production use remain task-specific.
+
 Baseline access date: 2026-09-01. Reference-audit and W-015 additions were
 inspected on 2026-09-02. This ledger records knowledge provenance and an operational reuse
 screen. It is not legal advice. Asset,

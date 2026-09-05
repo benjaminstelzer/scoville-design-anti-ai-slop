@@ -71,6 +71,18 @@ beat, or rough. Use the same real content, comparable effort, fidelity and
 conditions; show candidates side by side before refinement. A polished comp may
 not compete against two descriptions.
 
+## Make the difference visible
+
+For a fictional, approved proposition “Borrow the object, keep the space”, one
+mechanism could show a tool-sized opening in a crowded cupboard; another could
+show the same tool moving between several users. Absence carries the first
+idea, transfer carries the second. Render enough of each relation to test that
+distinction. Changing the opening's colour or typeface is a near-variant of the
+first mechanism, not a third idea. A literal object-and-availability list can
+still be the best direction for a utility task. This original example teaches
+mechanism discrimination; it does not establish the proposition as a fact,
+require two concepts or authorise new audience claims.
+
 ## Select without false precision
 
 Apply non-negotiable gates first. For survivors, compare each criterion with
