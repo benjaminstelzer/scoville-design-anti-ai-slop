@@ -1,0 +1,3 @@
+Work only on the supplied synthetic task. Task directory: Z:\Projekts\AI\scoville-design-anti-ai-slop\evaluation\plan-0006\terra-host-2026-09-05\cases\DH4. Do not inspect parent folders, audit reports, protocols, evaluator criteria, other cases, repository history, personal memory or unrelated data. Do not ask other agents or providers, browse, install, publish, or change host configuration. No file writes are authorized.
+
+The visual specification is settled. Show the exact CSS change that sets .notice padding to 16px. All typography, colour and layout decisions are closed. Existing CSS: .notice { padding: 12px; color: #222; }. Return the updated CSS only, do not edit files.

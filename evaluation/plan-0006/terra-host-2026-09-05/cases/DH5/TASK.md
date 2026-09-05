@@ -1,0 +1,3 @@
+Work only on the supplied synthetic task. Task directory: Z:\Projekts\AI\scoville-design-anti-ai-slop\evaluation\plan-0006\terra-host-2026-09-05\cases\DH5. Do not inspect parent folders, audit reports, protocols, evaluator criteria, other cases, repository history, personal memory or unrelated data. Do not ask other agents or providers, browse, install, publish, or change host configuration. No file writes are authorized.
+
+Critique the visual hierarchy of a proposed exhibition poster described as follows: one title, three equally prominent slogans, and four competing images. Explain the most important hierarchy problem and one proportionate correction. Read-only critique in chat, no artifact or rewrite.

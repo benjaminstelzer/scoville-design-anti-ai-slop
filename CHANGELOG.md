@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0.1 - 2026-09-05
+
+- Shortened the README, moved contributor layout notes to docs/maintenance.md, and made agent installation the primary path. Safety and evidence limits remain explicit.
+- Added separate prompts for this Skill and the complete live-verified Scoville suite.
+- Declared LICENSE in the runtime distribution file list. The builder preserves its exact repository bytes and produces a 35-file runtime.
+- Moved all three unit-test modules from scripts to tests and documented the path mapping without rewriting frozen review receipts. Archived browser working copies and caches.
+- Updated the isolated-build regression to verify license retention. All 32 existing unit tests passed in the available development environment.
+- Earlier 34-file manifests and evaluations remain unchanged. This packaging change does not claim new visual or host qualification.
+
 ## 2026-09-04: First public release (v1.0.0)
 
 - Uses three operations: generate, read-only critique and repair.

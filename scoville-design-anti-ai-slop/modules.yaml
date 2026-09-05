@@ -1,5 +1,7 @@
 format_version: 1
 package_schema: successor-v2
+distribution_files:
+  - LICENSE
 
 # Non-routed packaging/evaluation metadata; not an installed runtime dependency.
 # Repository tooling generates SKILL.md's direct index from route_label/path;

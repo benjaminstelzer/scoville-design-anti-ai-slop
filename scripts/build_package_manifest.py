@@ -14,12 +14,14 @@ def executable_paths(root: Path) -> list[Path]:
     registry = yaml.safe_load((root / "modules.yaml").read_text(encoding="utf-8"))
     module_paths = [Path(item["path"]) for item in registry["modules"]]
     non_routed = [Path(path) for path in registry.get("non_routed_references", [])]
+    distribution = [Path(path) for path in registry.get("distribution_files", [])]
     relative = [
         Path("SKILL.md"),
         Path("modules.yaml"),
         Path("agents/openai.yaml"),
         *module_paths,
         *non_routed,
+        *distribution,
     ]
     unique = {path.as_posix(): path for path in relative}
     if len(unique) != len(relative):

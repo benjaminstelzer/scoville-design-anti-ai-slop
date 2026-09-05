@@ -3,8 +3,13 @@ from __future__ import annotations
 import tempfile
 import hashlib
 import json
+import sys
 import unittest
 from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).resolve().parents[1] / "scripts"
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
 
 from build_runtime_package import build_runtime, runtime_bytes
 from generate_module_index import GENERATED, render_index
@@ -15,6 +20,8 @@ from validate_package import CURRENT_CANONICAL_IDS, CURRENT_SCHEMA, SUCCESSOR_SC
 def build_current(root: Path) -> dict:
     registry = build_successor(root)
     registry["package_schema"] = CURRENT_SCHEMA
+    registry["distribution_files"] = ["LICENSE"]
+    (root / "LICENSE").write_bytes(b"Synthetic license fixture\n")
     registry["budget"]["policy"] = "advisory"
     for index, module_id in enumerate(CURRENT_CANONICAL_IDS[28:], start=29):
         registry["modules"].append(_module(module_id, index, True))
@@ -108,7 +115,8 @@ class CurrentSchemaTests(unittest.TestCase):
             build_current(root)
             destination = parent / "runtime"
             receipt = build_runtime(root, destination)
-            self.assertEqual(34, receipt["runtime"]["file_count"])
+            self.assertEqual(35, receipt["runtime"]["file_count"])
+            self.assertEqual((root / "LICENSE").read_bytes(), (destination / "LICENSE").read_bytes())
             self.assertNotEqual(receipt["source"]["manifest_sha256"], receipt["runtime"]["manifest_sha256"])
             self.assertFalse((destination / "docs").exists())
             for record in receipt["source"]["files"]:

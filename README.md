@@ -17,7 +17,7 @@ It usually looks harmless:
 
 That is design slop: familiar signs and surface polish substitute for a
 subject-specific concept, controlled relationships, and rendered proof. The
-gradient attended the meeting. The brief did not.
+design must answer the brief, not just resemble its mood board.
 
 Scoville Design is an Agent Skill for creating, distinguishing, critiquing,
 and repairing graphic, editorial, brand, identity-mark, advertising,
@@ -53,40 +53,45 @@ Use Scoville Design to critique this webpage. Distinguish defects, tradeoffs, pr
 Use Scoville Design to make this landing page feel unmistakably like professional 1980s neon and retro computing. Use period DNA structurally, avoid a pile of familiar symbols, and verify desktop and mobile renders.
 ```
 
-```text
-Use Scoville Design with Scoville UI. Design owns the workflow, hierarchy, typography, spacing, and design-system decision. UI implements that record through the existing framework and proves the states responsively.
-```
-
 Explicit `$scoville-design-anti-ai-slop` invocation also works on hosts that
 support named Skill invocation.
 
 ## Install
 
-Use an Agent Skills-compatible host with file access and the format tools
-needed for your artifact. Ask the agent to install:
+### Install this Skill
+
+In a local Codex or Claude Code session, ask:
 
 ```text
-Install this Agent Skill from GitHub and make it available for all my projects:
+Install this Agent Skill for all my projects from this exact package directory:
 https://github.com/benjaminstelzer/scoville-design-anti-ai-slop/tree/main/scoville-design-anti-ai-slop
-Keep the installed directory name scoville-design-anti-ai-slop.
+Preserve existing customizations and ask before overwriting conflicting files.
+Report the installed location and whether the host discovers the Skill.
 ```
 
-The final path must end in
-`<skills-dir>/scoville-design-anti-ai-slop/SKILL.md`. For Claude Code, use
-`~/.claude/skills/` globally or `.claude/skills/` inside one project. Other
-hosts use their supported Skills directory.
+The agent needs source access and permission to write to its personal Skills
+location. Manual fallback: [Codex Skills guide](https://learn.chatgpt.com/docs/build-skills)
+or [Claude Code Skills guide](https://code.claude.com/docs/en/skills).
 
-Install only that 34-file directory, not the repository's development files.
-It contains the Core, direct module index, 30 expert modules, source index and
-host metadata. Python and the evaluation harness are development tools, not
-runtime requirements. Other Scoville Skills are optional.
+Install only the linked package for the focused option.
+Creating and inspecting artifacts also needs the appropriate format tools.
 
-**What it costs.** Experts load directly only when their concern can change the
-result. Token and expert-count estimates in `modules.yaml` are planning
-guidelines, not quality gates or reasons to omit necessary expertise. The
-validator reports measured package tokens and budget overruns as warnings;
-structural checks remain binding. These measurements do not establish lower
-provider-total cost. Explicit user/provider limits still apply.
+### Install the complete Scoville suite
+
+```text
+Install the complete Scoville Skill suite for all my projects. Fetch and install every exact package directory below:
+
+https://github.com/benjaminstelzer/scoville-brainstorm/tree/main/scoville-brainstorm
+https://github.com/benjaminstelzer/scoville-research/tree/main/scoville-research
+https://github.com/benjaminstelzer/scoville-code-anti-ai-slop/tree/main/scoville-code-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-design-anti-ai-slop/tree/main/scoville-design-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop/tree/main/scoville-ui-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/tree/main/scoville-scribe-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-plan/tree/main/scoville-plan
+https://github.com/benjaminstelzer/scoville-handoff/tree/main/scoville-handoff
+
+Preserve existing customizations and ask before overwriting conflicting files. Report every installed location and whether the host discovers each Skill.
+```
 
 ## What it enforces
 
@@ -111,11 +116,6 @@ provider-total cost. Explicit user/provider limits still apply.
   from appearance.
 
 The installed Core contract is in [SKILL.md](scoville-design-anti-ai-slop/SKILL.md).
-The root [authoring source](SKILL.md) retains one generator comment that the
-runtime build removes. The non-routed runtime provenance key is
-[source-index.md](scoville-design-anti-ai-slop/references/source-index.md), and the
-rule-to-source contract is in
-[rule-source-map.md](docs/research/rule-source-map.md).
 
 ## How it works
 
@@ -148,6 +148,9 @@ is absent, inactive, inapplicable, or explicitly excluded, UI retains its
 bounded Greenfield fallback. Neither Skill searches for, requires, or simulates
 the other.
 
+For repository structure and development tools, see
+[maintenance notes](docs/maintenance.md).
+
 ## Scoville family
 
 Each Skill works independently. Combine only the concerns the task actually
@@ -173,97 +176,36 @@ needs:
 
 ## Status
 
-Version 1.0.0 packages 30 selectively loaded modules for generation, read-only
-critique and authorised repair. The registry retains its `draft` development
-labels. Publication does not promote those labels to empirical qualification.
-An evidence reference may record a failure or an unverified case.
+The current package contains 30 selectively loaded modules and 35 files,
+including its MIT license. Publishing a package does not qualify its design
+judgment.
 
-The current implementation and its exact validation limits are recorded in
-[the release validation record](docs/release-validation.md) and
-[the implementation record](docs/evaluation/plan-0006-implementation.md).
-Historical packages, targeted checks and holdout results remain in
-[the evaluation records](docs/evaluation/); they do not qualify the changed
-package. A complete holdout was not repeated for this successor. Genuine host
-activation checks remain unverified. Static checks and focused development
-cases do not establish general visual superiority or professional competence.
+Five focused Terra Medium host cases on 2026-09-05 observed appropriate
+activation and exclusions, but a hierarchy critique omitted the applicable
+Composition module. That case is not a workflow pass. No artifact was rendered.
+The original Fable final review remains open, and no complete successor holdout
+or general visual-quality claim follows from these checks.
 
+See [current host observations](docs/evaluation/2026-09-05-terra-host-results.md),
+[release validation](docs/release-validation.md), and
+[implementation evidence](docs/evaluation/plan-0006-implementation.md).
 
 ## Sources
 
-The Skill uses original synthesis and does not vendor books, screenshots,
-datasets, or third-party Skill prose.
+The Skill contains original synthesis, not copied books, screenshots, datasets,
+or third-party Skill prose. The [source index](references/source-index.md)
+resolves every module's source IDs. The [research ledger](docs/research/source-ledger.md)
+and [rule-to-source map](docs/research/rule-source-map.md) preserve source scope,
+licensing, local synthesis, and recheck requirements across all 30 modules.
 
-Every `SRC-*` ID in a module's `Sources:` line resolves to the distributable,
-non-routed [source index](references/source-index.md). Its registered source families
-record stable locators, class, licence/reuse status, scope, bias/currency and
-recheck triggers. The fuller
-[research source ledger](docs/research/source-ledger.md) resolves the underlying
-books, standards, lectures, courses, studies, manuals, audits and prior-art
-aliases. The [rule-to-source map](docs/research/rule-source-map.md) maps
-external lineage and explicitly local synthesis to all 30 modules. Sources are provenance and
-current-verification paths, never an online runtime dependency.
-
-- [Graphic Design and Print Production Fundamentals](https://opentextbc.ca/graphicdesign/),
-  CC BY 4.0 except noted embedded material, for process, composition,
-  typography, colour, and production foundations; recurring professional books
-  are bibliographic, reference-only sources in the source index.
-- [Google Fonts Knowledge](https://fonts.google.com/knowledge),
-  [OERT](https://www.oert.org/en/the-project/), and
-  [Design With FontForge](https://github.com/fontforge/designwithfontforge.com) for typography,
-  writing systems, spacing, metrics, and font technology.
-- [WCAG 2.2](https://www.w3.org/TR/WCAG22/),
-  [WAI Images](https://www.w3.org/WAI/tutorials/images/), and
-  [W3C International Typography](https://www.w3.org/International/typography/)
-  for scoped accessibility and script-specific guidance.
-- [International Council of Design](https://www.theicod.org/resources/Professional-Code-of-Conduct/professional-conduct)
-  and the [NASAD communication-design summary](https://nasad.arts-accredit.org/wp-content/uploads/sites/3/2022/10/AD-BFA-CommunicationDesign-10-18-2022.pdf)
-  for professional responsibility and competency coverage.
-- [Smithsonian Open Access](https://www.si.edu/openaccess),
-  [The Met Timeline of Art History](https://www.metmuseum.org/essays/timeline-of-art-history),
-  and the [Grammar of Ornament public-domain edition](https://library.si.edu/digital-library/book/grammarornament00jone)
-  for item-checked historical and style context.
-- [C2PA 2.4](https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html),
-  official rights/privacy sources, and current jurisdiction-specific claim
-  authorities for bounded provenance, media-integrity, asset-rights, and
-  sustainability guidance. These require current rechecking when material.
-- Current visual-identity systems from the
-  [German Federal Government](https://styleguide.bundesregierung.de/),
-  [Canada](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/design-standard.html),
-  [European Commission](https://commission.europa.eu/resources/european-commission-visual-identity_en),
-  [ONS](https://service-manual.ons.gov.uk/brand-guidelines), and
-  [IBM](https://www.ibm.com/design/language/help/faq/) for scoped incumbent-CI
-  authority and governance patterns; organisation-specific values are never
-  promoted to general design rules.
-- [CDC Clear Communication Index](https://www.cdc.gov/ccindex/),
-  [W3C Making Content Usable](https://www.w3.org/TR/coga-usable/), advertising
-  evidence and current advertising authorities for visual communication,
-  instructional design, campaign art direction, comprehension and whole-
-  impression boundaries.
-- Current [GS1 standards](https://ref.gs1.org/standards/), packaging literature
-  and bounded attention studies for supplied-dieline pack/SKU work; structure,
-  regulation, barcode verification and provider acceptance stay outside Design.
-- ISO wayfinding/symbol/accessibility scope plus the
-  [NHS Wayfinding guide](https://assets.publishing.service.gov.uk/media/5a75803740f0b6397f35eeb1/Wayfinding.pdf),
-  [Queensland Health principles](https://www.health.qld.gov.au/system-governance/health-infrastructure/resources/wayfinding-design-principles),
-  and [SEGD](https://segd.org/) for physical journeys,
-  decision points, sign families and route evaluation. Applicable standards
-  and site facts require current qualified verification.
-- [Taste Skill v2](https://github.com/Leonxlnx/taste-skill/tree/ccbc15639c97057cbfcf32ecebc38ef716e4bb37)
-  as a scope-fair public comparator for landing pages, portfolios, and redesign.
-  No Taste prose or artifact is copied into this package.
-- [Agent Skills specification](https://agentskills.io/specification) and
-  [best practices](https://agentskills.io/skill-creation/best-practices) for the
-  portable package and progressive disclosure.
-
-The full source, license, reuse, and currency notes are maintained in the
-[research source ledger](docs/research/source-ledger.md).
-
-Historical targeted evidence is retained in the
-[targeted qualification ledger](docs/evaluation/w024-targeted-qualification-ledger.md).
-Earlier open plans, failed suites, and historical Terra/SOL transfer records
-remain available in [the evaluation records](docs/evaluation/) without being
-promoted to current qualification evidence.
+Primary foundations include [Graphic Design and Print Production Fundamentals](https://opentextbc.ca/graphicdesign/),
+[Google Fonts Knowledge](https://fonts.google.com/knowledge),
+[WCAG 2.2](https://www.w3.org/TR/WCAG22/), and the
+[Agent Skills specification](https://agentskills.io/specification).
+Sources establish provenance, not an online runtime dependency or a guarantee
+of professional competence. Rights, production, and jurisdiction-specific
+claims still need current verification.
 
 ## License
 
-MIT - see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).

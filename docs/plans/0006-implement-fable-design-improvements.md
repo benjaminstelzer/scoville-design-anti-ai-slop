@@ -3,8 +3,8 @@ format_version: 1
 id: PLAN-0006
 status: active
 created: 2026-09-04
-updated: 2026-09-04
-current_item: W-006
+updated: 2026-09-05
+current_item: W-004
 ---
 
 # Implement Fable design improvements
@@ -98,7 +98,7 @@ Steps:
 6. Populate module evidence lists only with actually executed case receipts; retain tested artifact hashes and all outcomes, and verify any subsequent metadata-only annotation separately.
 7. Validate final source and derivative manifests and current aggregate checks once; disclose every deferral or unverified host lane and do not mark required acceptance done while it remains unobserved; retain historical hashes and deliver only a local completion record and candidate path.
 Evidence: [docs/evaluation/plan-0006-focused-freeze.json inputs and tested manifests, docs/evaluation/plan-0006-sol-interim-reviews.md independent runtime and blind artifact reviews, ADR-0056 records the user-selected interim reviewer contingency, ADR-0057 records the explicit matched SOL execution choice, docs/evaluation/plan-0006-execution-progress.md all families and justified extensions executed and independently reviewed, docs/evaluation/plan-0006-case-receipts.json twenty executed sessions with original defects and correction stages retained, docs/evaluation/plan-0006-record-scope-build.json five R02 clarification clauses with independent fidelity review and two targeted retests, docs/evaluation/plan-0006-final-local-build.json hash-verified 34-file local derivative with evidence-only annotation, docs/evaluation/plan-0006-final-checks.json final local deterministic checks, docs/evaluation/plan-0006-final-audit.json SOL metadata and claim audit with capture defect resolved]
-Next action: Resume the still-unverified genuine host H1-H5 checks and the original proposal-session final package/evidence review when selected. W-005 does not substitute for either lane; separately authorised publication is owned by W-006.
+Next action: Review docs/evaluation/2026-09-05-terra-host-results.md and its unchanged receipts. Investigate the DH5 missing Composition read before choosing a correction or fresh affected test. The original proposal-session final Fable review remains open and is not replaced by Terra or W-005.
 
 ### W-005 Resolve the independent installed-package review findings
 
@@ -120,7 +120,7 @@ Evidence: [docs/evaluation/plan-0006-installed-review-fixes.md seven finding dis
 
 ### W-006 Publish the Design and UI packages
 
-Status: in_progress
+Status: done
 Depends on: [W-001, W-002, W-003, W-005]
 Blocked by: []
 Decisions: [ADR-0058]
@@ -132,5 +132,4 @@ Steps:
 3. Run release checks and inspect the intended public files and claims before committing.
 4. Publish the two releases and narrow family updates; verify GitHub state before retiring the previous UI release and tag.
 5. Record observed publication evidence without changing historical evaluation outcomes.
-Evidence: [Both local Design installations contain exactly 34 byte-identical reviewed runtime files, Profile fast-forward ad21b3322fc66ad247158c75d582826c10fe6c34 preserved the WordPress entry, docs/release-validation.md records 32 unit tests and 60 interpreted routing cases and package checks, Eight-member family and exact staged package bytes and local README links verified]
-Next action: Commit the prepared candidates and publish both releases with exact remote and family audits before retiring the previous UI release.
+Evidence: [Both local Design installations contain exactly 34 byte-identical reviewed runtime files, Profile fast-forward ad21b3322fc66ad247158c75d582826c10fe6c34 preserved the WordPress entry, docs/release-validation.md records 32 unit tests and 60 interpreted routing cases and package checks, Eight-member family and exact staged package bytes and local README links verified, Design v1.0.0 published on e42e0d866ce7297e15863a96f5a33e1930f95e95 with one annotated tag and one stable release, UI v1.1.0 published on 7c5b415c56c1be990572ecc3d670b39630487fc8 with one annotated tag and one stable release, Both final GitHub publication audits passed with exact profile and nine family blocks, Both uploaded ZIP and checksum asset hashes match local verified artifacts, Previous UI v1.0.16 release and tag retired after successor verification, Post-publication completion is recorded locally without advancing either published release commit]

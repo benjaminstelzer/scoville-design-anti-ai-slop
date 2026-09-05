@@ -1,0 +1,3 @@
+Work only on the supplied synthetic task. Task directory: Z:\Projekts\AI\scoville-design-anti-ai-slop\evaluation\plan-0006\terra-host-2026-09-05\cases\DH1. Do not inspect parent folders, audit reports, protocols, evaluator criteria, other cases, repository history, personal memory or unrelated data. Do not ask other agents or providers, browse, install, publish, or change host configuration. No file writes are authorized.
+
+Develop one visual concept for a new independent architecture exhibition poster titled 'COMMON GROUND'. Typography, composition, colour and imagery are open. Give a concrete art direction in chat only. Do not create or render an artifact.

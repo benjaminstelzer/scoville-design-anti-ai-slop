@@ -1,4 +1,4 @@
-"""Exercise boundary guards at their actual Design and UI owners."""
+"""Regression tests for boundary guards at their actual Design and UI owners."""
 from __future__ import annotations
 
 import subprocess
