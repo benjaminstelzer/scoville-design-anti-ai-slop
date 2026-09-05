@@ -149,7 +149,7 @@ bounded Greenfield fallback. Neither Skill searches for, requires, or simulates
 the other.
 
 For repository structure and development tools, see
-[maintenance notes](docs/maintenance.md).
+[maintenance notes](development/docs/maintenance.md).
 
 ## Scoville family
 
@@ -186,16 +186,18 @@ Composition module. That case is not a workflow pass. No artifact was rendered.
 The original Fable final review remains open, and no complete successor holdout
 or general visual-quality claim follows from these checks.
 
-See [current host observations](docs/evaluation/2026-09-05-terra-host-results.md),
-[release validation](docs/release-validation.md), and
-[implementation evidence](docs/evaluation/plan-0006-implementation.md).
+See [current host observations](development/docs/evaluation/2026-09-05-terra-host-results.md),
+[release validation](development/docs/release-validation.md), and
+[implementation evidence](development/docs/evaluation/plan-0006-implementation.md).
+
+Repository development and the current path mapping are in [development/](development/README.md).
 
 ## Sources
 
 The Skill contains original synthesis, not copied books, screenshots, datasets,
 or third-party Skill prose. The [source index](references/source-index.md)
-resolves every module's source IDs. The [research ledger](docs/research/source-ledger.md)
-and [rule-to-source map](docs/research/rule-source-map.md) preserve source scope,
+resolves every module's source IDs. The [research ledger](development/docs/research/source-ledger.md)
+and [rule-to-source map](development/docs/research/rule-source-map.md) preserve source scope,
 licensing, local synthesis, and recheck requirements across all 30 modules.
 
 Primary foundations include [Graphic Design and Print Production Fundamentals](https://opentextbc.ca/graphicdesign/),

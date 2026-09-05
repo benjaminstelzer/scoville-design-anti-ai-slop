@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.2 - 2026-09-05
+
+- Move repository development into `development/` and keep the installable Skill in its own top-level directory.
+- Update current paths while retaining historical evidence and its path mapping.
+- Remove the duplicate root source. Index, manifest and export generators use the canonical installable package.
+- Reject exports inside the canonical repository and detect index and manifest drift.
+
 ## v1.0.1 - 2026-09-05
 
 - Shortened the README, moved contributor layout notes to docs/maintenance.md, and made agent installation the primary path. Safety and evidence limits remain explicit.
@@ -23,7 +30,7 @@
 - Clarifies read-only critique, standalone operation, external evidence
   references and advisory resource estimates.
 - Separates current release checks from historical holdout evidence in
-  [release validation](docs/release-validation.md). Genuine host activation
+  [release validation](development/docs/release-validation.md). Genuine host activation
   remains unverified, and no full successor holdout is claimed.
 
 ## Historical local release candidate (pre-successor-v2)

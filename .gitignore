@@ -5,4 +5,4 @@ __pycache__/
 *.pyc
 
 # Third-party comparison material and sealed evaluation data stay external.
-/evaluation/local-only/
+/development/evaluation/local-only/
