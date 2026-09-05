@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.3 - 2026-09-05
+
+- Correct the README source-index link to the canonical installable package.
+
 ## v1.0.2 - 2026-09-05
 
 - Move repository development into `development/` and keep the installable Skill in its own top-level directory.

@@ -195,7 +195,7 @@ Repository development and the current path mapping are in [development/](develo
 ## Sources
 
 The Skill contains original synthesis, not copied books, screenshots, datasets,
-or third-party Skill prose. The [source index](references/source-index.md)
+or third-party Skill prose. The [source index](scoville-design-anti-ai-slop/references/source-index.md)
 resolves every module's source IDs. The [research ledger](development/docs/research/source-ledger.md)
 and [rule-to-source map](development/docs/research/rule-source-map.md) preserve source scope,
 licensing, local synthesis, and recheck requirements across all 30 modules.
