@@ -177,6 +177,77 @@ def _is_sibling_reference_link(target: str) -> bool:
     return resolved.startswith("references/")
 
 
+def _distribution_files(root: Path, registry: dict, result: Result) -> set[str]:
+    values = registry.get("distribution_files", [])
+    if not isinstance(values, list) or not all(isinstance(v, str) and v for v in values):
+        result.error("distribution_files must be a list of non-empty paths")
+        return set()
+    declared: set[str] = set()
+    for value in values:
+        normalized = _normal_path(value)
+        path = PurePosixPath(normalized)
+        if path.is_absolute() or ".." in path.parts or ":" in normalized:
+            result.error(f"invalid distribution path: {value}")
+            continue
+        target = root.joinpath(*path.parts)
+        if not target.resolve().is_relative_to(root):
+            result.error(f"distribution path escapes package: {value}")
+            continue
+        if path.as_posix() in declared:
+            result.error(f"duplicate distribution path: {value}")
+        declared.add(path.as_posix())
+        if not target.is_file():
+            result.error(f"missing distribution file: {value}")
+    return declared
+
+
+def _validate_script_links(content: str, relative: PurePosixPath,
+                           distribution: set[str], result: Result) -> None:
+    for link in MARKDOWN_LINK.findall(content):
+        link = _normal_path(link.split("#", 1)[0].split("?", 1)[0])
+        if "://" in link or "scripts" not in PurePosixPath(link).parts:
+            continue
+        target = posixpath.normpath(posixpath.join(str(relative.parent), link))
+        if not target.startswith("scripts/") or target not in distribution:
+            result.error(f"{relative}: script link is not a declared packaged tool: {link}")
+
+
+def _validate_example_links(content: str, relative: PurePosixPath,
+                            distribution: set[str], result: Result) -> None:
+    for link in MARKDOWN_LINK.findall(content):
+        link = _normal_path(link.split("#", 1)[0].split("?", 1)[0])
+        if "://" in link or "examples" not in PurePosixPath(link).parts:
+            continue
+        target = posixpath.normpath(posixpath.join(str(relative.parent), link))
+        if not target.startswith("examples/") or target not in distribution:
+            result.error(f"{relative}: example link is not a declared packaged asset: {link}")
+
+
+def _validate_example_manifest(root: Path, distribution: set[str], result: Result) -> None:
+    manifest_name = "examples/spatial-proof/manifest.json"
+    if manifest_name not in distribution:
+        return
+    try:
+        payload = json.loads((root / manifest_name).read_text(encoding="utf-8"))
+        entries = payload["entries"]
+        if payload.get("schema_version") != 1 or len(entries) != 6:
+            raise ValueError("expected schema 1 and six entries")
+        for entry in entries:
+            if entry.get("review") != "native-image-view-2026-09-07":
+                raise ValueError(f"{entry.get('id')}: missing native image review")
+            for field, hash_field in (("source", "source_sha256"), ("render", "render_sha256")):
+                relative = f"examples/spatial-proof/{entry[field]}"
+                if relative not in distribution:
+                    raise ValueError(f"{entry['id']}: undeclared {field}")
+                digest = hashlib.sha256((root / relative).read_bytes()).hexdigest()
+                if digest != entry.get(hash_field):
+                    raise ValueError(f"{entry['id']}: {field} hash mismatch")
+            if entry.get("viewport") != [640, 400]:
+                raise ValueError(f"{entry.get('id')}: unexpected viewport")
+    except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        result.error(f"invalid spatial teaching manifest: {exc}")
+
+
 def _validate_rule_source_map(
     map_path: Path,
     module_ids: set[str],
@@ -365,6 +436,8 @@ def validate_package(root: Path, schema: str, *, runtime: bool = False, developm
         return result
 
     declared_schema = registry.get("package_schema")
+    distribution = _distribution_files(root, registry, result)
+    _validate_example_manifest(root, distribution, result)
     if successor:
         if declared_schema != schema:
             result.error(
@@ -518,6 +591,8 @@ def validate_package(root: Path, schema: str, *, runtime: bool = False, developm
                 result.error(f"{module_id}: evidence must list executed P6 receipt IDs or be empty")
             elif len(evidence) != len(set(evidence)):
                 result.error(f"{module_id}: duplicate evidence receipt")
+        _validate_script_links(content, relative, distribution, result)
+        _validate_example_links(content, relative, distribution, result)
         sibling_links = [
             link for link in MARKDOWN_LINK.findall(content) if _is_sibling_reference_link(link)
         ]

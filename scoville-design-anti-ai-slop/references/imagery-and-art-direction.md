@@ -36,7 +36,9 @@ area and variant limits.
 ## Generate or decide
 
 1. Write one image thesis: what the viewer must learn or feel, why imagery is
-   the right carrier, and what would make the image misleading or generic.
+   the right carrier, a plausible competing reading, and what would make it
+   misleading or generic. Judge atmosphere or decoration by its declared job;
+   neither must explain every instruction.
 2. Choose and declare the mode—documentary/editorial, constructed,
    illustrative, diagrammatic, composite, or synthetic—before selecting the
    visual treatment. Do not let realism imply an evidence status the source
@@ -50,7 +52,12 @@ area and variant limits.
    ratios, continuity anchors, protected facts, prohibited inventions,
    references by mechanism rather than imitation, deliverables, review gates
    and proof. Separate must-have content from negotiable style.
-5. Direct a system through invariants and controlled variables. Keep the
+5. Direct a system through invariants and controlled variables. A stroke-based
+   illustration needs a deliberate weight/terminal grammar; hierarchy or
+   expressive variation is valid when purposeful and readable at output size.
+   For literal botanical or product identification, inspect appropriate subject
+   references; without them, use explicitly abstract treatment and withhold
+   identification claims. Keep the
    relevant viewpoint, light logic, abstraction, edge/texture language,
    palette relation, subject treatment or narrative role coherent; vary crop,
    scale, rhythm and emphasis enough to avoid cloned compositions.
@@ -70,18 +77,19 @@ the relevant volume, texture or silhouette. Decide this from the subject and
 permitted truth mode, not a mood word. A crop cannot restore missing context;
 return to the source or choose a different image when necessary.
 
-For illustration, block the largest masses and the subject's silhouette before
-surface detail. Establish a readable value structure, then resolve the
-relations that carry the idea: overlap, contact, scale, gesture or construction.
-Add perspective or lighting only when the chosen language needs them. A flat
-symbolic scene can be complete without realistic volume.
+For illustration, block masses and silhouette before detail; resolve the
+overlap, contact, scale or construction carrying the idea. Inspect a dominant
+recognizable object at native detail even when atmospheric: proportions,
+major-part alignment and projection must form a coherent treatment. Distinguish
+rotation or deliberate stylization from accidental stretching. Compare a
+suitable subject reference when uncertain; invent no physical ratio. A flat
+or abstract scene need not model realistic volume. Container fit alone does
+not verify object construction.
 
-An original study might show a hand holding a tool: preserve the contact and
-working end in both a wide and narrow crop, reserve live-copy space only where
-the actual image permits it, and compare a silhouette with the detailed view.
-If the action exists only in the caption, repair the visible relation. These
-are conditional branches, not a required style, shot list or permission to
-construct documentary evidence.
+For a hand holding a tool, preserve contact and working end across required
+crops; compare silhouette and detail. If only the caption conveys the action,
+repair the visible relation. This example prescribes no style or shot list and
+authorizes no constructed documentary evidence.
 
 ## Critique: failure signatures and causes
 

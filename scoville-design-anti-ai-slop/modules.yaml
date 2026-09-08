@@ -2,6 +2,25 @@ format_version: 1
 package_schema: successor-v2
 distribution_files:
   - LICENSE
+  - scripts/measure-layout.js
+  - scripts/inventory-svg-layout.js
+  - scripts/read-source.py
+  - examples/spatial-proof/README.md
+  - examples/spatial-proof/manifest.json
+  - examples/spatial-proof/repeated-card-span.svg
+  - examples/spatial-proof/repeated-card-span.png
+  - examples/spatial-proof/type-role-map.svg
+  - examples/spatial-proof/type-role-map.png
+  - examples/spatial-proof/longest-content-fit.svg
+  - examples/spatial-proof/longest-content-fit.png
+  - examples/spatial-proof/optical-correction.svg
+  - examples/spatial-proof/optical-correction.png
+  - examples/spatial-proof/intentional-asymmetry.svg
+  - examples/spatial-proof/intentional-asymmetry.png
+  - examples/spatial-proof/decoration-control.svg
+  - examples/spatial-proof/decoration-control.png
+  - examples/icon-treatment/comparison.svg
+  - examples/icon-treatment/comparison.png
 
 # Non-routed packaging/evaluation metadata; not an installed runtime dependency.
 # Repository tooling generates SKILL.md's direct index from route_label/path;
@@ -21,7 +40,7 @@ distribution_files:
 signal_enum:
   - needs_brief_frame
   - needs_concept
-  - complex_composition
+  - layout_method
   - typography
   - font_technology
   - writing_system
@@ -96,13 +115,13 @@ modules:
     status: draft
     intervention: external-verification
     path: references/composition-and-layout.md
-    route_label: hierarchy, grouping, semantic spacing, negative space, grid, reading order, or layout exception
-    when_any: [complex_composition]
+    route_label: Composition methods for an open relation needing source-assisted discovery, measurement, or a diagnostic comparison with suitable inputs
+    when_any: [layout_method]
     unless: []
     requires: []
     conflicts: []
-    owns: [visual_hierarchy, semantic_spacing, negative_space, spatial_system, layout_exception, content_fit]
-    sources: [SRC-COMPOSITION-CANON, SRC-GESTALT-EVIDENCE, SRC-TYPE-DETAIL, SRC-PROFESSIONAL-SCOPE, SRC-CRITIQUE-CANON, SRC-PACKAGE-LOCAL-SYNTHESIS]
+    owns: [spatial_discovery_methods, layout_measurement_methods, diagnostic_layout_comparisons]
+    sources: [SRC-COMPOSITION-CANON, SRC-GESTALT-EVIDENCE, SRC-TYPE-DETAIL, SRC-PROFESSIONAL-SCOPE, SRC-CRITIQUE-CANON, SRC-DESIGN-EVALUATION-EMPIRICAL, SRC-PACKAGE-LOCAL-SYNTHESIS, SRC-NESTED-CONTOUR-GEOMETRY]
     evidence: [P6-SOL-N02, P6-SOL-N06, P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
   - id: typography-and-typesetting
     status: draft
@@ -114,7 +133,7 @@ modules:
     requires: []
     conflicts: []
     owns: [type_roles, glyph_differentiation, typeface_compatibility, type_hierarchy, typesetting, microtypography, type_exception]
-    sources: [SRC-TYPE-CANON, SRC-TYPE-SELECTION, SRC-TYPE-DETAIL, SRC-TYPE-EMPIRICAL, SRC-FONT-TECH, SRC-PACKAGE-LOCAL-SYNTHESIS]
+    sources: [SRC-TYPE-CANON, SRC-TYPE-SELECTION, SRC-TYPE-DETAIL, SRC-TYPE-EMPIRICAL, SRC-FONT-TECH, SRC-PACKAGE-LOCAL-SYNTHESIS, SRC-HEADLINE-BREAKS]
     evidence: [P6-SOL-N02, P6-SOL-N04, P6-SOL-N06, P6-SOL-N08, P6-SOL-N10, P6-SOL-N12, P6-SOL-N13, P6-SOL-N14, P6-FABLE-C1-CANDIDATE, P6-FABLE-C2-CANDIDATE]
   - id: font-technology-and-script-safety
     status: draft
@@ -192,13 +211,13 @@ modules:
     status: draft
     intervention: focus
     path: references/brand-and-visual-systems.md
-    route_label: corporate design or visual identity system, incumbent CI conformance, brand architecture, cross-touchpoint invariants, governance, or lifecycle
+    route_label: corporate design or visual identity system, authored icon-family or stroke system, incumbent CI conformance, brand architecture, cross-touchpoint invariants, governance, or lifecycle
     when_any: [brand_system]
     unless: []
     requires: []
     conflicts: []
     owns: [visual_identity_thesis, visual_identity_authority, brand_architecture, identity_grammar, icon_and_symbol_system, system_invariants, controlled_variation, ci_conformance, brand_governance]
-    sources: [SRC-BRAND-CANON, SRC-BRAND-EVIDENCE, SRC-BRAND-SYSTEM-GOVERNANCE, SRC-CORPORATE-DESIGN-CONFORMANCE, SRC-BRAND-ARCHITECTURE, SRC-UI-EVALUATION, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS]
+    sources: [SRC-BRAND-CANON, SRC-BRAND-EVIDENCE, SRC-BRAND-SYSTEM-GOVERNANCE, SRC-CORPORATE-DESIGN-CONFORMANCE, SRC-BRAND-ARCHITECTURE, SRC-UI-EVALUATION, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS, SRC-STROKE-ROLE-AND-GAP]
     evidence: [P6-SOL-N12, P6-SOL-N14]
   - id: logo-and-identity-mark-design
     status: draft
@@ -276,7 +295,7 @@ modules:
     status: draft
     intervention: external-verification
     path: references/packaging-graphics-and-sku-systems.md
-    route_label: supplied-dieline panel or face mapping and hierarchy, assembled pack communication, SKU system, shelf or packaging-thumbnail transformation
+    route_label: package or label face mapping, face-local hierarchy or framing, assembled pack communication, SKU system, shelf or packaging-thumbnail transformation
     when_any: [packaging_graphics, packaging_sku_system]
     unless: []
     requires: []
@@ -300,7 +319,7 @@ modules:
     status: draft
     intervention: external-verification
     path: references/motion-and-sequence.md
-    route_label: animation, kinetic type, temporal data, storyboard, timing, continuity, interruption, or reduced equivalent
+    route_label: animation, kinetic type, temporal data, authored state sequence or storyboard, timing, continuity, interruption, or reduced equivalent
     when_any: [motion, sequence]
     unless: []
     requires: []
@@ -330,7 +349,7 @@ modules:
     requires: []
     conflicts: []
     owns: [causal_critique, finding_record, repair_priority, validation_rationale]
-    sources: [SRC-CRITIQUE-CANON, SRC-CRITIQUE-EMPIRICAL, SRC-PROFESSIONAL-SCOPE, SRC-SOURCE-EVIDENCE, SRC-PRODUCTION-PRINT, SRC-PRODUCTION-ACCESS, SRC-UI-EVALUATION, SRC-PACKAGE-LOCAL-SYNTHESIS]
+    sources: [SRC-CRITIQUE-CANON, SRC-CRITIQUE-EMPIRICAL, SRC-PROFESSIONAL-SCOPE, SRC-SOURCE-EVIDENCE, SRC-PRODUCTION-PRINT, SRC-PRODUCTION-ACCESS, SRC-UI-EVALUATION, SRC-DESIGN-EVALUATION-EMPIRICAL, SRC-PACKAGE-LOCAL-SYNTHESIS]
     evidence: []
   - id: culture-and-representation
     status: draft

@@ -2,7 +2,7 @@
 
 Status: `draft`  
 Intervention: `focus`  
-Sources: `SRC-BRAND-CANON`, `SRC-BRAND-EVIDENCE`, `SRC-BRAND-SYSTEM-GOVERNANCE`, `SRC-CORPORATE-DESIGN-CONFORMANCE`, `SRC-BRAND-ARCHITECTURE`, `SRC-UI-EVALUATION`, `SRC-ASSET-RIGHTS`, `SRC-PACKAGE-LOCAL-SYNTHESIS`
+Sources: `SRC-BRAND-CANON`, `SRC-BRAND-EVIDENCE`, `SRC-BRAND-SYSTEM-GOVERNANCE`, `SRC-CORPORATE-DESIGN-CONFORMANCE`, `SRC-BRAND-ARCHITECTURE`, `SRC-UI-EVALUATION`, `SRC-ASSET-RIGHTS`, `SRC-PACKAGE-LOCAL-SYNTHESIS`, `SRC-STROKE-ROLE-AND-GAP`
 
 ## Load when
 
@@ -10,7 +10,8 @@ Load when a decision affects Corporate Design/corporate visual identity,
 identity recognition, brand architecture, incumbent visual-identity
 conformance, cross-touchpoint requirements, mark/lockup configuration roles,
 icon/pictogram/symbol families, controlled variation, template or campaign
-inheritance, governance, migration, or lifecycle. Do not load for generic
+inheritance, governance, migration, or lifecycle. An authored icon family or
+stroke system also selects this owner outside identity work. Do not load for generic
 Corporate Identity strategy, behaviour, culture, naming or verbal identity;
 standalone mark-form creation; persuasive campaign art direction; one isolated
 supplied colour/type/icon/layout choice; or a medium template with no identity-
@@ -115,7 +116,44 @@ for every organisational label by default.
    required derivatives. Include version, status, owner, source, allowed use,
    replacement/migration and deprecation state.
 
+## Stroke-family procedure
+
+1. Define `role/family | intended size | weight | caps/joins | scaling policy`
+   before extending the family. Reuse these decisions for peers.
+2. Compare same-role/same-size peers for consistent apparent weight beside their
+   typography and actual background. Measure effective widths after transforms;
+   matching source attributes alone do not prove consistency.
+3. Permit different weights for hierarchy, expressive grammar, optical size or
+   production. Name the purpose and inspect the effect; unexplained peer drift
+   is a repair signal. Different roles need not share one width.
+   If weight carries hierarchy, its distinction must be visible at target size
+   and background; a numerical difference is insufficient. Optical compensation
+   may use unequal widths for equal apparent weight.
+4. Inspect the compound motif: both outer junctions, internal gaps, caps, counters
+   and neighbouring fills/clips. Equal weights do not prove coherent connections;
+   check intended overlaps and separations, including asymmetric ones. Repair
+   the family or paint order before local nudges; recheck after weight or scale
+   changes at the smallest required output.
+
+This is a synthesis of [IBM icon guidance](https://www.ibm.com/design/language/iconography/ui-icons/design/),
+[IBM illustration guidance](https://www.ibm.com/design/language/illustration/line-style/design/)
+and [Material Symbols](https://developers.google.com/fonts/docs/material_symbols).
+Their specific values are system conventions, not universal pixel rules.
+
 ## Build a family rather than matching boxes
+
+At consolidation or inspection, judge icon form first: recognisable meaning,
+proportions, apparent weight, drawing and family consistency, using the stroke
+procedure above. Then judge placement, enclosure, background and accents
+separately. A useful icon function does not validate its drawing or surrounding
+treatment. Preserve useful recognition cues while repairing the actual cause.
+
+The [sewing-label source](../examples/icon-treatment/comparison.svg) and
+[render](../examples/icon-treatment/comparison.png) compare original tiles (A),
+unchanged icons without pill/accent (B), and revised forms with original
+treatment (C). Compare A–B for treatment and A–C for drawing; B–C changes both.
+Tiles are regrouped for comparison. No variant is an automatic winner; neither
+ellipses nor accents are inherently wrong. Use only for this open distinction.
 
 Compare a compact, a wide and a diagonal member at their actual use size.
 Inspect apparent mass and centre, counter size, terminal/corner treatment and

@@ -53,7 +53,8 @@ class CanonicalPackageTests(unittest.TestCase):
             before = snapshot(package)
             skill = package/'SKILL.md'
             text = skill.read_text(encoding='utf-8')
-            changed = text.replace('→', 'BROKEN', 1)
+            start = text.index('<!-- MODULE_INDEX:START -->')
+            changed = text[:start] + text[start:].replace('→', 'BROKEN', 1)
             self.assertNotEqual(text, changed)
             skill.write_text(changed, encoding='utf-8', newline='\n')
             self.command('generate_module_index.py', '--root', package, '--check', expected=1)
@@ -63,6 +64,44 @@ class CanonicalPackageTests(unittest.TestCase):
             self.command('build_package_manifest.py', '--root', package, '--output', manifest)
             skill.write_text(text+'\nDrift.\n', encoding='utf-8', newline='\n')
             self.command('build_package_manifest.py', '--root', package, '--output', manifest, '--check', expected=1)
+
+    def test_repeated_groups_require_internal_and_outside_anchor_dispositions(self):
+        core = " ".join((PACKAGE / "SKILL.md").read_text(encoding="utf-8").split())
+        composition = " ".join(
+            (PACKAGE / "references/composition-and-layout.md")
+            .read_text(encoding="utf-8").split()
+        )
+        self.assertIn("check internal rhythm and both external anchors", core)
+        self.assertIn(
+            "internal gaps and both outside endpoints",
+            composition,
+        )
+        self.assertIn("Equal gaps for equal outside anchors", composition)
+
+    def test_authored_static_state_sequences_keep_motion_ownership(self):
+        motion = " ".join(
+            (PACKAGE / "references/motion-and-sequence.md")
+            .read_text(encoding="utf-8").split()
+        )
+        registry = (PACKAGE / "modules.yaml").read_text(encoding="utf-8")
+        self.assertIn("A sequence of authored still states selects this module", motion)
+        self.assertIn("already independent still images with no state/continuity relation", motion)
+        self.assertIn("authored state sequence or storyboard", registry)
+
+
+    def test_specialists_carry_declared_local_correctness_checks(self):
+        expected = {
+            'advertising-and-campaign-art-direction.md': 'button-shaped carrier as an action only when an action exists',
+            'information-design-and-data-visualization.md': 'derive the affine map from at least two known',
+            'physical-wayfinding-and-signage-systems.md': 'enumerate each route segment where it approaches or',
+            'instructional-and-explanatory-design.md': 'make a transition\nledger before styling',
+            'packaging-graphics-and-sku-systems.md': 'use painted fill and stroke edges',
+            'motion-and-sequence.md': 'both outside endpoints against any shared span',
+        }
+        for filename, phrase in expected.items():
+            with self.subTest(filename=filename):
+                text = (PACKAGE / 'references' / filename).read_text(encoding='utf-8')
+                self.assertIn(phrase, text)
 
 
 if __name__ == '__main__':

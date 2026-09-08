@@ -37,12 +37,14 @@ against the separately retained development source map and evidence receipts.
 `python -B development/scripts/build_package_manifest.py --output <new-manifest.json>`
 records the canonical package; `--check` detects manifest drift.
 `python -B development/scripts/build_runtime_package.py --destination <new-directory> --receipt <new-receipt.json>`
-exports the same 35 package files byte for byte to a new external directory.
+exports the same 54 package files byte for byte to a new external directory.
 It refuses existing or overlapping destinations. Legacy comment stripping is
 retained only for historical synthetic fixtures. It never recreates root sources.
 
-The runtime builder includes the package's exact LICENSE through
-`modules.yaml`'s `distribution_files`. The current runtime contains 35 files.
+The runtime builder includes the package's exact LICENSE and optional measurement
+helper through `modules.yaml`'s `distribution_files`. The current runtime contains
+54 files. Package validation checks distribution-file existence and routed
+script links; the separate browser regression needs existing Playwright and Edge.
 Earlier 34-file manifests remain historical evidence. This source change does
 not imply new model or host evaluation.
 
@@ -51,3 +53,11 @@ remaining host-routing work. Five focused Terra Medium host observations are
 documented in [the current record](evaluation/2026-09-05-terra-host-results.md).
 The hierarchy critique omitted Composition, and no artifact was rendered.
 File organization and deterministic checks do not resolve those limits.
+
+## Local development archive
+
+Later blind-test Plans, raw reviews, frozen candidates and session records remain
+in the local development checkout. The public tree retains reproducible helper
+tests and a concise [human blind-test summary](evaluation/human-blind-test-development.md).
+Release preparation uses an isolated worktree so publishing the canonical Skill
+does not expose private transcripts or change frozen evaluation copies.

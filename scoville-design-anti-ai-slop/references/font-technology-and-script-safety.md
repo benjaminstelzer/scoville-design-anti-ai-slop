@@ -89,6 +89,32 @@ font drew the glyphs. Replace this illustrative string with the task's actual
 confusables and language. It neither demonstrates another script's shaping nor
 requires a fallback experiment for a raster-only delivery.
 
+## Measure rendered text without confusing metrics
+
+Resolve required font loading and layout before measuring real strings. Record
+the engine, effective setting and metric used. `document.fonts.ready` completes
+the current browser font-loading/layout cycle; it does not prove that every
+glyph came from the intended file or that no fallback occurred. Investigate a
+material substitution through the specimen above.
+
+Use layout rectangles/advances for occupied line space and containment;
+use actual shaped glyph contours or a target-size render for visible ink.
+SVG text `getBBox()` is based on glyph cells, not exact ink. Browser client
+rectangles and nominal em sizes likewise cannot prove optical centering.
+Convert coordinates to one frame and account for transforms. Rotated text,
+strokes, masks and clips require a suitable metric or explicit uncertainty.
+Do not estimate width from character count and label it measured.
+
+The optional [`measure-layout.js`](../scripts/measure-layout.js) runs in an
+already loaded browser document and returns explicit client-rectangle/style
+checks; HTML text insets use DOM text Range rectangles by default, while an
+explicit box metric checks allocation only. Neither text cells nor Range bounds
+are exact ink or complete line boxes. Unsupported mixed/generated content needs
+separate measurement. Results include their metric and limits. It changes no
+artifact and rejects missing,
+hidden or unsupported geometry as unverified. It is a measurement convenience,
+not a shaper, an optical judge or a required dependency for other renderers.
+
 ## Critique: signatures and causes
 
 | Failure signature | Likely technical cause to test |

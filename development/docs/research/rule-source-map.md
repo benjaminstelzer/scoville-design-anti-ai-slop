@@ -1,5 +1,24 @@
 # Rule-to-source map
 
+## 2026-09-08 PLAN-0019 bounded rule refinements
+
+| Expert module | Operational rule cluster | Source IDs | Boundary |
+| --- | --- | --- | --- |
+| `composition-and-layout` | Nested circular visible contours and declared equal inset | SRC-NESTED-CONTOUR-GEOMETRY, SRC-PACKAGE-LOCAL-SYNTHESIS | Binding arithmetic within declared geometry, not aesthetic symmetry; excludes unsupported curves and paint. Source/visual example checks establish only bounded applicability. |
+| `typography-and-typesetting` | Phrase-aware display breaks and bounded manual shaping | SRC-HEADLINE-BREAKS, SRC-PACKAGE-LOCAL-SYNTHESIS | Contextual editorial convention; language competence, exact copy, expressive exceptions and required reflow remain binding. No universal line count or automatic semantic score. |
+| `brand-and-visual-systems` | Visible weight hierarchy versus optical compensation; recheck counters/gaps after weight or scale changes | SRC-STROKE-ROLE-AND-GAP, SRC-PACKAGE-LOCAL-SYNTHESIS | Contextual professional guidance plus local procedure; numeric inequality alone is not a defect or proof of hierarchy. No imported IBM ratios, grids or weight-count caps. |
+
+## 2026-09-07 PLAN-0011 spatial and type fixes
+
+Composition's concrete grid/interval/inset records, Typography's effective role
+map and Core/Critique's separated fit evidence are original
+`SRC-PACKAGE-LOCAL-SYNTHESIS`. The 2026-09-07 supplements to
+`SRC-COMPOSITION-CANON`, `SRC-TYPE-DETAIL`, `SRC-TYPE-EMPIRICAL` and
+`SRC-FONT-TECH` identify inspected Vinh, IBM, OERT, Rello and SVG passages and
+their transfer limits. The helper's targets and tolerances come from each task;
+its DOM rectangles are not glyph ink or an aesthetic score. Source inspection
+and the recorded geometry regression are not model-efficacy qualification.
+
 ## 2026-09-05 PLAN-0008 supplement
 
 Cartography's line-following/horizontal comparison and interior/exterior area
@@ -226,6 +245,20 @@ and the source index are updated first.
 
 ## Availability and change control
 
+### Paired boundary proof supplement (2026-09-07)
+
+Core, `composition-and-layout` and `critique-and-validation` use
+`SRC-DESIGN-EVALUATION-EMPIRICAL` as bounded motivation for localized visual
+findings plus geometric evidence. The source index records inspected versions,
+sections and contrary evidence from Haraguchi et al., AesEval and ReDeCheck.
+The paired record, coverage inventory and completion rule are local synthesis;
+none of those publications proves a written Skill improves Astra performance.
+
+| Expert module | Operational rule cluster | Source IDs | Boundary |
+| --- | --- | --- | --- |
+| `composition-and-layout` | Local enclosure coverage; paired visual and measured proof | SRC-DESIGN-EVALUATION-EMPIRICAL | Bounded motivation; exact procedure is local synthesis |
+| `critique-and-validation` | Localized findings; resolve appearance and geometry disagreement before acceptance | SRC-DESIGN-EVALUATION-EMPIRICAL | Bounded motivation; no proof of Skill efficacy |
+
 ### Successor-v2 local synthesis additions (2026-09-04)
 
 Historical rows above retain their source relations. The following additions
@@ -238,6 +271,10 @@ this same source ID; their dispositions record exact owners.
 | `brief-framing-and-criteria` | Moved communication record lineage | SRC-COMMUNICATION-CANON | Conceptual lineage only; exact schema remains local synthesis |
 | `concept-development-and-selection` | Local operation and record conventions | SRC-PACKAGE-LOCAL-SYNTHESIS | Local synthesis only; no new external attribution |
 | `composition-and-layout` | Local operation and record conventions | SRC-PACKAGE-LOCAL-SYNTHESIS | Local synthesis only; no new external attribution |
+| Core, `composition-and-layout`, `logo-and-identity-mark-design` | W-003 SVG source-inventory discovery, candidate accounting and configuration-local relation binding | SRC-PACKAGE-LOCAL-SYNTHESIS | Read-only geometric candidates, compact owner records and inferred target provenance, never automatic semantic verdicts; browser and known-source evidence in evaluation/plan-0017/inventory-implementation.md and inventory-adjudication.md, no general efficacy claim |
+| `composition-and-layout`, optional SVG inventory helper | W-003 provisional queue rows carried into existing working notes | SRC-PACKAGE-LOCAL-SYNTHESIS | Candidate identities, selectors and discovery geometry are seeded; intent/target/owner/view/status are not inferred. Browser fixtures verify transcription only. Model consumption remains unqualified; final coverage validation remains W-004. |
+| Core, optional source reader | W-003 quantified-source contradiction routing and computed read metadata | SRC-PACKAGE-LOCAL-SYNTHESIS | Responds to observed D05 owner exclusion, invented counts and singleton PowerShell indexing. UTF-8 line emission is tested against actual source bytes; delivery/comprehension remain separate. No general reliability claim. |
+| Core | W-003 provisional-owner evidence triage before exclusion | SRC-PACKAGE-LOCAL-SYNTHESIS | A source-supported ambiguous relation keeps each plausible owner open until that owner's direct module is read and its own Load-when scope is applied to the artifact facts. This is local workflow synthesis, not keyword routing or efficacy evidence. |
 | `typography-and-typesetting` | Local operation and record conventions | SRC-PACKAGE-LOCAL-SYNTHESIS | Local synthesis only; no new external attribution |
 | `font-technology-and-script-safety` | Local operation and record conventions | SRC-PACKAGE-LOCAL-SYNTHESIS | Local synthesis only; no new external attribution |
 | `colour-and-reproduction` | Local operation and record conventions | SRC-PACKAGE-LOCAL-SYNTHESIS | Local synthesis only; no new external attribution |

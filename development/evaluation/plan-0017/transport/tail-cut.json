@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "synthetic",
+  "source_id": "lesson.txt",
+  "reference": "lesson.txt",
+  "name": "tail-cut",
+  "description": "Synthetic tail cut, including an unterminated partial numbered line.",
+  "responses": [
+    {
+      "observer_received": "SOURCE=lesson.txt TOTAL=12 RANGE=1-12\n1: # Workshop notes\n2: \n3: Keep the supplied name.\n4: Use the existing palette.\n5: Inspect the local panel.\n6: Record the actual received lines.\n7: \n8: Read missing",
+      "request": {
+        "max_output_tokens": 100000,
+        "range": [
+          1,
+          12
+        ]
+      }
+    }
+  ],
+  "expected": {
+    "status": "unverified",
+    "complete": false,
+    "missing_ranges": [
+      [
+        8,
+        12
+      ]
+    ],
+    "observed_line_count": 7
+  }
+}

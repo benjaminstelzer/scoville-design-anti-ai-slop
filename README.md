@@ -70,7 +70,7 @@ Report the installed location and whether the host discovers the Skill.
 ```
 
 The agent needs source access and permission to write to its personal Skills
-location. Manual fallback: [Codex Skills guide](https://learn.chatgpt.com/docs/build-skills)
+location. Manual fallback: [Codex Skills guide](https://developers.openai.com/codex/skills/)
 or [Claude Code Skills guide](https://code.claude.com/docs/en/skills).
 
 Install only the linked package for the focused option.
@@ -119,12 +119,17 @@ The installed Core contract is in [SKILL.md](scoville-design-anti-ai-slop/SKILL.
 
 ## How it works
 
-The Core runs a compact studio loop: frame, route, make, inspect, judge,
-repair, and report evidence. A generated direct index selects from 30 flat,
-independent experts. Load all materially applicable experts, without a fixed
-count. Split complex work into real phases when the task or actual context
-capacity requires it, carrying a compact Design record rather than every
-reference forward.
+The Core runs a compact studio loop: frame and route, explore, consolidate,
+execute, inspect, resolve and deliver. Composition foundations apply throughout
+Design work. A direct index selects from 30 specialist modules only when an open
+decision or needed method calls for them. Rough ideas can stay provisional.
+Shared spacing and type roles are committed before repetition, then the actual
+render is inspected from the whole down to groups and native details.
+
+Visual inspection and suitable measurements check the same final artifact.
+Neither substitutes for the other. A clean first render can pass, and repair
+has no one-correction cap. After two unsuccessful passes, reassess the cause and
+method. Preserve useful expression while fixing the supported problem.
 
 The package has three modes: generation, read-only critique and repair.
 Style direction remains a domain available within each mode. A requested artifact must be editable and rendered through
@@ -182,25 +187,32 @@ needs:
 
 ## Status
 
-The current package contains 30 selectively loaded modules and 35 files,
-including its MIT license. Publishing a package does not qualify its design
-judgment.
+Version 1.2.0 contains 30 selectively loaded modules and 54 package files,
+including measurement helpers, visual examples and the MIT license.
 
-Version 1.1.0 adds practical guidance across 23 existing modules and removes
-package-size guidelines. Local artifact checks exercise the added operations,
-including coupled typography settings and point, line and area map labels.
-The release passes 26 unit tests and the package, routing and export checks.
-These observations do not demonstrate a general model advantage.
+### How it was developed
 
-Five focused Terra Medium host cases on 2026-09-05 observed appropriate
-activation and exclusions, but a hierarchy critique omitted the applicable
-Composition module. That case is not a workflow pass. No artifact was rendered.
-The original Fable final review remains open, and no complete successor holdout
-or general visual-quality claim follows from these checks.
+The Skill was revised through research, rendered tests and human blind A/B
+comparisons. Five later Astra Medium rounds alone covered **28 comparison pairs
+and 56 fresh designs**, with four, four, four, eight and eight pairs. Each pair
+compared the current Skill with no Skill on the same brief. A human reviewer
+with design and media training and years of practical experience ranked the
+anonymous images before the conditions were revealed. Separate AI reviews were
+retained, including disagreements and missing ratings.
 
-See [current host observations](development/docs/evaluation/2026-09-05-terra-host-results.md),
-[release validation](development/docs/release-validation-v1.1.0.md), and
-[practical guidance evidence](development/docs/evaluation/plan-0008-implementation.md).
+The work followed five recurring steps: research a failure, revise its owning
+module, generate fresh paired designs, collect blind feedback, then inspect and
+repair the demonstrated gap. Feedback changed spacing and typography systems,
+overflow checks, whole-image judgment, icon craft and small decorative joins.
+It also led to freer exploration before consolidation, so checking a design
+does not become a preset for making it.
+
+These are iterative development comparisons with one human reviewer, changing
+briefs and evolving Skill versions. They do not establish a general win rate or
+prove that the final wording catches every defect. The last compound-detail
+revision received focused visual and measured checks, not another blind round.
+See the [development evidence](development/docs/evaluation/human-blind-test-development.md)
+and [release validation](development/docs/release-validation-v1.2.0.md).
 
 Repository development and the current path mapping are in [development/](development/README.md).
 

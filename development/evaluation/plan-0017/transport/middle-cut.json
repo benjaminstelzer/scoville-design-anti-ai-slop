@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "synthetic",
+  "source_id": "lesson.txt",
+  "reference": "lesson.txt",
+  "name": "middle-cut",
+  "description": "Synthetic missing middle with original ending preserved.",
+  "responses": [
+    {
+      "observer_received": "SOURCE=lesson.txt TOTAL=12 RANGE=1-12\n1: # Workshop notes\n2: \n3: Keep the supplied name.\n[... truncated ...]\n10: Keep uncertain coverage open.\n11: Preserve the source text.\n12: Closing paragraph.\n"
+    }
+  ],
+  "expected": {
+    "status": "unverified",
+    "complete": false,
+    "missing_ranges": [
+      [
+        4,
+        9
+      ]
+    ],
+    "observed_line_count": 6
+  }
+}

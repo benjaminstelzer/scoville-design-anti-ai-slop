@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "synthetic-only",
+  "created_at_utc": "2026-09-07T11:06:03.928263+00:00",
+  "test_command": "python -B -m unittest discover -s development/tests -p test_read_coverage.py -v",
+  "test_result": {
+    "exit_code": 0,
+    "tests_run": 16,
+    "failures": 0,
+    "errors": 0,
+    "summary": "Ran 16 tests in 0.005s; OK"
+  },
+  "coverage_scope": "Six supplied synthetic observed-response fixtures checked with and without evaluator source bytes; content/metadata contradictions, ordering, duplicates, truncation markers, missing metadata and CLI exit semantics. No live transport claim.",
+  "cli_checks": [
+    {
+      "case": "full",
+      "exit_code": 0,
+      "status": "complete",
+      "complete": true,
+      "missing_ranges": []
+    },
+    {
+      "case": "tail-cut",
+      "exit_code": 1,
+      "status": "unverified",
+      "complete": false,
+      "missing_ranges": [
+        [
+          8,
+          12
+        ]
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "development/scripts/read_coverage.py",
+      "sha256": "948c0a15f06b1ce530809e46e8eb1acad71413c7d4bb3a51794ba993f078296d"
+    },
+    {
+      "path": "development/tests/test_read_coverage.py",
+      "sha256": "837423fb091128a88e7fc63ff7f115c24fca2f114107f5e5c7d5218d9e4563b4"
+    },
+    {
+      "path": "development/evaluation/plan-0017/transport/full.json",
+      "sha256": "32ca2cdab9b6912f62d48c9bb0fa7c1c43cb22ceb63029c8659740c81e3b6577"
+    },
+    {
+      "path": "development/evaluation/plan-0017/transport/middle-cut.json",
+      "sha256": "c3b037db39c1341cdc0d3c33a5121ab34e83400e51ba4c4f7d12f95745fe588a"
+    },
+    {
+      "path": "development/evaluation/plan-0017/transport/outer-cut.json",
+      "sha256": "324e24b3eaa910796e4adca0450d156da1b29500d49b4225c1436f60be354df6"
+    },
+    {
+      "path": "development/evaluation/plan-0017/transport/recovery.json",
+      "sha256": "9c9e19b41fb859e469305f18a1ab8ceb173a06547b491d3c7ddcc8e4addd46ff"
+    },
+    {
+      "path": "development/evaluation/plan-0017/transport/tail-cut.json",
+      "sha256": "a2b89b52c9e10f1580cc0924647e81b4fe35b7cb836898156e3b2e076f4e0888"
+    },
+    {
+      "path": "development/evaluation/plan-0017/transport/unavailable.json",
+      "sha256": "3bcce350596ee2037e5c32b624abb18d14d576e98e9d47ffcbe96a2549914a0c"
+    },
+    {
+      "path": "development/evaluation/plan-0017/transport/lesson.txt",
+      "sha256": "5f6c8e72fdc8540eaf5da501e565348fd8bbad89b621b75554d5fc232c5573e5"
+    },
+    {
+      "path": "development/evaluation/plan-0017/transport/README.md",
+      "sha256": "dcc0c7758a585b741973571f87e78e489a55c7cc9ab9f8e1665419333bf16d72"
+    }
+  ]
+}

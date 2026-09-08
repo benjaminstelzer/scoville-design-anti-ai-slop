@@ -2,7 +2,7 @@
 
 Status: `draft`  
 Intervention: `focus`  
-Sources: `SRC-CRITIQUE-CANON`, `SRC-CRITIQUE-EMPIRICAL`, `SRC-PROFESSIONAL-SCOPE`, `SRC-SOURCE-EVIDENCE`, `SRC-PRODUCTION-PRINT`, `SRC-PRODUCTION-ACCESS`, `SRC-UI-EVALUATION`, `SRC-PACKAGE-LOCAL-SYNTHESIS`
+Sources: `SRC-CRITIQUE-CANON`, `SRC-CRITIQUE-EMPIRICAL`, `SRC-PROFESSIONAL-SCOPE`, `SRC-SOURCE-EVIDENCE`, `SRC-PRODUCTION-PRINT`, `SRC-PRODUCTION-ACCESS`, `SRC-UI-EVALUATION`, `SRC-DESIGN-EVALUATION-EMPIRICAL`, `SRC-PACKAGE-LOCAL-SYNTHESIS`
 
 ## Load when
 
@@ -44,9 +44,9 @@ comparison method, success criterion, and falsifier before outputs are visible.
 
 ## Generate and decide the review
 
-1. Inspect the whole artifact without detectors: communication model,
-   specificity, hierarchy, tone, entry/progression/exit, coherence, and fit to
-   stated task and medium.
+1. Follow Core's observation-before-rationale inspection, preserving brief and
+   constraints. Record communication, hierarchy, character and task fit before
+   reconciling explanation; contradictions use Core's states and exceptions.
 2. Inspect intended detail and relevant diagnostic views: thumbnail, sequence,
    narrow/wide state, zoom, print size, alternate theme/locale/data, or motion
    point. Diagnostics reveal different failure classes; they are not audience
@@ -71,7 +71,12 @@ Allowed verdicts are exactly `defect`, `tradeoff`, `attributed preference`,
 `intentional exception`, or `unverifiable`. An experiment is not a verdict.
 Keep severity (consequence), confidence (evidence certainty), and priority
 (action order) separate. Attribute preferences to a named reviewer or audience;
-do not disguise them as laws.
+do not disguise them as laws. Keep overall rank, each candidate's strengths and
+local findings distinct: agreement on a winner need not mean agreement on why;
+a local flaw is not automatically the reviewer's reason for ranking.
+Lower rank, preference or tradeoff alone requires no repair; a direction from
+the acceptance authority or documented hard failure still requires the
+authorised action.
 
 ## Calibrate a cross-domain finding
 
@@ -153,10 +158,33 @@ affected consumers plus preserved dimensions. Syntax, metrics, screenshots,
 runtime checks, user research, accessibility review, and production proof are
 separate evidence lanes.
 
+Use Core's relation binding and final-version evidence matrix for each critical
+spatial finding; retain independent finding/control history here.
+
 Record independent reviewers' roles, verdicts, evidence, and rationales before
 reconciliation. Keep material disagreement visible; do not average different
 constructs into taste, consensus, or a universal score. One reviewer supplies
 one reviewer's judgment.
+
+Keep Core's content/execution/preference distinction. Localize observations at
+element, whole or system level; separate visible evidence from inferred effect
+and cause. Expertise informs judgment, but alone proves no verdict. Missing
+localization needs clarification, not automatic classification as taste; keep
+unsupported diagnoses unverified and explicit preferences attributed.
+Record material overflow, insufficient declared insets,
+unintended collision, alignment discrepancy and inconsistent shared type/spacing
+even when the concept is preferred. A requested comment cap remains binding;
+name the unsampled scope rather than treating omitted findings as approval.
+
+For measurable findings, bind the declared relation and target to an actual
+renderer measurement, metric/coordinate space, tolerance and before/after
+result. Do not claim ink bounds from glyph-cell boxes or optical balance from
+equal coordinates. Missing evidence is unverified, not pass. A successful
+recheck covers its named relations only; whole-view judgment remains separate.
+Challenge false positives with valid intentional overlaps, optical offsets and
+asymmetric controls. Attribute a disputed preference instead of manufacturing
+consensus, and correct demonstrably wrong review claims without rewriting the
+original independent receipt.
 
 Critique owns causal findings, exception classification, repair priority, and
 validation rationale. Domain experts own their design rules; users own task,

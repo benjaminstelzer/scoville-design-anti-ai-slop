@@ -89,6 +89,10 @@ route from visual inspection, a floor plan, an ordinary path or model memory.
    along complete routes. Temporary full-scale signs can test information and
    placement intent; they do not prove mounting, photometrics, fabrication or
    compliance.
+   On a drawn plan or sign, enumerate each route segment where it approaches or
+   crosses label ink, arrows, markers and boundaries. Check painted clearance
+   at those local intersections separately from path connectivity and topology;
+   a connected route can still obscure its destination label.
 8. **Govern change.** Bind every public label, map and sign message to `D`, `R`
    and an owner. Record additions, moves, renames, temporary closures,
    replacement, inspection and expiry so a corrected source cannot leave stale

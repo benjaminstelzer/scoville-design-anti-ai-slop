@@ -10,9 +10,11 @@ Load when the job requires technical export, rebuildability, authoritative
 source and derivative lineage, preflight, format-specific semantics or access,
 receiver/provider acceptance, physical proof, or a durable handoff record
 beyond Core's ordinary create-and-render loop. Do not load merely because an
-artifact is created, displayed once, or exported to PDF. The format Skill or
-implementation owner creates the artifact; this module defines and inspects the
-production evidence contract.
+artifact is created, displayed once, or exported to PDF. A fully specified
+unchanged conversion or export with no open production-evidence decision stays
+with the implementation/format owner and does not select this module. The
+format Skill or implementation owner creates the artifact; this module defines
+and inspects the production evidence contract.
 
 ## Artifact contract and inputs
 

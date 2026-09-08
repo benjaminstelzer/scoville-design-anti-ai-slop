@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.2.0 - 2026-09-08
+
+- Put composition foundations in the Core and route specialist methods by the open decision. Separate exploration, consolidation and final inspection so early ideas can remain provisional.
+- Require actual whole-image and detail inspection alongside suitable measurements of the same artifact. Track critical relations, disputed evidence and affected neighbours through repair without a one-correction cap.
+- Strengthen typography systems, icon construction and treatment, object proportions, stroke consistency and compound joins. Keep overall preference distinct from component strengths and technical defects.
+- Add layout inventory, measurement and source-reading helpers plus rendered spatial and icon examples. The canonical package now contains 54 files across 30 specialist modules.
+- Document five human-reviewed Astra Medium blind A/B rounds comprising 28 pairs and 56 fresh designs. Preserve disagreement and evidence limits rather than presenting iterative development as a general quality benchmark.
+- Restore public Scoville family membership and the profile entry. Release checks and remaining limits are recorded in development/docs/release-validation-v1.2.0.md.
+
 ## v1.1.0 - 2026-09-05
 
 - Add practical construction, comparison and repair methods to 23 existing design modules, including typography, colour, identity, imagery, information design, responsive composition and motion.

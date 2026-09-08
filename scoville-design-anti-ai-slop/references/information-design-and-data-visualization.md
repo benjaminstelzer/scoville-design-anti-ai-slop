@@ -58,6 +58,10 @@ Keep machine values separate from localised display strings.
    points, choose domain and aspect from the target variation plus comparison
    context. Use logarithmic or other transformed axes only for a matching task,
    valid domain and explicit transformation, ticks and excluded values.
+   For a declared linear axis, derive the affine map from at least two known
+   value/position pairs, then predict every other tick and encoded mark within
+   an explicit tolerance. Printed labels do not validate their own positions;
+   preserve a visible scale judgment as a separate lane.
 5. **Encode uncertainty and absence as meaning.** Identify what uncertainty
    represents before selecting intervals, distributions, ensembles, scenarios
    or frequency frames. Never merge zero, missing, suppressed, not applicable

@@ -84,6 +84,13 @@ source/owner/status | unknowns`.
     environmental conditions. Ask participants to predict, explain, choose, or
     perform. Preference and visual polish are not comprehension tests.
 
+For a multi-state physical or diagrammatic instruction, make a transition
+ledger before styling: `part identity | state N geometry/label/colour | state
+N+1 geometry/label/colour | permitted transformation | unresolved physical
+claim`. Check every adjacent transition and the final state. Visible continuity
+can validate identity and direction; assembly or folding feasibility remains
+unverified without an appropriate construction view, model or physical trial.
+
 ## Build an example that can transfer
 
 For a fictional sorting rule “A–M titles use the upper shelf; N–Z use the lower

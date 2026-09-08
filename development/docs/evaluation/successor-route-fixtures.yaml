@@ -1,6 +1,31 @@
 format_version: 1
 selection_rule: union of direct modules owning the supplied material signals; modifiers never select a route
 cases:
+  - id: RF61-small-repair-core-sufficient
+    signals: []
+    modifiers: [small_repair, visible_relation_settled, no_detailed_method_needed]
+    expected: []
+    forbidden: [composition-and-layout, critique-and-validation]
+  - id: RF62-small-repair-source-discovery-needed
+    signals: [layout_method]
+    modifiers: [small_repair, nested_source_relation_uncertain, editable_svg_available]
+    expected: [composition-and-layout]
+    forbidden: [critique-and-validation]
+  - id: RF63-mark-core-foundation-sufficient
+    signals: [identity_mark]
+    modifiers: [settled_identity, no_detailed_method_needed]
+    expected: [logo-and-identity-mark-design]
+    forbidden: [composition-and-layout, brand-and-visual-systems]
+  - id: RF64-readonly-measurement-needed
+    signals: [layout_method]
+    modifiers: [critique_mode, open_alignment, editable_svg_available]
+    expected: [composition-and-layout]
+    forbidden: [critique-and-validation]
+  - id: RF65-stroke-family-outside-brand
+    signals: [brand_system]
+    modifiers: [non_identity_icons, open_family_weight]
+    expected: [brand-and-visual-systems]
+    forbidden: [logo-and-identity-mark-design, composition-and-layout]
   - id: RF60-unnamed-style-grammar-open
     signals: [style_system]
     modifiers: [unnamed_tool_default, structural_style_decision_open]
@@ -82,17 +107,17 @@ cases:
     expected: [people-privacy-and-media-integrity]
     forbidden: [asset-rights-and-attribution]
   - id: RF07-local-type-exception
-    signals: [complex_composition, typography]
+    signals: [layout_method, typography]
     modifiers: [predeclared_single_domain_exception]
     expected: [composition-and-layout, typography-and-typesetting]
     forbidden: [critique-and-validation]
   - id: RF08-challenged-cross-domain-exception
-    signals: [complex_composition, fixed_media, rule_exception]
+    signals: [layout_method, fixed_media, rule_exception]
     modifiers: [conventional_control_required]
     expected: [composition-and-layout, editorial-and-fixed-media-design, critique-and-validation]
     forbidden: []
   - id: RF09-styled-responsive-page
-    signals: [complex_composition, typography, responsive_web, named_style]
+    signals: [layout_method, typography, responsive_web, named_style]
     modifiers: []
     expected: [composition-and-layout, typography-and-typesetting, web-and-responsive-design, style-direction]
     forbidden: [ui-workflow-and-interaction-design]
@@ -242,7 +267,7 @@ cases:
     expected: [brief-framing-and-criteria, brand-and-visual-systems, media-production-and-handoff, source-verification-and-evidence]
     forbidden: [critique-and-validation, asset-rights-and-attribution]
   - id: RF39-fixed-poster-ci-repair
-    signals: [brand_system, complex_composition, typography, fixed_media]
+    signals: [brand_system, layout_method, typography, fixed_media]
     modifiers: [mandatory_ci, type_roles_fixed_but_typesetting_open]
     expected: [composition-and-layout, typography-and-typesetting, brand-and-visual-systems, editorial-and-fixed-media-design]
     forbidden: [colour-and-reproduction, logo-and-identity-mark-design]
@@ -252,8 +277,8 @@ cases:
     expected: [packaging-graphics-and-sku-systems]
     forbidden: [composition-and-layout, editorial-and-fixed-media-design, media-production-and-handoff]
   - id: RF41-packaging-with-separate-open-composition
-    signals: [packaging_graphics, complex_composition]
-    modifiers: [authoritative_dieline_supplied, general_within_frame_composition_open]
+    signals: [packaging_graphics, layout_method]
+    modifiers: [authoritative_dieline_supplied, open_relation_requires_layout_method]
     expected: [composition-and-layout, packaging-graphics-and-sku-systems]
     forbidden: [editorial-and-fixed-media-design, media-production-and-handoff]
   - id: RF42-wayfinding-with-settled-map-craft

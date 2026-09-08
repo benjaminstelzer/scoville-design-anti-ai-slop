@@ -71,6 +71,11 @@ replace actual type, image, colour or composition judgment with a medium recipe.
 
 ## Allocate the content before polishing a page
 
+For adjacent programme, pricing and visitor-information groups, bind each to its
+own reading band and check the gap to its neighbours. Internal row alignment
+does not close a crossing side note. Judge sparse spreads by reading continuity
+and image/caption association, not a required fill ratio or added ornament.
+
 Choose the entry by actual use: a live presentation supports a timed spoken
 argument; a reading document carries its explanation without a speaker; a
 poster must establish its priority at the relevant distance; a reference sheet

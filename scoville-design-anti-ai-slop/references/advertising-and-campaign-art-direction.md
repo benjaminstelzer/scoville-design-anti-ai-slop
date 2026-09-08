@@ -92,6 +92,11 @@ any of those inputs.
     gates, likely takeout, brand linkage, placement survival, ethical risk,
     evidence quality, and the uncertainty most likely to reverse the decision.
 
+Treat a button-shaped carrier as an action only when an action exists. If a
+pill, tab or control-like shape instead labels a route, theme or proposition,
+name that role and check whether the visual affordance falsely promises
+interaction. Repair the carrier or the action hierarchy, not just its colour.
+
 ## Test the carrier and its counter-reading
 
 Suppose an explicitly fictional brief authorises “Share the equipment”. A

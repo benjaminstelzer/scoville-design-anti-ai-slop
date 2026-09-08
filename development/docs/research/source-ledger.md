@@ -1,5 +1,13 @@
 # Source and license ledger
 
+## 2026-09-08 PLAN-0019 bounded rule refinements
+
+| Record | Family / inspected source | Supported use and boundary |
+| --- | --- | --- |
+| P19-S01 | SRC-NESTED-CONTOUR-GEOMETRY; W3C CSS Backgrounds and Borders Level 3, section 4.2, CR Draft 2024-03-11; inspected 2026-09-08 | Inner/outer contour relation for circular offsets. W3C document terms; reference only, independently authored geometry procedure. Equal inset is a declared design intention, not a universal preference. Stroke-edge conversion and the original fixture are local synthesis; noncircular or unsupported paint is outside the shortcut. |
+| P19-S02 | SRC-HEADLINE-BREAKS; Microsoft Style Guide, Headings / Formatting headings, updated 2022-06-24; inspected 2026-09-08 | English editorial convention supporting phrase-aware display breaks. Reference only under documentation terms; no copied wording. Do not import the guide's two-line limit, rewrite supplied copy, assume unfamiliar-language competence or force fixed-format breaks into responsive output. |
+| P19-S03 | SRC-STROKE-ROLE-AND-GAP; IBM Design Language, Line illustration / Mixing stroke weights and Spacing, and UI icons / Stroke; undated live pages inspected 2026-09-08 | Contextual professional guidance, reference only under IBM terms; original instructions and examples. Adopt perceptible purpose and stroke/space coupling, not IBM's grid, pixel widths, maximum weight count or spacing ratio. Optical compensation and expressive variation remain allowed. No general perception threshold or agent efficacy claim. |
+
 ## 2026-09-05 PLAN-0008 line and area label supplement
 
 PG-S04 / SRC-CARTOGRAPHY: inspected Esri's [line feature labels](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/text/labels-for-line-features.html), paragraphs on curved river versus horizontal highway placement and distinct label paths, and [polygon feature labels](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/text/labels-for-polygon-features.html), paragraphs on interior/exterior placement, callout anchors and contained polygons. Current page date not established. Reference only; proprietary public documentation with reuse licence unknown. Original prose compares these possibilities and preserves supplied geometry. No Esri settings, graphics or wording are imported; no engine dependency or comprehension guarantee follows.

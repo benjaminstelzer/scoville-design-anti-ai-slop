@@ -27,13 +27,91 @@ cited, but its expression or assets are not packaged or adapted.
 
 ## Admitted source families
 
+### SRC-DESIGN-EVALUATION-EMPIRICAL
+
+Class: empirical
+Inspection: targeted supplement, 2026-09-07; reference-only, no third-party
+code, assets or training data incorporated. The historical freeze above is
+unchanged. Inspected versions and scope:
+
+- Haraguchi et al., *Can GPTs Evaluate Graphic Design Based on Design
+  Principles?*, SIGGRAPH Asia 2024 Technical Communications; author full text
+  [v1](https://arxiv.org/html/2410.08885v1), sections 4–5 and Appendix C.
+  On 700 original/perturbed banner designs with 60 crowd participants, GPT-4o
+  judgments correlate with human ratings but miss small changes that vector
+  metrics catch; geometric heuristics also misjudge some backgrounds. This
+  motivates complementary evidence, not universal spacing scores.
+- An et al., *Can Vision–Language Models Assess Graphic Design Aesthetics?*,
+  [arXiv v1](https://arxiv.org/html/2603.01083v1), 2026-03-01; inspected
+  sections 3–5, especially input and training ablations. Publication status
+  of a later conference copy was not independently verified. AesEval separates
+  judgment, region selection and localization; images and metadata contribute
+  differently. Region-grounded training improves results in the studied setup.
+  Fine-tuning evidence does not establish gains from a written Skill.
+- Walsh, Kapfhammer and McMinn, *Automated Layout Failure Detection for
+  Responsive Web Pages without an Explicit Oracle*, ISSTA 2017,
+  DOI 10.1145/3092703.3092712; inspected author
+  [PDF](https://www.gregorykapfhammer.com/download/research/papers/key/Walsh2017-paper.pdf),
+  sections 3–4. ReDeCheck models layout relations across widths and distinguishes
+  visible failures from coordinate issues without visible effects. Its browser
+  study motivates local relations plus visual adjudication, not a universal
+  aesthetic detector or a direct SVG implementation.
+
+Local use: Core paired proof, Composition boundary coverage and Critique
+localized acceptance. Exact records, check order and completion policy remain
+package-authored synthesis, not a reproduced intervention from these papers.
+No study here evaluates this Skill or Astra. Conflicting geometry/appearance
+requires investigation, not an automatic verdict from either lane.
+
 ### SRC-PACKAGE-LOCAL-SYNTHESIS
 
 Class: local-synthesis
-Authorship/version: package-authored operational heuristics; 2026-09-05 revision.
+Authorship/version: package-authored operational heuristics; 2026-09-07 revision.
 Scope: subject-specificity catalog and craft counter-moves; proportional
 records, routing, comparison controls and optional sibling coordination;
 original applied craft procedures and worked fragments in the existing owners.
+The spatial/type relation records and explicit browser checks added on
+2026-09-07 are local operational synthesis. Their declared numbers are
+task-specific inputs, not universal aesthetic thresholds.
+The optional numbered source reader, explicit quantitative-routing boundary,
+visual-artifact discovery boundary and provisional-owner evidence triage
+address observed local execution faults. The discovery boundary distinguishes
+requested judgment about how an artifact looks or communicates, including
+graphic encoding, from executing or verifying a fully specified mechanical
+change; it is not a trigger for arbitrary source geometry or data validation.
+The packaging-face boundary keeps questioned hierarchy, framing and fit on an
+actual supplied package or label face with Packaging even when a dieline is
+absent, while treating fully specified unchanged export as mechanical. This is
+an observed routing correction, not an external packaging standard.
+The repeated-group closure rule requires an explicit internal-rhythm record and
+a separate two-end outside-anchor disposition before a spatial verdict. It is a
+local operational correction from the PLAN-0017 storyboard probe: equal member
+gaps had been measured while a visible right-end overrun against the shared page
+span was omitted. It does not assert that every repeated group must share a span.
+The authored-still-state boundary keeps state change and continuity with Motion
+when successive static frames are themselves being designed. It distinguishes
+that job from merely selecting or ordering independent supplied stills. This is
+a local routing correction from the PLAN-0017 D06 repeat, not evidence that a
+static artifact is inherently temporal.
+The triage preserves multiple source-supported meanings until each candidate
+owner's scope is applied; it is not a keyword router or evidence of improved
+model behavior. Emitted metadata does not certify received coverage, correct
+module use or general model reliability.
+The optional SVG source-inventory helper is also local synthesis: geometric
+rectangle, authored-adjacency and repeated-span candidates assist discovery,
+not semantic parent inference or automatic visual acceptance. Browser fixtures
+and known-source observations bound its implementation evidence; they do not
+establish general detection accuracy or model-consumption success.
+Its seeded provisional records preserve queue identities and observed geometry
+in the existing working-note format. Semantic fields stay unknown until review.
+This is a local transcription aid, not evidence that a model completes or uses
+the rows, and not a runtime coverage/acceptance validator.
+Candidate accounting, compact owner binding and inference from repeated source
+roles are local review procedures. They preserve uncertainty and do not turn a
+geometric mismatch or an absent brief instruction into an aesthetic verdict.
+Closed evidence statuses, preservation of the original region/target and
+source-supported exception handling address observed acceptance failures.
+They are operational safeguards, not proof that an agent follows them.
 Basis: local synthesis developed from the recorded review proposals and
 existing package constraints, not an external publication.
 Limits: no measured prevalence, universal design rule, audience-recognition
@@ -119,6 +197,16 @@ being reconstructed from an author's reputation or a source-family label.
 
 ### SRC-TYPE-DETAIL
 
+2026-09-07 supplement: inspected OERT's
+[Typography and typographic systems](https://www.oert.org/en/typography-and-typographic-systems/)
+and [Family classification, selection, and combination](https://www.oert.org/en/family-classification-selection-and-combination/)
+(2012). Constant/variable relationships and actual role/setting comparisons
+support the operational approach; blanket serif superiority claims are not
+adopted. [IBM Type scale](https://www.ibm.com/design/language/typography/type-scale/),
+Type scale and Resources sections, was inspected for curated subsets and
+size/leading pairs. IBM's values and script adjustments are brand-specific.
+These are professional/teaching precedents, not empirical font-count limits.
+
 - **Stable source or identifier:** Hochuli, *Detail in Typography*, ISBN `9780907259343`, Felici, *The Complete Manual of Typography*, ISBN `9780132821919`, and [OERT typography resources](https://www.oert.org/en/category/text/)
 - **Class:** book-reference, open-learning
 - **Licence and reuse status:** Books are copyrighted. OERT is CC BY-SA as declared, with asset checks required.
@@ -128,6 +216,13 @@ being reconstructed from an author's reputation or a source-family label.
 
 ### SRC-TYPE-EMPIRICAL
 
+2026-09-07 supplement: Rello, Pielot and Marcos, *Make It Big!*, CHI 2016,
+DOI [10.1145/2858036.2858204](https://pielot.org/pubs/Rello2016-Fontsize.pdf),
+methods, results and limitations inspected. Arial/Wikipedia/desktop reading
+with 104 participants does not establish a universal display scale. Its 1.0
+line-spacing condition denotes approximately 120% of font size, not CSS
+line-height:1. No numeric gate is imported into the Skill.
+
 - **Stable source or identifier:** Richardson, DOI [`10.1007/978-3-030-90984-0`](https://doi.org/10.1007/978-3-030-90984-0), Galliussi et al. [2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7188700/), Arditi and Cho [2005](https://pmc.ncbi.nlm.nih.gov/articles/PMC4612630/), and Dyson and Kipping [1998](https://journals.uc.edu/index.php/vl/article/view/5671)
 - **Class:** empirical, open-read
 - **Licence and reuse status:** Mixed open-access and copyrighted scholarship. Cite and paraphrase. Verify article-level terms before adaptation.
@@ -136,6 +231,11 @@ being reconstructed from an author's reputation or a source-family label.
 - **Recheck trigger:** Recheck before making a numeric or population-wide readability claim
 
 ### SRC-FONT-TECH
+
+2026-09-07 supplement: [SVG 2, section 8.10](https://www.w3.org/TR/SVG/coords.html#BoundingBoxes)
+inspected for glyph-cell rather than ink bounding boxes. The browser helper
+reports client rectangles and computed styles; font readiness, transforms,
+paint, clipping and optical interpretation remain separate proof concerns.
 
 - **Stable source or identifier:** [OpenType 1.9.1](https://learn.microsoft.com/en-us/typography/opentype/spec/), [CSS Fonts 4](https://www.w3.org/TR/css-fonts-4/), [CSS Text 4](https://www.w3.org/TR/css-text-4/), [Unicode bidi and line-breaking reports](https://www.unicode.org/reports/), and [HarfBuzz shaping concepts](https://harfbuzz.github.io/shaping-concepts.html)
 - **Class:** standard, technical manual
@@ -154,6 +254,16 @@ being reconstructed from an author's reputation or a source-family label.
 - **Recheck trigger:** Recheck the exact font licence, file version, embedding flags, service terms, and receiver contract at use time
 
 ### SRC-COMPOSITION-CANON
+
+2026-09-07 supplement: Khoi Vinh, *Ordering Disorder* (New Riders, 2011),
+[publisher sample](https://ptgmedia.pearsoncmg.com/images/9780321703538/samplepages/0321703537.pdf),
+printed pp. 69–70 and 77 inspected for real-type-derived baselines and deliberate
+departures. A contradictory extracted numeric example is not used.
+[IBM 2x Grid](https://www.ibm.com/design/language/2x-grid/), construction, base
+unit and spatial relationships sections inspected for explicit usable-area and
+unit relationships. The procedure is informative; IBM's dimensions, equal-track
+choices and 8-px web unit are not general requirements. Book-reference entries
+below retain their original inspection limits.
 
 - **Stable source or identifier:** Müller-Brockmann, *Grid Systems in Graphic Design*, ISBN `9783721201451`, Samara, *Making and Breaking the Grid*, ISBN `9780760381939`, Lupton and Phillips, *Graphic Design: The New Basics*, ISBN `9781616893323`, White, *The Elements of Graphic Design*, ISBN `9781581157628`, and Hofmann, *Graphic Design Manual*, ISBN `9783721210064`
 - **Class:** book-reference, curriculum recurrence
@@ -615,6 +725,33 @@ inspected; full-text clause requirements and actual site compliance remain unver
 - **Scope:** Boundary objects, specialised knowledge, provisional versus controlled representations, prototype purposes, design-system stability/flexibility, interdisciplinary overlap and field-level ownership/status handoff
 - **Bias or currency limit:** Organisation, product-development, built-environment and design-system studies do not prescribe this Skill's leaf map. Hard owners, soft observers and the communication record are a falsifiable local synthesis, not a quoted external method.
 - **Recheck trigger:** Recheck the actual owner, authority, source version, receiver and unresolved conflicts whenever a cross-expert handoff changes a canonical decision or proof claim
+
+### SRC-NESTED-CONTOUR-GEOMETRY
+
+- **Stable source or identifier:** W3C, [CSS Backgrounds and Borders Level 3, section 4.2 Corner Shaping](https://www.w3.org/TR/css-backgrounds-3/#corner-shaping), inspected 2026-09-08; Candidate Recommendation Draft dated 2024-03-11
+- **Class:** standard, local geometric synthesis
+- **Licence and reuse status:** W3C document terms apply; reference and independently worded synthesis only. No source prose, diagrams or assets bundled.
+- **Scope:** CSS inner-edge radius derives from outer radius and border/padding thickness. The local method applies the corresponding offset relation to visible concentric circular contours in one coordinate space, including simple centred strokes and uniform scaling.
+- **Bias or currency limit:** A geometric relation, not a requirement for rounded corners or equal insets. Ellipses, unequal insets, nonuniform transforms and complex paint require other geometry; zero inner radius ends the positive-radius concentric model. No optical or agent-performance guarantee.
+- **Recheck trigger:** Recheck the specification for CSS behavior changes and the actual renderer/contours for each applicable artifact.
+
+### SRC-HEADLINE-BREAKS
+
+- **Stable source or identifier:** Microsoft Style Guide, [Headings, Formatting headings](https://learn.microsoft.com/en-us/style-guide/scannable-content/headings), updated 2022-06-24; inspected 2026-09-08
+- **Class:** professional-manual, contextual convention
+- **Licence and reuse status:** Microsoft documentation terms apply; independently worded synthesis only. No source text or examples redistributed.
+- **Scope:** Phrase-aware display breaks, related words and multiword names, then balanced line shape. The guide's manual two-line shaping advice excludes dynamically responsive content; this Skill defaults manual shaping to fixed formats and verifies any required reflow separately.
+- **Bias or currency limit:** English editorial guidance is not a universal line-count or grammatical rule. Preserve exact supplied copy, language-specific judgment, expressive exceptions and the existing unfamiliar-script escalation floor. No readability or agent-performance claim follows.
+- **Recheck trigger:** Recheck language competence, actual text, required formats and renderer when applying break controls.
+
+### SRC-STROKE-ROLE-AND-GAP
+
+- **Stable source or identifier:** IBM Design Language, [Line illustration / Mixing stroke weights and Spacing](https://www.ibm.com/design/language/illustration/line-style/design/), [UI icon design / Stroke](https://www.ibm.com/design/language/iconography/ui-icons/design/); inspected 2026-09-08, undated live guidance; preceding synthesis in PLAN-0018
+- **Class:** professional-manual, contextual convention, local synthesis
+- **Licence and reuse status:** IBM site terms apply; reference and original synthesis only. No IBM artwork, wording or assets bundled.
+- **Scope:** Purposeful, distinguishable mixed weights; stroke/gap relation and apparent-weight consistency at use size. The local procedural refinement repeats existing paint/detail checks after a weight/scale change, explicitly including counters, and separates hierarchy from optical compensation.
+- **Bias or currency limit:** IBM-specific grids, stroke values, weight counts and gap ratios are not universal rules. Purposeful expressive variation and optical compensation may use unequal widths. No mathematical threshold proves perceived hierarchy or recognition; no Skill efficacy evidence follows.
+- **Recheck trigger:** Recheck current incumbent grammar, intended size/background and required production variants; revisit source scope if adopting any system-specific number.
 
 ## Dead links and unavailable sources
 

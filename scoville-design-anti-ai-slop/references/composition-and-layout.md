@@ -2,80 +2,90 @@
 
 Status: `draft`  
 Intervention: `external-verification`  
-Sources: `SRC-COMPOSITION-CANON`, `SRC-GESTALT-EVIDENCE`, `SRC-TYPE-DETAIL`, `SRC-PROFESSIONAL-SCOPE`, `SRC-CRITIQUE-CANON`, `SRC-PACKAGE-LOCAL-SYNTHESIS`
+Sources: `SRC-COMPOSITION-CANON`, `SRC-GESTALT-EVIDENCE`, `SRC-TYPE-DETAIL`, `SRC-PROFESSIONAL-SCOPE`, `SRC-CRITIQUE-CANON`, `SRC-DESIGN-EVALUATION-EMPIRICAL`, `SRC-PACKAGE-LOCAL-SYNTHESIS`, `SRC-NESTED-CONTOUR-GEOMETRY`
 
 ## Load when
 
-Load for consequential within-page or within-frame hierarchy, semantic spacing,
-negative space, grid, balance, density, content fit, or a challenged spatial
-exception. Do not load only because an artifact has a layout. Cross-page/slide
-sequence and templates belong to fixed-media design; responsive transformation
-intent belongs to web design; glyph-to-paragraph spacing belongs to typography;
-file, bleed, trim, safe-area, preflight, and supplier acceptance belong to
-production. Load each of those owners independently when its concern is open.
+Composition foundations and common acceptance live in Core and always apply.
+Load this method reference only for an open spatial relation needing source-assisted
+discovery, measurement or a diagnostic comparison with the required inputs
+available. A small repair, mark-only task or critique does not alone select it.
+Preserve specialist ownership of package faces, mark contours, encodings and maps.
 
-## Inputs and formal variables
+## Select the needed method
 
-Inspect the artifact or real content, not a verbal summary. Record only open relevant fields; otherwise use the Core minimal record:
+For an open system, inspect content/dependencies, intended visual and task order,
+frames/distance/crops, anchors, protected strengths and available evidence.
+Visual order need not equal focus or programmatic order. Stress the supplied
+longest/shortest text, unbreakable strings, locales, item counts, image ratios
+and data extremes; never crop or reorder required meaning to pass a fit check.
+A conceptual grid, baseline grid, page geometry and CSS layout are different
+systems. Test a subject-derived constant when useful; a legitimate default is
+valid. Thumbnail, blur or colour-removal views can diagnose hierarchy and rhythm,
+but a predicted scan path is a hypothesis, not measured audience behaviour.
 
-- `C`: required content units, semantic groups, consequence, dependencies, and
-  allowed omission or disclosure;
-- `O`: importance, narrative, task, visual, programmatic, and focus orders;
-  these may differ, so name which order the composition should express;
-- `F`: target frames, intended size/distance, viewing sequence, fixed edges,
-  incumbent system, and relevant crops;
-- `A`: repeated anchors and alignment candidates: edge, axis, baseline, centre,
-  contour, or optical relation;
-- `P`: protected content, identity, source order, access floors, and deliberate
-  character;
-- `X`: stress content: shortest/longest text, unbreakable strings, missing or
-  extra items, image-ratio extremes, data outliers, and supplied locales;
-- `E`: available source, render, interaction, print, and human evidence, plus
-  what remains unverified.
+| Open need | Procedure | Limit |
+| --- | --- | --- |
+| Choose/test a grid or reading relation | Content-to-geometry recipes below | A computed system is not proof of the right system. |
+| Find uncertain local regions with editable source | Whole view → source candidates → semantic dispositions → Core bindings | Helper candidates are not defects or accepted regions. |
+| Verify a bound relation | Select metric below, render, measure, then reconcile with Core's visual lane | Source boxes are not glyph ink, paint or optical weight. |
+| Explain a visual failure | Signature/parent-cause table | Test the cause; don't substitute taste for a defect. |
 
-Translate the brief into a spatial thesis: primary entry, lead/support groups,
-intended progression or task path, density, rhythm, negative-space jobs, and
-protected adaptation behaviour. Treat any predicted scan path as a hypothesis,
-not eye-tracking evidence.
+## Discover with source assistance
 
-## Generate and decide
+First view without overlays and keep the provisional region map. Cross-check it
+against visible source/layer instances, including text, grouped artwork, use/image
+instances, nested drawn panels and repeated-group outside anchors.
 
-1. **Order before coordinates.** Make required semantic and task order coherent;
-   then decide visual entry, subordinate reads, and exit/action. Do not make all
-   distinctions loud. Check whether hierarchy survives a thumbnail, blur, or
-   colour-removal diagnostic as appropriate; these views diagnose structure,
-   not audience behaviour.
-2. **Relationships before values.** Group what shares meaning; separate changes
-   in task, topic, status, or sequence; align where a common relation clarifies;
-   offset where tension or distinction is intentional. Label intervals by job—
-   within group, between groups, section, edge, sequence—not by one universal
-   scale. Optical equality may override geometric equality when rendered masses
-   differ.
-3. **Choose the least-complex useful spatial system.** Derive candidate columns,
-   modules, margins, spans, and recurring anchors from repeated units, longest
-   measures, media ratios, alignment needs, and protected edges. Distinguish a
-   conceptual design grid from a baseline grid, page geometry, or CSS layout.
-   Use the grid to make relationships repeatable; break it only deliberately.
-   When the spatial system is open, test a constant derived from the subject:
-   product module, document format, data cadence, route, material unit or
-   manufacturing tolerance. Mark its origin `supplied | measured | inferred |
-   default`. A useful default is legitimate; settled geometry needs no new
-   constant. Judge whether the relation improves content consequence, not
-   whether it merely has an original rationale.
-4. **Give negative space a job.** It may separate, group, frame, pace, direct,
-   pause, or intensify. Empty area is not inherently premium; filled area is not
-   inherently clutter. Tune density to information consequence, comparison,
-   task, distance, medium, and concept.
-5. **Build rhythm through expectation and variation.** Repeated anchors and
-   intervals establish continuity; variation signals hierarchy, transition, or
-   emphasis. Inspect macro rhythm across the frame and micro rhythm within
-   groups. Do not repeat one spacing value until all relationships have equal
-   weight.
-6. **Compose with final-form content.** Use real text, labels, imagery, and data.
-   Fit all declared `X` cases rather than an ideal placeholder. Never hide,
-   crop, truncate, or reorder required meaning merely to make the frame clean.
+For editable SVG in a browser, optionally evaluate
+[inventory-svg-layout.js](../scripts/inventory-svg-layout.js) in the document.
+Its header gives the invocation. Retain its provisionalRecords and reviewQueue in
+existing notes, completing seeded identities instead of reconstructing candidates.
+With another format or method, make equivalent rows. A group-union intersection
+does not identify the actual enclosure. Positive inset is not padding intent.
+
+Inspect relevant queue entries in bounded reads; persist bulky output if needed.
+No mandatory JSON or extra file is required in ordinary work. An empty queue is
+not a complete map. Preserve discarded/duplicate candidate dispositions with
+visible/source reasons and add meaningful relations the helper missed.
+Raster-only discovery uses inspected regions with stated estimation uncertainty.
+
+## Measure the intended relationship
+
+| Relation | Supported procedure | Do not substitute |
+| --- | --- | --- |
+| Rectangular inset | left=content-left minus inner-left; right=inner-right minus content-right; likewise top/bottom. Compare declared minima. | Positive containment for sufficient padding; outer viewport/group union for local drawn enclosure. |
+| Nested circular corners | For a declared uniform gap, use the visible contours bounding it: frame's inner paint edge and nested object's outer edge. Corresponding concentric radii obey `r_inner = r_outer - gap` while positive. For a simple centred circular frame stroke, `r_outer = path_radius - effective_half_stroke`. Check straight edges and corners in one space; uniform scaling preserves this relation. | Raw path radius for paint radius; equal straight insets for equal corner gaps. Zero inner radius ends this model. Ellipses, nonuniform transforms, unequal insets and complex paint need another method; intentional unequal spacing is not a failure. |
+| Centre/alignment | Compare declared edge, baseline or group-centre coordinates on the stated axis. Inspect glyph ink/optical mass separately. | Minimum inset for centring; line box for optical centre. |
+| Repeated group | Check shared values, internal gaps and both outside endpoints against the intended common span. | Equal gaps for equal outside anchors. |
+| Stroke/paint | Account for visible stroke extent, caps, joins, transform and clipping; for a supported unrotated simple stroke, expand the path boundary by its effective half-width. | Raw stroke-width equality after different scaling; box bounds for complex filters/paint. |
+| Type-role reuse | Compare effective styles including inheritance, transforms and actual font rendering. | Count raw font-size declarations or assume equal em sizes look equal. |
+
+Use one coordinate space. In browser SVG inspect the viewport and getScreenCTM;
+convert design-unit targets to CSS pixels, including viewBox fitting/offsets.
+Choose tolerance before results from precision, role and scale, not to hide
+failure. Use the corner method only within its scope; acute joins, compound shapes and complex paint need
+appropriate detail views; unsupported exact metrics stay unverified.
+
+For explicit HTML/SVG checks, optionally evaluate
+[measure-layout.js](../scripts/measure-layout.js) in the artifact's document.
+Its header documents inset/gap/align/style checks. It waits for fonts; no new
+runtime installation is required. Default auto text measurement uses supported
+HTML Range rectangles or SVG client rectangles. Explicit box measures allocation;
+containerMetric bounds is for an intended group union, never local shape fit.
+Generated content, replaced elements and mixed text/icon subtrees may need separate
+metrics. Its rectangles do not prove exact ink, painted strokes, successful general
+clipping or optical balance. Apply Core's final-version lane matrix to the actual
+relation, including exceptions and missing evidence.
+
 
 ## Working from content to geometry
+
+Check what relationship each number, line, enclosure, emphasis or label asserts,
+and whether the content supports it. A number may express sequence, rank or a
+stable reference; a line or enclosure may connect or group. Preserve useful
+signals and intentional expression, but revise a cue that falsely implies an
+order, group or distinction. Removing all graphic structure is not the goal.
 
 For an open grid, place the longest required unit and a representative repeated
 unit first. Compare a shared reading column with a lead/support split; keep the
@@ -84,6 +94,30 @@ equal tracks inside usable width `W`, `n` tracks and gap `g` give
 `track = (W - (n - 1) * g) / n`. This computes a chosen system, not the correct
 track count. Derive spans from the content that must align, then test the most
 demanding group before extending the grid.
+
+Commit the chosen system before repeating it: usable bounds, column/track and
+gutter values or named free anchors, recurring spans, and interval roles with
+actual values and units. Reuse existing tokens where they fit. A simple mark
+may need only an axis and clear space; a page may need columns and a baseline
+derived from body leading. The grid is revised from the rough and real content,
+not imposed before the communication problem is understood.
+
+Use a compact relation record, for example
+`relation/role | source owner | value+unit | consumers | exception`.
+Distinguish within-group, between-group, section, caption-to-anchor and edge
+relationships where they actually differ. Equal jobs reuse one value; variation
+needs a named role, rhythm change or optical correction. Do not assign unrelated
+gaps the same value merely because they share a scale. Derive a small usable
+set from type, medium and density; neither 8 px nor any ratio is mandatory.
+
+When a concrete comparison is useful, inspect only the relevant declared
+teaching asset: [shared span source](../examples/spatial-proof/repeated-card-span.svg)
+and [render](../examples/spatial-proof/repeated-card-span.png), [longest-content
+fit source](../examples/spatial-proof/longest-content-fit.svg) and
+[render](../examples/spatial-proof/longest-content-fit.png), or [intentional
+asymmetry source](../examples/spatial-proof/intentional-asymmetry.svg) and
+[render](../examples/spatial-proof/intentional-asymmetry.png). Their numbers
+explain those examples only; transfer the relation mechanism, not the values.
 
 Tune visual weight through a named variable: occupied area, size, tonal or hue
 contrast, isolation, edge/axis position, or detail density. If a small dark
@@ -96,6 +130,7 @@ page gaps. Check whether similarity or an enclosing box still implies the
 wrong group. A deliberately remote caption can work when a clear reference
 link preserves association. These are local comparison procedures, not fixed
 spacing ratios or a requirement to replace a useful incumbent grid.
+
 
 ## Critique: signatures and causes
 
@@ -124,46 +159,7 @@ Name the perceptual cue behind a grouping judgment. Proximity, similarity,
 common region, connection, continuity, and figure-ground can conflict; they are
 context-bound hypotheses, not universal laws or aesthetic verdicts.
 
-## Smallest repair and preservation
 
-Freeze `P` before editing. Diagnose in this order, stopping at the first cause
-that explains the failures: requirement/content -> semantic or order relation
--> container/measure -> grid/track/span -> scale/density -> crop/source ->
-local optical correction. Repair the owning parent once and inspect every
-consumer. Preserve successful hierarchy, asymmetry, rhythm, subject relation,
-and recognisable character. Reject local nudges, blanket centring, extra cards,
-more whitespace, clipping, or one-column stacking when they only conceal the
-cause. Revert or narrow a repair that creates a new order, fit, access, crop, or
-identity regression.
-
-## Rules and exceptions
-
-Binding requirements come only from the brief, incumbent system, applicable
-standard, or actual platform/production authority. Grids, ratios, columns,
-alignment, symmetry, scan patterns, spacing scales, and whitespace levels are
-contextual mechanisms—not laws. Any numeric value must be labelled as supplied,
-measured, standard-scoped, provider-specific, or a provisional hypothesis.
-
-For off-grid placement, asymmetry, overlap, crop, irregular rhythm, or deliberate
-density, declare before judgment: the broken convention, intended gain,
-protected reading/access floors, stable counterstructure, accepted cost, and a
-falsifier. Keep the exception when the whole gains and required meaning
-survives; do not rationalise an accidental defect after seeing it.
-
-## Proof, ownership, and claim ceiling
-
-Inspect affected target frames at intended size. Include other supplied frames
-when shared changes can affect them or the agreed proof requires them; add a
-diagnostic thumbnail when hierarchy or density is in question.
-Compare before/control/after under identical content, dimensions, crops, fonts,
-assets, and renderer conditions. Check exact content, edges, overflow, group
-relations, hierarchy, reading/order intent, critical `X` cases, and protected
-regions. Use overlays or geometry only as annotated pointers and keep unrun
-checks `unverified`.
-
-Composition owns within-frame spatial relations. Typography owns type setting;
-fixed-media design owns cross-page sequence; web design owns responsive
-recomposition intent; UI owns framework implementation and runtime behaviour;
-production and providers own technical/physical acceptance. Do not infer user
-scan behaviour, comprehension, accessibility, cultural fitness, production
-readiness, market preference, or universal quality.
+Core owns common diagnosis order, exception requirements and final acceptance.
+This reference supplies spatial methods; it does not attest comprehension,
+accessibility, cultural fitness, market preference or production readiness.

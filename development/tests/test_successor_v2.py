@@ -130,6 +130,54 @@ class CurrentSchemaTests(unittest.TestCase):
             _write_registry(root, registry)
             self.assertTrue(any("executed P6 receipt" in e for e in validate_package(root, CURRENT_SCHEMA).errors))
 
+    def test_packaged_tool_links_require_declaration_and_existing_file(self):
+        for mutation, signature in ((None, None), ("typo", "script link"),
+                                    ("undeclared", "script link"), ("missing", "missing distribution"),
+                                    ("escape", "invalid distribution")):
+            with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                registry = build_current(root)
+                tool = root / "scripts/measure.js"
+                tool.parent.mkdir()
+                tool.write_text("(() => 1)\n", encoding="utf-8")
+                registry["distribution_files"].append("scripts/measure.js")
+                module = root / registry["modules"][0]["path"]
+                link = "../scripts/typo.js" if mutation == "typo" else "../scripts/measure.js"
+                module.write_text(module.read_text(encoding="utf-8") + f"\n[Tool]({link})\n", encoding="utf-8")
+                if mutation == "undeclared": registry["distribution_files"].pop()
+                if mutation == "missing": tool.unlink()
+                if mutation == "escape": registry["distribution_files"].append("../outside.js")
+                _write_registry(root, registry)
+                errors = validate_package(root, CURRENT_SCHEMA).errors
+                if signature:
+                    self.assertTrue(any(signature in e for e in errors), errors)
+                else:
+                    self.assertEqual([], errors)
+
+    def test_packaged_example_links_require_declaration_and_package_boundary(self):
+        for mutation, signature in ((None, None), ("undeclared", "example link"),
+                                    ("missing", "missing distribution"),
+                                    ("escape", "invalid distribution")):
+            with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                registry = build_current(root)
+                asset = root / "examples/spatial/example.svg"
+                asset.parent.mkdir(parents=True)
+                asset.write_text("<svg xmlns='http://www.w3.org/2000/svg'/>", encoding="utf-8")
+                registry["distribution_files"].append("examples/spatial/example.svg")
+                module = root / registry["modules"][0]["path"]
+                module.write_text(module.read_text(encoding="utf-8") +
+                                  "\n[Example](../examples/spatial/example.svg)\n", encoding="utf-8")
+                if mutation == "undeclared": registry["distribution_files"].pop()
+                if mutation == "missing": asset.unlink()
+                if mutation == "escape": registry["distribution_files"].append("../outside.svg")
+                _write_registry(root, registry)
+                errors = validate_package(root, CURRENT_SCHEMA).errors
+                if signature:
+                    self.assertTrue(any(signature in e for e in errors), errors)
+                else:
+                    self.assertEqual([], errors)
+
     def test_build_preserves_every_byte_except_exact_comment_and_never_overwrites(self):
         with tempfile.TemporaryDirectory() as directory:
             parent = Path(directory)

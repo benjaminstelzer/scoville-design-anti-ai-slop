@@ -21,15 +21,12 @@ model familiarity.
 
 A concept is a repeatable relationship among **subject evidence**, **required
 message**, **audience action or interpretation**, and one or more **carriers**.
-It is not a tagline, mood, palette, typeface, visual style, layout, or finished
-execution. For each viable territory select only open relevant fields below;
-otherwise use the Core minimal record:
-
-`thesis | subject evidence | primary/supporting carriers | content order |
-viewer/user action | literal content/denotation | intended inference/connotation |
-visual-verbal relation | rhetorical operation | plausible counter-reading |
-meaning construction | invariant | medium advantage | incumbent relation |
-likely failure | highest-risk unknown`.
+A palette or typeface alone does not establish a new conceptual mechanism;
+its visual treatment may still be the right design solution. During exploration
+use `idea | subject connection | intended effect`. Expand only decision-changing
+questions at selection: content order, carrier, counter-reading, invariant,
+medium advantage, incumbent relation or highest-risk unknown. These are prompts,
+not a form to complete before trying a rough.
 
 Carriers may include rhetoric or language, sequence, comparison, reveal, index,
 route, transformation, typographic behaviour, image/object/material relation,
@@ -43,20 +40,22 @@ duplicate that rubric. A labelled inference may support a hypothesis, not an
 approved fact. Quiet utility and accepted directions need no artificial score.
 
 Allocate text and image complementary jobs unless intentional repetition has a
-named access, memory or error-prevention function. Adjacency implies a relation;
+named identification, access, memory or error-prevention function. When keeping
+a cue is open, inspect its intended distinguishing role at output size before
+treating it as noise; retain, simplify or omit by that job. Recognition benefits
+remain hypotheses without audience evidence. Adjacency implies a relation;
 state the intended one and the consequential alternative reading. Ambiguity can
 carry a concept only when the intended audience can plausibly resolve it and
 protected facts, identity, action, warning and disclosure remain recoverable.
 
 ## Generate materially different territories
 
-Start from different causal operators, not different treatments. Compare pairs
-with colour, font, texture, decoration and style names hidden: they are
-materially different only when content order, audience action, meaning
-construction, primary carrier, format behaviour, or central risk changes.
-Generate enough mechanisms to expose the real decision; stop when another
-candidate repeats the causal operator or cannot alter selection. A count is a
-cost control, never evidence of diversity or quality.
+When different mechanisms are needed, vary content order, audience action,
+meaning construction, primary carrier, format behaviour or central risk.
+Temporarily hiding colour, font and texture can test mechanism diversity; restore
+them to judge the actual design's communication and character. A treatment can
+win that judgment without being a new mechanism. Explore only alternatives that
+could change the choice; neither mechanism count nor novelty proves quality.
 
 Abstract references into bounded jobs and rejected or copy-risk traits. Do not
 clone one precedent, average several into a trend centroid, or call search
@@ -73,6 +72,14 @@ not compete against two descriptions.
 
 ## Make the difference visible
 
+When the opening of a page or presentation is unresolved, compare viable entry
+forms using the same supplied content: a statement, image, demonstration,
+comparison or interaction. Which makes the subject and the audience's first
+question most immediately recoverable? Rough out only alternatives that could
+change the choice, at comparable fidelity. This is a probe within concept
+selection, not a required five-option exercise or permission to add unsupported
+content, assets or functionality.
+
 For a fictional, approved proposition “Borrow the object, keep the space”, one
 mechanism could show a tool-sized opening in a crowded cupboard; another could
 show the same tool moving between several users. Absence carries the first
@@ -82,6 +89,11 @@ first mechanism, not a third idea. A literal object-and-availability list can
 still be the best direction for a utility task. This original example teaches
 mechanism discrimination; it does not establish the proposition as a fact,
 require two concepts or authorise new audience claims.
+
+For a compact control, compare the [decoration-control source](../examples/spatial-proof/decoration-control.svg)
+with its [render](../examples/spatial-proof/decoration-control.png). It keeps the
+subject-bearing route and removes an unrelated device; this is a purpose test,
+not a general instruction to make designs sparse.
 
 ## Select without false precision
 
@@ -106,8 +118,10 @@ invariant and carrier must survive; pixel-identical composition need not.
 - **Generic thesis:** it fits an unrelated subject after a logo swap. Bind one
   verified subject process, object, language, data, tension, or behaviour to the
   carrier; reject the territory if only naming makes it specific.
-- **Strong prose, weak rough:** the carrier was never instantiated. Build the
-  cheapest comparable rough and repair carrier/hierarchy before description.
+- **Explanation outranks the image:** compare visible type, colour, composition
+  and image craft with idea fit. Neither a literal subject link nor one superior
+  component decides the whole. State the brief-based trade-off; preserve
+  convincing expression and quiet utility, including strengths of rejected work.
 - **Polish wins:** effort or presentation order anchored judgment. Normalise
   fidelity or develop all survivors to the same decision-relevant evidence.
 - **Required content disappears:** the mechanism assumes ideal brevity. Restore

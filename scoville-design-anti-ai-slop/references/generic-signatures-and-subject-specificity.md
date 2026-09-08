@@ -39,7 +39,7 @@ Accepted directions and protected geometry do not need forced novelty.
 ## Recognisable generic signatures
 
 These package-authored reviewer heuristics are not a validated detector of
-AI authorship or design quality. Examples selected as of **2026-09-04**, not
+AI authorship or design quality. Examples selected as of **2026-09-05**, not
 exhaustive or ranked by measured prevalence. Recheck when uses or cultural/style context change, or valid
 counterexamples undermine a diagnosis. A pattern alone never proves a defect:
 confirm the suspected cause and exclude the legitimate case.
@@ -52,6 +52,10 @@ confirm the suspected cause and exclude the legitimate case.
 | Repeated three-feature icon/title/sentence columns | Content was fitted to template rhythm; icons mean nothing. | Items are true peers and each icon carries distinct meaning. | Structure by content type; use real screenshots, data or objects where useful; omit redundant icons. |
 | Glossy pseudo-3D icons, isometric city or floating shapes | Mood keywords replaced an image job. | Spatial/mechanical subject or an authorised expressive direction benefits from that construction. | Use the subject's objects, process, place, working hands and materials with a named image job. |
 | Default sans and uniform radius/shadow everywhere | Defaults have no role map. | Incumbent rules or quiet utility give those defaults a useful role. | Map roles to reading task and subject voice; keep effective defaults. |
+| Cream ground, literary serif and terracotta accent | A borrowed editorial mood is carrying the identity without a subject relation. | Those choices have a useful reading, material or incumbent identity role. | Derive type roles and colour from the actual reading task, subject material or supplied identity; keep the combination when it earns those roles. |
+| Black ground, neon accent and technical micro-labels | Technology or rebellion shorthand has replaced the subject's actual behaviour. | Low-light context, a supplied identity or the depicted signal gives the contrast a concrete job. | Show the real process, signal or object behaviour; use emphasis where its consequence changes. |
+| Newspaper masthead, rules and narrow columns around unrelated content | Borrowed editorial authority has displaced the content's own relations. | Issue, section and article relationships genuinely help readers navigate or compare. | Derive hierarchy and grouping from the actual evidence and reading order; retain editorial structure where it serves them. |
+| Decorative word accents or arrows appended by habit | Emphasis or direction marks no real distinction, action or relation. | An accent identifies consequential content or an arrow communicates an actual action, direction or connection. | Emphasise the words that change interpretation; connect actual related objects or remove the redundant cue. |
 | Tracked all-caps eyebrow above every heading | Hierarchy device applied by habit. | It distinguishes a real category or section level. | Remove where it marks nothing; keep only signals that separate roles. |
 | Laughing laptop team, handshake or whiteboard stock image | Mood selection has no subject relation. | The depicted event is the real subject and the image is suitable and cleared. | Capture or brief the actual place, task, object or person with a role; disclose constructed substitutes. |
 | Sparkle, wand or orb for AI/innovation | Category shorthand replaced subject evidence. | The motif is an incumbent asset or has a justified function. | Show what the feature does to the user's real content. |
@@ -60,6 +64,11 @@ confirm the suspected cause and exclude the legitimate case.
 | KPI tiles with gauges/donuts | Metric model is absent; library chose encoding. | Monitoring a few accepted thresholds is the real task. | Encode decision and field semantics; select Information Design through Core if open. |
 
 ## Counter-move and removal test
+
+The [decoration-control source](../examples/spatial-proof/decoration-control.svg)
+and [render](../examples/spatial-proof/decoration-control.png) are a bounded
+example of asking what meaning disappears when a device is removed. Use the
+test only for a disputed consequential choice; do not score ornament by count.
 
 Removing a signature is not the repair. Bind verified subject evidence to the
 affected decision; a proposed relation stays a hypothesis until inspected.

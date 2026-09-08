@@ -9,14 +9,20 @@ Sources: `SRC-PACKAGING-GRAPHICS`, `SRC-BRAND-CANON`, `SRC-TYPE-DETAIL`, `SRC-IM
 Load when graphics on supplied authoritative package or label geometry must
 coordinate panels/faces, assembled or opening views, product information, a
 SKU family, shelf or thumbnail recognition, or packaging-specific e-commerce
-derivatives. Load for package-graphic generation, critique or repair when the
-flat-to-object relation can change the result. Do not load for structural
+derivatives. Also load when an existing supplied package or label face is the
+artifact and its face-local hierarchy, framing, fit or repeated family relation
+is questioned, even when no dieline or assembled view is supplied. In that
+case, missing object geometry limits flat-to-object claims; it does not transfer
+the visible face relation to general Composition. Load for package-graphic
+generation, critique or repair when the flat-to-object relation can change the
+result. Do not load for structural
 packaging, dieline construction or correction, material/barrier/closure/
 protection engineering, mandatory-content determination, barcode data or
 symbology, scan certification, print preflight, or provider acceptance. Do not
 load for an approved pack that only needs technical export, an ordinary folded
-publication, a product-card interface, or a single flat graphic merely shown on
-a box mockup.
+publication, a product-card interface, or a generic flat graphic merely shown
+on a box mockup. A supplied graphic explicitly functioning as the package or
+label face remains within this module's face-local scope.
 
 ## Authority and packaging record
 
@@ -168,6 +174,11 @@ Bind every render to artwork, `G` and SKU version. Inspect flat art with dieline
 overlay; assembled primary, secondary and affected opening/handling views;
 critical seams and protected zones; closest-confusable SKUs in one identical
 lineup; and relevant shelf, distance, thumbnail and e-commerce derivatives.
+For visible frame or panel clearance, use painted fill and stroke edges in the
+actual face, not only equal element coordinates or bounding boxes. Check every
+repeated SKU face; matching source numbers do not prove matching visible gaps
+when stroke widths, fills, clipping or transforms differ.
+
 Compare before/after with identical product content, geometry, camera/view,
 lighting, scale and context. Obtain a physical sample, barcode verification,
 regulatory approval and provider proof only from their responsible lanes.

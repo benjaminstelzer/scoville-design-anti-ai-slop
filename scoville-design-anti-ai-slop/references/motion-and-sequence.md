@@ -9,9 +9,13 @@ Sources: `SRC-MOTION-CRAFT`, `SRC-MOTION-ACCESS`, `SRC-MOTION-TECH`, `SRC-IMAGE-
 Load when time, state change, pacing, attention transfer, continuity, kinetic
 type, storyboard, loop, interaction motion, or a reduced/static equivalent can
 change meaning or quality. Load for temporal critique or repair, even when the
-implementation already exists. Do not load for selecting or ordering still
-images, settled framework-token implementation, codec/export work without
-temporal judgment, or a static artifact merely described as dynamic.
+implementation already exists. A sequence of authored still states selects
+this module when state change, persistent identity, transition meaning or
+continuity remains open, even if the requested output itself is static. Do not
+load merely for selecting or ordering already independent still images with no
+state/continuity relation, settled framework-token implementation, codec/export
+work without temporal judgment, or a static artifact merely described as
+dynamic.
 
 ## Inputs and formal variables
 
@@ -159,6 +163,11 @@ first/final/poster frames and two full loop cycles. Exercise interrupt, cancel,
 reverse, retrigger, background/offscreen and all intended inputs; compare normal,
 reduced and static outputs for information/state parity. Where applicable run
 exact flash analysis on final encodes and import/play the delivered variant.
+For a static storyboard or state row, also check its repeated internal rhythm,
+both outside endpoints against any shared span, and each nested status or action
+surface against its content. Equal panel gaps cannot close an external-anchor
+or local-content-fit relation.
+
 Performance requires target runtime traces under representative load; source
 properties, a preview or apparent smoothness are not proof.
 

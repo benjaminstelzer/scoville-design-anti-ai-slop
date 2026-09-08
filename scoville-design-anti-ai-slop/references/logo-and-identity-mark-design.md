@@ -192,6 +192,17 @@ partner treatment, or an incumbent CI rule.
 
 ## Proof, ownership, and claim ceiling
 
+For each supplied lockup, separately name its internal symbol/word relation
+and its relation to the surrounding field. Bind the Core's object, region or
+anchor, intent/target, Mark owner, metric/view and evidence status to that
+configuration. Word-to-panel containment cannot prove symbol-to-word clearance;
+the main lockup's gap cannot stand in for a small or monochrome variant.
+Inspect each relevant local relation and measure it in the actual configuration.
+For browser-rendered SVG, the optional
+[`inventory-svg-layout.js`](../scripts/inventory-svg-layout.js) can expose
+adjacent artwork/text candidates before these choices. Its queue is geometric
+discovery, not a verdict on ink, optical spacing, intent or identity preservation.
+
 Evidence can include the editable canonical source, construction and optical
 notes, same-condition mechanism comparison, one-colour and reversed sources,
 smallest-detail render, relevant process simulation or sample, complete
