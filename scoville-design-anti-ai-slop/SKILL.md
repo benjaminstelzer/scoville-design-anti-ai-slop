@@ -1,6 +1,7 @@
 ---
 name: scoville-design-anti-ai-slop
 description: Develop, critique, or repair visual artifacts, concepts, typography, composition, visual systems and information graphics. Use when a visual decision, diagnosis or correctness judgment is open, including measurable layout and encoding relations. Excludes fully specified mechanical edits, conversion/rendering alone, backend-only work and prose-only editing.
+compatibility: "Any Agent Skills host that can read references/ and examples/. Visual inspection needs an image or screenshot viewer provided by the host; without one, render checks stay unverified. Optional scripts/read-source.py needs Python 3. Web access only for standards, licence or living-community checks. Developed for Codex and Claude Code; other hosts untested."
 ---
 
 # Scoville Design Anti-AI-Slop
@@ -179,7 +180,12 @@ and authorisation remain binding.
 Distinguish binding constraints, evidence-bounded rules, conventions, heuristics,
 preferences and exceptions. Numeric advice needs its population, language/script,
 medium, task and override basis; one study or starting value is no universal law.
-Render proof covers inspected appearance only. Syntax, runtime, accessibility,
+Render proof covers inspected appearance only. It requires a host capability
+through which the agent actually views the rendered artifact or its image, such
+as an image-viewing tool, a screenshot that the agent can open, or a supplied
+render. Creating a screenshot file, reading its bytes or metadata, or inspecting
+source alone is not viewing. Without such a capability, record every visual-lane
+result as unverified and state that limit. Syntax, runtime, accessibility,
 user research, rights, provider and physical acceptance are separate lanes.
 Check current standards, law, licences and living-community claims when required;
 if unavailable, mark unverified and stop at that authority boundary.

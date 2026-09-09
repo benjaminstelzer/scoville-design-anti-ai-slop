@@ -6,6 +6,7 @@
 *.py text eol=lf
 *.ps1 text eol=lf
 *.html text eol=lf
+*.svg text eol=lf
 *.mjs text eol=lf
 *.cjs text eol=lf
 *.txt text eol=lf

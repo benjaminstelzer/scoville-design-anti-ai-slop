@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.2.1 - 2026-09-09
+
+- Require actual image inspection for visual proof, and leave unavailable render checks unverified.
+- Keep SVG examples on LF line endings so their recorded hashes survive Windows checkouts.
+
+- Document host and tool requirements in the README compatibility block, matching the Skill frontmatter.
+
+- Added the `compatibility` frontmatter field declaring host and tool requirements. No behavior change.
+
 ## v1.2.0 - 2026-09-08
 
 - Put composition foundations in the Core and route specialist methods by the open decision. Separate exploration, consolidation and final inspection so early ideas can remain provisional.
