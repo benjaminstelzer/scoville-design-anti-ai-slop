@@ -60,6 +60,8 @@ support named Skill invocation.
 
 Any Agent Skills host that can read references/ and examples/. Visual inspection needs an image or screenshot viewer provided by the host; without one, render checks stay unverified. Optional scripts/read-source.py needs Python 3. Web access only for standards, licence or living-community checks. Developed for Codex and Claude Code; other hosts untested.
 
+Creating artifacts also requires tools for the requested format.
+
 ## Install
 
 ### Install this Skill
@@ -78,7 +80,6 @@ location. Manual fallback: [Codex Skills guide](https://developers.openai.com/co
 or [Claude Code Skills guide](https://code.claude.com/docs/en/skills).
 
 Install only the linked package for the focused option.
-Creating and inspecting artifacts also needs the appropriate format tools.
 
 ### Install the complete Scoville suite
 
