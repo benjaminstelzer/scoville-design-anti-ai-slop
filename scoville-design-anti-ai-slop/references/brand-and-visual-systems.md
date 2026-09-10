@@ -231,8 +231,8 @@ Binding constraints are approved names/content/assets, incumbent authority,
 rights and partner agreements, exact semantic meaning, accessibility duties,
 required destinations and release state. Evidence-bounded claims about
 recognition, distinctiveness, usability or preference require the relevant
-audience and task. Conventions—stable signatures, controlled variation,
-canonical sources, clear governance—are means, not a guarantee of a strong
+audience and task. Conventions - stable signatures, controlled variation,
+canonical sources, clear governance - are means, not a guarantee of a strong
 identity. Starting heuristics such as few core elements, one master asset or a
 limited palette must yield to actual roles and production needs.
 

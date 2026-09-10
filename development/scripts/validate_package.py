@@ -248,69 +248,6 @@ def _validate_example_manifest(root: Path, distribution: set[str], result: Resul
         result.error(f"invalid spatial teaching manifest: {exc}")
 
 
-def _validate_rule_source_map(
-    map_path: Path,
-    module_ids: set[str],
-    module_sources: dict[str, set[str]],
-    registered_sources: set[str],
-    result: Result,
-) -> None:
-    if not map_path.is_file():
-        result.error("missing required file: docs/research/rule-source-map.md")
-        return
-
-    mapped: dict[str, set[str]] = {module_id: set() for module_id in module_ids}
-    rows: dict[str, int] = {module_id: 0 for module_id in module_ids}
-    for line_number, line in enumerate(
-        map_path.read_text(encoding="utf-8").splitlines(), start=1
-    ):
-        if not line.lstrip().startswith("|"):
-            continue
-        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
-        if len(cells) < 3:
-            continue
-        module_id = cells[0].strip("`")
-        if module_id not in module_ids:
-            continue
-        rows[module_id] += 1
-        if not cells[1] or cells[1] in {"---", "Operational rule cluster"}:
-            result.error(
-                f"rule-source map line {line_number}: {module_id} has no rule cluster"
-            )
-        raw_ids = [part.strip().strip("`") for part in cells[2].split(",")]
-        if not raw_ids or any(not part for part in raw_ids):
-            result.error(
-                f"rule-source map line {line_number}: {module_id} has no source IDs"
-            )
-            continue
-        for source_id in raw_ids:
-            if not SOURCE_ID.fullmatch(source_id):
-                result.error(
-                    f"rule-source map line {line_number}: invalid source ID {source_id}"
-                )
-                continue
-            if source_id not in registered_sources:
-                result.error(
-                    f"rule-source map line {line_number}: unresolved source ID {source_id}"
-                )
-            mapped[module_id].add(source_id)
-
-    for module_id in sorted(module_ids):
-        if rows[module_id] == 0:
-            result.error(f"{module_id}: no rule-source map row")
-            continue
-        declared = module_sources.get(module_id, set())
-        if mapped[module_id] != declared:
-            missing = sorted(declared - mapped[module_id])
-            undeclared = sorted(mapped[module_id] - declared)
-            details: list[str] = []
-            if missing:
-                details.append("unmapped " + ", ".join(missing))
-            if undeclared:
-                details.append("undeclared " + ", ".join(undeclared))
-            result.error(f"{module_id}: rule-source map mismatch ({'; '.join(details)})")
-
-
 def _validate_common_loads(registry: dict, modules: list[dict], result: Result) -> None:
     planned = registry.get("planned_common_loads")
     if not isinstance(planned, list) or not planned:
@@ -347,66 +284,6 @@ def _validate_common_loads(registry: dict, modules: list[dict], result: Result) 
                 f"planned common load {load_id}: unknown module IDs "
                 + ", ".join(unknown)
             )
-
-
-def validate_evidence_receipts(root: Path, modules: list[dict], result: Result) -> None:
-    """Resolve current references to executed repository receipts, including failures.
-
-    The runtime contains receipt identifiers, not development evidence. This
-    repository-only check deliberately does not equate an evidence ID with pass.
-    """
-    referenced = {
-        value for item in modules if isinstance(item.get("evidence"), list)
-        for value in item["evidence"] if isinstance(value, str)
-    }
-    if not referenced:
-        return
-    path = root / "docs/evaluation/plan-0006-case-receipts.json"
-    try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-        records = payload["receipts"]
-        if payload.get("schema_version") != 1 or not isinstance(records, list):
-            raise ValueError("unsupported receipt registry")
-        by_id = {record["id"]: record for record in records}
-        if len(by_id) != len(records):
-            raise ValueError("duplicate receipt IDs")
-    except (OSError, ValueError, KeyError, TypeError) as exc:
-        result.error(f"executed evidence receipt registry unavailable: {exc}")
-        return
-    for receipt_id in sorted(referenced):
-        record = by_id.get(receipt_id)
-        if not isinstance(record, dict):
-            result.error(f"{receipt_id}: unresolved executed evidence receipt")
-            continue
-        if record.get("executed") is not True:
-            result.error(f"{receipt_id}: receipt is not executed")
-        for field_name in ("case_version", "requested_model", "session_id", "executed_at"):
-            if not isinstance(record.get(field_name), str) or not record[field_name].strip():
-                result.error(f"{receipt_id}: missing {field_name}")
-        settings = record.get("settings")
-        if not isinstance(settings, dict) or not settings.get("effort") or not isinstance(settings.get("tools"), list):
-            result.error(f"{receipt_id}: missing model/tool settings")
-        if not isinstance(record.get("outcome"), str) or record["outcome"] not in {"pass", "fail", "limited", "unverified"}:
-            result.error(f"{receipt_id}: invalid observed outcome")
-        if not re.fullmatch(r"[A-F0-9]{64}", str(record.get("tested_package_sha256", ""))):
-            result.error(f"{receipt_id}: missing tested package hash")
-        artifacts = record.get("artifacts")
-        if not isinstance(artifacts, list) or not artifacts:
-            result.error(f"{receipt_id}: no observed artifacts or execution trace")
-            continue
-        for artifact in artifacts:
-            if not isinstance(artifact, dict) or not isinstance(artifact.get("path"), str) or not artifact["path"]:
-                result.error(f"{receipt_id}: invalid artifact record")
-                continue
-            artifact_path = Path(artifact["path"])
-            if not artifact_path.is_absolute():
-                artifact_path = root / artifact_path
-            try:
-                digest = hashlib.sha256(artifact_path.read_bytes()).hexdigest().upper()
-                if digest != artifact.get("sha256"):
-                    result.error(f"{receipt_id}: artifact hash mismatch: {artifact['path']}")
-            except OSError:
-                result.error(f"{receipt_id}: artifact unavailable: {artifact['path']}")
 
 
 def validate_package(root: Path, schema: str, *, runtime: bool = False, development_root: Path | None = None) -> Result:
@@ -583,14 +460,8 @@ def validate_package(root: Path, schema: str, *, runtime: bool = False, developm
             for label, value in (("Status", status), ("Intervention", intervention)):
                 if re.findall(rf"^{label}: `(.*?)`  $", content, re.MULTILINE) != [value]:
                     result.error(f"{module_id}: {label} header must match registry with standard formatting")
-            evidence = item.get("evidence")
-            if not isinstance(evidence, list) or not all(
-                isinstance(value, str) and re.fullmatch(r"P6-[A-Z0-9][A-Z0-9._-]*", value)
-                for value in evidence
-            ):
-                result.error(f"{module_id}: evidence must list executed P6 receipt IDs or be empty")
-            elif len(evidence) != len(set(evidence)):
-                result.error(f"{module_id}: duplicate evidence receipt")
+            if item.get("evidence") != []:
+                result.error(f"{module_id}: evidence must be empty; raw receipt registries are not retained")
         _validate_script_links(content, relative, distribution, result)
         _validate_example_links(content, relative, distribution, result)
         sibling_links = [
@@ -640,19 +511,6 @@ def validate_package(root: Path, schema: str, *, runtime: bool = False, developm
         result.error(
             "declared reference files missing: "
             + ", ".join(path.name for path in missing_expected)
-        )
-
-    evidence_root = development_root if development_root is not None else root
-    if schema == CURRENT_SCHEMA and not runtime:
-        validate_evidence_receipts(evidence_root, modules, result)
-
-    if successor and not runtime:
-        _validate_rule_source_map(
-            evidence_root / "docs" / "research" / "rule-source-map.md",
-            set(ids),
-            module_sources,
-            registered_sources,
-            result,
         )
 
     skill_text = skill_path.read_text(encoding="utf-8")

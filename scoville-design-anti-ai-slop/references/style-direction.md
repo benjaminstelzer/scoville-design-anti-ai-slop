@@ -31,8 +31,8 @@ Class may be `movement/lineage`, `period umbrella`, `genre/aesthetic`,
 `method/reduction`, `material/process`, `mood/attribute`, `regional/vernacular`,
 `subculture`, or `incumbent system`. Mark claims `supplied`, `verified`,
 `inferred`, `contested`, `unknown`, or `community authority required`. When a
-label has materially different senses—such as 1980s, Brutalist, Minimalist or
-Neoclassical—present the bounded alternatives that fit the brief and choose
+label has materially different senses - such as 1980s, Brutalist, Minimalist or
+Neoclassical - present the bounded alternatives that fit the brief and choose
 one; do not blend the currently fashionable associations invisibly.
 
 Choose one dominant lineage or incumbent system. Give each secondary influence
@@ -66,8 +66,8 @@ typography, spacing, colour, imagery, interaction and production remain their
 owners' decisions. A named label never implies a font family, pairing, palette,
 spacing scale, grid, motif count, breakpoint or animation recipe.
 
-State how subject evidence—process, object, language, data, ritual, tension or
-behaviour—changes the system. Add a counterweight only to repair an observed
+State how subject evidence - process, object, language, data, ritual, tension or
+behaviour - changes the system. Add a counterweight only to repair an observed
 functional conflict. Add a signature only when verified subject evidence can
 carry it; zero or several coordinated expressions may be right.
 
@@ -147,7 +147,7 @@ system already serves the task, no style translation is required.
 Trace `observation → communication/recognition effect → factual, structural,
 subject, production, brand, access, cultural or rights cause → smallest repair
 → preserved strength → new proof`. Repair by relabeling, removing, replacing,
-restructuring, re-sourcing, compensating, obtaining authority, or stopping—not
+restructuring, re-sourcing, compensating, obtaining authority, or stopping - not
 by adding more motifs. Preserve verified history, useful recognition cues,
 subject-specific relations, strong hierarchy and incumbent invariants. Re-render
 affected media with identical content, then check the whole format set for

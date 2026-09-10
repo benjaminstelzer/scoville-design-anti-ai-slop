@@ -20,7 +20,7 @@ Work from real text and actual fonts. Type can lead exploration: try provisional
 faces and treatments before proving each choice. Use the fields below only to
 resolve open decisions; consolidate retained choices and audit the final setting.
 
-- `R`: semantic roles and reading priority—display, heading levels, body,
+- `R`: semantic roles and reading priority - display, heading levels, body,
   navigation, action, caption, annotation, data, code/identifier, and fallback;
 - `T`: exact strings, language/locale, case, numerals, punctuation, critical
   confusables, longest/shortest values, and translation variants;
@@ -60,7 +60,7 @@ another.
    when it covers the roles. Retain another for a visible gain in function,
    voice, contrast, density, repertoire, fallback, or production. Compare
    families by proportions, x/cap height, stroke and terminal character,
-   texture, metrics, and deliberate contrast—not merely serif versus sans.
+   texture, metrics, and deliberate contrast - not merely serif versus sans.
    Reject accidental near-similarity or competing voices, not variety itself.
 4. **Set text as a coupled system.** Tune size, measure, leading, paragraph
    spacing/indent, alignment, columns, and line/paragraph breaking together on
@@ -196,7 +196,7 @@ responsive fit, pagination, or production.
 There is no universal family count, serif/sans pairing, body size, measure,
 leading, modular scale, tracking value, or alignment. Numerical guidance is a
 supplied constraint, a standard in exact scope, a measured observation, or a
-provisional comparison value—not an unexplained quality gate. Category labels,
+provisional comparison value - not an unexplained quality gate. Category labels,
 font popularity, similarity scores, and specimen charts do not prove fit.
 
 Expressive distortion, extreme tightness/spacing, unusual measure, deliberate

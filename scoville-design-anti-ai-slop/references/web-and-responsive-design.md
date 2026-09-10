@@ -65,8 +65,8 @@ Inspect only applicable lanes:
   scaling by specifying intended consequences, not framework mechanics.
 
 Choose the transformation that resolves the first pressure while preserving the
-most important relationships. State what may vary—density, line breaks, crop,
-disclosure, navigation, composition—and what would falsify the choice. Responsive
+most important relationships. State what may vary - density, line breaks, crop,
+disclosure, navigation, composition - and what would falsify the choice. Responsive
 design may produce substantially different compositions; it need not resemble a
 scaled desktop canvas.
 

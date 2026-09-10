@@ -164,8 +164,7 @@ is absent, inactive, inapplicable, or explicitly excluded, UI retains its
 bounded Greenfield fallback. Neither Skill searches for, requires, or simulates
 the other.
 
-For repository structure and development tools, see
-[maintenance notes](development/docs/maintenance.md).
+Repository validation and retention rules are in [development](development/README.md).
 
 ## Scoville family
 
@@ -192,42 +191,20 @@ needs:
 
 ## Status
 
-Version 1.2.1 contains 30 selectively loaded modules and 54 package files,
-including measurement helpers, visual examples and the MIT license.
+Version 1.2.1 contains 30 selectively loaded modules, measurement helpers,
+visual examples, and the MIT license. The package was revised through source
+review, rendered checks, and blind comparisons; the changelog preserves the
+release-level history.
 
-### How it was developed
-
-The Skill was revised through research, rendered tests and human blind A/B
-comparisons. Five later Astra Medium rounds alone covered **28 comparison pairs
-and 56 fresh designs**, with four, four, four, eight and eight pairs. Each pair
-compared the current Skill with no Skill on the same brief. A human reviewer
-with design and media training and years of practical experience ranked the
-anonymous images before the conditions were revealed. Separate AI reviews were
-retained, including disagreements and missing ratings.
-
-The work followed five recurring steps: research a failure, revise its owning
-module, generate fresh paired designs, collect blind feedback, then inspect and
-repair the demonstrated gap. Feedback changed spacing and typography systems,
-overflow checks, whole-image judgment, icon craft and small decorative joins.
-It also led to freer exploration before consolidation, so checking a design
-does not become a preset for making it.
-
-These are iterative development comparisons with one human reviewer, changing
-briefs and evolving Skill versions. They do not establish a general win rate or
-prove that the final wording catches every defect. The last compound-detail
-revision received focused visual and measured checks, not another blind round.
-See the [development evidence](development/docs/evaluation/human-blind-test-development.md)
-and [release validation](development/docs/release-validation-v1.2.0.md).
-
-Repository development and the current path mapping are in [development/](development/README.md).
+Those iterative comparisons used evolving briefs, changing Skill versions,
+and one human reviewer. They do not establish a general win rate, professional
+competence, or that the current wording catches every visual defect.
 
 ## Sources
 
 The Skill contains original synthesis, not copied books, screenshots, datasets,
 or third-party Skill prose. The [source index](scoville-design-anti-ai-slop/references/source-index.md)
-resolves every module's source IDs. The [research ledger](development/docs/research/source-ledger.md)
-and [rule-to-source map](development/docs/research/rule-source-map.md) preserve source scope,
-licensing, local synthesis, and recheck requirements across all 30 modules.
+resolves the source IDs declared by all 30 modules.
 
 Primary foundations include [Graphic Design and Print Production Fundamentals](https://opentextbc.ca/graphicdesign/),
 [Google Fonts Knowledge](https://fonts.google.com/knowledge),

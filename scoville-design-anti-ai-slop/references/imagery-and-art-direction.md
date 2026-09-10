@@ -39,8 +39,8 @@ area and variant limits.
    the right carrier, a plausible competing reading, and what would make it
    misleading or generic. Judge atmosphere or decoration by its declared job;
    neither must explain every instruction.
-2. Choose and declare the mode—documentary/editorial, constructed,
-   illustrative, diagrammatic, composite, or synthetic—before selecting the
+2. Choose and declare the mode - documentary/editorial, constructed,
+   illustrative, diagrammatic, composite, or synthetic - before selecting the
    visual treatment. Do not let realism imply an evidence status the source
    does not possess.
 3. Build a contact sheet or comparable field. Reject near-duplicates and rank

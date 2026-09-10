@@ -1,11 +1,4 @@
-"""Evaluator for observed, numbered source reads; not a runtime dependency.
-
-Protocol: SOURCE=<id> TOTAL=<n> RANGE=<first>-<last>, then N: <text>.
-Every numbered line must end with a newline, including an empty source line.
-Only actual received text supplies evidence. Requests and hidden inner results
-are never recursively searched for lines. Source-byte hashes are evaluator
-provenance; line matching does not prove transfer of original newline bytes.
-"""
+"""Verify complete numbered source reads without retaining the source corpus."""
 
 import argparse
 import hashlib
@@ -20,7 +13,6 @@ TRUNCATION = re.compile(r"\b\d+\s+(?:tokens|characters)\s+truncated\b|\boutput (
 
 
 def ranges(numbers):
-    """Represent a set of source line numbers as inclusive ordered ranges."""
     result = []
     for number in sorted(set(numbers)):
         if result and result[-1][1] + 1 == number:
@@ -39,12 +31,6 @@ def observed_text(response):
 
 
 def verify_coverage(responses, expected_source=None, reference_bytes=None):
-    """Check actual received numbered text, optionally against evaluator bytes.
-
-    Missing ranges can be recovered by later reads. Contradictions, including
-    conflicting text/metadata or nonascending lines within a read, block a pass.
-    Identical overlap across separate reads is retained but counted only once.
-    """
     if not isinstance(responses, list):
         raise ValueError("responses must be a list")
     reference_lines = None
@@ -141,8 +127,8 @@ def verify_coverage(responses, expected_source=None, reference_bytes=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("receipt", type=Path, help="JSON: source_id, responses; optional relative reference")
-    parser.add_argument("--reference", type=Path, help="Known source bytes for evaluator-only content matching")
+    parser.add_argument("receipt", type=Path, help="JSON with source_id and responses")
+    parser.add_argument("--reference", type=Path, help="Known source bytes for content matching")
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     receipt = json.loads(args.receipt.read_text(encoding="utf-8"))

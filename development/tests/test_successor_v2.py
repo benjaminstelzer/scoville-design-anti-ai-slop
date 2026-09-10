@@ -1,8 +1,6 @@
 from __future__ import annotations
 
 import tempfile
-import hashlib
-import json
 import sys
 import unittest
 from pathlib import Path
@@ -35,10 +33,6 @@ def build_current(root: Path) -> dict:
     source_index.write_text(source_index.read_text(encoding="utf-8") +
         "\n### SRC-PACKAGE-LOCAL-SYNTHESIS\n\nClass: local-synthesis\nScope: local heuristic.\n",
         encoding="utf-8", newline="\n")
-    source_map = root / "docs/research/rule-source-map.md"
-    source_map.write_text(source_map.read_text(encoding="utf-8") + "".join(
-        f"| `{module_id}` | Owned rule | {SOURCE_ID} | bounded |\n"
-        for module_id in CURRENT_CANONICAL_IDS[28:]), encoding="utf-8", newline="\n")
     _write_registry(root, registry)
     _write_skill(root, registry)
     return registry
@@ -122,13 +116,13 @@ class CurrentSchemaTests(unittest.TestCase):
                     path.write_text(path.read_text(encoding="utf-8") + "\n[Other](other.md)\n", encoding="utf-8")
                 self.assertTrue(any(signature in e for e in validate_package(root, CURRENT_SCHEMA).errors))
 
-    def test_planned_fixture_ids_are_not_evidence(self):
+    def test_raw_evidence_ids_are_not_retained(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             registry = build_current(root)
             registry["modules"][0]["evidence"] = ["RF51-planned"]
             _write_registry(root, registry)
-            self.assertTrue(any("executed P6 receipt" in e for e in validate_package(root, CURRENT_SCHEMA).errors))
+            self.assertTrue(any("evidence must be empty" in e for e in validate_package(root, CURRENT_SCHEMA).errors))
 
     def test_packaged_tool_links_require_declaration_and_existing_file(self):
         for mutation, signature in ((None, None), ("typo", "script link"),
@@ -194,7 +188,7 @@ class CurrentSchemaTests(unittest.TestCase):
                 path = record["path"]
                 self.assertEqual(runtime_bytes(path, (root / path).read_bytes()), (destination / path).read_bytes())
             self.assertEqual([], validate_package(destination, CURRENT_SCHEMA, runtime=True).errors)
-            self.assertTrue(any("rule-source-map" in e for e in validate_package(destination, CURRENT_SCHEMA).errors))
+            self.assertEqual([], validate_package(destination, CURRENT_SCHEMA).errors)
             with self.assertRaisesRegex(ValueError, "already exists"):
                 build_runtime(root, destination)
             with self.assertRaisesRegex(ValueError, "outside"):
@@ -202,30 +196,6 @@ class CurrentSchemaTests(unittest.TestCase):
             path = destination / "SKILL.md"
             path.write_text(path.read_text(encoding="utf-8").replace("route 01", "wrong route"), encoding="utf-8")
             self.assertTrue(any("index drift" in e for e in validate_package(destination, CURRENT_SCHEMA, runtime=True).errors))
-
-    def test_evidence_resolves_executed_receipts_not_just_id_shape(self):
-        for mutation in (None, "missing", "planned", "hash", "settings", "outcome", "artifact"):
-            with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as directory:
-                root = Path(directory)
-                registry = build_current(root)
-                registry["modules"][0]["evidence"] = ["P6-UNIT-OBSERVED"]
-                _write_registry(root, registry)
-                artifact = root / "docs/evaluation/unit-trace.txt"
-                artifact.parent.mkdir(parents=True)
-                artifact.write_text("Observed unit-test fixture, not a design case.\n", encoding="utf-8")
-                receipt = {"id": "P6-UNIT-OBSERVED", "executed": True, "case_version": "unit-v1", "requested_model": "unit-fixture", "session_id": "unit-session", "executed_at": "2026-09-04", "settings": {"effort": "unit", "tools": []}, "outcome": "fail", "tested_package_sha256": "A" * 64, "artifacts": [{"path": "docs/evaluation/unit-trace.txt", "sha256": hashlib.sha256(artifact.read_bytes()).hexdigest().upper()}]}
-                if mutation == "planned": receipt["executed"] = False
-                if mutation == "hash": receipt["tested_package_sha256"] = "missing"
-                if mutation == "settings": receipt["settings"] = {}
-                if mutation == "outcome": receipt["outcome"] = "planned"
-                if mutation == "artifact": artifact.write_text("Changed", encoding="utf-8")
-                if mutation != "missing":
-                    (artifact.parent / "plan-0006-case-receipts.json").write_text(json.dumps({"schema_version": 1, "receipts": [receipt]}), encoding="utf-8")
-                errors = validate_package(root, CURRENT_SCHEMA).errors
-                if mutation is None:
-                    self.assertEqual([], errors, "Executed failures are valid evidence, not pass claims")
-                else:
-                    self.assertTrue(errors)
 
 
 if __name__ == "__main__":

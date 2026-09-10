@@ -50,7 +50,7 @@ Record only open relevant fields; otherwise use the Core minimal record:
    hierarchy, type, spacing, crop or subject recognition in the stable frames.
 3. **Build temporal hierarchy from real content.** Sequence attention and causal
    order; protect reading holds and stillness. Set duration from copy, language,
-   task, distance, frequency and target testing—not universal timing, stagger,
+   task, distance, frequency and target testing - not universal timing, stagger,
    spring, frame-rate or layer-count recipes.
 4. **Choose a continuity spine.** Preserve identity through spatial, semantic,
    causal, temporal or perceptual relations. Specify origin, path, occlusion,

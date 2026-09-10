@@ -773,9 +773,7 @@ provenance and current-verification state.
    comparison pairs stay outside the public repository. Their existence does
    not grant redistribution rights.
 
-The development repository keeps research records and alias history at
-`docs/research/source-ledger.md` and rule-level use at
-`docs/research/rule-source-map.md`. These are repository-relative audit locators,
-not links to files in this installed package. Consult them only in a separately
-available development checkout for an explicit provenance audit; never treat
-them as installed runtime dependencies or infer their contents from these names.
+The source IDs declared in `modules.yaml` and each routed module resolve against
+this index. Raw research notes, audits, screenshots, comparison pairs, and
+evaluation receipts are temporary working material and are not release
+dependencies.

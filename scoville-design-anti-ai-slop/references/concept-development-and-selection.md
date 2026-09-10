@@ -134,8 +134,8 @@ invariant and carrier must survive; pixel-identical composition need not.
 - **Matrix hides disagreement:** unknowns or preferences were scored as facts.
   Restore gates, uncertainty, trade-offs and named authority.
 
-Repair the smallest parent cause—frame, subject relation, carrier, rough,
-selection judgment, or format mapping—while preserving the selected thesis,
+Repair the smallest parent cause - frame, subject relation, carrier, rough,
+selection judgment, or format mapping - while preserving the selected thesis,
 verified content, working relationships and incumbent constraints. Re-render
 only affected conditions, then regression-check the complete representative
 set. If a rough exposes a false frame, record the change and regenerate affected

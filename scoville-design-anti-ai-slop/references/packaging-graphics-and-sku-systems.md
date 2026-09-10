@@ -41,7 +41,7 @@ safety constraints, or expand unrelated SKU and production fields:
   owner, required/optional/unknown state, allowed transformation and placement
   condition;
 - `H`: intended brand/product/variant/quantity/claim hierarchy by channel,
-  viewing condition, consequence and likely confusion—not one universal
+  viewing condition, consequence and likely confusion - not one universal
   front/back ranking;
 - `S`: SKU IDs, shared invariants, controlled variables, actual product
   differences, closest confusable pairs, pack sizes/forms, locales, markets,
@@ -68,7 +68,7 @@ omit, invent, rewrite or relocate them.
    return to its actual owner.
 2. **Define the packaging communication job.** State what must be identified,
    distinguished, understood or acted on in each `V`. Allocate `C` by task,
-   exposure, consequence and available face—not by a generic rule that brand is
+   exposure, consequence and available face - not by a generic rule that brand is
    always first, legal copy always belongs on the back, or every package needs a
    hero claim.
 3. **Design one SKU grammar.** Separate recognition invariants from variant

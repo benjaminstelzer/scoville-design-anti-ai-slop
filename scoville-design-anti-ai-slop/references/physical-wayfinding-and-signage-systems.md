@@ -21,7 +21,7 @@ installation, certification or provider acceptance.
 Work from accountable site and destination information, not a plausible plan.
 Record only open relevant fields; otherwise use the Core minimal record:
 
-- `J`: people and journeys—origins, destinations, tasks, frequency,
+- `J`: people and journeys - origins, destinations, tasks, frequency,
   familiarity, time/stress, mobility, sensory/cognitive needs, languages,
   companions, carrying conditions and consequence of error;
 - `D`: stable destination IDs, owner-approved display names, aliases only when
@@ -31,7 +31,7 @@ Record only open relevant fields; otherwise use the Core minimal record:
   nodes, transitions, decision and confirmation points, arrival criteria,
   recovery routes, relevant landmarks, sight barriers and unresolved spatial
   truth;
-- `S`: sign roles and IDs—orientation, direction, confirmation,
+- `S`: sign roles and IDs - orientation, direction, confirmation,
   identification, directory/index and bounded regulatory information supplied
   by its owner; message, location intent, approach, viewing condition,
   dependencies and lifecycle;
@@ -59,8 +59,8 @@ route from visual inspection, a floor plan, an ordinary path or model memory.
    a false route or inaccessible destination.
 2. **Build one governed destination registry.** Apply owner-approved labels and
    hierarchy consistently across directories, signs, maps and supporting
-   channels. Decide which level is necessary at each stage—site, building,
-   zone, floor, department, room or service—without exposing irrelevant or
+   channels. Decide which level is necessary at each stage - site, building,
+   zone, floor, department, room or service - without exposing irrelevant or
    restricted destinations. Do not rename a service to make a layout fit.
 3. **Place information at decisions.** At each point, state the traveler's
    question, available paths, required distinction, advance notice, visible
@@ -119,7 +119,7 @@ still need their actual authorities and evidence.
 | Failure signature | Parent cause to test |
 | --- | --- |
 | Many signs exist but travelers still hesitate | journey/decision model is wrong; information arrives too early, late or at the wrong branch |
-| A destination appears under different names | destination registry, authority or version drift—not typography—is the parent failure |
+| A destination appears under different names | destination registry, authority or version drift - not typography - is the parent failure |
 | Direction is readable but the route is ambiguous | arrow/path relation, destination hierarchy, viewpoint or next confirmation is missing |
 | A route works outbound but not on return or recovery | only the ideal journey was modeled; reversal, level change or missed-turn state is absent |
 | Directory, map and signs disagree | derivatives do not share stable destination and route IDs or source versions |

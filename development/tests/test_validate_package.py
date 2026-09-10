@@ -70,7 +70,6 @@ def _module(module_id: str, index: int, successor: bool) -> dict:
 
 def build_successor(root: Path) -> dict:
     (root / "references").mkdir(parents=True)
-    (root / "docs" / "research").mkdir(parents=True)
     modules = [
         _module(module_id, index, True)
         for index, module_id in enumerate(SUCCESSOR_CANONICAL_IDS, start=1)
@@ -104,19 +103,6 @@ def build_successor(root: Path) -> dict:
         f"# Source index\n\n### {SOURCE_ID} Canonical curriculum source\n\nRecord.\n",
         encoding="utf-8",
         newline="\n",
-    )
-    map_lines = [
-        "# Rule-to-source map",
-        "",
-        "| Expert module | Operational rule cluster | Source IDs | Boundary |",
-        "| --- | --- | --- | --- |",
-    ]
-    map_lines.extend(
-        f"| `{module_id}` | Owned rule | {SOURCE_ID} | bounded |"
-        for module_id in SUCCESSOR_CANONICAL_IDS
-    )
-    (root / "docs" / "research" / "rule-source-map.md").write_text(
-        "\n".join(map_lines) + "\n", encoding="utf-8", newline="\n"
     )
     return registry
 
@@ -215,21 +201,6 @@ class SuccessorValidatorTests(unittest.TestCase):
             result = validate_package(root, SUCCESSOR_SCHEMA)
             self.assertTrue(any("unresolved source ID AUD.TYPE-02" in error for error in result.errors))
             self.assertTrue(any("Sources: header must equal" in error for error in result.errors))
-
-    def test_rule_source_map_cluster_and_resolution_are_hard_errors(self) -> None:
-        with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
-            build_successor(root)
-            map_path = root / "docs" / "research" / "rule-source-map.md"
-            text = map_path.read_text(encoding="utf-8")
-            text = text.replace(
-                f"| `{SUCCESSOR_CANONICAL_IDS[0]}` | Owned rule | {SOURCE_ID} | bounded |",
-                f"| `{SUCCESSOR_CANONICAL_IDS[0]}` |  | AUD.MISSING-99 | bounded |",
-            )
-            map_path.write_text(text, encoding="utf-8", newline="\n")
-            result = validate_package(root, SUCCESSOR_SCHEMA)
-            self.assertTrue(any("has no rule cluster" in error for error in result.errors))
-            self.assertTrue(any("unresolved source ID AUD.MISSING-99" in error for error in result.errors))
 
     def test_sibling_link_is_hard_error(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

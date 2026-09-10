@@ -110,7 +110,7 @@ modules:
     conflicts: []
     owns: [concept_territories, concept_carriers, rough_comparison, concept_selection, concept_repair, originality_boundary]
     sources: [SRC-CONCEPT-EVIDENCE, SRC-BRIEF-HCD, SRC-FOUNDATION-GRAPHIC, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
+    evidence: []
   - id: composition-and-layout
     status: draft
     intervention: external-verification
@@ -122,7 +122,7 @@ modules:
     conflicts: []
     owns: [spatial_discovery_methods, layout_measurement_methods, diagnostic_layout_comparisons]
     sources: [SRC-COMPOSITION-CANON, SRC-GESTALT-EVIDENCE, SRC-TYPE-DETAIL, SRC-PROFESSIONAL-SCOPE, SRC-CRITIQUE-CANON, SRC-DESIGN-EVALUATION-EMPIRICAL, SRC-PACKAGE-LOCAL-SYNTHESIS, SRC-NESTED-CONTOUR-GEOMETRY]
-    evidence: [P6-SOL-N02, P6-SOL-N06, P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
+    evidence: []
   - id: typography-and-typesetting
     status: draft
     intervention: external-verification
@@ -134,7 +134,7 @@ modules:
     conflicts: []
     owns: [type_roles, glyph_differentiation, typeface_compatibility, type_hierarchy, typesetting, microtypography, type_exception]
     sources: [SRC-TYPE-CANON, SRC-TYPE-SELECTION, SRC-TYPE-DETAIL, SRC-TYPE-EMPIRICAL, SRC-FONT-TECH, SRC-PACKAGE-LOCAL-SYNTHESIS, SRC-HEADLINE-BREAKS]
-    evidence: [P6-SOL-N02, P6-SOL-N04, P6-SOL-N06, P6-SOL-N08, P6-SOL-N10, P6-SOL-N12, P6-SOL-N13, P6-SOL-N14, P6-FABLE-C1-CANDIDATE, P6-FABLE-C2-CANDIDATE]
+    evidence: []
   - id: font-technology-and-script-safety
     status: draft
     intervention: external-verification
@@ -146,7 +146,7 @@ modules:
     conflicts: []
     owns: [font_technology, font_fallback, script_requirements, bidi_vertical, font_proof]
     sources: [SRC-FONT-TECH, SRC-FONT-LICENCE-PROOF, SRC-DATA-ACCESS-LOCALE, SRC-PROFESSIONAL-SCOPE, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N12, P6-SOL-N14]
+    evidence: []
   - id: colour-and-reproduction
     status: draft
     intervention: external-verification
@@ -158,7 +158,7 @@ modules:
     conflicts: []
     owns: [colour_roles, colour_access, gamut_boundary, reproduction_chain, colour_proof]
     sources: [SRC-COLOUR-PERCEPTION, SRC-COLOUR-MANAGEMENT, SRC-COLOUR-ACCESS-DATA, SRC-PRODUCTION-PRINT, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N02, P6-SOL-N08, P6-SOL-N10, P6-SOL-N12, P6-SOL-N13, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
+    evidence: []
   - id: imagery-and-art-direction
     status: draft
     intervention: external-verification
@@ -170,7 +170,7 @@ modules:
     conflicts: []
     owns: [image_thesis, image_mode, shot_or_generation_brief, image_sequence, crop_system, image_treatment_integrity_floor]
     sources: [SRC-IMAGE-CRAFT, SRC-IMAGE-INTEGRITY, SRC-PEOPLE-PRIVACY, SRC-IMAGE-METADATA-ACCESS, SRC-SYNTHETIC-PROVENANCE, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
+    evidence: []
   - id: information-design-and-data-visualization
     status: draft
     intervention: external-verification
@@ -182,7 +182,7 @@ modules:
     conflicts: []
     owns: [data_encoding, data_integrity, uncertainty_display, dashboard_information, data_handoff]
     sources: [SRC-DATA-CANON, SRC-DATA-EMPIRICAL, SRC-DATA-ACCESS-LOCALE, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N02]
+    evidence: []
   - id: cartography-and-spatial-data
     status: draft
     intervention: external-verification
@@ -206,7 +206,7 @@ modules:
     conflicts: []
     owns: [diagram_semantics, relation_encoding, edge_contract, diagram_proof]
     sources: [SRC-DIAGRAM-SEMANTICS, SRC-DATA-CANON, SRC-DATA-EMPIRICAL, SRC-DATA-ACCESS-LOCALE, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
+    evidence: []
   - id: brand-and-visual-systems
     status: draft
     intervention: focus
@@ -218,7 +218,7 @@ modules:
     conflicts: []
     owns: [visual_identity_thesis, visual_identity_authority, brand_architecture, identity_grammar, icon_and_symbol_system, system_invariants, controlled_variation, ci_conformance, brand_governance]
     sources: [SRC-BRAND-CANON, SRC-BRAND-EVIDENCE, SRC-BRAND-SYSTEM-GOVERNANCE, SRC-CORPORATE-DESIGN-CONFORMANCE, SRC-BRAND-ARCHITECTURE, SRC-UI-EVALUATION, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS, SRC-STROKE-ROLE-AND-GAP]
-    evidence: [P6-SOL-N12, P6-SOL-N14]
+    evidence: []
   - id: logo-and-identity-mark-design
     status: draft
     intervention: focus
@@ -230,7 +230,7 @@ modules:
     conflicts: []
     owns: [identity_mark_form, wordmark_form, mark_optical_variants, mark_form_proof]
     sources: [SRC-MARK-DESIGN, SRC-BRAND-CANON, SRC-BRAND-EVIDENCE, SRC-CULTURE-AUTHORITY, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
+    evidence: []
   - id: instructional-and-explanatory-design
     status: draft
     intervention: external-verification
@@ -242,7 +242,7 @@ modules:
     conflicts: []
     owns: [explanation_objective, explanation_sequence, instructional_visual_relation, comprehension_test_contract]
     sources: [SRC-INSTRUCTIONAL-COMMUNICATION, SRC-COMMUNICATION-CLARITY, SRC-DIAGRAM-SEMANTICS, SRC-DATA-ACCESS-LOCALE, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N06, P6-FABLE-C2-CANDIDATE]
+    evidence: []
   - id: advertising-and-campaign-art-direction
     status: draft
     intervention: focus
@@ -266,7 +266,7 @@ modules:
     conflicts: []
     owns: [workflow_design, information_architecture, interaction_pattern_intent, state_recovery_intent, ui_system_definition, design_ui_record]
     sources: [SRC-UI-HCD-IA, SRC-UI-FORMS-STATES, SRC-UI-EVALUATION, SRC-BRIEF-HCD, SRC-BRAND-SYSTEM-GOVERNANCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N02]
+    evidence: []
   - id: web-and-responsive-design
     status: draft
     intervention: external-verification
@@ -278,7 +278,7 @@ modules:
     conflicts: []
     owns: [responsive_priority, responsive_transformation, density_disclosure, responsive_asset_intent, responsive_design_record]
     sources: [SRC-WEB-RESPONSIVE, SRC-TYPE-DETAIL, SRC-TYPE-EMPIRICAL, SRC-FONT-TECH, SRC-FONT-LICENCE-PROOF, SRC-IMAGE-METADATA-ACCESS, SRC-DATA-ACCESS-LOCALE, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N02, P6-SOL-N06, P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
+    evidence: []
   - id: editorial-and-fixed-media-design
     status: draft
     intervention: external-verification
@@ -290,7 +290,7 @@ modules:
     conflicts: []
     owns: [fixed_medium_contract, editorial_sequence, page_spread_system, presentation_document_template_system, fold_face_relationship, physical_design_constraints]
     sources: [SRC-FIXED-EDITORIAL, SRC-COMPOSITION-CANON, SRC-GESTALT-EVIDENCE, SRC-TYPE-DETAIL, SRC-TYPE-EMPIRICAL, SRC-IMAGE-CRAFT, SRC-IMAGE-INTEGRITY, SRC-PRODUCTION-PRINT, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N12, P6-SOL-N14]
+    evidence: []
   - id: packaging-graphics-and-sku-systems
     status: draft
     intervention: external-verification
@@ -302,7 +302,7 @@ modules:
     conflicts: []
     owns: [dieline_graphic_mapping, packaging_panel_communication, packaging_sku_system, packaging_context_proof]
     sources: [SRC-PACKAGING-GRAPHICS, SRC-BRAND-CANON, SRC-TYPE-DETAIL, SRC-IMAGE-CRAFT, SRC-PRODUCTION-PRINT, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N04, P6-SOL-N08, P6-SOL-N10, P6-SOL-N13]
+    evidence: []
   - id: physical-wayfinding-and-signage-systems
     status: draft
     intervention: external-verification
@@ -314,7 +314,7 @@ modules:
     conflicts: []
     owns: [physical_route_model, destination_hierarchy_structure, decision_point_system, signage_family_system, wayfinding_route_proof]
     sources: [SRC-WAYFINDING-SYSTEMS, SRC-CARTOGRAPHY, SRC-TYPE-DETAIL, SRC-DATA-ACCESS-LOCALE, SRC-BRAND-CANON, SRC-PRODUCTION-PRINT, SRC-SOURCE-EVIDENCE, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N08, P6-SOL-N10, P6-SOL-N13]
+    evidence: []
   - id: motion-and-sequence
     status: draft
     intervention: external-verification
@@ -326,7 +326,7 @@ modules:
     conflicts: []
     owns: [motion_thesis, temporal_hierarchy, continuity_spine, kinetic_readability, reduced_equivalent]
     sources: [SRC-MOTION-CRAFT, SRC-MOTION-ACCESS, SRC-MOTION-TECH, SRC-IMAGE-CRAFT, SRC-IMAGE-INTEGRITY, SRC-PEOPLE-PRIVACY, SRC-TYPE-EMPIRICAL, SRC-DATA-ACCESS-LOCALE, SRC-PRODUCTION-DIGITAL, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N02]
+    evidence: []
   - id: media-production-and-handoff
     status: draft
     intervention: external-verification
@@ -398,7 +398,7 @@ modules:
     conflicts: []
     owns: [claim_registry, source_registry, evidence_relation, current_verification, correction_history]
     sources: [SRC-SOURCE-EVIDENCE, SRC-PROFESSIONAL-SCOPE, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N06]
+    evidence: []
   - id: asset-rights-and-attribution
     status: draft
     intervention: external-verification
@@ -410,7 +410,7 @@ modules:
     conflicts: []
     owns: [asset_registry, license_boundary, rights_layers, attribution_record, attribution_survival]
     sources: [SRC-ASSET-RIGHTS, SRC-PEOPLE-PRIVACY, SRC-CULTURE-AUTHORITY, SRC-IMAGE-METADATA-ACCESS, SRC-SYNTHETIC-PROVENANCE, SRC-PRODUCTION-DIGITAL, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N12]
+    evidence: []
   - id: style-direction
     status: draft
     intervention: focus
@@ -422,7 +422,7 @@ modules:
     conflicts: []
     owns: [style_interpretation, style_dna, anti_cliche_counterweight, medium_translation, style_proof]
     sources: [SRC-STYLE-HISTORY, SRC-FOUNDATION-GRAPHIC, SRC-CULTURE-AUTHORITY, SRC-ASSET-RIGHTS, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N12, P6-FABLE-C2-CANDIDATE]
+    evidence: []
 
   - id: generic-signatures-and-subject-specificity
     status: draft
@@ -435,7 +435,7 @@ modules:
     conflicts: []
     owns: [generic_cliche_test, specificity_judgment, subject_counter_move]
     sources: [SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N06, P6-SOL-N12, P6-SOL-N14, P6-FABLE-C2-CANDIDATE]
+    evidence: []
   - id: coordination-with-sibling-skills
     status: draft
     intervention: focus
@@ -447,7 +447,7 @@ modules:
     conflicts: []
     owns: [partner_exchange, cross_owner_status_preservation]
     sources: [SRC-DESIGN-BOUNDARY-COORDINATION, SRC-PACKAGE-LOCAL-SYNTHESIS]
-    evidence: [P6-SOL-N10]
+    evidence: []
 
 # C10 and C19 were removed as duplicate load examples; retain the ID gaps.
 planned_common_loads:

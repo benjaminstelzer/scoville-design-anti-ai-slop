@@ -43,7 +43,7 @@ grids or furniture. Define a sequence thesis such as entry, development,
 evidence, pause, transition, climax, recovery and close only where the content requires
 those roles. Establish the least complex recurring anchor system that preserves
 orientation while allowing subject-specific variation. Pacing follows content,
-audience, viewing duration, page turns, physical handling and visual change—not
+audience, viewing duration, page turns, physical handling and visual change - not
 a prescribed alternation, template count, hero cadence or uniform density.
 
 Inspect four scopes: detail; page/slide/panel; facing spread/fold/surface
