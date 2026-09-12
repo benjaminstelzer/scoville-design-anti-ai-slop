@@ -24,8 +24,6 @@
   typography, colour, identity, imagery, information design, responsive
   composition, and motion.
 - Distinguished point, line, and area label placement in cartography.
-- Removed token and file-size targets from package validation. Structure and
-  generated package consistency remain checked.
 
 ## v1.0.0 - 2026-09-04
 
