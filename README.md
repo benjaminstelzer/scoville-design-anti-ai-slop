@@ -1,40 +1,24 @@
 # Scoville Design Anti-AI-Slop
 
-An attractive surface can arrive before the design has an idea. Scoville
-Design makes the idea, structure, craft, and evidence arrive too.
+A design can look polished and still miss the brief. An 80s reference becomes
+neon, chrome and VHS noise, but the combination says little about the actual
+subject. Or every element is neatly spaced, yet nothing tells the reader where
+to start.
 
-It usually looks harmless:
+Scoville Design connects the visual choices to the content, audience and medium.
+It helps create a direction, develop it into an artifact, inspect the result and
+repair specific problems. A critique should explain what is wrong and why,
+while preserving the parts that work.
 
-- An 80s brief becomes neon, chrome, a perspective grid, VHS noise, and an
-  arcade font. The decade has been searched. The design has not been made.
-- Every element is clean and evenly spaced. Nothing tells the eye what matters
-  first, second, or at all.
-- A critique recommends more whitespace, stronger hierarchy, and better
-  typography. It does not identify one cause, preserve one strength, or repair
-  one pixel.
-- The source file is valid and the screenshot is polished. The required price
-  is clipped just beyond the viewport, where it can enjoy some privacy.
-
-That is design slop: familiar signs and surface polish substitute for a
-subject-specific concept, controlled relationships, and rendered proof. The
-design must answer the brief, not just resemble its mood board.
-
-Scoville Design is an Agent Skill for creating, distinguishing, critiquing,
-and repairing graphic, editorial, brand, identity-mark, advertising,
-instructional, packaging, physical-wayfinding, web, UI, information, and motion
-design. It can translate a named style into a coherent contemporary system
-without reducing it to a costume. Theory and history load only when they
-improve a decision, repair, or style result.
-
-It does not activate for mechanical application of settled design, file
-conversion or rendering alone, backend-only work, or prose-only editing.
+Use it for graphic, editorial, brand, advertising, packaging, wayfinding, web,
+interface, information and motion design. It also handles style interpretation.
+Mechanical edits to a settled design, conversion or rendering alone, backend
+work and prose-only editing do not need it.
 
 ## Why "Scoville"?
 
-The family is named for useful signal that remains detectable after dilution. In design, the
-heat is the relationship among idea, content, hierarchy, type, colour, image,
-space, medium, and audience. Adding glow until the layout becomes spicy is a
-different experiment.
+The family is named for useful signal that remains detectable after dilution.
+In Design, that means keeping the idea and the content legible through the visual choices.
 
 ## How to use
 
@@ -164,21 +148,19 @@ is absent, inactive, inapplicable, or explicitly excluded, UI retains its
 bounded Greenfield fallback. Neither Skill searches for, requires, or simulates
 the other.
 
-Repository validation and retention rules are in [development](development/README.md).
-
 ## How it was developed
 
-I developed Design through source review, rendered work and blind comparisons,
-then revised the instructions around the visual problems those comparisons
-exposed. The [changelog](CHANGELOG.md) traces the move toward composition
-foundations, selectively loaded specialist methods, and inspection of both
-the whole image and its details. The briefs and Skill versions changed during
-that work, so the comparisons do not establish a general win rate.
+I developed Design by comparing the instructions with actual visual work.
+Source review, rendered artifacts and blind comparisons exposed different
+problems, and I revised the Skill around what each could show. That led to
+composition foundations in the Core and specialist methods loaded only when
+the task needs them.
 
-Real design tasks continue to inform it. I examine complete task histories
-alongside the resulting artifacts to find missed visual defects, unhelpful
-repair loops and unnecessary reference reads. Those observations guide the
-next revisions and the visual problems I check in subsequent work.
+The [changelog](CHANGELOG.md) follows that development. I continue reading task
+histories alongside the resulting artifacts to find missed defects, repeated
+repairs and reference reads that do not help the design. The comparisons used
+changing briefs and Skill versions with one human reviewer. They helped me
+revise the instructions, but are not a benchmark of general design quality.
 
 ## Scoville family
 
@@ -202,17 +184,6 @@ needs:
   Work Items, Decisions, and lifecycle state.
 - [Handoff](https://github.com/benjaminstelzer/scoville-handoff) transfers active
   work to another agent or session.
-
-## Status
-
-Version 1.2.1 contains 30 selectively loaded modules, measurement helpers,
-visual examples, and the MIT license. The package was revised through source
-review, rendered checks, and blind comparisons; the changelog preserves the
-release-level history.
-
-Those iterative comparisons used evolving briefs, changing Skill versions,
-and one human reviewer. They do not establish a general win rate, professional
-competence, or that the current wording catches every visual defect.
 
 ## Sources
 
