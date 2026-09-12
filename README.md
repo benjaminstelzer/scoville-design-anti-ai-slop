@@ -217,3 +217,18 @@ claims still need current verification.
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## How it was developed
+
+I developed Design through source review, rendered work and blind comparisons,
+then revised the instructions around the visual problems those comparisons
+exposed. The [changelog](CHANGELOG.md) traces the move toward composition
+foundations, selectively loaded specialist methods, and inspection of both
+the whole image and its details. The briefs and Skill versions changed during
+that work, so the comparisons do not establish a general win rate.
+
+Real design tasks continue to inform it. I examine complete task histories
+alongside the resulting artifacts to find missed visual defects, unhelpful
+repair loops and unnecessary reference reads. Those observations guide the
+next revisions, with package checks kept separate from judgment of the actual
+visual result.
